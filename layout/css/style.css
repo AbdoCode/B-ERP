@@ -1,0 +1,280 @@
+/* start General */
+.tab-content .tab-pane div h2{ font-weight: bold}
+.table-responsive{overflow-x: visible}
+@media (max-width: 768px) {
+    .tab-content .tab-pane div h2{text-align: center}
+}
+/* End General*/
+/* Start navbar */
+.navbar{margin-bottom: 0}
+.navbar > .container-fluid .navbar-brand{ margin-left: 40px;padding: 0}
+.navbar > .container-fluid .navbar-brand img{ height: 100%}
+.navbar .navbar-right{ margin-right: 30px}
+.navbar .navbar-text{
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block
+}
+.navbar .dropdown .fa-globe{ position: relative}
+.navbar .dropdown .number-notification{
+    position: absolute;
+    top: -9px;
+    right: -4px;
+    background-color: #D43F3A;
+    color: #FFF;
+    padding: 2px 3px;
+    border-radius: 2px;
+    font-size: 16px
+}
+.navbar .dropdown .dropdown-menu{ padding: 0}
+.navbar .dropdown .dropdown-menu > li > a{ padding: 10px;white-space: normal}
+.navbar .dropdown .dropdown-menu .list-group-item{
+    border-radius: 0;
+    height: 102px;
+    width: 334px
+}
+.navbar .dropdown .dropdown-menu .list-group-item p.list-group-item-text{
+    height: 35px;
+    margin-bottom: 5px;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+@media (max-width: 768px) {
+    .navbar .dropdown .dropdown-menu .list-group-item {
+        border-left: 0;
+        border-right: 0;
+        border-top: 0;
+        color: #FFF
+    }
+    .navbar .dropdown .dropdown-menu .list-group-item:hover .list-group-item-heading,
+    .navbar .dropdown .dropdown-menu .list-group-item:focus .list-group-item-heading { color: #FFF}
+    .navbar .navbar-right { margin-right: -15px}
+    .navbar > .container-fluid .navbar-brand{ margin-left: 5px}
+}
+/* End navbar */
+/* Start Login Page */
+.login{ padding-top: 90px}
+.login .form-horizontal{ max-width: 450px}
+.login .page-header{
+    border: 0;
+    margin-top: 0;
+    padding-top: 40px
+}
+.login .page-header h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 40px
+}
+.login .SumoSelect{ width: 100%;text-align: left}
+@media (max-width: 768px) {
+    .login{ padding-top: 10px}
+    .login .form-horizontal{ max-width: 90%}
+    .login .form-horizontal label{ margin-top: 7px}
+}
+/* End Login Page */
+/* Start main Aside */
+.mainAside{ padding:0;background-color: #222}
+.mainAside .nav-pills > li > a{ border-radius: 0}
+.mainAside .nav-pills > li > a,
+.mainAside .nav-pills > li > a:focus,
+.mainAside .nav-pills > li > a:hover { color: #FFF}
+.mainAside .nav-pills > li.active > a,
+.mainAside .nav-pills > li.active > a:focus,
+.mainAside .nav-pills > li.active > a:hover{ color: #222;background-color: #FFF}
+.mainAside .nav > li > a:focus,
+.mainAside .nav > li > a:hover { color: #FFF;background-color: #337AB7}
+.mainAside .glyphicon{ top: 2px;float: right}
+.mainAside .dropdown-menu{
+    top: 0;
+    left: 100%;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+}
+.mainAside .dropdown-menu > li > a{ padding: 10px 15px}
+.mainAside .dropdown-menu > li > a:focus,
+.mainAside .dropdown-menu > li > a:hover{ background-color: #337AB7;color: #FFF}
+.viewAside{
+    padding: 9px 10px;
+    border: none;
+    position: fixed;
+    left: -15px;
+    z-index: 9999;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    display: none
+}
+.viewAside:hover{left: -1px}
+.viewAside .icon-bar{
+    width: 22px;
+    height: 2px;
+    margin-bottom: 3px;
+    background-color: #222;
+    display: block;
+    border-radius: 1px
+}
+@media (max-width: 768px) {
+    .mainAside { display: none}
+    .viewAside { display: block}
+    .mainAside .dropdown-menu { top: 10px;left: 30%}
+}
+/* End main Aside */
+/* Start Daily Tasks */
+.daily-tasks .table-responsive .table tr td .SumoSelect:first-of-type{ margin-bottom: 2px}
+.daily-tasks .table-responsive .table tr td .SumoSelect:last-of-type{ display: none}
+/* End Daily Tasks */
+/* Start Activities & issues */
+.activities{padding: 20px 0}
+.issues h1{text-transform: capitalize}
+.activities .container-for-btn-group,
+.issues .container-for-btn-group{overflow: hidden; margin-bottom: 10px}
+.activities .btn-group,
+.issues .container-for-btn-group button{float: right;margin-right: 10px}
+.activities .table-responsive,
+.issues .table-responsive{margin-top: 10px}
+@media (max-width: 768px) {
+    .activities,
+    .issues{padding: 10px 0}
+    .activities .btn-group,
+    .issues .container-for-btn-group button{margin-right: 0}
+    .issues .container-for-btn-group button{margin-bottom: 5px}
+    .activities .input-group.center-block,
+    .issues .input-group.center-block{display: table}
+    .activities .input-group-btn.center-block,
+    .issues .input-group-btn.center-block{display: table-cell}
+    .activities .table-responsive,
+    .issues .table-responsive{margin-top: 5px}
+}
+/* End Activities & issues */
+/* Start Boxes */
+.add-activities{z-index: 99999;width: 356px;height: 396px;display: none}
+.add-objectives{z-index: 99999;width: 420px;height: 519px;display: none}
+.forget-password,
+.add-issue-administration,
+.add-issue-kid{z-index: 99999;width: 356px;display: none}
+.add-class-preparations{z-index: 99999;width: 400px;display: none}
+.forget-password form .form-group:last-of-type{display: none}
+.add-activities .panel,
+.add-objectives .panel,
+.add-issue-administration .panel,
+.add-issue-kid .panel,
+.forget-password .panel,
+.add-class-preparations .panel{margin-bottom: 0}
+.add-activities .panel .panel-heading h2,
+.add-objectives .panel .panel-heading h2,
+.add-issue-administration .panel .panel-heading h2,
+.add-issue-kid .panel .panel-heading h2,
+.forget-password .panel .panel-heading h2,
+.add-class-preparations .panel .panel-heading h2 {font-size: 22px}
+.add-activities .panel .panel-heading span,
+.add-objectives .panel .panel-heading span,
+.add-issue-administration .panel .panel-heading span,
+.add-issue-kid .panel .panel-heading span,
+.forget-password .panel .panel-heading span,
+.add-class-preparations .panel .panel-heading span{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer
+}
+.add-activities .panel .panel-heading span:hover,
+.add-objectives .panel .panel-heading span:hover,
+.add-issue-administration .panel .panel-heading span:hover,
+.add-issue-kid .panel .panel-heading span:hover,
+.forget-password .panel .panel-heading span:hover,
+.add-class-preparations .panel .panel-heading span:hover{color: #D9534F}
+.add-activities .form-horizontal .form-group textarea,
+.add-objectives .form-horizontal .form-group textarea,
+.add-issue-administration .form-horizontal .form-group textarea,
+.add-issue-kid .form-horizontal .form-group textarea{resize: none}
+.add-class-preparations .add-item-button-container{overflow: hidden}
+.add-class-preparations .add-item-button{float: right}
+.add-class-preparations .table-responsive th,
+.add-class-preparations .table-responsive td{border-top: none}
+.add-class-preparations .table-responsive .form-group{margin: auto}
+.forget-password .SumoSelect,
+.add-issue-administration .SumoSelect,
+.add-issue-kid .SumoSelect,
+.add-class-preparations .SumoSelect{ width: 100%}
+/* End Boxes */
+/* Start add-workplan */
+.add-workplan form .form-group{min-width: 200px}
+.workplan h2{margin-bottom: 20px}
+.workplan .table-responsive{margin-top: 10px}
+/* End add-workplan */
+/* Start Classes */
+.classes .container-for-btn-group{overflow: hidden; margin-bottom: 10px}
+.classes .btn-group{float: right;margin-right: 10px}
+.classes .btn-group li{list-style: none;float: left;padding: 0;border: none}
+.classes .btn-group li a{color: #FFF;text-decoration: none;display: block;padding: 6px 12px;border: 1px solid transparent}
+.classes .table-responsive{margin-top: 10px}
+.classes .preparations-check{float: left;text-align: center}
+@media (max-width: 768px) {
+    .classes .container-for-btn-group{text-align: center;padding: 0}
+    .classes .btn-group{margin-right: 0;float: none;padding: 0;width: 100%}
+    .classes .btn-group li{width: 33.33333333%}
+    .classes .btn-group li a{padding: 6px 0}
+    .classes .input-group.center-block{display: table}
+    .classes .input-group-btn.center-block{display: table-cell}
+    .classes .table-responsive{margin-top: 5px}
+}
+/* End Classes */
+/* Start Events & subject */
+.events h2{margin-bottom: 20px}
+.events .input-group.center-block{display: table}
+.events .input-group-btn.center-block{display: table-cell}
+.subject > .SumoSelect{position: absolute;top: 73px;right: 15px}
+.events .table-responsive{margin-top: 10px}
+.subject > .table-responsive{margin-top: 65px}
+.subject > .table-responsive .btn-group{margin-bottom: 10px}
+@media (max-width: 768px) {
+    .subject > .SumoSelect{position: relative;top: 0;right: 0;width: 100%}
+    .subject > .table-responsive{margin-top: 15px}
+}
+/* End Events & subject */
+/* Start View Activity , view Event */
+.view-activity,
+.view-event,
+.view-issue{padding: 20px; font-size:20px}
+.view-activity h1,
+.view-event h1,
+.view-issue h1{margin-bottom: 30px;font-weight: bold;font-size: 30px}
+.view-activity .contRow,
+.view-event .contRow,
+.view-issue .contRow{overflow:hidden;margin-bottom: 8px}
+.view-activity .contRow textarea,
+.view-issue .contRow textarea{width: calc(91.66666667% - 15px);margin-left: 15px}
+.view-issue form{margin-top: 40px}
+.view-issue form .SumoSelect{width: 100%}
+/* End View Activity , view Event */
+/* Start view-approvals-workplan , view-confirmation-workplan, view-workplan */
+.view-approvals-workplan,
+.view-confirmation-workplan,
+.view-workplan{padding: 30px 0}
+.view-approvals-workplan .aside .info,
+.view-confirmation-workplan .aside .info{margin-bottom: 10px;font-size: 20px}
+.view-approvals-workplan .aside textarea{width: 100%;height: 150px;resize: none;margin-top: 30px}
+/* End view-approvals-workplan , view-confirmation-workplan, view-workplan */
+/* Start performance sheet */
+.performance-sheet{padding: 10px;margin: 30px;border:1px solid #000}
+.performance-sheet .general-info{float: right}
+.performance-sheet h1{font-weight: bold;margin: 10px 0 40px 20px}
+.performance-sheet table{font-size: 18px}
+.performance-sheet table tr td{border-top: none;padding: 12px 8px}
+.performance-sheet table tr td label{color: #A00}
+/* End performance sheet */
+.performance-sheet-print .container-for-btn-group{overflow: hidden; margin: 20px 0}
+.performance-sheet-print .container-for-btn-group .btn-group{float: right;margin-right: 30px}
+@media (max-width: 768px) {
+    .activities .btn-group,
+    .issues .container-for-btn-group button {
+        margin-right: 0
+    }
+
+    .issues .container-for-btn-group button {
+        margin-bottom: 5px
+    }
+}
