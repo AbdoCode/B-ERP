@@ -1,5 +1,5 @@
 <?php
-
+/*
 	$dsn = 'mysql:host=localhost;dbname=test';
 	$user = 'root';
 	$pass = '';
@@ -15,3 +15,4 @@
 	catch(PDOException $e) {
 		echo 'Failed To Connect' . $e->getMessage();
 	}
+*/
