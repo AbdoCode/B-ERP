@@ -6,7 +6,7 @@
     include 'Boxes/add-issue.php';
 ?>
 <div class="issues">
-    <h1><?php echo $_GET['type']; ?>s Issues</h1>
+    <h2><?php echo $_GET['type']; ?>s Issues</h2>
     <div class="container-for-btn-group">
         <button class="btn btn-primary add-issue-<?php echo $_GET['type']; ?>-button">
             <span class="glyphicon glyphicon-plus-sign"></span> Add Issue for <?php echo $_GET['type']; ?>

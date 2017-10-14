@@ -1,8 +1,8 @@
 /* start General */
-.tab-content .tab-pane div h2{ font-weight: bold}
+h2{font-weight: bold}
 .table-responsive{overflow-x: visible}
 @media (max-width: 768px) {
-    .tab-content .tab-pane div h2{text-align: center}
+    h2{text-align: center}
 }
 /* End General*/
 /* Start navbar */
@@ -126,29 +126,37 @@
 .daily-tasks .table-responsive .table tr td .SumoSelect:first-of-type{ margin-bottom: 2px}
 .daily-tasks .table-responsive .table tr td .SumoSelect:last-of-type{ display: none}
 /* End Daily Tasks */
-/* Start Activities & issues */
-.activities{padding: 20px 0}
-.issues h1{text-transform: capitalize}
+/* Start Activities & issues & Classes */
+.issues h2{text-transform: capitalize}
 .activities .container-for-btn-group,
-.issues .container-for-btn-group{overflow: hidden; margin-bottom: 10px}
+.issues .container-for-btn-group,
+.classes .container-for-btn-group{overflow: hidden; margin-bottom: 10px}
 .activities .btn-group,
-.issues .container-for-btn-group button{float: right;margin-right: 10px}
+.issues .container-for-btn-group button,
+.classes .btn-group{float: right;margin-right: 10px}
+.classes .btn-group li{list-style: none;float: left;padding: 0;border: none}
+.classes .btn-group li a{color: #FFF;text-decoration: none;display: block;padding: 6px 12px;border: 1px solid transparent}
 .activities .table-responsive,
-.issues .table-responsive{margin-top: 10px}
+.issues .table-responsive,
+.classes .table-responsive{margin-top: 10px}
+.classes .preparations-check{float: left;text-align: center}
 @media (max-width: 768px) {
-    .activities,
-    .issues{padding: 10px 0}
     .activities .btn-group,
     .issues .container-for-btn-group button{margin-right: 0}
     .issues .container-for-btn-group button{margin-bottom: 5px}
     .activities .input-group.center-block,
-    .issues .input-group.center-block{display: table}
+    .issues .input-group.center-block,
+    .classes .input-group.center-block{display: table}
     .activities .input-group-btn.center-block,
-    .issues .input-group-btn.center-block{display: table-cell}
+    .issues .input-group-btn.center-block,
+    .classes .input-group-btn.center-block{display: table-cell}
     .activities .table-responsive,
-    .issues .table-responsive{margin-top: 5px}
+    .issues .table-responsive,
+    .classes .table-responsive{margin-top: 5px}
+    .classes .btn-group{margin-right: 0;float: none;padding: 0;width: 100%}
+    .classes .btn-group li{margin-bottom: 4px;margin-right: 4px;border-radius: 4px !important}
 }
-/* End Activities & issues */
+/* End Activities & issues & Classes */
 /* Start Boxes */
 .add-activities{z-index: 99999;width: 356px;height: 396px;display: none}
 .add-objectives{z-index: 99999;width: 420px;height: 519px;display: none}
@@ -192,9 +200,11 @@
 .add-issue-kid .form-horizontal .form-group textarea{resize: none}
 .add-class-preparations .add-item-button-container{overflow: hidden}
 .add-class-preparations .add-item-button{float: right}
+.add-class-preparations .table-responsive{overflow: auto;max-height:166px}
 .add-class-preparations .table-responsive th,
 .add-class-preparations .table-responsive td{border-top: none}
 .add-class-preparations .table-responsive .form-group{margin: auto}
+.add-class-preparations form .form-group:last-of-type{margin-top: 5px}
 .forget-password .SumoSelect,
 .add-issue-administration .SumoSelect,
 .add-issue-kid .SumoSelect,
@@ -205,23 +215,6 @@
 .workplan h2{margin-bottom: 20px}
 .workplan .table-responsive{margin-top: 10px}
 /* End add-workplan */
-/* Start Classes */
-.classes .container-for-btn-group{overflow: hidden; margin-bottom: 10px}
-.classes .btn-group{float: right;margin-right: 10px}
-.classes .btn-group li{list-style: none;float: left;padding: 0;border: none}
-.classes .btn-group li a{color: #FFF;text-decoration: none;display: block;padding: 6px 12px;border: 1px solid transparent}
-.classes .table-responsive{margin-top: 10px}
-.classes .preparations-check{float: left;text-align: center}
-@media (max-width: 768px) {
-    .classes .container-for-btn-group{text-align: center;padding: 0}
-    .classes .btn-group{margin-right: 0;float: none;padding: 0;width: 100%}
-    .classes .btn-group li{width: 33.33333333%}
-    .classes .btn-group li a{padding: 6px 0}
-    .classes .input-group.center-block{display: table}
-    .classes .input-group-btn.center-block{display: table-cell}
-    .classes .table-responsive{margin-top: 5px}
-}
-/* End Classes */
 /* Start Events & subject */
 .events h2{margin-bottom: 20px}
 .events .input-group.center-block{display: table}
@@ -244,11 +237,16 @@
 .view-issue h1{margin-bottom: 30px;font-weight: bold;font-size: 30px}
 .view-activity .contRow,
 .view-event .contRow,
-.view-issue .contRow{overflow:hidden;margin-bottom: 8px}
-.view-activity .contRow textarea,
-.view-issue .contRow textarea{width: calc(91.66666667% - 15px);margin-left: 15px}
+.view-issue .contRow{overflow: hidden;margin-bottom: 8px}
+.view-activity .carousel{float: left;padding: 0;width: 450px;height: 450px;margin-left: 15px}
 .view-issue form{margin-top: 40px}
 .view-issue form .SumoSelect{width: 100%}
+@media (max-width: 768px) {
+    .view-activity,
+    .view-event,
+    .view-issue{padding: 0}
+    .view-activity .carousel{width: 100%;height: 300px}
+}
 /* End View Activity , view Event */
 /* Start view-approvals-workplan , view-confirmation-workplan, view-workplan */
 .view-approvals-workplan,
@@ -257,24 +255,31 @@
 .view-approvals-workplan .aside .info,
 .view-confirmation-workplan .aside .info{margin-bottom: 10px;font-size: 20px}
 .view-approvals-workplan .aside textarea{width: 100%;height: 150px;resize: none;margin-top: 30px}
+@media (max-width: 768px) {
+    .workplan .input-group.center-block{display: table}
+    .workplan .input-group-btn.center-block{display: table-cell}
+}
 /* End view-approvals-workplan , view-confirmation-workplan, view-workplan */
 /* Start performance sheet */
-.performance-sheet{padding: 10px;margin: 30px;border:1px solid #000}
-.performance-sheet .general-info{float: right}
-.performance-sheet h1{font-weight: bold;margin: 10px 0 40px 20px}
-.performance-sheet table{font-size: 18px}
-.performance-sheet table tr td{border-top: none;padding: 12px 8px}
-.performance-sheet table tr td label{color: #A00}
-/* End performance sheet */
+.performance-sheet{padding: 10px;margin: 30px;border:1px solid #000;position: relative}
+.performance-sheet .general-info{position: absolute;top:10px;right: 20px}
+.performance-sheet h2{font-weight: bold;margin: 10px 0 40px 20px}
+.performance-sheet .rates{font-size: 18px}
+.performance-sheet .rates .rate{margin-bottom: 20px}
+.performance-sheet .rates .rate label{color: #A00}
 .performance-sheet-print .container-for-btn-group{overflow: hidden; margin: 20px 0}
 .performance-sheet-print .container-for-btn-group .btn-group{float: right;margin-right: 30px}
-@media (max-width: 768px) {
-    .activities .btn-group,
-    .issues .container-for-btn-group button {
-        margin-right: 0
-    }
-
-    .issues .container-for-btn-group button {
-        margin-bottom: 5px
-    }
+@media (max-width: 768px){
+    .performance-sheet{margin: 10px 0}
+    .performance-sheet h2{margin: 0 0 20px;width: 100%;text-align: left}
+    .performance-sheet .general-info{position: static;margin-bottom: 20px}
 }
+/* End performance sheet */
+/* Start Bus */
+.busPage .info{margin: 20px 0}
+.busPage .info label{font-size: 22px}
+.busPage .table .form-control{height: 13px}
+@media (max-width: 768px){
+.busPage .info > div{margin-bottom: 10px}
+}
+/* End Bus */

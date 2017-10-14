@@ -45,7 +45,7 @@
                         <td>20.3%</td>
                         <td>Not Participant</td>
                         <td>16/50</td>
-                        <td><button class="btn btn-primary btn-sm add-issue-Kid-button">Add</button></td>
+                        <td><button class="btn btn-primary btn-sm add-issue-kid-button">Add</button></td>
                     </tr>
                     <tr>
                         <td>1</td>
@@ -54,7 +54,7 @@
                         <td>20.3%</td>
                         <td>Not Participant</td>
                         <td>16/50</td>
-                        <td><button class="btn btn-primary btn-sm add-issue-Kid-button">Add</button></td>
+                        <td><button class="btn btn-primary btn-sm add-issue-kid-button">Add</button></td>
                     </tr>
                 </table>
             </div>
@@ -188,10 +188,10 @@
                 </table>
             </div>
         </div>
-        <div role="tabpanel" class="tab-pane" id="preparations">
+        <div role="tabpanel" class="tab-pane preparations" id="preparations">
             <div class="container-for-btn-group">
                 <div class="btn-group add-preparations-button">
-                    <button class="btn btn-primary">
+                    <button class="btn btn-primary btn-block">
                         <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add Preparations
                     </button>
                 </div>
@@ -218,6 +218,14 @@
                             <form>
                                 <div class="preparations-check">
                                     <label for="" class="control-label">Air condition</label>
+                                    <input type="checkbox" class="form-control" id="">
+                                </div>
+                                <div class="preparations-check">
+                                    <label for="" class="control-label">Books</label>
+                                    <input type="checkbox" class="form-control" id="">
+                                </div>
+                                <div class="preparations-check">
+                                    <label for="" class="control-label">Books</label>
                                     <input type="checkbox" class="form-control" id="">
                                 </div>
                                 <div class="preparations-check">

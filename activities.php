@@ -6,6 +6,7 @@
     include 'Boxes/add-activities.php';
 ?>
 <div class="activities">
+    <h2>Activities</h2>
     <div class="container-for-btn-group">
         <div class="btn-group">
             <button class="btn btn-primary">

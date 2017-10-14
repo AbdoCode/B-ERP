@@ -9,20 +9,20 @@
         <h1 class="text-center">Issue Name</h1>
         <div class="contRow">
             <label class="col-xs-1">Date:</label>
-            <p class="col-xs-11">17 Aug 2017</p>
+            <p class="col-sm-11 col-sm-push-0 col-xs-9 col-xs-push-2">17 Aug 2017</p>
         </div>
         <div class="contRow">
-            <label class="col-xs-1">Details:</label>
-            <textarea disabled class="col-xs-11"></textarea>
+            <label class="col-sm-1 ccl-xs-12">Details:</label>
+            <p class="col-sm-11 col-xs-12">This is Details for this activity This is Details for this activity This is Details for this activity This is Details for this activity This is Details for this activity This is Details for this activity This is Details for this activity This is Details for this activity This is Details for this activity This is Details for this activity This is Details for this activity This is Details for this activity This is Details for this activity This is Details for this activity </p>
         </div>
         <div class="col-sm-offset-4 col-sm-4 col-xs-12">
             <button type="submit" class="btn btn-success btn-block">Solve</button>
         </div>
     </div>
     <form class="form-horizontal">
-        <div class="form-group">
-            <label for="jobTitle" class="col-xs-1 control-label">Job Title</label>
-            <div class="col-sm-4 col-xs-9">
+        <div class="form-group col-sm-5">
+            <label for="jobTitle" class="col-sm-4 control-label">Job Title</label>
+            <div class="col-sm-8">
                 <select class="form-control" id="jobTitle">
                     <option disabled selected>Choose Job Title</option>
                     <option>CEO</option>
@@ -31,8 +31,10 @@
                     <option>Supervisor</option>
                 </select>
             </div>
-            <label for="employee" class="col-xs-1 col-sm-push-1 control-label">To</label>
-            <div class="col-sm-4 col-xs-9 col-sm-push-1">
+        </div>
+        <div class="form-group col-sm-5 col-sm-push-2">
+            <label for="employee" class="col-sm-4 control-label">To</label>
+            <div class="col-sm-8">
                 <select class="form-control" id="employee">
                     <option disabled selected>Select to send</option>
                     <option>All</option>

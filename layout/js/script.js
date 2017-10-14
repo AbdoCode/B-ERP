@@ -75,7 +75,6 @@ $(function () {
     }
     $(window).resize(function () {
         if($(window).innerWidth() <= 768){
-            console.log($(window).innerWidth());
             $(".viewAside").on('click', function () {
                 $(this).toggle();
                 $(".mainAside").toggle();
@@ -135,13 +134,32 @@ $(function () {
     openBox(".subject .add-objective-button", ".add-objectives", ".add-objectives .panel .panel-heading .glyphicon-remove");
     openBox(".add-preparations-button", ".add-class-preparations", ".add-class-preparations .panel .panel-heading .glyphicon-remove");
     // add new row in table on preparations box
-    /*$(".add-class-preparations .add-item-button").on('click', function () {
-        $(".add-class-preparations .table tr:last-of-type").append('<tr> <td> <div class="form-group"> <input type="text" class="form-control" placeholder="type item" /> </div> </td> <td> <div class="form-group"> <select class="form-control"> <option disabled selected>Choose Rate</option> <option value="10%">10%</option> <option value="20%">20%</option> <option value="30%">30%</option> <option value="40%">40%</option> <option value="50%">50%</option> <option value="60%">60%</option> <option value="70%">70%</option> <option value="80%">80%</option> <option value="90%">90%</option> <option value="100%">100%</option> </select> </div> </td> </tr>');
-    });*/
-    /*
-    var count = $(".classes .preparations-check").length,
-        width = 100 / count;
-    $(".classes .preparations-check").css('width', width+'%');*/
+    $(".add-class-preparations .add-item-button").on('click', function () {
+        $(".add-class-preparations .table").append('<tr> <td> <div class="form-group"> <input type="text" class="form-control" placeholder="type item" /> </div> </td> <td> <div class="form-group"> <select class="form-control"> <option disabled selected>Choose Rate</option> <option value="10%">10%</option> <option value="20%">20%</option> <option value="30%">30%</option> <option value="40%">40%</option> <option value="50%">50%</option> <option value="60%">60%</option> <option value="70%">70%</option> <option value="80%">80%</option> <option value="90%">90%</option> <option value="100%">100%</option> </select> </div> </td> </tr>');
+    });
+
+    // calculate width for preparations-checks
+    $(".classes .preparations form").each(function () {
+        var count = $(this).children().length,
+            width = 100 / count;
+        if($(window).innerWidth() <= 768) {
+            $(this).children().css('width', '50%');
+        } else if($(window).innerWidth() <= 992) {
+            $(this).children().css('width', '25%');
+        } else {
+            $(this).children().css('width', width+'%');
+        }
+    });
+    // center photos in carousel in view activities
+    $(".view-activity .carousel .item").each(function () {
+        var number = ($(".view-activity .carousel").height() - $(this).height()) / 2;
+        $(this).css("margin-top", number);
+    });
+    $(".performance-sheet-print button").on('click',function () {
+        $('.performance-sheet').printMe({
+            "path": ["style.css"]
+        });
+    });
 });
 
 

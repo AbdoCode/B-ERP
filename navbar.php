@@ -130,6 +130,18 @@
                     <li><a href="confirmation-workplan.php">Confirmation</a></li>
                 </ul>
             </li>
+            <li <?php if (basename($_SERVER['PHP_SELF']) == 'bus-attend-am.php' || basename($_SERVER['PHP_SELF']) == 'bus-attend-pm.php') echo 'class="active"' ?>>
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    Bus <span class="glyphicon glyphicon-triangle-right"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="bus-attend-am.php">A</a></li>
+                    <li><a href="bus-attend-am.php">B</a></li>
+                    <li><a href="bus-attend-am.php">C</a></li>
+                    <li><a href="bus-attend-pm.php">X</a></li>
+                    <li><a href="bus-attend-pm.php">F</a></li>
+                </ul>
+            </li>
         </ul>
     </aside>
     <div class="col-sm-10">

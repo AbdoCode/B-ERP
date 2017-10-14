@@ -7,26 +7,27 @@
 <div class="view-event">
     <h1 class="text-center">Event Name</h1>
     <div class="contRow">
-        <label class="col-xs-2">Kids Number:</label>
-        <p class="col-xs-10">22</p>
+        <label class="col-sm-2 col-xs-1">Kids Number:</label>
+        <p class="col-sm-10 col-sm-push-0 col-xs-8 col-xs-push-3">22</p>
     </div>
     <div class="contRow">
-        <label class="col-xs-2">Segment:</label>
-        <p class="col-xs-10"></p>
+        <label class="col-sm-2 col-xs-1">Segment:</label>
+        <p class="col-sm-10 col-sm-push-0 col-xs-8 col-xs-push-3"></p>
     </div>
     <div class="contRow">
-        <label class="col-xs-2">Location:</label>
-        <p class="col-xs-10">Giza</p>
+        <label class="col-sm-2 col-xs-1">Location:</label>
+        <p class="col-sm-10 col-sm-push-0 col-xs-8 col-xs-push-3">Giza</p>
     </div>
     <div class="contRow">
-        <label class="col-xs-2">Date from:</label>
-        <p class="col-xs-4">11 Sep 2017</p>
-        <label class="col-xs-2">Date to:</label>
-        <p class="col-xs-4">13 Sep 2017</p>
+        <label class="col-sm-2 col-xs-4">Date from:</label>
+        <p class="col-sm-4 col-xs-8">11 Sep 2017</p>
+        <div class="clearfix visible-xs"></div>
+        <label class="col-sm-2 col-xs-4">Date to:</label>
+        <p class="col-sm-4 col-xs-8">13 Sep 2017</p>
     </div>
     <div class="contRow">
-        <label class="col-xs-2">Status:</label>
-        <p class="col-xs-10">Completed</p>
+        <label class="col-sm-2 col-xs-1">Status:</label>
+        <p class="col-sm-10 col-sm-push-0 col-xs-8 col-xs-push-3">Completed</p>
     </div>
     <div class="table-responsive">
         <table class="table table-bordered table-hover">

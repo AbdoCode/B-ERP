@@ -4,7 +4,7 @@
     include 'init.php';
     include 'navbar.php';
 ?>
-<div class="performance-sheet-print">
+<div class="performance-sheet-print hidden-xs">
     <div class="container-for-btn-group">
         <div class="btn-group">
             <button class="btn btn-default">
@@ -14,60 +14,54 @@
     </div>
 </div>
 <div class="performance-sheet">
+    <h2>Mohamed Maher</h2>
     <div class="general-info">
         <label>Date:</label>
         <span>17 Aug 2017</span><br/>
         <label>Term:</label>
         <span>Fall 2017</span><br/>
         <label>Job Title:</label>
-        <span>Teacher</span><br/>
+        <span>Teacher Supervisor</span><br/>
     </div>
-    <h1>Mohamed Maher</h1>
-    <div class="table-responsive rate">
-        <table class="table text-center">
-            <tr>
-                <td col-sm-4>
-                    <label>Task progress</label><br/>
-                    <span>80%</span>
-                </td>
-                <td col-sm-4>
-                    <label>Workplan completion Rate</label><br/>
-                    <span>20%</span>
-                </td>
-                <td col-sm-4>
-                    <label>Attendance Rate</label><br/>
-                    <span>40%</span>
-                </td>
-            </tr>
-            <tr>
-                <td col-sm-4>
-                    <label>Attendance Rate</label><br/>
-                    <span>40%</span>
-                </td>
-                <td col-sm-4>
-                    <label>Task progress</label><br/>
-                    <span>80%</span>
-                </td>
-                <td col-sm-4>
-                    <label>Workplan completion Rate</label><br/>
-                    <span>20%</span>
-                </td>
-            </tr>
-            <tr>
-                <td col-sm-4>
-                    <label>Workplan completion Rate</label><br/>
-                    <span>20%</span>
-                </td>
-                <td col-sm-4>
-                    <label>Attendance Rate</label><br/>
-                    <span>40%</span>
-                </td>
-                <td col-sm-4>
-                    <label>Task progress</label><br/>
-                    <span>80%</span>
-                </td>
-            </tr>
-        </table>
+    <div class="rates text-center">
+        <div class="row">
+            <div class="rate col-sm-4 col-xs-6">
+                <label>Task progress</label><br/>
+                <span>80%</span>
+            </div>
+            <div class="rate col-sm-4 col-xs-6">
+                <label>Workplan completion Rate</label><br/>
+                <span>20%</span>
+            </div>
+            <div class="rate col-sm-4 col-xs-6">
+                <label>Attendance Rate</label><br/>
+                <span>40%</span>
+            </div>
+            <div class="rate col-sm-4 col-xs-6">
+                <label>Task progress</label><br/>
+                <span>80%</span>
+            </div>
+            <div class="rate col-sm-4 col-xs-6">
+                <label>Workplan completion Rate</label><br/>
+                <span>20%</span>
+            </div>
+            <div class="rate col-sm-4 col-xs-6">
+                <label>Attendance Rate</label><br/>
+                <span>40%</span>
+            </div>
+            <div class="rate col-sm-4 col-xs-6">
+                <label>Task progress</label><br/>
+                <span>80%</span>
+            </div>
+            <div class="rate col-sm-4 col-xs-6">
+                <label>Workplan completion Rate</label><br/>
+                <span>20%</span>
+            </div>
+            <div class="rate col-sm-4 col-xs-6">
+                <label>Attendance Rate</label><br/>
+                <span>40%</span>
+            </div>
+        </div>
     </div>
 </div>
 <?php
