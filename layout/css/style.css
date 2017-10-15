@@ -283,3 +283,12 @@ h2{font-weight: bold}
 .busPage .info > div{margin-bottom: 10px}
 }
 /* End Bus */
+/* Start Add event */
+.add-event{margin-bottom: 10px}
+.add-event h2{margin-bottom: 30px}
+.add-event table input.form-control{min-width: 150px}
+.add-event form .control-label{text-align: left}
+@media (max-width: 768px){
+    .add-event .table-responsive{padding: 0}
+}
+/* End Add event */

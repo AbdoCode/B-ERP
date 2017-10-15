@@ -23,7 +23,7 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Mohamed<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
+                            <li><a href="add-event.php">Add Event</a></li>
                             <li><a href="#">Another action</a></li>
                             <li><a href="#">Something else here</a></li>
                         </ul>
@@ -108,6 +108,7 @@
                     Events <span class="glyphicon glyphicon-triangle-right"></span>
                 </a>
                 <ul class="dropdown-menu">
+                    <li><a href="add-event.php">Add Event</a></li>
                     <li><a href="events.php">Current</a></li>
                     <li><a href="events.php">Old</a></li>
                 </ul>
