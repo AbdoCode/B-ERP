@@ -103,12 +103,12 @@
                     <li><a href="classes.php">Class F</a></li>
                 </ul>
             </li>
-            <li <?php if (basename($_SERVER['PHP_SELF']) == 'events.php') echo 'class="active"' ?>>
+            <li <?php if (basename($_SERVER['PHP_SELF']) == 'events.php' || basename($_SERVER['PHP_SELF']) == 'event-requests.php') echo 'class="active"' ?>>
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                     Events <span class="glyphicon glyphicon-triangle-right"></span>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="add-event.php">Add Event</a></li>
+                    <li><a href="event-requests.php">Event Requests</a></li>
                     <li><a href="events.php">Current</a></li>
                     <li><a href="events.php">Old</a></li>
                 </ul>
@@ -143,6 +143,18 @@
                     <li><a href="bus-attend-pm.php">F</a></li>
                 </ul>
             </li>
+            <li <?php if (basename($_SERVER['PHP_SELF']) == 'reception-logistics.php' || basename($_SERVER['PHP_SELF']) == 'check-in-out.php' || basename($_SERVER['PHP_SELF']) == 'time-table.php' || basename($_SERVER['PHP_SELF']) == 'add-new-time-table.php') echo 'class="active"' ?>>
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    Logistics <span class="glyphicon glyphicon-triangle-right"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="check-in-out.php">Check in/out</a></li>
+                    <li><a href="reception-logistics.php">Reception Logistics</a></li>
+                    <li><a href="time-table.php">Time tables</a></li>
+                </ul>
+            </li>
+            <li <?php if (basename($_SERVER['PHP_SELF']) == 'assigned-tasks.php' || basename($_SERVER['PHP_SELF']) == 'view-assigned-task.php') echo 'class="active"' ?>><a href="assigned-tasks.php">Assigned Tasks</a></li>
+            <li <?php if (basename($_SERVER['PHP_SELF']) == 'staff.php') echo 'class="active"' ?>><a href="staff.php">Staff</a></li>
         </ul>
     </aside>
     <div class="col-sm-10">

@@ -137,7 +137,10 @@ $(function () {
     $(".add-class-preparations .add-item-button").on('click', function () {
         $(".add-class-preparations .table").append('<tr> <td> <div class="form-group"> <input type="text" class="form-control" placeholder="type item" /> </div> </td> <td> <div class="form-group"> <select class="form-control"> <option disabled selected>Choose Rate</option> <option value="10%">10%</option> <option value="20%">20%</option> <option value="30%">30%</option> <option value="40%">40%</option> <option value="50%">50%</option> <option value="60%">60%</option> <option value="70%">70%</option> <option value="80%">80%</option> <option value="90%">90%</option> <option value="100%">100%</option> </select> </div> </td> </tr>');
     });
-
+    // add new row in table on preparations box
+    $(".add-reception-logistics .container-for-btn-group button").on('click', function () {
+        $(".add-reception-logistics .table").append('<tr><td><input type="text" class="form-control"></td><td><input type="number" class="form-control"></td><td><input type="number" class="form-control"></td></tr>');
+    });
     // calculate width for preparations-checks
     $(".classes .preparations form").each(function () {
         var count = $(this).children().length,
