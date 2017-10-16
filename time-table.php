@@ -31,13 +31,13 @@
                 <td>1</td>
                 <td>17 Aug 2017</td>
                 <td>Confirmed</td>
-                <td><a href="#" class="btn btn-primary btn-sm">View</a></td>
+                <td><a href="view-time-table.php" class="btn btn-primary btn-sm">View</a></td>
             </tr>
             <tr>
                 <td>2</td>
                 <td>20 Sep 2016</td>
                 <td>Pending</td>
-                <td><a href="#" class="btn btn-primary btn-sm">View</a></td>
+                <td><a href="view-time-table.php" class="btn btn-primary btn-sm">View</a></td>
             </tr>
         </table>
     </div>

@@ -35,7 +35,7 @@
                 <td>Hadeer</td>
                 <td>Confirmed</td>
                 <td>17 Sep 2017</td>
-                <td><a href="#" class="btn btn-primary btn-sm">View</a></td>
+                <td><a href="view-reception-logistics.php" class="btn btn-primary btn-sm">View</a></td>
             </tr>
             <tr>
                 <td>1</td>
@@ -43,7 +43,7 @@
                 <td>Hadeer</td>
                 <td>Confirmed</td>
                 <td>17 Sep 2017</td>
-                <td><a href="#" class="btn btn-primary btn-sm">View</a></td>
+                <td><a href="view-reception-logistics.php" class="btn btn-primary btn-sm">View</a></td>
             </tr>
         </table>
     </div>

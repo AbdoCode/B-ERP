@@ -322,12 +322,17 @@ h2{font-weight: bold}
 }
 /* End Bus */
 /* Start Add event */
-.add-event{margin-bottom: 10px}
-.add-event h2{margin-bottom: 30px}
+.add-event,
+.view-event-request{margin-bottom: 10px}
+.add-event h2,
+.view-event-request h2{margin-bottom: 30px}
 .add-event table input.form-control{min-width: 150px}
-.add-event form .control-label{text-align: left}
+.add-event form .control-label,
+.view-event-request .form-horizontal .control-label{text-align: left}
+.view-event-request .sum label{color: #A00}
 @media (max-width: 768px){
-    .add-event .table-responsive{padding: 0}
+    .add-event .table-responsive,
+    .view-event-request .table-responsive{padding: 0}
 }
 /* End Add event */
 /* Start new time table */
@@ -349,3 +354,13 @@ h2{font-weight: bold}
     .add-reception-logistics button[type='submit']{margin: 10px 0}
 }
 /* End Reception logistics */
+/* Start view-reception-logistics */
+.view-reception-logistics{padding-bottom: 10px}
+.view-reception-logistics h2{margin-bottom: 30px}
+.view-reception-logistics .info{margin-bottom: 20px;overflow: hidden}
+.view-reception-logistics .info label{font-size: 20px}
+.view-reception-logistics textarea {margin-bottom: 10px;resize: none}
+@media (max-width: 768px) {
+    .view-reception-logistics textarea{margin-top: 10px}
+}
+/* End view-reception-logistics */

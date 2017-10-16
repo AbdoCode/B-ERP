@@ -33,14 +33,14 @@
                 <td>Funday</td>
                 <td>17 Aug 2017</td>
                 <td>Confirmed</td>
-                <td><a href="#" class="btn btn-primary btn-sm">View</a></td>
+                <td><a href="view-event-request.php" class="btn btn-primary btn-sm">View</a></td>
             </tr>
             <tr>
                 <td>1</td>
                 <td>Funday</td>
                 <td>17 Aug 2017</td>
                 <td>Confirmed</td>
-                <td><a href="#" class="btn btn-primary btn-sm">View</a></td>
+                <td><a href="view-event-request.php" class="btn btn-primary btn-sm">View</a></td>
             </tr>
         </table>
     </div>
