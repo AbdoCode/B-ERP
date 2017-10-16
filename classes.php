@@ -60,6 +60,13 @@
             </div>
         </div>
         <div role="tabpanel" class="tab-pane" id="classTable">
+            <div class="container-for-btn-group">
+                <div class="btn-group">
+                    <a href="add-class-table.php" class="btn btn-primary btn-block">
+                        <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add Class Table
+                    </a>
+                </div>
+            </div>
             <div class="table-responsive">
                 <table class="table table-bordered table-hover">
                     <tr class="info">
@@ -174,7 +181,7 @@
                     <tr>
                         <th class="col-sm-1">#</th>
                         <th class="col-sm-4">Name</th>
-                        <th class="col-sm-3">This day attendance</th>
+                        <th class="col-sm-3">Attendance (<?php echo date('d M Y'); ?>)</th>
                         <th class="col-sm-3">Attendance Rate</th>
                         <th class="col-sm-1">Term</th>
                     </tr>

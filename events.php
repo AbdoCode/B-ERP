@@ -15,6 +15,8 @@
                 <li><a href="#">Completed</a></li>
                 <li><a href="#">Pending</a></li>
                 <li><a href="#">Postponed</a></li>
+                <li><a href="#">Cancelled</a></li>
+                <li><a href="#">In progress</a></li>
             </ul>
         </div>
     </div>

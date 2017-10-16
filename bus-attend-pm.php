@@ -34,8 +34,8 @@
                     <th class="col-sm-1">#</th>
                     <th class="col-sm-3">Kid Name</th>
                     <th class="col-sm-2">Reception Attendance</th>
-                    <th class="col-sm-2">Bus Attendance</th>
-                    <th class="col-sm-4">Kid Address</th>
+                    <th class="col-sm-3">Bus Attendance (<?php echo date('d M Y'); ?>)</th>
+                    <th class="col-sm-3">Kid Address</th>
                 </tr>
                 <tr>
                     <td>1</td>

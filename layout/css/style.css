@@ -277,7 +277,7 @@ h2{font-weight: bold}
 .view-activity h1,
 .view-event h1,
 .view-issue h1,
-.view-assigned-task h1{margin-bottom: 30px;font-weight: bold;font-size: 30px}
+.view-assigned-task h2{margin-bottom: 30px;font-weight: bold;font-size: 30px}
 .view-activity .contRow,
 .view-event .contRow,
 .view-issue .contRow,
@@ -315,6 +315,16 @@ h2{font-weight: bold}
     .performance-sheet{margin: 10px 0}
     .performance-sheet h2{margin: 0 0 20px;width: 100%;text-align: left}
     .performance-sheet .general-info{position: static;margin-bottom: 20px}
+}
+@media print{
+    .performance-sheet{padding: 10px;margin: 30px;border:1px solid #000;position: relative}
+    .performance-sheet .general-info{position: absolute;top:10px;right: 20px}
+    .performance-sheet h2{font-weight: bold;margin: 10px 0 40px 20px}
+    .performance-sheet .rates{font-size: 18px}
+    .performance-sheet .rates .rate{margin-bottom: 20px}
+    .performance-sheet .rates .rate label{color: #A00}
+    .performance-sheet-print .container-for-btn-group{overflow: hidden; margin: 20px 0}
+    .performance-sheet-print .container-for-btn-group .btn-group{float: right;margin-right: 30px}
 }
 /* End performance sheet */
 /* Start Bus */
@@ -368,3 +378,16 @@ h2{font-weight: bold}
     .view-reception-logistics textarea{margin-top: 10px}
 }
 /* End view-reception-logistics */
+/* Start Class Table */
+.add-class-table .table > tbody > tr > td{
+    padding: 0;
+}
+.add-class-table input{
+    width: 100%;
+    padding: 8px;
+    border: none;
+}
+@media (max-width: 768px) {
+    .add-class-table input{min-width: 150px}
+}
+/* End Class Table */

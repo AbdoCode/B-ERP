@@ -6,6 +6,7 @@
 ?>
     <div class="daily-statistics">
         <h2>Daily Statistics</h2>
+        <canvas id="myChart"></canvas>
     </div>
 <?php
     include $templates . 'footer.php';

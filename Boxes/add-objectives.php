@@ -33,7 +33,7 @@
                 <div class="form-group">
                     <label for="date" class="col-xs-1 control-label">Date</label>
                     <div class="col-xs-10 col-xs-push-1">
-                        <input type="week" class="form-control" id="date">
+                        <input type="date" class="form-control" id="date" step="7">
                     </div>
                 </div>
                 <div class="form-group">

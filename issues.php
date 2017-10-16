@@ -24,9 +24,10 @@
                 <th class="col-sm-1">#</th>
                 <th class="col-sm-3">Title</th>
                 <th class="col-sm-1">Status</th>
-                <th class="col-sm-2">Forward From</th>
-                <th class="col-sm-2">Escalation level</th>
-                <th class="col-sm-2">Solver Name</th>
+                <th class="col-sm-1">Forward From</th>
+                <th class="col-sm-1">Escalation level</th>
+                <th class="col-sm-1">Solution Acting</th>
+                <th class="col-sm-3">Solution time</th>
                 <th class="col-sm-1">Details</th>
             </tr>
             <tr>
@@ -45,6 +46,7 @@
                     <span>Supervisor</span><br/>
                     <span>Hoda</span>
                 </td>
+                <td>equation for calculate solution time</td>
                 <td><a href="view-issue.php" class="btn btn-primary btn-sm">View</a></td>
             </tr>
             <tr>
@@ -63,6 +65,7 @@
                     <span>Supervisor</span><br/>
                     <span>Hoda</span>
                 </td>
+                <td>equation for calculate solution time</td>
                 <td><a href="view-issue.php" class="btn btn-primary btn-sm">View</a></td>
             </tr>
         </table>

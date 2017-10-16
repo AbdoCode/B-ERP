@@ -26,6 +26,13 @@
         <p class="col-sm-4 col-xs-8">13 Sep 2017</p>
     </div>
     <div class="contRow">
+        <label class="col-sm-2 col-xs-4">Time from:</label>
+        <p class="col-sm-4 col-xs-8">09:00 AM</p>
+        <div class="clearfix visible-xs"></div>
+        <label class="col-sm-2 col-xs-4">Time to:</label>
+        <p class="col-sm-4 col-xs-8">01:00 PM</p>
+    </div>
+    <div class="contRow">
         <label class="col-sm-2 col-xs-1">Status:</label>
         <p class="col-sm-10 col-sm-push-0 col-xs-8 col-xs-push-3">Completed</p>
     </div>

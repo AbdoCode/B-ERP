@@ -50,6 +50,18 @@
                     <input type="date" class="form-control" id="dateTo">
                 </div>
             </div>
+            <div class="form-group">
+                <label for="timeFrom" class="col-xs-3 control-label">Time From</label>
+                <div class="col-sm-9 col-xs-9">
+                    <input type="time" class="form-control" id="timeFrom">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="timeTo" class="col-xs-3 control-label">Time To</label>
+                <div class="col-sm-9 col-xs-9">
+                    <input type="time" class="form-control" id="timeTo">
+                </div>
+            </div>
         </form>
         <div class="table-responsive col-sm-7">
             <table class="table table-bordered">
@@ -148,6 +160,7 @@
                 </tfoot>
             </table>
         </div>
+        <div class="clearfix"></div>
         <div class="form-group">
             <div class="col-sm-push-4 col-sm-4 col-xs-12">
                 <button class="form-control btn btn-primary btn-block">Add</button>

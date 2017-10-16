@@ -164,7 +164,15 @@
             </li>
             <li <?php if (basename($_SERVER['PHP_SELF']) == 'daily-statistics.php') echo 'class="active"' ?>><a href="daily-statistics.php">Daily Statistics</a></li>
             <li <?php if (basename($_SERVER['PHP_SELF']) == 'assigned-tasks.php' || basename($_SERVER['PHP_SELF']) == 'view-assigned-task.php') echo 'class="active"' ?>><a href="assigned-tasks.php">Assigned Tasks</a></li>
-            <li <?php if (basename($_SERVER['PHP_SELF']) == 'staff.php') echo 'class="active"' ?>><a href="staff.php">Staff</a></li>
+            <li <?php if (basename($_SERVER['PHP_SELF']) == 'staff.php') echo 'class="active"' ?>>
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    Staff <span class="glyphicon glyphicon-triangle-right"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="staff.php?type=current">Current Staff</a></li>
+                    <li><a href="staff.php?type=old">Old Staff</a></li>
+                </ul>
+            </li>
         </ul>
     </aside>
     <div class="col-sm-10">
