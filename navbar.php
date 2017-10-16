@@ -153,16 +153,16 @@
                     <li><a href="time-table.php">Time tables</a></li>
                 </ul>
             </li>
-            <li <?php if (basename($_SERVER['PHP_SELF']) == '' || basename($_SERVER['PHP_SELF']) == '') echo 'class="active"' ?>>
+            <li <?php if (basename($_SERVER['PHP_SELF']) == 'kids-data.php' || basename($_SERVER['PHP_SELF']) == 'kids-grades.php') echo 'class="active"' ?>>
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                     Kids <span class="glyphicon glyphicon-triangle-right"></span>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="#">Kids Data</a></li>
-                    <li><a href="#">Kids Grades</a></li>
+                    <li><a href="kids-data.php">Kids Data</a></li>
+                    <li><a href="kids-grades.php">Kids Grades</a></li>
                 </ul>
             </li>
-            <li <?php if (basename($_SERVER['PHP_SELF']) == '') echo 'class="active"' ?>><a href="#">Daily Statistics</a></li>
+            <li <?php if (basename($_SERVER['PHP_SELF']) == 'daily-statistics.php') echo 'class="active"' ?>><a href="daily-statistics.php">Daily Statistics</a></li>
             <li <?php if (basename($_SERVER['PHP_SELF']) == 'assigned-tasks.php' || basename($_SERVER['PHP_SELF']) == 'view-assigned-task.php') echo 'class="active"' ?>><a href="assigned-tasks.php">Assigned Tasks</a></li>
             <li <?php if (basename($_SERVER['PHP_SELF']) == 'staff.php') echo 'class="active"' ?>><a href="staff.php">Staff</a></li>
         </ul>

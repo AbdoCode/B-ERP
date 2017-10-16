@@ -121,7 +121,14 @@
                 </table>
             </div>
         </div>
-        <div role="tabpanel" class="tab-pane" id="kidsGrade">kids Grade</div>
+        <div role="tabpanel" class="tab-pane" id="kidsGrade">
+            <div class="input-group col-sm-5 col-xs-12 center-block">
+                <input type="search" class="form-control" placeholder="Kid name..." />
+                <div class="input-group-btn center-block">
+                    <button class="btn btn-default" type="submit"><i class="fa fa-search fa-fw"></i></button>
+                </div>
+            </div>
+        </div>
         <div role="tabpanel" class="tab-pane" id="workPlan">
             <div class="input-group col-sm-5 col-xs-12 center-block">
                 <input type="search" class="form-control" placeholder="Teacher name/term..." />

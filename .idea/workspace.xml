@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="597a9482-fa08-471e-8566-9bf89cea1a8e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view-event-request.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view-reception-logistics.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view-time-table.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daily-statistics.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kids-data.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kids-grades.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event-requests.php" afterPath="$PROJECT_DIR$/event-requests.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes.php" afterPath="$PROJECT_DIR$/classes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layout/css/style.css" afterPath="$PROJECT_DIR$/layout/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layout/js/script.js" afterPath="$PROJECT_DIR$/layout/js/script.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/navbar.php" afterPath="$PROJECT_DIR$/navbar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reception-logistics.php" afterPath="$PROJECT_DIR$/reception-logistics.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/time-table.php" afterPath="$PROJECT_DIR$/time-table.php" />
     </list>
     <ignored path="BackPackersz.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,29 +30,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="navbar.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/navbar.php">
+      <file leaf-file-name="daily-statistics.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/daily-statistics.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="164" column="117" selection-start-line="164" selection-start-column="117" selection-end-line="164" selection-end-column="117" />
+            <state relative-caret-position="34">
+              <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="classes.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/classes.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="123" column="61" selection-start-line="123" selection-start-column="61" selection-end-line="123" selection-end-column="61" />
-              <folding>
-                <element signature="e#1312#3174#0#HTML" expanded="false" />
-                <element signature="e#3183#5446#0#HTML" expanded="false" />
-                <element signature="e#5533#7122#0#HTML" expanded="false" />
-                <element signature="e#7131#8618#0#HTML" expanded="false" />
-                <element signature="e#8627#14553#0#HTML" expanded="false" />
-                <element signature="e#14562#16489#0#HTML" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -63,8 +43,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/layout/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="336" column="19" selection-start-line="336" selection-start-column="19" selection-end-line="336" selection-end-column="19" />
+            <state relative-caret-position="535">
+              <caret line="255" column="44" selection-start-line="255" selection-start-column="44" selection-end-line="255" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -88,9 +68,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/includes/pages/activities.php" />
-        <option value="$PROJECT_DIR$/includes/pages/views/view-activity.php" />
-        <option value="$PROJECT_DIR$/includes/pages/events.php" />
         <option value="$PROJECT_DIR$/includes/pages/views/view-event.php" />
         <option value="$PROJECT_DIR$/includes/pages/subject.php" />
         <option value="$PROJECT_DIR$/includes/pages/daily-tasks.php" />
@@ -118,7 +95,6 @@
         <option value="$PROJECT_DIR$/view-activity.php" />
         <option value="$PROJECT_DIR$/view-issue.php" />
         <option value="$PROJECT_DIR$/view-event.php" />
-        <option value="$PROJECT_DIR$/classes.php" />
         <option value="$PROJECT_DIR$/performance-sheet.php" />
         <option value="$PROJECT_DIR$/includes/templates/footer.php" />
         <option value="$PROJECT_DIR$/bus-attend-pm.php" />
@@ -134,11 +110,15 @@
         <option value="$PROJECT_DIR$/layout/js/script.js" />
         <option value="$PROJECT_DIR$/view-event-request.php" />
         <option value="$PROJECT_DIR$/reception-logistics.php" />
-        <option value="$PROJECT_DIR$/layout/css/style.css" />
         <option value="$PROJECT_DIR$/view-reception-logistics.php" />
         <option value="$PROJECT_DIR$/time-table.php" />
         <option value="$PROJECT_DIR$/view-time-table.php" />
+        <option value="$PROJECT_DIR$/layout/css/style.css" />
+        <option value="$PROJECT_DIR$/kids-data.php" />
+        <option value="$PROJECT_DIR$/kids-grades.php" />
+        <option value="$PROJECT_DIR$/classes.php" />
         <option value="$PROJECT_DIR$/navbar.php" />
+        <option value="$PROJECT_DIR$/daily-statistics.php" />
       </list>
     </option>
   </component>
@@ -383,7 +363,7 @@
       <workItem from="1507944347568" duration="32328000" />
       <workItem from="1508019760716" duration="7284000" />
       <workItem from="1508029651347" duration="19895000" />
-      <workItem from="1508089733645" duration="11413000" />
+      <workItem from="1508089733645" duration="13408000" />
     </task>
     <task id="LOCAL-00001" summary="Mohamed Edit">
       <created>1507986336002</created>
@@ -406,11 +386,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508088482029</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Mohamed Edit">
+      <created>1508153151510</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1508153151510</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="257976000" />
+    <option name="totallyTimeSpent" value="259971000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -458,27 +445,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../eCommerceCourse-master/includes/functions/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="194" column="5" selection-start-line="194" selection-start-column="5" selection-end-line="194" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../teamx_for_careerea_developers_team_website_for_develop_this_website/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../teamx_for_careerea_developers_team_website_for_develop_this_website/navbar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="40" column="101" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Boxes/add-activities.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -783,14 +749,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/layout/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="165" column="3" selection-start-line="165" selection-start-column="3" selection-end-line="165" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view-reception-logistics.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -828,8 +786,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/layout/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="336" column="19" selection-start-line="336" selection-start-column="19" selection-end-line="336" selection-end-column="19" />
+        <state relative-caret-position="535">
+          <caret line="255" column="44" selection-start-line="255" selection-start-column="44" selection-end-line="255" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kids-grades.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+          <folding>
+            <element signature="e#1312#3174#0#HTML" expanded="false" />
+            <element signature="e#3183#5446#0#HTML" expanded="false" />
+            <element signature="e#5455#5891#0#HTML" expanded="false" />
+            <element signature="e#5900#7489#0#HTML" expanded="false" />
+            <element signature="e#7498#8985#0#HTML" expanded="false" />
+            <element signature="e#8994#14920#0#HTML" expanded="false" />
+            <element signature="e#14929#16856#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layout/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="165" column="3" selection-start-line="165" selection-start-column="3" selection-end-line="165" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -837,23 +827,24 @@
     <entry file="file://$PROJECT_DIR$/navbar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="461">
-          <caret line="164" column="117" selection-start-line="164" selection-start-column="117" selection-end-line="164" selection-end-column="117" />
+          <caret line="164" column="81" selection-start-line="164" selection-start-column="81" selection-end-line="164" selection-end-column="81" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes.php">
+    <entry file="file://$PROJECT_DIR$/kids-data.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="123" column="61" selection-start-line="123" selection-start-column="61" selection-end-line="123" selection-end-column="61" />
-          <folding>
-            <element signature="e#1312#3174#0#HTML" expanded="false" />
-            <element signature="e#3183#5446#0#HTML" expanded="false" />
-            <element signature="e#5533#7122#0#HTML" expanded="false" />
-            <element signature="e#7131#8618#0#HTML" expanded="false" />
-            <element signature="e#8627#14553#0#HTML" expanded="false" />
-            <element signature="e#14562#16489#0#HTML" expanded="false" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="4" column="25" selection-start-line="0" selection-start-column="0" selection-end-line="49" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/daily-statistics.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>

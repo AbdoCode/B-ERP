@@ -236,20 +236,24 @@ h2{font-weight: bold}
 .workplan h2,
 .assigned-tasks h2,
 .checkInOut h2,
-.staff h2{margin-bottom: 20px}
+.staff h2,
+.kids-data h2{margin-bottom: 20px}
 .workplan .table-responsive,
 .assigned-tasks .table-responsive,
 .checkInOut .table-responsive,
-.staff .table-responsive{margin-top: 10px}
+.staff .table-responsive,
+.kids-data .table-responsive{margin-top: 10px}
 @media (max-width: 768px) {
     .workplan .input-group.center-block,
     .assigned-tasks .input-group.center-block,
     .checkInOut .input-group.center-block,
-    .staff .input-group.center-block{display: table}
+    .staff .input-group.center-block,
+    .kids-data .input-group.center-block{display: table}
     .workplan .input-group-btn.center-block,
     .assigned-tasks .input-group-btn.center-block,
     .checkInOut .input-group-btn.center-block,
-    .staff .input-group-btn.center-block{display: table-cell}
+    .staff .input-group-btn.center-block,
+    .kids-data .input-group-btn.center-block{display: table-cell}
 }
 /* End add-workplan */
 /* Start Events & subject */
