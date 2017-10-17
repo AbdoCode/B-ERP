@@ -1,4 +1,4 @@
-<div class="add-issue-administration">
+<div class="add-issue-administration box">
     <div class="panel panel-default">
         <div class="panel-heading">
             <h2 class="panel-title text-center">Add Issue</h2>
@@ -51,7 +51,7 @@
         </div>
     </div>
 </div>
-<div class="add-issue-kid">
+<div class="add-issue-kid box">
     <div class="panel panel-default">
         <div class="panel-heading">
             <h2 class="panel-title text-center">Add Issue</h2>

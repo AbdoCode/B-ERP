@@ -62,6 +62,30 @@
                 <td>11 Sep 2017</td>
                 <td><a href="view-event.php" class="btn btn-primary btn-sm">View</a></td>
             </tr>
+            <tr>
+                <td>3</td>
+                <td>Photo Session</td>
+                <td>In progress</td>
+                <td>10 Sep 2017</td>
+                <td>11 Sep 2017</td>
+                <td><a href="view-event.php" class="btn btn-primary btn-sm">View</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Photo Session</td>
+                <td>Completed</td>
+                <td>10 Sep 2017</td>
+                <td>11 Sep 2017</td>
+                <td><a href="view-event.php" class="btn btn-primary btn-sm">View</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Photo Session</td>
+                <td>Cancelled</td>
+                <td>10 Sep 2017</td>
+                <td>11 Sep 2017</td>
+                <td><a href="view-event.php" class="btn btn-primary btn-sm">View</a></td>
+            </tr>
         </table>
     </div>
 </div>

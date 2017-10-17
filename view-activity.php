@@ -5,7 +5,7 @@
     include 'navbar.php';
 ?>
 <div class="view-activity">
-    <h1 class="text-center">Activity Name</h1>
+    <h2 class="text-center">Activity Name</h2>
     <div class="contRow">
         <label class="col-xs-1">Date:</label>
         <p class="col-sm-11 col-sm-push-0 col-xs-9 col-xs-push-2">17 Aug 2017</p>

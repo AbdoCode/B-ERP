@@ -1,14 +1,12 @@
 /*global $*/
 $(function () {
     'use strict';
-
     //Define variables
     var forgetPasswordBox = $(".forget-password"),
         viewAside = $(".viewAside"),
         mainAside = $(".mainAside"),
         windowVar = $(window),
         navbar = $(".navbar");
-
     // to show forget password
     function showforget() {
         forgetPasswordBox.show();
@@ -124,16 +122,24 @@ $(function () {
     });
     // Fire jquery.sumoselect plugin
     $('select').SumoSelect();
-    // colorize rows events
-    $(".events .table tr td:nth-of-type(3)").each(function () {
-        if ($(this).html() === "Completed") {
-            $(this).parent().addClass("success");
-        } else if ($(this).html() === "Pending") {
-            $(this).parent().addClass("danger");
-        } else if ($(this).html() === "Postponed") {
-            $(this).parent().addClass("warning");
-        }
-    });
+    // Function colorize rows
+    function colorize($target) {
+        $($target).each(function () {
+            if ($(this).html() === "Completed") {
+                $(this).parent().addClass("success");
+            } else if ($(this).html() === "Pending") {
+                $(this).parent().addClass("danger");
+            } else if ($(this).html() === "Postponed") {
+                $(this).parent().addClass("info");
+            } else if ($(this).html() === "Cancelled") {
+                $(this).parent().addClass("active");
+            } else if ($(this).html() === "In progress") {
+                $(this).parent().addClass("warning");
+            }
+        });
+    }
+    // event colorize
+    colorize(".events .table tr td:nth-of-type(3)");
     //open Boxes
     function openBox($openButton, $box, $closeButton) {
         $($openButton).on('click', function () {

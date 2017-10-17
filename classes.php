@@ -61,11 +61,9 @@
         </div>
         <div role="tabpanel" class="tab-pane" id="classTable">
             <div class="container-for-btn-group">
-                <div class="btn-group">
-                    <a href="add-class-table.php" class="btn btn-primary btn-block">
-                        <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add Class Table
-                    </a>
-                </div>
+                <a href="add-class-table.php" class="btn btn-primary">
+                    <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add Class Table
+                </a>
             </div>
             <div class="table-responsive">
                 <table class="table table-bordered table-hover">
@@ -204,11 +202,9 @@
         </div>
         <div role="tabpanel" class="tab-pane preparations" id="preparations">
             <div class="container-for-btn-group">
-                <div class="btn-group add-preparations-button">
-                    <button class="btn btn-primary btn-block">
-                        <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add Preparations
-                    </button>
-                </div>
+                <button class="btn btn-primary add-preparations-button">
+                    <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add Preparations
+                </button>
             </div>
             <div class="input-group col-sm-5 col-xs-12 center-block">
                 <input type="search" class="form-control" placeholder="Teacher name..." />

@@ -1,4 +1,4 @@
-<div class="add-objectives">
+<div class="add-objectives box">
     <div class="panel panel-default">
         <div class="panel-heading">
             <h2 class="panel-title text-center">Add Objectives</h2>

@@ -7,11 +7,9 @@
 <div class="event-request">
     <h2>Event Requests</h2>
     <div class="container-for-btn-group">
-        <div class="btn-group">
-            <a href="add-event.php" class="btn btn-primary">
-                <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Request New Event
-            </a>
-        </div>
+        <a href="add-event.php" class="btn btn-primary">
+            <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Request New Event
+        </a>
     </div>
     <div class="input-group col-sm-5 col-xs-12 center-block">
         <input type="search" class="form-control" placeholder="Event name/Status..." />

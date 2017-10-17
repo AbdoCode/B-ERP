@@ -1,4 +1,4 @@
-<div class="add-activities">
+<div class="add-activities box">
     <div class="panel panel-default">
         <div class="panel-heading">
             <h2 class="panel-title text-center">Add Activity</h2>

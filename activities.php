@@ -8,11 +8,9 @@
 <div class="activities">
     <h2>Activities</h2>
     <div class="container-for-btn-group">
-        <div class="btn-group">
-            <button class="btn btn-primary">
-                <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add Activities
-            </button>
-        </div>
+        <button class="btn btn-primary">
+            <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add Activities
+        </button>
     </div>
     <div class="input-group col-sm-5 col-xs-12 center-block">
         <input type="search" class="form-control" placeholder="Activity name..." />

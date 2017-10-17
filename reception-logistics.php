@@ -7,11 +7,9 @@
 <div class="reception-logistics">
     <h2>Reception Logistics</h2>
     <div class="container-for-btn-group">
-        <div class="btn-group">
-            <a href="add-reception-logistics.php" class="btn btn-primary">
-                <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add New Logistics
-            </a>
-        </div>
+        <a href="add-reception-logistics.php" class="btn btn-primary">
+            <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add New Logistics
+        </a>
     </div>
     <div class="input-group col-sm-5 col-xs-12 center-block">
         <input type="search" class="form-control" placeholder="Reception name/Date..." />

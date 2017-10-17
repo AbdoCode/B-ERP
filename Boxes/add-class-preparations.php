@@ -1,4 +1,4 @@
-<div class="add-class-preparations">
+<div class="add-class-preparations box">
     <div class="panel panel-default">
         <div class="panel-heading">
             <h2 class="panel-title text-center">Weekly Preparation</h2>

@@ -6,11 +6,9 @@
 ?>
 <div class="performance-sheet-print hidden-xs">
     <div class="container-for-btn-group">
-        <div class="btn-group">
-            <button class="btn btn-default" type="button" onclick="window.print();return false;">
-                <span class="glyphicon glyphicon-print" aria-hidden="true"></span> Print
-            </button>
-        </div>
+        <button class="btn btn-default" type="button" onclick="window.print();return false;">
+            <span class="glyphicon glyphicon-print" aria-hidden="true"></span> Print
+        </button>
     </div>
 </div>
 <div class="performance-sheet">

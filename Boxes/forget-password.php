@@ -1,4 +1,4 @@
-<div class="forget-password">
+<div class="forget-password box">
     <div class="panel panel-default">
         <div class="panel-heading">
             <h2 class="panel-title text-center">Forget Password</h2>

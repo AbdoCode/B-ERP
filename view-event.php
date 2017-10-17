@@ -5,7 +5,7 @@
     include 'navbar.php';
 ?>
 <div class="view-event">
-    <h1 class="text-center">Event Name</h1>
+    <h2 class="text-center">Event Name</h2>
     <div class="contRow">
         <label class="col-sm-2 col-xs-1">Kids Number:</label>
         <p class="col-sm-10 col-sm-push-0 col-xs-8 col-xs-push-3">22</p>

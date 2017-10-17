@@ -41,8 +41,8 @@ var piedata = {
     datasets: [
         {
             label: "Population (millions)",
-            backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
-            data: [2478,5267,734,784,433]
+            backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
+            data: [2478, 5267, 734, 784, 433]
         }
     ]
 };
@@ -54,7 +54,7 @@ var pieoptions = {
     }
 };
 
-var myPieChart = new Chart(pie,{
+var myPieChart = new Chart(pie, {
     type: 'pie',
     data: piedata,
     options: pieoptions
@@ -64,9 +64,9 @@ var myPieChart = new Chart(pie,{
 var doughnutdata = {
     labels: ["IOS", "Android", "Blackberry", "Symbian", "Sony", "Others"],
     datasets: [{
-        backgroundColor: ["rgba(52, 152, 219,0.8)","rgba(231, 76, 60,0.8)","rgba(155, 89, 182,0.8)","rgba(38, 185, 154,0.8)","rgba(255,99,132,1)","rgba(189, 195, 199,0.8)"],
+        backgroundColor: ["rgba(52, 152, 219,0.8)", "rgba(231, 76, 60,0.8)", "rgba(155, 89, 182,0.8)", "rgba(38, 185, 154,0.8)", "rgba(255,99,132,1)", "rgba(189, 195, 199,0.8)"],
         borderWidth: 2,
-        hoverBackgroundColor: ["rgba(52, 152, 219,1)","rgba(231, 76, 60,1)","rgba(155, 89, 182,1)","rgba(38, 185, 154,1)","rgba(255,99,132,1)","rgba(189, 195, 199,1)"],
+        hoverBackgroundColor: ["rgba(52, 152, 219,1)", "rgba(231, 76, 60,1)", "rgba(155, 89, 182,1)", "rgba(38, 185, 154,1)", "rgba(255,99,132,1)", "rgba(189, 195, 199,1)"],
         data: [65, 59, 20, 81, 56, 55]
     }]
 };

@@ -7,11 +7,9 @@
 <div class="time-table">
     <h2>Time Tables</h2>
     <div class="container-for-btn-group">
-        <div class="btn-group">
-            <a href="add-new-time-table.php" class="btn btn-primary">
-                <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add time table
-            </a>
-        </div>
+        <a href="add-new-time-table.php" class="btn btn-primary">
+            <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add time table
+        </a>
     </div>
     <div class="input-group col-sm-5 col-xs-12 center-block">
         <input type="search" class="form-control" placeholder="Status/Date..." />
