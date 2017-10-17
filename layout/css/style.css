@@ -385,3 +385,15 @@ h2{font-weight: bold}
     .add-class-table input{min-width: 150px}
 }
 /* End Class Table */
+/* Start daily-statistics */
+.daily-statistics{padding: 0 20px}
+.daily-statistics .stat h4{margin-bottom: 0}
+.daily-statistics .stat .number{font-size: 40px;font-weight: bold}
+.daily-statistics .chart-container {height: auto;margin: auto;border: 1px solid #DDD;padding: 10px}
+.daily-statistics > div:last-of-type .chart-container{height: 350px}
+.daily-statistics > div {margin: 20px 0}
+@media (max-width: 768px) {
+    .daily-statistics .stat .number{font-size: 20px}
+    .daily-statistics .chart-container {height: auto;border: 1px solid #DDD;padding: 5px}
+}
+/* End daily-statistics */

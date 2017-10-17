@@ -62,6 +62,13 @@ $(function () {
     $(window).resize(function() {
         setHeight();
     });
+    if($(window).innerWidth() > 768) {
+        $(window).scroll(function () {
+            var windowHeightScroll = ($(window).innerHeight() - $(".navbar").outerHeight(true)) + $(window).scrollTop();
+            $(".mainAside").css('min-height', windowHeightScroll);
+            console.log($(window).scrollTop());
+        });
+    }
     // Display Main Aside on mobile view
     if($(window).innerWidth() <= 768){
         $(".viewAside").on('click', function () {
@@ -159,24 +166,3 @@ $(function () {
         $(this).css("margin-top", number);
     });
 });
-
-var ctx = document.getElementById('myChart').getContext('2d');
-var chart = new Chart(ctx, {
-    // The type of chart we want to create
-    type: 'line',
-
-    // The data for our dataset
-    data: {
-        labels: ["January", "February", "March", "April", "May", "June", "July"],
-        datasets: [{
-            label: "My First dataset",
-            backgroundColor: 'rgb(255, 99, 132)',
-            borderColor: 'rgb(255, 99, 132)',
-            data: [0, 10, 5, 2, 20, 30, 45]
-        }]
-    },
-
-    // Configuration options go here
-    options: {}
-});
-
