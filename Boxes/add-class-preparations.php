@@ -39,7 +39,7 @@
                             </td>
                             <td>
                                 <div class="form-group">
-                                    <select class="form-control">
+                                    <select class="form-control normalSelect">
                                         <option disabled selected>Choose Rate</option>
                                         <option value="10%">10%</option>
                                         <option value="20%">20%</option>
@@ -63,7 +63,7 @@
                             </td>
                             <td>
                                 <div class="form-group">
-                                    <select class="form-control">
+                                    <select class="form-control normalSelect">
                                         <option disabled selected>Choose Rate</option>
                                         <option value="10%">10%</option>
                                         <option value="20%">20%</option>

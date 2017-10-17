@@ -143,22 +143,28 @@
 .view-approvals-workplan .aside textarea{width: 100%;height: 150px;margin-top: 30px}
 /* End view-approvals-workplan , view-confirmation-workplan, view-workplan */
 /* Start performance sheet */
-.performance-sheet{padding: 10px;margin: 30px;border:1px solid #000;position: relative}
-.performance-sheet .general-info{position: absolute;top:10px;right: 20px}
-.performance-sheet h2{margin: 10px 0 40px 20px}
-.performance-sheet .rates{font-size: 18px}
+.performance-sheet{padding: 10px;margin: 30px;border:1px solid #000}
+.performance-sheet h2{margin: 10px 0 0 20px;float: left}
+.performance-sheet .general-info{position: relative;float: right;width: 200px}
+.performance-sheet .rates{font-size: 18px;margin-top: 30px}
 .performance-sheet .rates .rate{margin-bottom: 20px}
 .performance-sheet .rates .rate label{color: #A00}
 .performance-sheet-print .container-for-btn-group{margin: 20px 0}
-.performance-sheet-print .container-for-btn-group .btn-group{margin-right: 30px}
+.performance-sheet-print .container-for-btn-group .btn{margin-right: 30px}
 @media (max-width: 768px){
     .performance-sheet{margin: 10px 0}
+    .performance-sheet .general-info{float:left}
     .performance-sheet h2{margin: 0 0 20px;width: 100%;text-align: left}
-    .performance-sheet .general-info{position: static;margin-bottom: 20px}
+    .performance-sheet .rates .rate{width: 50%}
 }
 @media print {
-    body {visibility:hidden;}
-    .performance-sheet {visibility:visible}
+    body {visibility:hidden}
+    .performance-sheet {visibility:visible;padding: 10px;border:1px solid #000;position: relative}
+    .performance-sheet .general-info{position: absolute;top:10px;right: 20px}
+    .performance-sheet h2{margin: 10px 0 50px 20px}
+    .performance-sheet .rates{font-size: 18px;margin-top: 20px;overflow: hidden}
+    .performance-sheet .rates .row{overflow: hidden}
+    .performance-sheet .rates .rate{margin-bottom: 30px;float: left;width: 33.33333333%}
 }
 /* End performance sheet */
 /* Start Bus */

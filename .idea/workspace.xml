@@ -3,25 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="597a9482-fa08-471e-8566-9bf89cea1a8e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Boxes/add-activities.php" afterPath="$PROJECT_DIR$/Boxes/add-activities.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Boxes/add-class-preparations.php" afterPath="$PROJECT_DIR$/Boxes/add-class-preparations.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Boxes/add-issue.php" afterPath="$PROJECT_DIR$/Boxes/add-issue.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Boxes/add-objectives.php" afterPath="$PROJECT_DIR$/Boxes/add-objectives.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Boxes/forget-password.php" afterPath="$PROJECT_DIR$/Boxes/forget-password.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/activities.php" afterPath="$PROJECT_DIR$/activities.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes.php" afterPath="$PROJECT_DIR$/classes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event-requests.php" afterPath="$PROJECT_DIR$/event-requests.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/events.php" afterPath="$PROJECT_DIR$/events.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add-event.php" afterPath="$PROJECT_DIR$/add-event.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layout/css/style.css" afterPath="$PROJECT_DIR$/layout/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layout/js/charts-script.js" afterPath="$PROJECT_DIR$/layout/js/charts-script.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layout/js/script.js" afterPath="$PROJECT_DIR$/layout/js/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.php" afterPath="$PROJECT_DIR$/login.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/performance-sheet.php" afterPath="$PROJECT_DIR$/performance-sheet.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reception-logistics.php" afterPath="$PROJECT_DIR$/reception-logistics.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/time-table.php" afterPath="$PROJECT_DIR$/time-table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view-activity.php" afterPath="$PROJECT_DIR$/view-activity.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view-event.php" afterPath="$PROJECT_DIR$/view-event.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view-issue.php" afterPath="$PROJECT_DIR$/view-issue.php" />
     </list>
     <ignored path="BackPackersz.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,24 +29,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/layout/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+            <state relative-caret-position="459">
+              <caret line="164" column="59" selection-start-line="164" selection-start-column="59" selection-end-line="164" selection-end-column="59" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/login.php">
+      <file leaf-file-name="performance-sheet.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/performance-sheet.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
-              <folding>
-                <element signature="e#551#2341#0#HTML" expanded="false" />
-              </folding>
+            <state relative-caret-position="340">
+              <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -94,7 +78,6 @@
         <option value="$PROJECT_DIR$/kids-data.php" />
         <option value="$PROJECT_DIR$/kids-grades.php" />
         <option value="$PROJECT_DIR$/issues.php" />
-        <option value="$PROJECT_DIR$/add-event.php" />
         <option value="$PROJECT_DIR$/bus-attend-am.php" />
         <option value="$PROJECT_DIR$/bus-attend-pm.php" />
         <option value="$PROJECT_DIR$/view-assigned-task.php" />
@@ -114,15 +97,16 @@
         <option value="$PROJECT_DIR$/view-activity.php" />
         <option value="$PROJECT_DIR$/view-event.php" />
         <option value="$PROJECT_DIR$/view-issue.php" />
-        <option value="$PROJECT_DIR$/performance-sheet.php" />
         <option value="$PROJECT_DIR$/Boxes/add-activities.php" />
-        <option value="$PROJECT_DIR$/Boxes/add-class-preparations.php" />
         <option value="$PROJECT_DIR$/Boxes/add-issue.php" />
         <option value="$PROJECT_DIR$/Boxes/add-objectives.php" />
         <option value="$PROJECT_DIR$/Boxes/forget-password.php" />
-        <option value="$PROJECT_DIR$/layout/js/script.js" />
         <option value="$PROJECT_DIR$/events.php" />
         <option value="$PROJECT_DIR$/login.php" />
+        <option value="$PROJECT_DIR$/layout/js/script.js" />
+        <option value="$PROJECT_DIR$/Boxes/add-class-preparations.php" />
+        <option value="$PROJECT_DIR$/add-event.php" />
+        <option value="$PROJECT_DIR$/performance-sheet.php" />
         <option value="$PROJECT_DIR$/layout/css/style.css" />
       </list>
     </option>
@@ -369,7 +353,7 @@
       <workItem from="1508019760716" duration="7284000" />
       <workItem from="1508029651347" duration="19895000" />
       <workItem from="1508089733645" duration="32841000" />
-      <workItem from="1508203486891" duration="12123000" />
+      <workItem from="1508203486891" duration="15411000" />
     </task>
     <task id="LOCAL-00001" summary="Mohamed Edit">
       <created>1507986336002</created>
@@ -434,11 +418,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508239632819</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Mohamed Edit">
+      <created>1508252659310</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1508252659310</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="291527000" />
+    <option name="totallyTimeSpent" value="294815000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -662,17 +653,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/add-event.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="162" column="28" selection-start-line="162" selection-start-column="28" selection-end-line="162" selection-end-column="28" />
-          <folding>
-            <marker date="1508176941997" expanded="true" signature="6924:6961" ph="..." />
-            <marker date="1508176941997" expanded="true" signature="7061:7098" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bus-attend-am.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -729,6 +709,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -828,14 +809,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/performance-sheet.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Boxes/add-activities.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -843,14 +816,6 @@
           <folding>
             <element signature="n#div#0;n#!!top" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Boxes/add-class-preparations.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="38" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -885,16 +850,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/layout/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="109" column="21" selection-start-line="109" selection-start-column="21" selection-end-line="109" selection-end-column="21" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/events.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -905,18 +860,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
+        <state relative-caret-position="255">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
           <folding>
             <element signature="e#551#2341#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Boxes/add-class-preparations.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="65" column="76" selection-start-line="65" selection-start-column="76" selection-end-line="65" selection-end-column="76" />
+          <folding>
+            <element signature="n#select#0;n#div#0;n#td#1;n#tr#1;n#table#0;n#div#3;n#form#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#select#0;n#div#0;n#td#1;n#tr#2;n#table#0;n#div#3;n#form#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layout/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="120" column="9" selection-start-line="120" selection-start-column="9" selection-end-line="120" selection-end-column="9" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add-event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="144" column="70" selection-start-line="144" selection-start-column="70" selection-end-line="144" selection-end-column="70" />
+          <folding>
+            <marker date="1508254084868" expanded="true" signature="6894:6931" ph="..." />
+            <marker date="1508254084868" expanded="true" signature="7031:7068" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/layout/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+        <state relative-caret-position="459">
+          <caret line="164" column="59" selection-start-line="164" selection-start-column="59" selection-end-line="164" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/performance-sheet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
           <folding />
         </state>
       </provider>

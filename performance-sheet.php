@@ -21,6 +21,7 @@
         <label>Job Title:</label>
         <span>Teacher Supervisor</span><br/>
     </div>
+    <div class="clearfix"></div>
     <div class="rates text-center">
         <div class="row">
             <div class="rate col-sm-4 col-xs-6">

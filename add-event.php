@@ -76,8 +76,8 @@
                     <td>
                         <select>
                             <?php
-                                for($i=1;$i<=1000;$i++){
-                                    echo '<option value="'.$i.'">'.$i.'</option>';
+                                for($i=0;$i<=1000;$i+=20){
+                                    echo '<option value="'.$i.'">'.$i.' LE</option>';
                                 }
                             ?>
                         </select>
@@ -89,9 +89,9 @@
                     <td>
                         <select>
                             <?php
-                                for($i=1;$i<=1000;$i++){
-                                    echo '<option value="'.$i.'">'.$i.'</option>';
-                                }
+                            for($i=0;$i<=1000;$i+=20){
+                                echo '<option value="'.$i.'">'.$i.' LE</option>';
+                            }
                             ?>
                         </select>
                     </td>
@@ -102,9 +102,9 @@
                     <td>
                         <select>
                             <?php
-                                for($i=1;$i<=1000;$i++){
-                                    echo '<option value="'.$i.'">'.$i.'</option>';
-                                }
+                            for($i=0;$i<=1000;$i+=20){
+                                echo '<option value="'.$i.'">'.$i.' LE</option>';
+                            }
                             ?>
                         </select>
                     </td>
@@ -115,9 +115,9 @@
                     <td>
                         <select>
                             <?php
-                                for($i=1;$i<=1000;$i++){
-                                    echo '<option value="'.$i.'">'.$i.'</option>';
-                                }
+                            for($i=0;$i<=1000;$i+=20){
+                                echo '<option value="'.$i.'">'.$i.' LE</option>';
+                            }
                             ?>
                         </select>
                     </td>
@@ -128,9 +128,9 @@
                     <td>
                         <select>
                             <?php
-                                for($i=1;$i<=1000;$i++){
-                                    echo '<option value="'.$i.'">'.$i.'</option>';
-                                }
+                            for($i=0;$i<=1000;$i+=20){
+                                echo '<option value="'.$i.'">'.$i.' LE</option>';
+                            }
                             ?>
                         </select>
                     </td>
@@ -141,9 +141,9 @@
                     <td>
                         <select>
                             <?php
-                                for($i=1;$i<=1000;$i++){
-                                    echo '<option value="'.$i.'">'.$i.'</option>';
-                                }
+                            for($i=0;$i<=1000;$i+=20){
+                                echo '<option value="'.$i.'">'.$i.' LE</option>';
+                            }
                             ?>
                         </select>
                     </td>

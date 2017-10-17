@@ -121,7 +121,7 @@ $(function () {
         }
     });
     // Fire jquery.sumoselect plugin
-    $('select').SumoSelect();
+    $('select:not(.normalSelect)').SumoSelect();
     // Function colorize rows
     function colorize($target) {
         $($target).each(function () {
