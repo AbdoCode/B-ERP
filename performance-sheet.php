@@ -1,13 +1,13 @@
 <?php
     session_start();
-    $pageTitle = 'Home';
+    $pageTitle = 'Mohamed Maher';
     include 'init.php';
     include 'navbar.php';
 ?>
 <div class="performance-sheet-print hidden-xs">
     <div class="container-for-btn-group">
         <div class="btn-group">
-            <button class="btn btn-default">
+            <button class="btn btn-default" type="button" onclick="window.print();return false;">
                 <span class="glyphicon glyphicon-print" aria-hidden="true"></span> Print
             </button>
         </div>

@@ -316,15 +316,9 @@ h2{font-weight: bold}
     .performance-sheet h2{margin: 0 0 20px;width: 100%;text-align: left}
     .performance-sheet .general-info{position: static;margin-bottom: 20px}
 }
-@media print{
-    .performance-sheet{padding: 10px;margin: 30px;border:1px solid #000;position: relative}
-    .performance-sheet .general-info{position: absolute;top:10px;right: 20px}
-    .performance-sheet h2{font-weight: bold;margin: 10px 0 40px 20px}
-    .performance-sheet .rates{font-size: 18px}
-    .performance-sheet .rates .rate{margin-bottom: 20px}
-    .performance-sheet .rates .rate label{color: #A00}
-    .performance-sheet-print .container-for-btn-group{overflow: hidden; margin: 20px 0}
-    .performance-sheet-print .container-for-btn-group .btn-group{float: right;margin-right: 30px}
+@media print {
+    body {visibility:hidden;}
+    .performance-sheet {visibility:visible}
 }
 /* End performance sheet */
 /* Start Bus */
