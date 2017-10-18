@@ -72,9 +72,11 @@
 .classes .btn-group li{list-style: none;float: left;padding: 0;border: none;margin-right: 0}
 .classes .btn-group li a{color: #FFF;text-decoration: none;display: block;padding: 6px 12px;border: 1px solid transparent}
 .classes .preparations-check{float: left;text-align: center}
+.classes .preparations-check input[type="checkbox"]{margin: 5px auto 0;width: 15px;height: 15px}
 @media (max-width: 768px) {
     .classes .btn-group{margin-right: 0;float: none;padding: 0;width: 100%}
     .classes .btn-group li{margin-bottom: 4px;margin-right: 4px;border-radius: 4px !important}
+    .classes .preparations-check input[type="checkbox"]{width: 20px;height: 20px}
 }
 /* End Classes */
 /* Start Boxes */
@@ -155,14 +157,14 @@
     .performance-sheet{margin: 10px 0}
     .performance-sheet .general-info{float:left}
     .performance-sheet h2{margin: 0 0 20px;width: 100%;text-align: left}
-    .performance-sheet .rates .rate{width: 50%}
+
 }
 @media print {
     body {visibility:hidden}
     .performance-sheet {visibility:visible;padding: 10px;border:1px solid #000;position: relative}
     .performance-sheet .general-info{position: absolute;top:10px;right: 20px}
     .performance-sheet h2{margin: 10px 0 50px 20px}
-    .performance-sheet .rates{font-size: 18px;margin-top: 20px;overflow: hidden}
+    .performance-sheet .rates{font-size: 18px;margin-top: 80px;overflow: hidden}
     .performance-sheet .rates .row{overflow: hidden}
     .performance-sheet .rates .rate{margin-bottom: 30px;float: left;width: 33.33333333%}
 }
@@ -170,9 +172,10 @@
 /* Start Bus */
 .busPage .info{margin: 20px 0}
 .busPage .info label{font-size: 22px}
-.busPage .table .form-control{height: 13px}
+.busPage form input[type="checkbox"]{margin: auto;height: 15px;width: 15px}
 @media (max-width: 768px){
     .busPage .info > div{margin-bottom: 10px}
+    .busPage form input[type="checkbox"]{height: 20px;width: 20px}
 }
 /* End Bus */
 /* Start Add event */
@@ -240,7 +243,7 @@ textarea{resize: none}
 .container-for-btn-group{overflow: hidden;margin-bottom: 10px}
 .container-for-btn-group .btn{float: right;margin-right: 10px}
 .panel{margin-bottom: 0}
-.panel .panel-heading h2 {font-size: 22px}
+.panel .panel-heading h2{font-size: 22px}
 .panel .panel-heading span{ position: absolute;top: 15px;right: 15px;cursor: pointer}
 .panel .panel-heading span:hover{color: #D9534F}
 .box{z-index: 99999;display: none}

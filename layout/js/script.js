@@ -96,10 +96,11 @@ $(function () {
                 mainAside.toggle();
                 viewAside.toggle();
             });
+            /*
             if (mainAside.css('display') === 'block' && viewAside.css('display') === 'none') {
                 mainAside.css('display', 'none');
                 viewAside.css('display', 'block');
-            }
+            }*/
         } else {
             if (mainAside.css('display') === 'none' && viewAside.css('display') === 'block') {
                 mainAside.css('display', 'block');

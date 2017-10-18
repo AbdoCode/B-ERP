@@ -4,7 +4,7 @@
     include 'init.php';
     include 'navbar.php';
 ?>
-<div class="busPage">
+<div class="busPage" xmlns="http://www.w3.org/1999/html">
     <div class="info row text-center">
         <div class="col-sm-2 col-xs-4">
             <label>Time</label><br/>
@@ -27,40 +27,40 @@
             <span>المنيا الجديدة - المنيا</span>
         </div>
     </div>
-    <div class="table-responsive">
-        <table class="table table-bordered">
-            <form>
-                <tr>
-                    <th class="col-sm-1">#</th>
-                    <th class="col-sm-3">Kid Name</th>
-                    <th class="col-sm-2">Reception Attendance</th>
-                    <th class="col-sm-3">Bus Attendance (<?php echo date('d M Y'); ?>)</th>
-                    <th class="col-sm-3">Kid Address</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Ali mohamed</td>
-                    <td><input type="checkbox" class="form-control" /></td>
-                    <td><input type="checkbox" class="form-control" /></td>
-                    <td>25 شارع طلعت حرب القاهرة</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Ali mohamed</td>
-                    <td><input type="checkbox" class="form-control" /></td>
-                    <td><input type="checkbox" class="form-control" /></td>
-                    <td>25 شارع طلعت حرب القاهرة</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Ali mohamed</td>
-                    <td><input type="checkbox" class="form-control" /></td>
-                    <td><input type="checkbox" class="form-control" /></td>
-                    <td>25 شارع طلعت حرب القاهرة</td>
-                </tr>
-            </form>
-        </table>
-    </div>
+    <form>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                    <tr>
+                        <th class="col-sm-1">#</th>
+                        <th class="col-sm-3">Kid Name</th>
+                        <th class="col-sm-2">Reception Attendance</th>
+                        <th class="col-sm-3">Bus Attendance (<?php echo date('d M Y'); ?>)</th>
+                        <th class="col-sm-3">Kid Address</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Ali mohamed</td>
+                        <td><input type="checkbox" class="form-control" /></td>
+                        <td><input type="checkbox" class="form-control" /></td>
+                        <td>25 شارع طلعت حرب القاهرة</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Ali mohamed</td>
+                        <td><input type="checkbox" class="form-control" /></td>
+                        <td><input type="checkbox" class="form-control" /></td>
+                        <td>25 شارع طلعت حرب القاهرة</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Ali mohamed</td>
+                        <td><input type="checkbox" class="form-control" /></td>
+                        <td><input type="checkbox" class="form-control" /></td>
+                        <td>25 شارع طلعت حرب القاهرة</td>
+                    </tr>
+            </table>
+        </div>
+    </form>
 </div>
 <?php
     include $templates . 'footer.php';

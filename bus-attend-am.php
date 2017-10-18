@@ -23,9 +23,9 @@
             <span>المنيا الجديدة - المنيا</span>
         </div>
     </div>
-    <div class="table-responsive">
-        <table class="table table-bordered">
-            <form>
+    <form>
+        <div class="table-responsive">
+            <table class="table table-bordered">
                 <tr>
                     <th class="col-sm-1">#</th>
                     <th class="col-sm-4">Kid Name</th>
@@ -50,9 +50,9 @@
                     <td><input type="checkbox" class="form-control" /></td>
                     <td>25 شارع طلعت حرب القاهرة</td>
                 </tr>
-            </form>
-        </table>
-    </div>
+            </table>
+        </div>
+    </form>
 </div>
 <?php
     include $templates . 'footer.php';
