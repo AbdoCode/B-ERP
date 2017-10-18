@@ -12,10 +12,7 @@
                     <img class="img-responsive" alt="Logo" src="layout/images/logo.png" />
                 </a>
                 <div class="navbar-text">
-                    <strong>
-                        <span class="date">07 Oct 2017</span> /
-                        <span class="time">7:44 PM</span>
-                    </strong>
+                    <strong id="dateTime"></strong>
                 </div>
             </div>
             <div class="collapse navbar-collapse" id="mainCollapse">

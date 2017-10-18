@@ -1,3 +1,37 @@
+//Date & time
+function date_time(id) {
+    var date = new Date,
+        AP = "AM",
+        year = date.getFullYear(),
+        month = date.getMonth(),
+        months = new Array('Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'),
+        d = date.getDate(),
+        day = date.getDay(),
+        days = new Array('Sun', 'Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat'),
+        h = date.getHours();
+    if (h == 0) {
+        h = 12;
+    } else if (h > 12) {
+        h = h - 12;
+        AP = "PM";
+    }
+    if (h < 10) {
+        h = "0" + h;
+    }
+    var m = date.getMinutes();
+    if (m < 10) {
+        m = "0" + m;
+    }
+    var s = date.getSeconds();
+    if (s < 10) {
+        s = "0" + s;
+    }
+    var result = days[day] + ' ' + d + ' ' + months[month] + ' ' + year + ' / ' + h + ':' + m + ':' + s + ' ' + AP;
+    document.getElementById(id).innerHTML = result;
+    setTimeout('date_time("'+id+'");',1000);
+    return true;
+}
+window.onload = date_time('dateTime');
 /*global $*/
 $(function () {
     'use strict';
@@ -65,15 +99,18 @@ $(function () {
         var windowHeight = windowVar.innerHeight() - navbar.outerHeight(true);
         mainAside.css('min-height', windowHeight);
     }
-    setHeight();
-    windowVar.resize(function () {
-        setHeight();
-    });
     if (windowVar.innerWidth() > 768) {
+        setHeight();
+        windowVar.resize(function () {
+            setHeight();
+        });
         windowVar.scroll(function () {
             var windowHeightScroll = (windowVar.innerHeight() - navbar.outerHeight(true)) + windowVar.scrollTop();
             mainAside.css('min-height', windowHeightScroll);
         });
+    } else {
+        var mobileHeight = ($(".mainAside .nav > li").length * 40) + 20;
+        mainAside.css('min-height', mobileHeight + 'px');
     }
     // Display Main Aside on mobile view
     if (windowVar.innerWidth() <= 768) {
@@ -96,11 +133,10 @@ $(function () {
                 mainAside.toggle();
                 viewAside.toggle();
             });
-            /*
             if (mainAside.css('display') === 'block' && viewAside.css('display') === 'none') {
                 mainAside.css('display', 'none');
                 viewAside.css('display', 'block');
-            }*/
+            }
         } else {
             if (mainAside.css('display') === 'none' && viewAside.css('display') === 'block') {
                 mainAside.css('display', 'block');

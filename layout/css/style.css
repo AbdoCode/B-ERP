@@ -21,6 +21,9 @@
     .navbar .navbar-right { margin-right: -15px}
     .navbar > .container-fluid .navbar-brand{ margin-left: 5px}
 }
+@media (max-width: 340px) {
+    .navbar #dateTime{font-size: 10px}
+}
 /* End navbar */
 /* Start Login Page */
 .login{padding-top: 90px}
