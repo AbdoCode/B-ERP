@@ -40,7 +40,7 @@
                     </tr>
                     <tr>
                         <td>1</td>
-                        <td>Mohamed Maher Mahfouz</td>
+                        <td><a href="kids-profile.php">Mohamed Maher Mahfouz</a></td>
                         <td>22</td>
                         <td>20.3%</td>
                         <td>Not Participant</td>
@@ -318,7 +318,7 @@
                     </tr>
                     <tr>
                         <td>1</td>
-                        <td>Mohamed Maher Mahfouz</td>
+                        <td><a href="profile.php">Mohamed Maher Mahfouz</a></td>
                         <td>Fall 2017</td>
                         <td>20.3%</td>
                         <td><a href="performance-sheet.php" class="btn btn-primary btn-sm">View</a></td>

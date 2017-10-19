@@ -218,4 +218,9 @@ $(function () {
         var number = ($(".view-activity .carousel").height() - $(this).height()) / 2;
         $(this).css("margin-top", number);
     });
+    // upload profile photo
+    $('#image_uploads').change(function (e) {
+        var img = URL.createObjectURL(e.target.files[0]);
+        $('.profile .profile-img img').attr('src', img);
+    });
 });

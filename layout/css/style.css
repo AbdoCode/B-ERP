@@ -239,8 +239,36 @@
     .daily-statistics .chart-container {height: auto;border: 1px solid #DDD;padding: 5px}
 }
 /* End daily-statistics */
+/* Start Profile */
+.profile{padding: 40px 0}
+.profile .panel,
+.profile .profile-img{margin-bottom: 20px}
+.profile .profile-img img{width: 100%;margin-bottom: 10px;border-radius: 4px}
+.profile .panel .panel-title{font-weight: bold;font-size: 18px}
+.profile .infoRow {margin: 5px 0}
+.edit-profile .infoRow {margin: 15px 0}
+.profile .infoRow label{font-size: 16px;margin-right: 10px}
+.profile .infoRow > p,
+.profile .infoRow input{display: inline-block}
+.profile .infoRow input,
+.profile .infoRow .SumoSelect{width: auto;min-width: 400px}
+.profile label[for="image_uploads"],
+.profile input[type="file"]{position: absolute;top: 0;left: 0;width: 100%}
+.profile input[type="file"]{visibility: hidden}
+@media (max-width: 768px) {
+    .profile{padding: 10px 0}
+    .profile .container-fluid{padding: 0}
+    .profile .panel,
+    .profile .profile-img{margin-bottom: 10px}
+    .edit-profile .profile-img > div { display: none}
+    .edit-profile .infoRow input,
+    .edit-profile .infoRow .SumoSelect {min-width: auto}
+}
+/* End Profile */
 /* Start framework */
 h2{font-weight: bold;text-transform: capitalize}
+table a,
+table a:hover{color: #333}
 .table-responsive{margin-top: 10px;overflow-x: visible}
 textarea{resize: none}
 .container-for-btn-group{overflow: hidden;margin-bottom: 10px}
