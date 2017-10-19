@@ -9,6 +9,7 @@
 <div class="subject">
     <h2>English</h2>
     <select>
+        <option selected disabled>Choose Class</option>
         <option>A</option>
         <option>B</option>
         <option>X</option>

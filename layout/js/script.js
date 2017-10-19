@@ -181,17 +181,19 @@ $(function () {
     // add new row in table on preparations box
     addRow(".add-reception-logistics .container-for-btn-group button", ".add-reception-logistics .table", '<tr><td><input type="text" class="form-control"></td><td><input type="number" class="form-control"></td><td><input type="number" class="form-control"></td></tr>');
     // calculate width for preparations-checks
-    $(".classes .preparations form").each(function () {
-        var count = $(this).children().length,
-            width = 100 / count;
-        if (windowVar.innerWidth() <= 768) {
-            $(this).children().css('width', '50%');
-        } else if (windowVar.innerWidth() <= 992) {
-            $(this).children().css('width', '25%');
-        } else {
-            $(this).children().css('width', width + '%');
-        }
-    });
+    if (windowVar.innerWidth() > 768) {
+        $(".classes .preparations form").each(function () {
+            var count = $(this).children().length,
+                width = 100 / count;
+            if (windowVar.innerWidth() <= 768) {
+                $(this).children().css('width', '50%');
+            } else if (windowVar.innerWidth() <= 992) {
+                $(this).children().css('width', '25%');
+            } else {
+                $(this).children().css('width', width + '%');
+            }
+        });
+    }
     // center photos in carousel in view activities
     $(".view-activity .carousel .item").each(function () {
         var number = ($(".view-activity .carousel").height() - $(this).height()) / 2;

@@ -55,7 +55,7 @@
 .mainAside .dropdown-menu > li > a{ padding: 10px 15px}
 .mainAside .dropdown-menu > li > a:focus,
 .mainAside .dropdown-menu > li > a:hover{ background-color: #337AB7;color: #FFF}
-.viewAside{padding: 9px 10px;border: none;position: fixed;top: 70px;left: -1px;z-index: 9999;display: none;background-color: #222}
+.viewAside{padding: 9px 10px;border: none;position: fixed;top: 70px;left: -1px;z-index: 999;display: none;background-color: #222}
 .viewAside .icon-bar{width: 22px;height: 2px;margin-bottom: 3px;background-color: #FFF;display: block;border-radius: 1px}
 @media (max-width: 768px) {
     .mainAside { display: none}
@@ -78,6 +78,9 @@
     .classes .btn-group{margin-right: 0;float: none;padding: 0;width: 100%}
     .classes .btn-group li{margin-bottom: 4px;margin-right: 4px;border-radius: 4px !important}
     .classes .preparations-check input[type="checkbox"]{width: 20px;height: 20px}
+    .classes .preparations-check{width: 100%;margin-bottom: 5px}
+    .classes .preparations-check label{margin-bottom: 0}
+    .classes .preparations-check input[type="checkbox"]{margin-top: 0}
 }
 /* End Classes */
 /* Start Boxes */
@@ -281,7 +284,9 @@ textarea{resize: none}
 .box .SumoSelect{width: 100%}
 .contRow{overflow: hidden;margin-bottom: 8px}
 @media (max-width: 768px) {
+    body,html{min-height: 100%;height: 100%}
     h2{text-align: center}
+    .box{min-height: 100%}
     .table-responsive{margin-top: 5px}
     .container-for-btn-group .btn{margin-right: 0}
     .input-group.center-block{display: table}
