@@ -68,7 +68,7 @@
     </div>
 </nav>
 <section>
-    <button type="button" class="viewAside" data-toggle="" data-target="#mainAside" aria-expanded="false">
+    <button type="button" class="viewAside" data-target="#mainAside" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>

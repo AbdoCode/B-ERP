@@ -55,16 +55,12 @@
 .mainAside .dropdown-menu > li > a{ padding: 10px 15px}
 .mainAside .dropdown-menu > li > a:focus,
 .mainAside .dropdown-menu > li > a:hover{ background-color: #337AB7;color: #FFF}
-.viewAside{
-    padding: 9px 10px;border: none;position: fixed;left: -15px;z-index: 9999;
-    -webkit-transition: all .5s ease;-moz-transition: all .5s ease;-o-transition: all .5s ease;transition: all .5s ease;display: none
-}
-.viewAside:hover{left: -1px}
-.viewAside .icon-bar{width: 22px;height: 2px;margin-bottom: 3px;background-color: #222;display: block;border-radius: 1px}
+.viewAside{padding: 9px 10px;border: none;position: fixed;top: 70px;left: -1px;z-index: 9999;display: none;background-color: #222}
+.viewAside .icon-bar{width: 22px;height: 2px;margin-bottom: 3px;background-color: #FFF;display: block;border-radius: 1px}
 @media (max-width: 768px) {
     .mainAside { display: none}
     .viewAside { display: block}
-    .mainAside .dropdown-menu { top: 10px;left: 30%}
+    .mainAside .dropdown-menu { top: 10px;left: 35%}
     .mainAside .asideBack{display: block}
 }
 /* End main Aside */
@@ -237,6 +233,8 @@
 .daily-statistics > div:last-of-type .chart-container{height: 350px}
 .daily-statistics > div {margin: 20px 0}
 @media (max-width: 768px) {
+    .daily-statistics{padding: 0}
+    .daily-statistics .write-stat{padding: 0 20px}
     .daily-statistics .stat .number{font-size: 20px}
     .daily-statistics .chart-container {height: auto;border: 1px solid #DDD;padding: 5px}
 }

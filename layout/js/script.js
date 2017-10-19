@@ -109,47 +109,22 @@ $(function () {
             mainAside.css('min-height', windowHeightScroll);
         });
     } else {
-        var mobileHeight = ($(".mainAside .nav > li").length * 40) + 20;
+        var mobileHeight = ($(".mainAside .nav > li").length * 42) + 20;
         mainAside.css('min-height', mobileHeight + 'px');
     }
     // Display Main Aside on mobile view
     if (windowVar.innerWidth() <= 768) {
-        $(".asideBack").on('click', function () {
+        $(".asideBack, .mainAside ul li a[data-toggle='tab']").on('click', function () {
             mainAside.hide();
             viewAside.show();
         });
         viewAside.on('click', function () {
-            $(this).toggle();
-            mainAside.toggle();
-        });
-        $(".mainAside ul li a[data-toggle='tab']").on('click', function () {
-            mainAside.toggle();
-            viewAside.toggle();
+            $(this).hide();
+            mainAside.show();
         });
     }
-    windowVar.resize(function () {
-        if (windowVar.innerWidth() <= 768) {
-            viewAside.on('click', function () {
-                $(this).toggle();
-                mainAside.toggle();
-            });
-            $(".mainAside ul li a[data-toggle='tab']").on('click', function () {
-                mainAside.toggle();
-                viewAside.toggle();
-            });
-            if (mainAside.css('display') === 'block' && viewAside.css('display') === 'none') {
-                mainAside.css('display', 'none');
-                viewAside.css('display', 'block');
-            }
-        } else {
-            if (mainAside.css('display') === 'none' && viewAside.css('display') === 'block') {
-                mainAside.css('display', 'block');
-                viewAside.css('display', 'none');
-            }
-        }
-    });
     // to colorize rows
-    $(document).on('change', ".dailyTasksStatus", function (e) {
+    $(document).on('change', ".dailyTasksStatus", function () {
         if ($(this).val() === "completed") {
             $(this).parent().parent().parent().addClass("success").removeClass("danger warning");
             $(this).parent().siblings(".SumoSelect").css("display", "none");
