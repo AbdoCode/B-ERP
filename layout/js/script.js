@@ -114,6 +114,10 @@ $(function () {
     }
     // Display Main Aside on mobile view
     if (windowVar.innerWidth() <= 768) {
+        $(".asideBack").on('click', function () {
+            mainAside.hide();
+            viewAside.show();
+        });
         viewAside.on('click', function () {
             $(this).toggle();
             mainAside.toggle();

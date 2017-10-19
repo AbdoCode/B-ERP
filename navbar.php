@@ -76,6 +76,7 @@
     </button>
     <aside class="mainAside col-sm-2" id="mainAside">
         <ul class="nav nav-pills nav-stacked">
+            <li class="asideBack"><a href="#"><i class="fa fa-caret-left fa-fw fa-lg"></i>Back</a></li>
             <li <?php if (basename($_SERVER['PHP_SELF']) == 'daily-tasks.php') echo 'class="active"' ?>><a href="daily-tasks.php">Daily Tasks</a></li>
             <li <?php if (basename($_SERVER['PHP_SELF']) == 'activities.php') echo 'class="active"' ?>><a href="activities.php">Activities</a></li>
             <li <?php if (basename($_SERVER['PHP_SELF']) == 'subject.php') echo 'class="active"' ?>>

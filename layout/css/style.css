@@ -49,6 +49,7 @@
 .mainAside .nav-pills > li.active > a:hover{ color: #222;background-color: #FFF}
 .mainAside .nav > li > a:focus,
 .mainAside .nav > li > a:hover { color: #FFF;background-color: #337AB7}
+.mainAside .asideBack{display: none;background-color: #337AB7}
 .mainAside .glyphicon{ top: 2px;float: right}
 .mainAside .dropdown-menu{top: 0;left: 100%;border-radius: 0;margin: 0;padding: 0}
 .mainAside .dropdown-menu > li > a{ padding: 10px 15px}
@@ -64,6 +65,7 @@
     .mainAside { display: none}
     .viewAside { display: block}
     .mainAside .dropdown-menu { top: 10px;left: 30%}
+    .mainAside .asideBack{display: block}
 }
 /* End main Aside */
 /* Start Daily Tasks */
