@@ -21,19 +21,27 @@
                 <div class="form-group">
                     <label for="class" class="col-xs-1 control-label">Class</label>
                     <div class="col-sm-10  col-sm-push-1 col-xs-9 col-xs-push-2">
-                        <select class="form-control" id="class">
+                        <select class="form-control" id="class" multiple>
                             <option disabled selected>Select your class</option>
-                            <option>All</option>
-                            <option>A</option>
-                            <option>B</option>
-                            <option>c</option>
+                            <option value="all">All</option>
+                            <option value="a1">A1</option>
+                            <option value="a2">A2</option>
+                            <option value="b1">B1</option>
+                            <option value="b2">B2</option>
+                            <option value="c1">C1</option>
+                            <option value="c2">C2</option>
                         </select>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="photos" class="col-xs-1 control-label">Photos</label>
+                    <label class="col-xs-1 control-label">Photos</label>
                     <div class="col-sm-10  col-sm-push-1 col-xs-9 col-xs-push-2">
-                        <input multiple type="file" id="photos">
+                        <div style="position: relative" class="uploads">
+                            <label for="photos_upload" class="btn btn-primary">
+                                <span class="glyphicon glyphicon-upload"></span> Upload Photos
+                            </label>
+                            <input type="file" id="photos_upload" class="btn btn-primary" accept="image/*" multiple>
+                        </div>
                     </div>
                 </div>
                 <div class="form-group">
