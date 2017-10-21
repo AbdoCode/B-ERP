@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="597a9482-fa08-471e-8566-9bf89cea1a8e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/activities.php" afterPath="$PROJECT_DIR$/activities.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BackPackersz.iws" />
@@ -39,7 +40,7 @@
         <entry file="file://$PROJECT_DIR$/activities.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="17" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
+              <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -396,7 +397,13 @@
       <option name="project" value="LOCAL" />
       <updated>1508627853887</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="code">
+      <created>1508627903211</created>
+      <option name="number" value="00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1508627903211</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -441,7 +448,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Mohamed Edit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mohamed Edit" />
+    <MESSAGE value="code" />
+    <option name="LAST_COMMIT_MESSAGE" value="code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -813,7 +821,7 @@
     <entry file="file://$PROJECT_DIR$/activities.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="17" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
+          <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
           <folding />
         </state>
       </provider>
