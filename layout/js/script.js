@@ -31,7 +31,9 @@ function date_time(id) {
     setTimeout('date_time("'+id+'");',1000);
     return true;
 }
-window.onload = date_time('dateTime');
+if (location.pathname.substring(location.pathname.lastIndexOf("/") + 1) != 'login.php') {
+    window.onload = date_time('dateTime');
+}
 /*global $*/
 $(function () {
     'use strict';
