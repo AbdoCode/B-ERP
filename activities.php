@@ -1,3 +1,4 @@
+hello from ubuntu
 <?php
     session_start();
     $pageTitle = 'Home';
