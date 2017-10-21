@@ -58,11 +58,11 @@ $(function () {
     });
     // resize boxes width on mobile mode
     if (windowVar.innerWidth() <= 768) {
-        $(".add-activities, .add-objectives, .forget-password, .add-issue-administration, .add-issue-kid, .add-class-preparations").width((98 / 100) * windowVar.innerWidth());
+        $(".add-activities, .add-objectives, .forget-password, .add-issue-administration, .add-issue-kid, .add-class-preparations, .pics-view").width((98 / 100) * windowVar.innerWidth());
     }
     windowVar.resize(function () {
         if (windowVar.innerWidth() <= 768) {
-            $(".add-activities, .add-objectives, .forget-password, .add-issue-administration, .add-issue-kid, .add-class-preparations").width((98 / 100) * windowVar.innerWidth());
+            $(".add-activities, .add-objectives, .forget-password, .add-issue-administration, .add-issue-kid, .add-class-preparations, .pics-view").width((98 / 100) * windowVar.innerWidth());
         }
     });
     // center boxes
@@ -79,6 +79,7 @@ $(function () {
     $(".add-issue-kid").centerBox();
     forgetPasswordBox.centerBox();
     $(".add-class-preparations").centerBox();
+    $(".pics-view").centerBox();
     // function for center horizontal
     $.fn.centerBoxHorizontal = function () {
         var obj = $(this);
@@ -123,19 +124,23 @@ $(function () {
             mainAside.show();
         });
     }
-    // to colorize rows
-    $(document).on('change', ".dailyTasksStatus", function () {
-        if ($(this).val() === "completed") {
-            $(this).parent().parent().parent().addClass("success").removeClass("danger warning");
-            $(this).parent().siblings(".SumoSelect").css("display", "none");
-        } else if ($(this).val() === "pending") {
-            $(this).parent().parent().parent().addClass("danger").removeClass("success warning");
-            $(this).parent().siblings(".SumoSelect").css("display", "none");
-        } else if ($(this).val() === "inprogress") {
-            $(this).parent().parent().parent().addClass("warning").removeClass("danger success");
-            $(this).parent().siblings(".SumoSelect").css("display", "inline-block");
-        }
-    });
+    // to colorize rows select Box
+    function colorizeSelect($target) {
+        $(document).on('change', $target, function () {
+            if ($(this).val() === "completed") {
+                $(this).parent().parent().parent().addClass("success").removeClass("danger warning");
+                $(this).parent().siblings(".SumoSelect").css("display", "none");
+            } else if ($(this).val() === "pending") {
+                $(this).parent().parent().parent().addClass("danger").removeClass("success warning");
+                $(this).parent().siblings(".SumoSelect").css("display", "none");
+            } else if ($(this).val() === "inprogress") {
+                $(this).parent().parent().parent().addClass("warning").removeClass("danger success");
+                $(this).parent().siblings(".SumoSelect").css("display", "inline-block");
+            }
+        });
+    }
+    colorizeSelect(".dailyTasksStatus");
+    colorizeSelect(".tableStatus");
     // Fire jquery.sumoselect plugin
     $('select:not(.normalSelect)').SumoSelect();
     // Function colorize rows
@@ -170,6 +175,7 @@ $(function () {
     openBox(".add-issue-kid-button", ".add-issue-kid", ".add-issue-kid .panel .panel-heading .glyphicon-remove");
     openBox(".subject .add-objective-button", ".add-objectives", ".add-objectives .panel .panel-heading .glyphicon-remove");
     openBox(".add-preparations-button", ".add-class-preparations", ".add-class-preparations .panel .panel-heading .glyphicon-remove");
+    openBox(".viewEventPhotos", ".pics-view", '.pics-view > span');
     // function to add
     function addRow($startButton, $divToAppend, $content) {
         $($startButton).on('click', function () {
@@ -180,6 +186,8 @@ $(function () {
     addRow(".add-class-preparations .add-item-button", ".add-class-preparations .table", '<tr> <td> <div class="form-group"> <input type="text" class="form-control" placeholder="type item" /> </div> </td> <td> <div class="form-group"> <select class="form-control"> <option disabled selected>Choose Rate</option> <option value="10%">10%</option> <option value="20%">20%</option> <option value="30%">30%</option> <option value="40%">40%</option> <option value="50%">50%</option> <option value="60%">60%</option> <option value="70%">70%</option> <option value="80%">80%</option> <option value="90%">90%</option> <option value="100%">100%</option> </select> </div> </td> </tr>');
     // add new row in table on preparations box
     addRow(".add-reception-logistics .container-for-btn-group button", ".add-reception-logistics .table", '<tr><td><input type="text" class="form-control"></td><td><input type="number" class="form-control"></td><td><input type="number" class="form-control"></td></tr>');
+    // add new row in table at add-event
+    addRow(".add-event .container-for-btn-group button", ".add-event .table", '<tr><td><input type="text" class="form-control" placeholder="type objective..."/></td><td><input type="text" class="form-control" placeholder="type activities..."/></td><td><input type="text" class="form-control" placeholder="Ex: 500LE"></td></tr>');
     // calculate width for preparations-checks
     if (windowVar.innerWidth() > 768) {
         $(".classes .preparations form").each(function () {
@@ -194,10 +202,18 @@ $(function () {
             }
         });
     }
+    // function for carousels
+    function forCarousels($target, $carousel) {
+        $($target).each(function () {
+            var number = ($($carousel).height() - $(this).height()) / 2;
+            $(this).css("margin-top", number);
+        });
+    }
     // center photos in carousel in view activities
-    $(".view-activity .carousel .item").each(function () {
-        var number = ($(".view-activity .carousel").height() - $(this).height()) / 2;
-        $(this).css("margin-top", number);
+    forCarousels(".view-activity .carousel .item", ".view-activity .carousel");
+    // center photos in carousel in view event
+    $(".viewEventPhotos").on('click', function () {
+        forCarousels(".pics-view .carousel .item", ".pics-view .carousel");
     });
     // upload profile photo
     $('#image_uploads').change(function (e) {

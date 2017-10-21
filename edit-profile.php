@@ -11,7 +11,7 @@
                 <div class="col-sm-3 col-sm-push-9">
                     <div class="profile-img">
                         <img src="layout/images/Profile.jpg" class="img-responsive"/>
-                        <div style="position: relative">
+                        <div style="position: relative" class="uploads">
                             <label for="image_uploads" class="btn btn-primary">
                                 <span class="glyphicon glyphicon-upload"></span> Upload Image
                             </label>

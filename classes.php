@@ -145,14 +145,16 @@
                 <table class="table table-bordered table-hover">
                     <tr>
                         <th class="col-sm-1">#</th>
-                        <th class="col-sm-5">Teacher name</th>
+                        <th class="col-sm-4">Teacher name</th>
+                        <th class="col-sm-2">Subject</th>
                         <th class="col-sm-2">Term</th>
                         <th class="col-sm-2">Completion rate</th>
-                        <th class="col-sm-2">Details</th>
+                        <th class="col-sm-1">Details</th>
                     </tr>
                     <tr>
                         <td>1</td>
                         <td>Mohamed Maher Mahfouz</td>
+                        <td>English</td>
                         <td>Fall 2017</td>
                         <td>20.3%</td>
                         <td><a href="view-workplan.php" class="btn btn-primary btn-sm">View</a></td>
@@ -160,6 +162,7 @@
                     <tr>
                         <td>1</td>
                         <td>Mohamed Maher Mahfouz</td>
+                        <td>Arabic</td>
                         <td>Fall 2017</td>
                         <td>20.3%</td>
                         <td><a href="view-workplan.php" class="btn btn-primary btn-sm">View</a></td>

@@ -3,6 +3,7 @@
     $pageTitle = 'Home';
     include 'init.php';
     include 'navbar.php';
+    include 'Boxes/pics_view.php';
 ?>
 <div class="view-event">
     <h2 class="text-center">Event Name</h2>
@@ -36,35 +37,44 @@
         <label class="col-sm-2 col-xs-1">Status:</label>
         <p class="col-sm-10 col-sm-push-0 col-xs-8 col-xs-push-3">Completed</p>
     </div>
+    <div class="contRow">
+        <label class="col-sm-2 col-xs-4">Photos:</label>
+        <div class="col-sm-4 col-xs-8">
+            <button class="btn btn-sm btn-primary viewEventPhotos">
+                <span class="glyphicon glyphicon-picture"></span> View
+            </button>
+        </div>
+        <div class="clearfix visible-xs"></div>
+        <label class="col-sm-2 col-xs-4">Files:</label>
+        <div class="col-sm-4 col-xs-8">
+            <form method="get" action="<?php ?>">
+                <button type="submit" class="btn btn-sm btn-primary">
+                    <span class="glyphicon glyphicon-download"></span> Download
+                </button>
+            </form>
+        </div>
+    </div>
     <div class="table-responsive">
         <table class="table table-bordered table-hover">
             <tr>
                 <th class="col-sm-1">#</th>
-                <th class="col-sm-4">Objectives</th>
-                <th class="col-sm-3">Activities</th>
-                <th class="col-sm-2">Photos</th>
-                <th class="col-sm-2">Files</th>
+                <th class="col-sm-6">Objectives</th>
+                <th class="col-sm-5">Activities</th>
             </tr>
             <tr>
                 <td>1</td>
                 <td>Objective Details</td>
                 <td>Activities Details</td>
-                <td>File.png</td>
-                <td>File.Pdf</td>
             </tr>
             <tr>
                 <td>1</td>
                 <td>Objective Details</td>
                 <td>Activities Details</td>
-                <td>File.png</td>
-                <td>File.Pdf</td>
             </tr>
             <tr>
                 <td>1</td>
                 <td>Objective Details</td>
                 <td>Activities Details</td>
-                <td>File.png</td>
-                <td>File.Pdf</td>
             </tr>
         </table>
     </div>
