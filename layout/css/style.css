@@ -134,6 +134,7 @@
 .view-event h2,
 .view-issue h2,
 .view-assigned-task h2{margin-bottom: 30px;font-size: 30px}
+.view-event label{color: #A00}
 .view-activity .carousel{float: left;padding: 0;width: 450px;height: 450px;margin-left: 15px}
 .view-issue form{margin-top: 40px}
 .view-issue form .SumoSelect{width: 100%}
@@ -297,6 +298,5 @@ div.uploads input[type="file"]{visibility: hidden}
     .container-for-btn-group .btn{margin-right: 0}
     .input-group.center-block{display: table}
     .input-group-btn.center-block{display: table-cell}
-    div.uploads { display: none}
 }
 /* End framework */

@@ -62,22 +62,22 @@
                     <input type="time" class="form-control" id="timeTo">
                 </div>
             </div>
-            <div class="form-group hidden-xs">
+            <div class="form-group">
                 <label class="col-xs-3 control-label">Photos:</label>
                 <div class="col-sm-9 col-xs-9">
                     <div style="position: relative" class="uploads">
-                        <label for="photos_upload" class="btn btn-primary">
+                        <label for="photos_upload" class="btn btn-primary btn-sm">
                             <span class="glyphicon glyphicon-upload"></span> Upload Photos
                         </label>
                         <input type="file" id="photos_upload" class="btn btn-primary" accept="image/*" multiple>
                     </div>
                 </div>
             </div>
-            <div class="form-group hidden-xs">
+            <div class="form-group">
                 <label class="col-xs-3 control-label">Files:</label>
                 <div class="col-sm-9 col-xs-9">
                     <div style="position: relative" class="uploads">
-                        <label for="files_upload" class="btn btn-primary">
+                        <label for="files_upload" class="btn btn-primary btn-sm">
                             <span class="glyphicon glyphicon-upload"></span> Upload Files
                         </label>
                         <input type="file" id="files_upload" class="btn btn-primary" accept=".doc, .dot, .wbk, .docx, .docm, .dotx, .xls, .xlt, .xlm, .xlsx, .xlsm, .xltx, .xltm, .ppt, .pot, .pps, .pptx, .pptm, .potx, .ppsx, .sldx, .pdf" multiple>
