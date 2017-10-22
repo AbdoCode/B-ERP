@@ -1,3 +1,6 @@
+<?php
+    include 'Boxes/add-issue.php';
+?>
 <nav class="navbar navbar-inverse navbar-static-top">
     <div class="container-fluid">
         <div class="row">

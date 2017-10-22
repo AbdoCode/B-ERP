@@ -84,11 +84,11 @@
 }
 /* End Classes */
 /* Start Boxes */
-.add-activities{width: 356px;height: 396px}
-.add-objectives{width: 420px;height: 519px}
+.add-activities,
 .forget-password,
 .add-issue-administration,
 .add-issue-kid{width: 356px}
+.add-objectives{width: 420px}
 .add-class-preparations{width: 400px}
 .forget-password form .form-group:last-of-type{display: none}
 .add-class-preparations .add-item-button-container{overflow: hidden}

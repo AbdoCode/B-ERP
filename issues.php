@@ -3,7 +3,6 @@
     $pageTitle = 'Home';
     include 'init.php';
     include 'navbar.php';
-    include 'Boxes/add-issue.php';
 ?>
 <div class="issues">
     <h2><?php echo $_GET['type']; ?>s Issues</h2>
