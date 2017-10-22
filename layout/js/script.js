@@ -71,8 +71,8 @@ $(function () {
     $.fn.centerBox = function () {
         $(this).css({
             'position': 'fixed',
-            'left': (windowVar.innerWidth() - $(this).width()) / 2,
-            'top': (windowVar.innerHeight() - $(this).height()) / 2
+            'top': (($(window).height() - $(this).outerHeight()) / 2) + $(window).scrollTop() + "px",
+            'left': (($(window).width() - $(this).outerWidth()) / 2) + $(window).scrollLeft() + "px"
         });
     };
     $(".add-activities").centerBox();

@@ -1,4 +1,3 @@
-we will back to the hardware mode
 <?php
     session_start();
     $pageTitle = 'Home';
