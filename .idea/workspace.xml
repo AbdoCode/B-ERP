@@ -78,13 +78,12 @@
       <file leaf-file-name="navbar.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/navbar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="126" column="21" selection-start-line="126" selection-start-column="21" selection-end-line="126" selection-end-column="21" />
+            <state relative-caret-position="240">
+              <caret line="125" column="32" selection-start-line="125" selection-start-column="32" selection-end-line="125" selection-end-column="32" />
               <folding>
                 <element signature="n#nav#0;n#!!top" expanded="false" />
                 <element signature="n#li#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#nav#0;n#!!top" expanded="false" />
                 <element signature="n#li#3;n#ul#0;n#aside#0;n#section#0;n#!!top" expanded="false" />
-                <element signature="n#li#4;n#ul#0;n#aside#0;n#section#0;n#!!top" expanded="false" />
                 <element signature="n#li#5;n#ul#0;n#aside#0;n#section#0;n#!!top" expanded="false" />
                 <element signature="n#li#6;n#ul#0;n#aside#0;n#section#0;n#!!top" expanded="false" />
                 <element signature="n#li#7;n#ul#0;n#aside#0;n#section#0;n#!!top" expanded="false" />
@@ -446,7 +445,7 @@
       <workItem from="1508665339195" duration="1050000" />
       <workItem from="1508669005949" duration="333000" />
       <workItem from="1508713562543" duration="6117000" />
-      <workItem from="1508721185019" duration="22846000" />
+      <workItem from="1508721185019" duration="22895000" />
     </task>
     <task id="LOCAL-00001" summary="Mohamed Edit">
       <created>1507986336002</created>
@@ -623,11 +622,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508723216930</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Mohamed Edit">
+      <created>1508723268453</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1508723268453</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="397019000" />
+    <option name="totallyTimeSpent" value="397068000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1088,13 +1094,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/navbar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="126" column="21" selection-start-line="126" selection-start-column="21" selection-end-line="126" selection-end-column="21" />
+        <state relative-caret-position="240">
+          <caret line="125" column="32" selection-start-line="125" selection-start-column="32" selection-end-line="125" selection-end-column="32" />
           <folding>
             <element signature="n#nav#0;n#!!top" expanded="false" />
             <element signature="n#li#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#nav#0;n#!!top" expanded="false" />
             <element signature="n#li#3;n#ul#0;n#aside#0;n#section#0;n#!!top" expanded="false" />
-            <element signature="n#li#4;n#ul#0;n#aside#0;n#section#0;n#!!top" expanded="false" />
             <element signature="n#li#5;n#ul#0;n#aside#0;n#section#0;n#!!top" expanded="false" />
             <element signature="n#li#6;n#ul#0;n#aside#0;n#section#0;n#!!top" expanded="false" />
             <element signature="n#li#7;n#ul#0;n#aside#0;n#section#0;n#!!top" expanded="false" />
