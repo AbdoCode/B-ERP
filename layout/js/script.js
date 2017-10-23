@@ -34,6 +34,17 @@ function date_time(id) {
 if (location.pathname.substring(location.pathname.lastIndexOf("/") + 1) != 'login.php') {
     window.onload = date_time('dateTime');
 }
+// Notification By Ajax
+function showNotification() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("notification").innerHTML = this.responseText;
+        }
+    };
+    xhttp.open("GET", "notification.php", true);
+    xhttp.send();
+}
 /*global $*/
 $(function () {
     'use strict';

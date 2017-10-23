@@ -1,6 +1,5 @@
 <?php
-/*
-	$dsn = 'mysql:host=localhost;dbname=test';
+	$dsn = 'mysql:host=localhost;dbname=backpackerz';
 	$user = 'root';
 	$pass = '';
 	$option = array(
@@ -8,11 +7,10 @@
 	);
 
 	try {
-		$con = new PDO($dsn, $user, $pass, $option);
-		$con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		$connect = new PDO($dsn, $user, $pass, $option);
+		$connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	}
 
 	catch(PDOException $e) {
 		echo 'Failed To Connect' . $e->getMessage();
 	}
-*/

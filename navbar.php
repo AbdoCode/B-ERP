@@ -21,24 +21,60 @@
             <div class="collapse navbar-collapse" id="mainCollapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Mohamed<span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo $sessionUser ?><span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="add-event.php">Add Event</a></li>
                             <li><a href="#" class="add-issue-kid-button">Add Issue for kid</a></li>
                             <li><a href="#" class="add-issue-administration-button">Add Issue for administration</a></li>
+                            <li><a href="logout.php">Logout</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <a href="#" onclick="showNotification()" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                             <i class="fa fa-globe fa-fw fa-lg">
                                 <span class="number-notification">3</span>
                             </i>
                         </a>
-                        <ul class="dropdown-menu list-group">
+                        <ul class="dropdown-menu list-group" id="notification">
                             <li>
                                 <a href="#" class="list-group-item">
                                     <h4 class="list-group-item-heading">Mohamed Exception to you</h4>
                                     <p class="list-group-item-text">Mohamed Accept to change any thing in system. but notify him after that. thank you Mohamed Accept to change any thing in system. but notify him after that. thank you</p>
+                                    <span class="list-group-item-text text-warning"><strong>1 min ago.</strong></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="list-group-item">
+                                    <h4 class="list-group-item-heading">Task From 1</h4>
+                                    <p class="list-group-item-text">sadasdlaskdnasldnaskldnalskdnasldnasknklnk</p>
+                                    <span class="list-group-item-text text-warning"><strong>1 min ago.</strong></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="list-group-item">
+                                    <h4 class="list-group-item-heading">Task From 1</h4>
+                                    <p class="list-group-item-text">sadasdlaskdnasldnaskldnalskdnasldnasknklnk</p>
+                                    <span class="list-group-item-text text-warning"><strong>1 min ago.</strong></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="list-group-item">
+                                    <h4 class="list-group-item-heading">Task From 1</h4>
+                                    <p class="list-group-item-text">sadasdlaskdnasldnaskldnalskdnasldnasknklnk</p>
+                                    <span class="list-group-item-text text-warning"><strong>1 min ago.</strong></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="list-group-item">
+                                    <h4 class="list-group-item-heading">Task From 1</h4>
+                                    <p class="list-group-item-text">sadasdlaskdnasldnaskldnalskdnasldnasknklnk</p>
+                                    <span class="list-group-item-text text-warning"><strong>1 min ago.</strong></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="list-group-item">
+                                    <h4 class="list-group-item-heading">Task From 1</h4>
+                                    <p class="list-group-item-text">sadasdlaskdnasldnaskldnalskdnasldnasknklnk</p>
                                     <span class="list-group-item-text text-warning"><strong>1 min ago.</strong></span>
                                 </a>
                             </li>
@@ -80,6 +116,17 @@
     <aside class="mainAside col-sm-2" id="mainAside">
         <ul class="nav nav-pills nav-stacked">
             <li class="asideBack"><a href="#"><i class="fa fa-caret-left fa-fw fa-lg"></i>Back</a></li>
+            <?php
+                $stmt = $connect->prepare("");
+                $stmt->execute();
+                while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                    if ($row['href'] == '#') {
+                        echo ''
+                    } else {
+                        echo '';
+                    }
+                }
+            ?>
             <li <?php if (basename($_SERVER['PHP_SELF']) == 'daily-tasks.php') echo 'class="active"' ?>><a href="daily-tasks.php">Daily Tasks</a></li>
             <li <?php if (basename($_SERVER['PHP_SELF']) == 'activities.php') echo 'class="active"' ?>><a href="activities.php">Activities</a></li>
             <li <?php if (basename($_SERVER['PHP_SELF']) == 'subject.php') echo 'class="active"' ?>>
@@ -137,11 +184,11 @@
                     Bus <span class="glyphicon glyphicon-triangle-right"></span>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="bus-attend-am.php">A</a></li>
-                    <li><a href="bus-attend-am.php">B</a></li>
-                    <li><a href="bus-attend-am.php">C</a></li>
-                    <li><a href="bus-attend-pm.php">X</a></li>
-                    <li><a href="bus-attend-pm.php">F</a></li>
+                    <li><a href="bus-attend.php">A</a></li>
+                    <li><a href="bus-attend.php">B</a></li>
+                    <li><a href="bus-attend.php">C</a></li>
+                    <li><a href="bus-attend.php">X</a></li>
+                    <li><a href="bus-attend.php">F</a></li>
                 </ul>
             </li>
             <li <?php if (basename($_SERVER['PHP_SELF']) == 'reception-logistics.php' || basename($_SERVER['PHP_SELF']) == 'check-in-out.php' || basename($_SERVER['PHP_SELF']) == 'time-table.php' || basename($_SERVER['PHP_SELF']) == 'add-new-time-table.php') echo 'class="active"' ?>>
