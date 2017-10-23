@@ -21,23 +21,29 @@
         <table class="table table-bordered table-hover">
             <tr>
                 <th class="col-sm-1">#</th>
-                <th class="col-sm-5">Event Name</th>
-                <th class="col-sm-3">Requested Date</th>
-                <th class="col-sm-2">Status</th>
+                <th class="col-sm-3">Event Name</th>
+                <th class="col-sm-2">Requested Date</th>
+                <th class="col-sm-2">Requested By</th>
+                <th class="col-sm-1">Status</th>
+                <th class="col-sm-2">Confirmed By</th>
                 <th class="col-sm-1">Details</th>
             </tr>
             <tr>
                 <td>1</td>
                 <td>Funday</td>
                 <td>17 Aug 2017</td>
+                <td>Ahmed</td>
                 <td>Confirmed</td>
+                <td>Sara, Nour</td>
                 <td><a href="view-event-request.php" class="btn btn-primary btn-sm">View</a></td>
             </tr>
             <tr>
                 <td>1</td>
                 <td>Funday</td>
                 <td>17 Aug 2017</td>
+                <td>Ali</td>
                 <td>Confirmed</td>
+                <td>None</td>
                 <td><a href="view-event-request.php" class="btn btn-primary btn-sm">View</a></td>
             </tr>
         </table>

@@ -184,6 +184,8 @@ $(function () {
             $($divToAppend).append($content);
         });
     }
+    // add new row in on objective box
+    addRow(".add-objectives .add-item-button", ".add-objectives .form-horizontal .toAppend", '<div class="form-group"><label for="+1" class="col-xs-1 control-label">+1</label><div class="col-xs-10 col-xs-push-1"><textarea class="form-control" id="+1" placeholder="type your objective..."></textarea></div></div>');
     // add new row in table on preparations box
     addRow(".add-class-preparations .add-item-button", ".add-class-preparations .table", '<tr> <td> <div class="form-group"> <input type="text" class="form-control" placeholder="type item" /> </div> </td> <td> <div class="form-group"> <select class="form-control"> <option disabled selected>Choose Rate</option> <option value="10%">10%</option> <option value="20%">20%</option> <option value="30%">30%</option> <option value="40%">40%</option> <option value="50%">50%</option> <option value="60%">60%</option> <option value="70%">70%</option> <option value="80%">80%</option> <option value="90%">90%</option> <option value="100%">100%</option> </select> </div> </td> </tr>');
     // add new row in table on preparations box

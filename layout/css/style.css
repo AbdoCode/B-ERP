@@ -69,14 +69,19 @@
 .daily-tasks .table-responsive .table tr td .SumoSelect:last-of-type{ display: none}
 /* End Daily Tasks */
 /* Start Classes */
-.classes .btn-group{float: right;margin-right: 10px}
-.classes .btn-group li{list-style: none;float: left;padding: 0;border: none;margin-right: 0}
-.classes .btn-group li a{color: #FFF;text-decoration: none;display: block;padding: 6px 12px;border: 1px solid transparent}
+.classes .btn-group,
+.daily-statistics .btn-group{float: right;margin-right: 10px}
+.classes .btn-group li,
+.daily-statistics .btn-group li{list-style: none;float: left;padding: 0;border: none;margin-right: 0}
+.classes .btn-group li a,
+.daily-statistics .btn-group li a{color: #FFF;text-decoration: none;display: block;padding: 6px 12px;border: 1px solid transparent}
 .classes .preparations-check{float: left;text-align: center}
 .classes .preparations-check input[type="checkbox"]{margin: 5px auto 0;width: 15px;height: 15px}
 @media (max-width: 768px) {
-    .classes .btn-group{margin-right: 0;float: none;padding: 0;width: 100%}
-    .classes .btn-group li{margin-bottom: 4px;margin-right: 4px;border-radius: 4px !important}
+    .classes .btn-group,
+    .daily-statistics .btn-group{margin-right: 0;float: none;padding: 0;width: 100%}
+    .classes .btn-group li,
+    .daily-statistics .btn-group li{margin-bottom: 4px;margin-right: 4px;border-radius: 4px !important}
     .classes .preparations-check input[type="checkbox"]{width: 20px;height: 20px}
     .classes .preparations-check{width: 100%;margin-bottom: 5px}
     .classes .preparations-check label{margin-bottom: 0}
@@ -90,9 +95,11 @@
 .add-issue-kid{width: 356px}
 .add-objectives{width: 420px}
 .add-class-preparations{width: 400px}
+.add-objectives .add-item-button{padding: 0}
+.add-objectives textarea{height: 55px}
+.add-objectives .toAppend{max-height: 220px; overflow-x: auto;margin-bottom: 5px}
+.add-objectives .form-group{margin-left: 0;margin-right: 0}
 .forget-password form .form-group:last-of-type{display: none}
-.add-class-preparations .add-item-button-container{overflow: hidden}
-.add-class-preparations .add-item-button{float: right}
 .add-class-preparations .table-responsive{overflow: auto;max-height:166px}
 .add-class-preparations .table-responsive th,
 .add-class-preparations .table-responsive td{border-top: none}
@@ -241,8 +248,12 @@
 .daily-statistics .stat h4{margin-bottom: 0}
 .daily-statistics .stat .number{font-size: 40px;font-weight: bold}
 .daily-statistics .chart-container {height: auto;margin: auto;border: 1px solid #DDD;padding: 10px}
-.daily-statistics > div:last-of-type .chart-container{height: 350px}
-.daily-statistics > div {margin: 20px 0}
+.daily-statistics .tab-pane > div:last-of-type .chart-container{height: 350px}
+.daily-statistics .tab-pane > div {margin: 20px 0}
+.daily-statistics .largeStat h4,
+.daily-statistics .largeStat .number{color: #C9302C}
+.daily-statistics .largeStat h4{font-size: 24px}
+.daily-statistics .largeStat .number{font-size: 50px}
 @media (max-width: 768px) {
     .daily-statistics{padding: 0}
     .daily-statistics .write-stat{padding: 0 20px}
@@ -292,6 +303,8 @@ textarea{resize: none}
 div.uploads label,
 div.uploads input[type="file"]{position: absolute;top: 0;left: 0;width: 100%}
 div.uploads input[type="file"]{visibility: hidden}
+.add-item-button-container{overflow: hidden}
+.add-item-button{float: right}
 @media (max-width: 768px) {
     h2{text-align: center}
     .table-responsive{margin-top: 5px}
