@@ -71,11 +71,11 @@ $(function () {
     });
     // resize boxes width on mobile mode
     if (windowVar.innerWidth() <= 768) {
-        $(".add-activities, .add-objectives, .forget-password, .add-issue-administration, .add-issue-kid, .add-class-preparations, .pics-view").width((98 / 100) * windowVar.innerWidth());
+        $(".forget-password, .pics-view").width((98 / 100) * windowVar.innerWidth());
     }
     windowVar.resize(function () {
         if (windowVar.innerWidth() <= 768) {
-            $(".add-activities, .add-objectives, .forget-password, .add-issue-administration, .add-issue-kid, .add-class-preparations, .pics-view").width((98 / 100) * windowVar.innerWidth());
+            $(".forget-password, .pics-view").width((98 / 100) * windowVar.innerWidth());
         }
     });
     // center boxes
@@ -86,12 +86,7 @@ $(function () {
             'left': (($(window).width() - $(this).outerWidth()) / 2) + $(window).scrollLeft() + "px"
         });
     };
-    $(".add-activities").centerBox();
-    $(".add-objectives").centerBox();
-    $(".add-issue-administration").centerBox();
-    $(".add-issue-kid").centerBox();
     forgetPasswordBox.centerBox();
-    $(".add-class-preparations").centerBox();
     $(".pics-view").centerBox();
     // function for center horizontal
     $.fn.centerBoxHorizontal = function () {
@@ -183,11 +178,6 @@ $(function () {
             });
         });
     }
-    openBox(".activities .container-for-btn-group button", ".add-activities", ".add-activities .panel .panel-heading .glyphicon-remove");
-    openBox(".add-issue-administration-button", ".add-issue-administration", ".add-issue-administration .panel .panel-heading .glyphicon-remove");
-    openBox(".add-issue-kid-button", ".add-issue-kid", ".add-issue-kid .panel .panel-heading .glyphicon-remove");
-    openBox(".subject .add-objective-button", ".add-objectives", ".add-objectives .panel .panel-heading .glyphicon-remove");
-    openBox(".add-preparations-button", ".add-class-preparations", ".add-class-preparations .panel .panel-heading .glyphicon-remove");
     openBox(".viewEventPhotos", ".pics-view", '.pics-view > span');
     // function to add
     function addRow($startButton, $divToAppend, $content) {
@@ -195,8 +185,8 @@ $(function () {
             $($divToAppend).append($content);
         });
     }
-    // add new row in on objective box
-    addRow(".add-objectives .add-item-button", ".add-objectives .form-horizontal .toAppend", '<div class="form-group"><label for="+1" class="col-xs-1 control-label">+1</label><div class="col-xs-10 col-xs-push-1"><textarea class="form-control" id="+1" placeholder="type your objective..."></textarea></div></div>');
+    // add new row on objective box
+    addRow(".add-objectives .add-item-button", ".add-objectives .form-horizontal .toAppend", '<div class="form-group"><label for="+1" class="col-xs-1 control-label">+1</label><div class="col-sm-11 col-sm-push-0 col-xs-10 col-xs-push-1"><textarea class="form-control" id="+1" placeholder="type your objective..." rows="2"></textarea></div></div>');
     // add new row in table on preparations box
     addRow(".add-class-preparations .add-item-button", ".add-class-preparations .table", '<tr> <td> <div class="form-group"> <input type="text" class="form-control" placeholder="type item" /> </div> </td> <td> <div class="form-group"> <select class="form-control"> <option disabled selected>Choose Rate</option> <option value="10%">10%</option> <option value="20%">20%</option> <option value="30%">30%</option> <option value="40%">40%</option> <option value="50%">50%</option> <option value="60%">60%</option> <option value="70%">70%</option> <option value="80%">80%</option> <option value="90%">90%</option> <option value="100%">100%</option> </select> </div> </td> </tr>');
     // add new row in table on preparations box
@@ -235,4 +225,6 @@ $(function () {
         var img = URL.createObjectURL(e.target.files[0]);
         $('.profile .profile-img img').attr('src', img);
     });
+    // center 404 error photo
+    $(".error-path img").css("marginTop", (($(window).height() - $("nav").outerHeight()) - $(".error-path img").height()) / 2);
 });

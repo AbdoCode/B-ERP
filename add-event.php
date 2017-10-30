@@ -86,11 +86,6 @@
             </div>
         </form>
         <div class="col-sm-7">
-            <div class="container-for-btn-group">
-                <button class="btn btn-primary">
-                    <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add Row
-                </button>
-            </div>
             <div class="table-responsive">
                 <table class="table table-bordered">
                     <tr>
@@ -139,6 +134,11 @@
                         </tr>
                     </tfoot>
                 </table>
+            </div>
+            <div class="container-for-btn-group">
+                <button class="btn btn-primary">
+                    <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add Row
+                </button>
             </div>
         </div>
         <div class="clearfix"></div>

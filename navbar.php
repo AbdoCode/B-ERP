@@ -1,6 +1,3 @@
-<?php
-    include 'Boxes/add-issue.php';
-?>
 <nav class="navbar navbar-inverse navbar-static-top">
     <div class="container-fluid">
         <div class="row">
@@ -24,82 +21,18 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo $sessionUser ?><span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="add-event.php">Add Event</a></li>
-                            <li><a href="#" class="add-issue-kid-button">Add Issue for kid</a></li>
-                            <li><a href="#" class="add-issue-administration-button">Add Issue for administration</a></li>
+                            <li><a href="add-kid-issue.php">Add Issue for kid</a></li>
+                            <li><a href="add-administration-issue.php">Add Issue for administration</a></li>
                             <li><a href="logout.php">Logout</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#" onclick="showNotification()" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                             <i class="fa fa-globe fa-fw fa-lg">
-                                <span class="number-notification">3</span>
+                                <span class="number-notification">6</span>
                             </i>
                         </a>
-                        <ul class="dropdown-menu list-group" id="notification">
-                            <li>
-                                <a href="#" class="list-group-item">
-                                    <h4 class="list-group-item-heading">Mohamed Exception to you</h4>
-                                    <p class="list-group-item-text">Mohamed Accept to change any thing in system. but notify him after that. thank you Mohamed Accept to change any thing in system. but notify him after that. thank you</p>
-                                    <span class="list-group-item-text text-warning"><strong>1 min ago.</strong></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="list-group-item">
-                                    <h4 class="list-group-item-heading">Task From 1</h4>
-                                    <p class="list-group-item-text">sadasdlaskdnasldnaskldnalskdnasldnasknklnk</p>
-                                    <span class="list-group-item-text text-warning"><strong>1 min ago.</strong></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="list-group-item">
-                                    <h4 class="list-group-item-heading">Task From 1</h4>
-                                    <p class="list-group-item-text">sadasdlaskdnasldnaskldnalskdnasldnasknklnk</p>
-                                    <span class="list-group-item-text text-warning"><strong>1 min ago.</strong></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="list-group-item">
-                                    <h4 class="list-group-item-heading">Task From 1</h4>
-                                    <p class="list-group-item-text">sadasdlaskdnasldnaskldnalskdnasldnasknklnk</p>
-                                    <span class="list-group-item-text text-warning"><strong>1 min ago.</strong></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="list-group-item">
-                                    <h4 class="list-group-item-heading">Task From 1</h4>
-                                    <p class="list-group-item-text">sadasdlaskdnasldnaskldnalskdnasldnasknklnk</p>
-                                    <span class="list-group-item-text text-warning"><strong>1 min ago.</strong></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="list-group-item">
-                                    <h4 class="list-group-item-heading">Task From 1</h4>
-                                    <p class="list-group-item-text">sadasdlaskdnasldnaskldnalskdnasldnasknklnk</p>
-                                    <span class="list-group-item-text text-warning"><strong>1 min ago.</strong></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="list-group-item">
-                                    <h4 class="list-group-item-heading">Task From 1</h4>
-                                    <p class="list-group-item-text">sadasdlaskdnasldnaskldnalskdnasldnasknklnk</p>
-                                    <span class="list-group-item-text text-warning"><strong>1 min ago.</strong></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="list-group-item">
-                                    <h4 class="list-group-item-heading">Task From 1</h4>
-                                    <p class="list-group-item-text">sadasdlaskdnasldnaskldnalskdnasldnasknklnk</p>
-                                    <span class="list-group-item-text text-warning"><strong>1 min ago.</strong></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="list-group-item">
-                                    <h4 class="list-group-item-heading">Task From 1</h4>
-                                    <p class="list-group-item-text">sadasdlaskdnasldnaskldnalskdnasldnasknklnk</p>
-                                    <span class="list-group-item-text text-warning"><strong>1 min ago.</strong></span>
-                                </a>
-                            </li>
-                        </ul>
+                        <ul class="dropdown-menu list-group" id="notification"></ul>
                     </li>
                 </ul>
             </div>
@@ -117,11 +50,11 @@
         <ul class="nav nav-pills nav-stacked">
             <li class="asideBack"><a href="#"><i class="fa fa-caret-left fa-fw fa-lg"></i>Back</a></li>
             <?php
-                $stmt = $connect->prepare("");
+                $stmt = $connect->prepare("SELECT * FROM sys_tabs");
                 $stmt->execute();
                 while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
                     if ($row['href'] == '#') {
-                        echo ''
+                        echo '';
                     } else {
                         echo '';
                     }

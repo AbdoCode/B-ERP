@@ -4,7 +4,7 @@
     include 'init.php';
     include 'navbar.php';
 ?>
-<div class="add-class-table">
+<div class="add-class-table edit-class-table">
     <h2>Class Table</h2>
     <form>
         <div class="table-responsive">

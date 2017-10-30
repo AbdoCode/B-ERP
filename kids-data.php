@@ -3,7 +3,6 @@
     $pageTitle = 'Kids Data';
     include 'init.php';
     include 'navbar.php';
-    include 'Boxes/add-issue.php';
 ?>
 <div class="kids-data">
     <h2>Kids Data</h2>
@@ -31,7 +30,7 @@
                 <td>20.3%</td>
                 <td>Not Participant</td>
                 <td>16/50</td>
-                <td><button class="btn btn-primary btn-sm add-issue-kid-button">Add</button></td>
+                <td><a href="add-kid-issue.php?id=1" class="btn btn-primary btn-sm">Add</a></td>
             </tr>
             <tr>
                 <td>1</td>
@@ -40,7 +39,7 @@
                 <td>20.3%</td>
                 <td>Not Participant</td>
                 <td>16/50</td>
-                <td><button class="btn btn-primary btn-sm add-issue-kid-button">Add</button></td>
+                <td><a href="add-kid-issue.php?id=1" class="btn btn-primary btn-sm">Add</a></td>
             </tr>
         </table>
     </div>

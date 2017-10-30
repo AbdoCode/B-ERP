@@ -3,8 +3,6 @@
     $pageTitle = 'Home';
     include 'init.php';
     include 'navbar.php';
-    include 'Boxes/add-issue.php';
-    include 'Boxes/add-class-preparations.php';
 ?>
 <div class="classes">
     <h2>Class Name</h2>
@@ -33,7 +31,7 @@
                         <th class="col-sm-1">#</th>
                         <th class="col-sm-4">Name</th>
                         <th class="col-sm-1">Age</th>
-                        <th class="col-sm-2">Attendance Rate</th>
+                        <th class="col-sm-2">Attendance Rate <br/>(14 Sep 2017 - 20 Nov 2017)</th>
                         <th class="col-sm-2">Bus</th>
                         <th class="col-sm-1">Matarials</th>
                         <th class="col-sm-1">Issue</th>
@@ -45,7 +43,7 @@
                         <td>20.3%</td>
                         <td>Not Participant</td>
                         <td>16/50</td>
-                        <td><button class="btn btn-primary btn-sm add-issue-kid-button">Add</button></td>
+                        <td><a href="add-kid-issue.php?id=1" class="btn btn-primary btn-sm">Add</a></td>
                     </tr>
                     <tr>
                         <td>1</td>
@@ -54,7 +52,7 @@
                         <td>20.3%</td>
                         <td>Not Participant</td>
                         <td>16/50</td>
-                        <td><button class="btn btn-primary btn-sm add-issue-kid-button">Add</button></td>
+                        <td><a href="add-kid-issue.php?id=1" class="btn btn-primary btn-sm">Add</a></td>
                     </tr>
                 </table>
             </div>
@@ -63,6 +61,12 @@
             <div class="container-for-btn-group">
                 <a href="add-class-table.php" class="btn btn-primary">
                     <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add Class Table
+                </a>
+                <a href="add-class-table.php" class="btn btn-primary">
+                    <span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Edit Class Table
+                </a>
+                <a href="view-class-table.php" class="btn btn-primary">
+                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> View last Tables
                 </a>
             </div>
             <div class="table-responsive">
@@ -205,9 +209,9 @@
         </div>
         <div role="tabpanel" class="tab-pane preparations" id="preparations">
             <div class="container-for-btn-group">
-                <button class="btn btn-primary add-preparations-button">
+                <a href="add-class-preparations.php" class="btn btn-primary">
                     <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add Preparations
-                </button>
+                </a>
             </div>
             <div class="input-group col-sm-5 col-xs-12 center-block">
                 <input type="search" class="form-control" placeholder="Teacher name..." />

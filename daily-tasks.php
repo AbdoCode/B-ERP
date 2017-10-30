@@ -6,6 +6,11 @@
 ?>
 <div class="daily-tasks">
     <h2>Daily Tasks</h2>
+    <div class="container-for-btn-group">
+        <a href="add-daily-tasks.php" class="btn btn-primary">
+            <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add Daily Task
+        </a>
+    </div>
     <div class="table-responsive">
         <table class="table table-bordered table-hover">
             <tr>

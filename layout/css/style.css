@@ -68,6 +68,8 @@
 /* Start Daily Tasks */
 .daily-tasks .table-responsive .table tr td .SumoSelect:first-of-type{ margin-bottom: 2px}
 .daily-tasks .table-responsive .table tr td .SumoSelect:last-of-type{ display: none}
+.add-daily-tasks form{margin: 30px 0}
+.add-daily-tasks .SumoSelect{width: 100%}
 /* End Daily Tasks */
 /* Start Classes */
 .classes .btn-group,
@@ -97,18 +99,12 @@
 }
 /* End Classes */
 /* Start Boxes */
-.add-activities,
-.forget-password,
-.add-issue-administration,
-.add-issue-kid{width: 356px}
-.add-objectives{width: 420px}
-.add-class-preparations{width: 400px}
+.forget-password{width: 356px}
 .add-objectives .add-item-button{padding: 0}
-.add-objectives textarea{height: 55px}
-.add-objectives .toAppend{max-height: 220px; overflow-x: auto;margin-bottom: 5px}
+.add-objectives .toAppend{max-height: 370px; overflow-x: auto;margin-bottom: 5px}
 .add-objectives .form-group{margin-left: 0;margin-right: 0}
 .forget-password form .form-group:last-of-type{display: none}
-.add-class-preparations .table-responsive{overflow: auto;max-height:166px}
+.add-class-preparations .table-responsive{overflow: auto;max-height:240px;margin-bottom: 5px}
 .add-class-preparations .table-responsive th,
 .add-class-preparations .table-responsive td{border-top: none}
 .add-class-preparations .table-responsive .form-group{margin: auto}
@@ -118,6 +114,8 @@
 .pics-view > span{z-index: 998}
 @media (max-width: 768px) {
     .pics-view .carousel{width: 100%;height: 300px}
+    .add-objectives .toAppend{max-height: 250px}
+    .add-class-preparations .table-responsive{max-height: 166px}
 }
 /* End Boxes */
 /* Start add-workplan */
@@ -213,6 +211,7 @@
 .view-event-request .form-horizontal .control-label{text-align: left}
 .view-event-request .sum label{color: #A00}
 .add-event button.add{margin-top: 20px}
+.add-event .table-responsive{margin-top: 0}
 @media (max-width: 768px){
     .add-event .table-responsive,
     .view-event-request .table-responsive{padding: 0}
@@ -225,7 +224,7 @@
 .add-reception-logistics table tr td{border-top: none;text-align: center}
 .add-reception-logistics table input{min-width: 150px}
 .add-reception-logistics .SumoSelect{width: 100%}
-.add-reception-logistics .row{margin-top: 50px}
+.add-reception-logistics .row{margin-top: 10px}
 .add-reception-logistics button[type='submit']{margin: 20px 0}
 @media (max-width: 768px) {
     .add-reception-logistics .btn-group{margin-right: 0}
@@ -244,7 +243,7 @@
 }
 /* End view-reception-logistics */
 /* Start Class Table */
-.add-class-table .table > tbody > tr > td{padding: 0}
+.edit-class-table .table > tbody > tr > td{padding: 0}
 .add-class-table input{width: 100%;padding: 8px;border: none}
 @media (max-width: 768px) {
     .add-class-table input{min-width: 150px}
@@ -290,6 +289,12 @@
     .edit-profile .infoRow .SumoSelect {min-width: auto}
 }
 /* End Profile */
+/* Start 404 */
+.error-path img{
+    display: block;
+    margin: auto;
+}
+/* End 404 */
 /* Start framework */
 h2{font-weight: bold;text-transform: capitalize}
 table a,
@@ -305,13 +310,16 @@ textarea{resize: none}
 .panel .panel-heading span:hover,
 .pics-view >span:hover{color: #D9534F}
 .box{z-index: 997;display: none}
-.box .SumoSelect{width: 100%}
+.box .SumoSelect,
+.add-forms .SumoSelect{width: 100%}
+.add-forms h2{margin-bottom: 30px}
+.add-forms .control-label{text-align: left}
 .contRow{overflow: hidden;margin-bottom: 8px}
 div.uploads label,
 div.uploads input[type="file"]{position: absolute;top: 0;left: 0;width: 100%}
 div.uploads input[type="file"]{visibility: hidden}
 .add-item-button-container{overflow: hidden}
-.add-item-button{float: right}
+.add-item-button{float: right;margin-right: 15px}
 @media (max-width: 768px) {
     h2{text-align: center}
     .table-responsive{margin-top: 5px}

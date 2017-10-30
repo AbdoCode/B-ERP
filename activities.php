@@ -3,14 +3,13 @@
     $pageTitle = 'Home';
     include 'init.php';
     include 'navbar.php';
-    include 'Boxes/add-activities.php';
 ?>
 <div class="activities">
     <h2>Activities</h2>
     <div class="container-for-btn-group">
-        <button class="btn btn-primary">
+        <a href="add-activities.php" class="btn btn-primary">
             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add Activities
-        </button>
+        </a>
     </div>
     <div class="input-group col-sm-5 col-xs-12 center-block">
         <input type="search" class="form-control" placeholder="Activity name..." />
@@ -22,10 +21,11 @@
         <table class="table table-bordered table-hover">
             <tr>
                 <th class="col-sm-1">#</th>
-                <th class="col-sm-4">Name</th>
+                <th class="col-sm-3">Name</th>
                 <th class="col-sm-1">Class</th>
-                <th class="col-sm-3">Status</th>
+                <th class="col-sm-2">Status</th>
                 <th class="col-sm-2">Date</th>
+                <th class="col-sm-2">Time</th>
                 <th class="col-sm-1">Details</th>
             </tr>
             <tr>
@@ -41,6 +41,7 @@
                     </select>
                 </td>
                 <td>17 Aug 2017</td>
+                <td>05:20 AM</td>
                 <td><a href="view-activity.php" class="btn btn-primary btn-sm">View</a></td>
             </tr>
             <tr>
@@ -56,6 +57,7 @@
                     </select>
                 </td>
                 <td>18 Sep 2017</td>
+                <td>05:20 AM</td>
                 <td><a href="view-activity.php" class="btn btn-primary btn-sm">View</a></td>
             </tr>
         </table>

@@ -3,7 +3,6 @@
     $pageTitle = 'Home';
     include 'init.php';
     include 'navbar.php';
-    include 'Boxes/add-objectives.php';
 ?>
 
 <div class="subject">
@@ -24,9 +23,9 @@
             <tr>
                 <td>
                     <div class="btn-group">
-                        <button class="btn btn-primary add-objective-button">
+                        <a href="add-objectives.php" class="btn btn-primary">
                             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add Objective
-                        </button>
+                        </a>
                     </div>
                     <div class="workplan">
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">

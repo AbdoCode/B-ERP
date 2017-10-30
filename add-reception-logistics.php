@@ -7,13 +7,6 @@
 <div class="add-reception-logistics">
     <h2>Add Reception Logistics</h2>
     <form>
-        <div class="container-for-btn-group">
-            <div class="btn-group">
-                <button type="button" class="btn btn-primary">
-                    <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add Item
-                </button>
-            </div>
-        </div>
         <div class="table-responsive">
             <table class="table">
                 <tr>
@@ -32,6 +25,13 @@
                     <td><input type="number" class="form-control"></td>
                 </tr>
             </table>
+        </div>
+        <div class="container-for-btn-group">
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary">
+                    <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add New Logistic
+                </button>
+            </div>
         </div>
         <div class="row">
             <div class="col-sm-6">

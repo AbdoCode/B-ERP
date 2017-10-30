@@ -7,9 +7,9 @@
 <div class="issues">
     <h2><?php echo $_GET['type']; ?>s Issues</h2>
     <div class="container-for-btn-group">
-        <button class="btn btn-primary add-issue-<?php echo $_GET['type']; ?>-button">
+        <a href="add-<?php echo $_GET['type']; ?>-issue.php" class="btn btn-primary">
             <span class="glyphicon glyphicon-plus-sign"></span> Add Issue for <?php echo $_GET['type']; ?>
-        </button>
+        </a>
     </div>
     <div class="input-group col-sm-5 col-xs-12 center-block">
         <input type="search" class="form-control" placeholder="Issue name..." />
