@@ -3,7 +3,7 @@
     $pageTitle = 'Home';
     include 'init.php';
     include 'navbar.php';
-    include 'Boxes/pics_view.php';
+    include 'pics_view.php';
 ?>
 <div class="view-event-request">
     <h2>Event Title</h2>

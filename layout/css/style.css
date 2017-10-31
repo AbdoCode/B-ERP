@@ -99,16 +99,16 @@
 }
 /* End Classes */
 /* Start Boxes */
-.forget-password{width: 356px}
 .add-objectives .add-item-button{padding: 0}
 .add-objectives .toAppend{max-height: 370px; overflow-x: auto;margin-bottom: 5px}
 .add-objectives .form-group{margin-left: 0;margin-right: 0}
-.forget-password form .form-group:last-of-type{display: none}
+form.forget-password .form-group:last-of-type{display: none}
 .add-class-preparations .table-responsive{overflow: auto;max-height:240px;margin-bottom: 5px}
 .add-class-preparations .table-responsive th,
 .add-class-preparations .table-responsive td{border-top: none}
 .add-class-preparations .table-responsive .form-group{margin: auto}
 .add-class-preparations form .form-group:last-of-type{margin-top: 5px}
+.pics-view{z-index: 997;display: none}
 .pics-view{background-color: #FFF;padding: 3px;border-radius: 3px;border: 1px solid #DDD;box-shadow: 2px 2px 10px 2px #DDD}
 .pics-view .carousel{width: 450px;height: 450px}
 .pics-view > span{z-index: 998}
@@ -309,8 +309,6 @@ textarea{resize: none}
 .pics-view > span{ position: absolute;top: 15px;right: 15px;cursor: pointer}
 .panel .panel-heading span:hover,
 .pics-view >span:hover{color: #D9534F}
-.box{z-index: 997;display: none}
-.box .SumoSelect,
 .add-forms .SumoSelect{width: 100%}
 .add-forms h2{margin-bottom: 30px}
 .add-forms .control-label{text-align: left}

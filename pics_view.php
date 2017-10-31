@@ -1,4 +1,4 @@
-<div class="pics-view box">
+<div class="pics-view">
     <span class="glyphicon glyphicon-remove"></span>
     <div id="pics-view" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner" role="listbox">

@@ -31,7 +31,7 @@ function date_time(id) {
     setTimeout('date_time("'+id+'");',1000);
     return true;
 }
-if (location.pathname.substring(location.pathname.lastIndexOf("/") + 1) != 'login.php') {
+if (location.pathname.substring(location.pathname.lastIndexOf("/") + 1) != 'login.php' && location.pathname.substring(location.pathname.lastIndexOf("/") + 1) != 'forget-password.php') {
     window.onload = date_time('dateTime');
 }
 // Notification By Ajax
@@ -49,33 +49,19 @@ function showNotification() {
 $(function () {
     'use strict';
     //Define variables
-    var forgetPasswordBox = $(".forget-password"),
-        viewAside = $(".viewAside"),
+    var viewAside = $(".viewAside"),
         mainAside = $(".mainAside"),
         windowVar = $(window),
-        navbar = $(".navbar");
-    // to show forget password
-    function showforget() {
-        forgetPasswordBox.show();
-        localStorage.setItem('show', 'true');
-    }
-    $(".login .forget-button").on('click', function () {
-        showforget();
-    });
-    if (localStorage.getItem('show')) {
-        forgetPasswordBox.show();
-    }
-    $(".forget-password .glyphicon-remove, .forget-password form .form-group .forgetSubmit").on('click', function () {
-        forgetPasswordBox.hide();
-        localStorage.removeItem('show');
-    });
+        navbar = $(".navbar"),
+        picsView = $(".pics-view"),
+        errorImg = $(".error-path img");
     // resize boxes width on mobile mode
     if (windowVar.innerWidth() <= 768) {
-        $(".forget-password, .pics-view").width((98 / 100) * windowVar.innerWidth());
+        picsView.width((98 / 100) * windowVar.innerWidth());
     }
     windowVar.resize(function () {
         if (windowVar.innerWidth() <= 768) {
-            $(".forget-password, .pics-view").width((98 / 100) * windowVar.innerWidth());
+            picsView.width((98 / 100) * windowVar.innerWidth());
         }
     });
     // center boxes
@@ -86,8 +72,7 @@ $(function () {
             'left': (($(window).width() - $(this).outerWidth()) / 2) + $(window).scrollLeft() + "px"
         });
     };
-    forgetPasswordBox.centerBox();
-    $(".pics-view").centerBox();
+    picsView.centerBox();
     // function for center horizontal
     $.fn.centerBoxHorizontal = function () {
         var obj = $(this);
@@ -226,5 +211,5 @@ $(function () {
         $('.profile .profile-img img').attr('src', img);
     });
     // center 404 error photo
-    $(".error-path img").css("marginTop", (($(window).height() - $("nav").outerHeight()) - $(".error-path img").height()) / 2);
+    errorImg.css("marginTop", (($(window).height() - $("nav").outerHeight()) - errorImg.height()) / 2);
 });
