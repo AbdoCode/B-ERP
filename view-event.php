@@ -40,9 +40,17 @@
     <div class="contRow">
         <label class="col-sm-2 col-xs-4">Photos:</label>
         <div class="col-sm-4 col-xs-8">
-            <button class="btn btn-sm btn-primary viewEventPhotos">
+            <button class="col-xs- btn btn-sm btn-primary viewEventPhotos">
                 <span class="glyphicon glyphicon-picture"></span> View
             </button>
+            <div class="col-xs-7">
+                <div style="position: relative" class="uploads">
+                    <label for="photos_upload" class="btn btn-primary btn-sm">
+                        <span class="glyphicon glyphicon-upload"></span> Upload
+                    </label>
+                    <input type="file" id="photos_upload" class="btn btn-primary" accept="image/*" multiple>
+                </div>
+            </div>
         </div>
         <div class="clearfix visible-xs"></div>
         <label class="col-sm-2 col-xs-4">Files:</label>
@@ -52,6 +60,22 @@
                     <span class="glyphicon glyphicon-download"></span> Download
                 </button>
             </form>
+        </div>
+    </div>
+    <div class="contRow">
+        <label class="col-sm-2 col-xs-4">Videos:</label>
+        <div class="col-sm-4 col-xs-8">
+            <button class="col-xs- btn btn-sm btn-primary viewEventVideos">
+                <span class="glyphicon glyphicon-picture"></span> View
+            </button>
+            <div class="col-xs-7">
+                <div style="position: relative" class="uploads">
+                    <label for="videos_upload" class="btn btn-primary btn-sm">
+                        <span class="glyphicon glyphicon-upload"></span> Upload
+                    </label>
+                    <input type="file" id="videos_upload" class="btn btn-primary" accept="video/*" multiple>
+                </div>
+            </div>
         </div>
     </div>
     <div class="table-responsive">

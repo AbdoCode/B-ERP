@@ -135,13 +135,13 @@ $(function () {
     colorizeSelect(".dailyTasksStatus");
     colorizeSelect(".tableStatus");
     // Fire jquery.sumoselect plugin
-    $('select:not(.normalSelect)').SumoSelect();
+    $('select:not(.normalSelect)').SumoSelect({search: true, searchText: 'Type to Search...', selectAll: true});
     // Function colorize rows
     function colorize($target) {
         $($target).each(function () {
-            if ($(this).html() === "Completed") {
+            if ($(this).html() === "Completed" || $(this).html() === "Solved") {
                 $(this).parent().addClass("success");
-            } else if ($(this).html() === "Pending") {
+            } else if ($(this).html() === "Pending" || $(this).html() === "Not Solved") {
                 $(this).parent().addClass("danger");
             } else if ($(this).html() === "Postponed") {
                 $(this).parent().addClass("info");
@@ -154,6 +154,8 @@ $(function () {
     }
     // event colorize
     colorize(".events .table tr td:nth-of-type(3)");
+    // issue colorize
+    colorize(".issues .table tr td:nth-of-type(3)");
     //open Boxes
     function openBox($openButton, $box, $closeButton) {
         $($openButton).on('click', function () {
@@ -163,7 +165,7 @@ $(function () {
             });
         });
     }
-    openBox(".viewEventPhotos", ".pics-view", '.pics-view > span');
+    openBox(".viewEventPhotos, .viewEventVideos", ".pics-view", '.pics-view > span');
     // function to add
     function addRow($startButton, $divToAppend, $content) {
         $($startButton).on('click', function () {

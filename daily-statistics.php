@@ -32,36 +32,81 @@
         </div>
         <div role="tabpanel" class="tab-pane" id="numbers">
             <div class="write-stat row">
-                <div class="stat col-sm-3 col-xs-6 largeStat">
-                    <h4>Total Kids</h4>
-                    <span class="number">231,809</span>
+                <div class="stat col-sm-3 col-xs-6">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h4>Total Kids</h4>
+                            <span class="number">231,809</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="stat col-sm-3 col-xs-6">
-                    <h4>Total Teacher</h4>
-                    <span class="number">405,895</span>
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <h4>Total Kids</h4>
+                            <span class="number">231,809</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="stat col-sm-3 col-xs-6">
-                    <h4>Total Teacher</h4>
-                    <span class="number">405,895</span>
-                </div>
-                <div class="stat col-sm-3 col-xs-6 largeStat">
-                    <h4>Total Teacher</h4>
-                    <span class="number">405,895</span>
-                </div>
-                <div class="stat col-sm-3 col-xs-6">
-                    <h4>Total Teacher</h4>
-                    <span class="number">405,895</span>
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">
+                            <h4>Total Kids</h4>
+                            <span class="number">231,809</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="stat col-sm-3 col-xs-6">
-                    <h4>Total Teacher</h4>
-                    <span class="number">405,895</span>
+                    <div class="panel panel-warning">
+                        <div class="panel-heading">
+                            <h4>Total Kids</h4>
+                            <span class="number">231,809</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="stat col-sm-3 col-xs-6 largeStat">
-                    <h4>Total Teacher</h4>
-                    <span class="number">405,895</span>
+                <div class="stat col-sm-3 col-xs-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Total Kids</h4>
+                            <span class="number">231,809</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat col-sm-3 col-xs-6">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            <h4>Total Kids</h4>
+                            <span class="number">231,809</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat col-sm-3 col-xs-6">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <h4>Total Kids</h4>
+                            <span class="number">231,809</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat col-sm-3 col-xs-6">
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">
+                            <h4>Total Kids</h4>
+                            <span class="number">231,809</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat col-sm-3 col-xs-6">
+                    <div class="panel panel-warning">
+                        <div class="panel-heading">
+                            <h4>Total Kids</h4>
+                            <span class="number">231,809</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
 </div>
 <?php
     include $templates . 'footer.php';

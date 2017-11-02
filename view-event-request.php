@@ -54,9 +54,33 @@
             <div class="form-group">
                 <label class="col-sm-4 col-xs-5 control-label">Photos:</label>
                 <div class="col-sm-8 col-xs-7">
-                    <button class="btn btn-sm btn-primary viewEventPhotos">
+                    <button class="col-xs-4 btn btn-sm btn-primary viewEventPhotos">
                         <span class="glyphicon glyphicon-picture"></span> View
                     </button>
+                    <div class="col-xs-8">
+                        <div style="position: relative" class="uploads">
+                            <label for="photos_upload" class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-upload"></span> Upload
+                            </label>
+                            <input type="file" id="photos_upload" class="btn btn-primary" accept="image/*" multiple>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-4 col-xs-5 control-label">Videos:</label>
+                <div class="col-sm-8 col-xs-7">
+                    <button class="col-xs-4 btn btn-sm btn-primary viewEventVideos">
+                        <span class="glyphicon glyphicon-picture"></span> View
+                    </button>
+                    <div class="col-xs-8">
+                        <div style="position: relative" class="uploads">
+                            <label for="videos_upload" class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-upload"></span> Upload
+                            </label>
+                            <input type="file" id="videos_upload" class="btn btn-primary" accept="video/*" multiple>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="form-group">

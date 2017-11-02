@@ -29,8 +29,6 @@
             <label for="class" class="col-xs-1 control-label">Class</label>
             <div class="col-sm-11  col-sm-push-0 col-xs-9 col-xs-push-2">
                 <select class="form-control" id="class" multiple>
-                    <option disabled selected>Select your class</option>
-                    <option value="all">All</option>
                     <option value="a1">A1</option>
                     <option value="a2">A2</option>
                     <option value="b1">B1</option>

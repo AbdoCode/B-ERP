@@ -3,7 +3,6 @@
     $pageTitle = 'Workplan Confirmation';
     include 'init.php';
     include 'navbar.php';
-    include 'Boxes/add-issue.php';
 ?>
 <div class="view-confirmation-workplan">
     <div class="col-sm-9">
@@ -640,7 +639,7 @@
                     <button type="submit" class="btn btn-success btn-block">Done</button>
                 </div>
                 <div class="form-group">
-                    <button type="button" class="add-issue-administration-button btn btn-warning btn-block">Add issue for this teacher</button>
+                    <a href="add-administration-issue.php" type="button" class="btn btn-warning btn-block">Add issue for this teacher</a>
                 </div>
             </form>
         </div>

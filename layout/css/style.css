@@ -90,8 +90,8 @@
     .daily-statistics .btn-group,
     .busPage .btn-group{width: 100%;padding: 0;margin-right: 0}
     .classes .btn-group li{margin-bottom: 4px;margin-right: 4px;border-radius: 4px !important}
-    .daily-statistics .btn-group li,
-    .busPage .btn-group li{width: 50%}
+    .daily-statistics .btn-group li{width: 50%}
+    .busPage .btn-group li{width: 33.33333333%;min-width: auto}
     .classes .preparations-check input[type="checkbox"]{width: 20px;height: 20px}
     .classes .preparations-check{width: 100%;margin-bottom: 5px}
     .classes .preparations-check label{margin-bottom: 0}
@@ -99,19 +99,20 @@
 }
 /* End Classes */
 /* Start Boxes */
-.add-objectives .add-item-button{padding: 0}
-.add-objectives .toAppend{max-height: 370px; overflow-x: auto;margin-bottom: 5px}
+.add-objectives .toAppend{max-height: 370px}
+.add-objectives .toAppend,
+.add-class-preparations .table-responsive{overflow-x: auto;margin-bottom: 5px}
 .add-objectives .form-group{margin-left: 0;margin-right: 0}
 form.forget-password .form-group:last-of-type{display: none}
-.add-class-preparations .table-responsive{overflow: auto;max-height:240px;margin-bottom: 5px}
+.add-class-preparations .table-responsive{max-height:240px}
 .add-class-preparations .table-responsive th,
 .add-class-preparations .table-responsive td{border-top: none}
 .add-class-preparations .table-responsive .form-group{margin: auto}
 .add-class-preparations form .form-group:last-of-type{margin-top: 5px}
-.pics-view{z-index: 997;display: none}
-.pics-view{background-color: #FFF;padding: 3px;border-radius: 3px;border: 1px solid #DDD;box-shadow: 2px 2px 10px 2px #DDD}
+.pics-view{z-index: 997;display: none;background-color: #FFF;padding: 3px;border-radius: 3px;border: 1px solid #DDD;box-shadow: 2px 2px 10px 2px #DDD}
 .pics-view .carousel{width: 450px;height: 450px}
-.pics-view > span{z-index: 998}
+.pics-view > span{z-index: 998;position: absolute;top: 15px;right: 15px;cursor: pointer}
+.pics-view >span:hover{color: #D9534F}
 @media (max-width: 768px) {
     .pics-view .carousel{width: 100%;height: 300px}
     .add-objectives .toAppend{max-height: 250px}
@@ -251,18 +252,13 @@ form.forget-password .form-group:last-of-type{display: none}
 /* End Class Table */
 /* Start daily-statistics */
 .daily-statistics{padding: 0 20px}
-.daily-statistics .stat h4{margin-bottom: 0}
-.daily-statistics .stat .number{font-size: 40px;font-weight: bold}
+.daily-statistics .stat h4{margin-bottom: 0; font-size: 24px}
+.daily-statistics .stat .number{font-size: 50px;font-weight: bold}
 .daily-statistics .chart-container {height: auto;margin: auto;border: 1px solid #DDD;padding: 10px}
 .daily-statistics .tab-pane > div:last-of-type .chart-container{height: 350px}
 .daily-statistics .tab-pane > div {margin: 20px 0}
-.daily-statistics .largeStat h4,
-.daily-statistics .largeStat .number{color: #C9302C}
-.daily-statistics .largeStat h4{font-size: 24px}
-.daily-statistics .largeStat .number{font-size: 50px}
 @media (max-width: 768px) {
     .daily-statistics{padding: 0}
-    .daily-statistics .write-stat{padding: 0 20px}
     .daily-statistics .stat .number{font-size: 20px}
     .daily-statistics .chart-container {height: auto;border: 1px solid #DDD;padding: 5px}
 }
@@ -303,21 +299,17 @@ table a:hover{color: #333}
 textarea{resize: none}
 .container-for-btn-group{overflow: hidden;margin-bottom: 10px}
 .container-for-btn-group .btn{float: right;margin-right: 10px}
-.panel{margin-bottom: 0}
-.panel .panel-heading h2{font-size: 22px}
-.panel .panel-heading span,
-.pics-view > span{ position: absolute;top: 15px;right: 15px;cursor: pointer}
-.panel .panel-heading span:hover,
-.pics-view >span:hover{color: #D9534F}
 .add-forms .SumoSelect{width: 100%}
 .add-forms h2{margin-bottom: 30px}
 .add-forms .control-label{text-align: left}
 .contRow{overflow: hidden;margin-bottom: 8px}
+div.uploads label{color: #FFF}
 div.uploads label,
 div.uploads input[type="file"]{position: absolute;top: 0;left: 0;width: 100%}
 div.uploads input[type="file"]{visibility: hidden}
 .add-item-button-container{overflow: hidden}
 .add-item-button{float: right;margin-right: 15px}
+.SumoSelect .select-all{height: auto}
 @media (max-width: 768px) {
     h2{text-align: center}
     .table-responsive{margin-top: 5px}

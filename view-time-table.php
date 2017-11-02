@@ -6,6 +6,9 @@
 ?>
 <div class="view-time-table">
     <h2>View Time Table</h2>
+    <div class="text-center">
+        <label>Date: 19 Sep 2014</label>
+    </div>
     <div class="table-responsive">
         <table class="table table-bordered table-hover">
             <tr>

@@ -23,8 +23,7 @@
         <div class="form-group col-sm-5">
             <label for="jobTitle" class="col-sm-4 control-label">Job Title</label>
             <div class="col-sm-8">
-                <select class="form-control" id="jobTitle">
-                    <option disabled selected>Choose Job Title</option>
+                <select class="form-control" id="jobTitle" multiple>
                     <option>CEO</option>
                     <option>General Manager</option>
                     <option>Academy Head</option>
@@ -35,9 +34,7 @@
         <div class="form-group col-sm-5 col-sm-push-2">
             <label for="employee" class="col-sm-4 control-label">To</label>
             <div class="col-sm-8">
-                <select class="form-control" id="employee">
-                    <option disabled selected>Select to send</option>
-                    <option>All</option>
+                <select class="form-control" id="employee" multiple>
                     <option>Ahmed</option>
                     <option>Mohamed</option>
                     <option>Ibrahim</option>

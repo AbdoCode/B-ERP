@@ -37,7 +37,7 @@
         <div class="form-group">
             <label for="date" class="col-xs-1 control-label">Date</label>
             <div class="col-sm-11 col-sm-push-0 col-xs-10 col-xs-push-1">
-                <input type="date" class="form-control" id="date" step="7">
+                <input type="date" class="form-control" id="date">
             </div>
         </div>
         <div class="form-group">

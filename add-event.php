@@ -63,17 +63,6 @@
                 </div>
             </div>
             <div class="form-group">
-                <label class="col-xs-3 control-label">Photos:</label>
-                <div class="col-sm-9 col-xs-9">
-                    <div style="position: relative" class="uploads">
-                        <label for="photos_upload" class="btn btn-primary btn-sm">
-                            <span class="glyphicon glyphicon-upload"></span> Upload Photos
-                        </label>
-                        <input type="file" id="photos_upload" class="btn btn-primary" accept="image/*" multiple>
-                    </div>
-                </div>
-            </div>
-            <div class="form-group">
                 <label class="col-xs-3 control-label">Files:</label>
                 <div class="col-sm-9 col-xs-9">
                     <div style="position: relative" class="uploads">
