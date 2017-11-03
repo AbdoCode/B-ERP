@@ -6,6 +6,11 @@
 ?>
 <div class="kids-data">
     <h2>Kids Data</h2>
+    <div class="container-for-btn-group">
+        <a href="edit-kids-profile.php" class="btn btn-primary">
+            <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add New Kid
+        </a>
+    </div>
     <div class="input-group col-sm-5 col-xs-12 center-block">
         <input type="search" class="form-control" placeholder="Kid name..." />
         <div class="input-group-btn center-block">
@@ -16,29 +21,32 @@
         <table class="table table-bordered table-hover">
             <tr>
                 <th class="col-sm-1">#</th>
-                <th class="col-sm-4">Name</th>
-                <th class="col-sm-1">Age</th>
+                <th class="col-sm-3">Name</th>
+                <th class="col-sm-1">Class</th>
                 <th class="col-sm-2">Attendance Rate</th>
-                <th class="col-sm-2">Bus</th>
-                <th class="col-sm-1">Matarials</th>
+                <th class="col-sm-2">Bus Participation</th>
+                <th class="col-sm-1">Material</th>
+                <th class="col-sm-1">Performance sheet</th>
                 <th class="col-sm-1">Issue</th>
             </tr>
             <tr>
                 <td>1</td>
-                <td>Mohamed Maher Mahfouz</td>
-                <td>22</td>
+                <td><a href="kids-profile.php?id=1">Mohamed Maher Mahfouz</a></td>
+                <td>B2</td>
                 <td>20.3%</td>
                 <td>Not Participant</td>
                 <td>16/50</td>
+                <td><a href="performance-sheet-kids.php" class="btn btn-primary btn-sm">View</a></td>
                 <td><a href="add-kid-issue.php?id=1" class="btn btn-primary btn-sm">Add</a></td>
             </tr>
             <tr>
                 <td>1</td>
                 <td>Mohamed Maher Mahfouz</td>
-                <td>22</td>
+                <td>A2</td>
                 <td>20.3%</td>
                 <td>Not Participant</td>
                 <td>16/50</td>
+                <td><a href="performance-sheet-kids.php" class="btn btn-primary btn-sm">View</a></td>
                 <td><a href="add-kid-issue.php?id=1" class="btn btn-primary btn-sm">Add</a></td>
             </tr>
         </table>

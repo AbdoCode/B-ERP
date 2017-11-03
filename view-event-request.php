@@ -152,6 +152,24 @@
         </div>
         <div class="clearfix"></div>
     </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <form>
+                <div class="form-group col-sm-4 col-xs-12">
+                    <button type="submit" class="btn btn-success btn-block">Approve</button>
+                </div>
+                <div class="form-group col-sm-4 col-xs-12">
+                    <button type="submit" class="btn btn-danger btn-block">Reject</button>
+                </div>
+                <div class="form-group col-sm-4 col-xs-12">
+                    <textarea class="form-control" placeholder="Type your Comment" rows="3"></textarea>
+                </div>
+                <div class="form-group col-sm-push-8 col-sm-4 col-xs-12">
+                    <button type="submit" class="btn btn-warning btn-block">Send back for modification</button>
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
 <?php
     include $templates . 'footer.php';

@@ -582,7 +582,7 @@
                     <button type="submit" class="btn btn-danger btn-block">Reject</button>
                 </div>
                 <div class="form-group">
-                    <textarea class="form-control" placeholder="Type your Comment"></textarea>
+                    <textarea class="form-control" placeholder="Type your Comment" rows="5"></textarea>
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-warning btn-block">Send back for modification</button>

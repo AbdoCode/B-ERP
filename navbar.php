@@ -154,6 +154,10 @@
                     <li><a href="staff.php?type=old">Old Staff</a></li>
                 </ul>
             </li>
+            <li <?php if (basename($_SERVER['PHP_SELF']) == 'logistics-approval.php') echo 'class="active"' ?>><a href="logistics-approval.php">Logistics</a></li>
+            <li <?php if (basename($_SERVER['PHP_SELF']) == 'performance-review.php') echo 'class="active"' ?>><a href="performance-review.php">Performance Review</a></li>
+            <li <?php if (basename($_SERVER['PHP_SELF']) == 'tasks.php') echo 'class="active"' ?>><a href="tasks.php">Tasks</a></li>
+            <li <?php if (basename($_SERVER['PHP_SELF']) == 'db-management.php') echo 'class="active"' ?>><a href="db-management.php">DB Management</a></li>
         </ul>
     </aside>
     <div class="col-sm-10">

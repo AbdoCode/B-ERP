@@ -30,6 +30,10 @@
                             <p>5 Sep 1995</p>
                         </div>
                         <div class="infoRow">
+                            <label>Age:</label>
+                            <p>5 Years</p>
+                        </div>
+                        <div class="infoRow">
                             <label>Address:</label>
                             <p>25A Almatar st. Imbaba, Giza</p>
                         </div>
@@ -40,6 +44,22 @@
                         <div class="infoRow">
                             <label>Bus:</label>
                             <p>No. 6</p>
+                        </div>
+                        <div class="infoRow">
+                            <label>Term Added:</label>
+                            <p>Fall 2015</p>
+                        </div>
+                        <div class="infoRow">
+                            <label>Attendance Rate:</label>
+                            <p>89.2%</p>
+                        </div>
+                        <div class="infoRow">
+                            <label>Performance Sheet:</label>
+                            <p><a href="performance-sheet-kids.php" class="btn btn-primary btn-sm">View</a></p>
+                        </div>
+                        <div class="infoRow">
+                            <label>Material:</label>
+                            <p><a href="#">20/50</a></p>
                         </div>
                     </div>
                 </div>

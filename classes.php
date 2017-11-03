@@ -29,11 +29,12 @@
                 <table class="table table-bordered table-hover">
                     <tr>
                         <th class="col-sm-1">#</th>
-                        <th class="col-sm-4">Name</th>
+                        <th class="col-sm-3">Name</th>
                         <th class="col-sm-1">Age</th>
                         <th class="col-sm-2">Attendance Rate <br/>(14 Sep 2017 - 20 Nov 2017)</th>
                         <th class="col-sm-2">Bus</th>
                         <th class="col-sm-1">Matarials</th>
+                        <th class="col-sm-1">Performance sheet</th>
                         <th class="col-sm-1">Issue</th>
                     </tr>
                     <tr>
@@ -43,6 +44,7 @@
                         <td>20.3%</td>
                         <td>Not Participant</td>
                         <td>16/50</td>
+                        <td><a href="performance-sheet-kids.php" class="btn btn-primary btn-sm">View</a></td>
                         <td><a href="add-kid-issue.php?id=1" class="btn btn-primary btn-sm">Add</a></td>
                     </tr>
                     <tr>
@@ -52,6 +54,7 @@
                         <td>20.3%</td>
                         <td>Not Participant</td>
                         <td>16/50</td>
+                        <td><a href="performance-sheet-kids.php" class="btn btn-primary btn-sm">View</a></td>
                         <td><a href="add-kid-issue.php?id=1" class="btn btn-primary btn-sm">Add</a></td>
                     </tr>
                 </table>
