@@ -177,7 +177,7 @@ $(function () {
     // add new row in table on preparations box
     addRow(".add-class-preparations .add-item-button", ".add-class-preparations .table", '<tr> <td> <div class="form-group"> <input type="text" class="form-control" placeholder="type item" /> </div> </td> <td> <div class="form-group"> <select class="form-control"> <option disabled selected>Choose Rate</option> <option value="10%">10%</option> <option value="20%">20%</option> <option value="30%">30%</option> <option value="40%">40%</option> <option value="50%">50%</option> <option value="60%">60%</option> <option value="70%">70%</option> <option value="80%">80%</option> <option value="90%">90%</option> <option value="100%">100%</option> </select> </div> </td> </tr>');
     // add new row in table on preparations box
-    addRow(".add-reception-logistics .container-for-btn-group button", ".add-reception-logistics .table", '<tr><td><input type="text" class="form-control"></td><td><input type="number" class="form-control"></td><td><input type="number" class="form-control"></td></tr>');
+    addRow(".add-logistics .container-for-btn-group button", ".add-logistics .table", '<tr><td><input type="text" class="form-control"></td><td><input type="number" class="form-control"></td><td><input type="number" class="form-control"></td></tr>');
     // add new row in table at add-event
     addRow(".add-event .container-for-btn-group button", ".add-event .table", '<tr><td><input type="text" class="form-control" placeholder="type objective..."/></td><td><input type="text" class="form-control" placeholder="type activities..."/></td><td><input type="text" class="form-control" placeholder="Ex: 500LE"></td></tr>');
     // calculate width for preparations-checks

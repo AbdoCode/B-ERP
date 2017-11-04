@@ -4,10 +4,10 @@
     include 'init.php';
     include 'navbar.php';
 ?>
-<div class="reception-logistics">
-    <h2>Reception Logistics</h2>
+<div class="logistics">
+    <h2>Logistics</h2>
     <div class="container-for-btn-group">
-        <a href="add-reception-logistics.php" class="btn btn-primary">
+        <a href="add-logistics.php" class="btn btn-primary">
             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add New Logistics
         </a>
     </div>
@@ -21,27 +21,24 @@
         <table class="table table-bordered table-hover">
             <tr>
                 <th class="col-sm-1">#</th>
-                <th class="col-sm-4">Reception Name</th>
-                <th class="col-sm-2">Forward to (<abbr title="Operation Manager">OR</abbr>)</th>
-                <th class="col-sm-2"><abbr title="Operation Manager">OR</abbr> Confirmation</th>
-                <th class="col-sm-2">Date</th>
-                <th class="col-sm-1">Details</th>
+                <th class="col-sm-3">Forward to</th>
+                <th class="col-sm-3">Status</th>
+                <th class="col-sm-3">Date</th>
+                <th class="col-sm-2">Details</th>
             </tr>
             <tr>
                 <td>1</td>
-                <td>Doaa</td>
                 <td>Hadeer</td>
                 <td>Confirmed</td>
                 <td>17 Sep 2017</td>
-                <td><a href="view-reception-logistics.php" class="btn btn-primary btn-sm">View</a></td>
+                <td><a href="view-logistics.php" class="btn btn-primary btn-sm">View</a></td>
             </tr>
             <tr>
                 <td>1</td>
-                <td>Doaa</td>
                 <td>Hadeer</td>
                 <td>Confirmed</td>
                 <td>17 Sep 2017</td>
-                <td><a href="view-reception-logistics.php" class="btn btn-primary btn-sm">View</a></td>
+                <td><a href="view-logistics.php" class="btn btn-primary btn-sm">View</a></td>
             </tr>
         </table>
     </div>

@@ -4,7 +4,7 @@
     include 'init.php';
     include 'navbar.php';
 ?>
-<div class="busPage">
+<div class="attend">
     <h2>Bus Check In/Out</h2>
     <div class="container-for-btn-group">
         <ul class="btn-group" role="tablist">
@@ -16,25 +16,72 @@
     <div class="tab-content">
         <div role="tabpanel" class="tab-pane active" id="checkIn">
             <div class="info row text-center">
-                <div class="col-sm-2 col-xs-4">
-                    <label>Date</label><br/>
-                    <span><?php echo date('d M Y'); ?></span>
-                </div>
-                <div class="col-sm-2 col-xs-4">
-                    <label>Time</label><br/>
-                    <span><?php echo date('h:m A'); ?></span>
-                </div>
-                <div class="col-sm-2 col-xs-4">
-                    <label>No. kids</label><br/>
-                    <span>20</span>
+                <div class="col-sm-3 col-xs-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <label>Date & Time</label><br/>
+                            <span><?php echo date('d M Y & h:m A'); ?></span>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-sm-3 col-xs-6">
-                    <label>Bus Number</label><br/>
-                    <span>ب ض س - 561</span>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <label>No. kids</label><br/>
+                            <span>20</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix visible-xs"></div>
+                <div class="col-sm-3 col-xs-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <label>Bus Number</label><br/>
+                            <span>ب ض س - 561</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-sm-3 col-xs-6">
-                    <label>Walk line</label><br/>
-                    <span>المنيا الجديدة - المنيا</span>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <label>Walk line</label><br/>
+                            <span>المنيا الجديدة - المنيا</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix visible-xs"></div>
+                <div class="col-sm-3 col-xs-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <label>Driver Name</label><br/>
+                            <span>Ahmed Ali</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <label>Driver Phone</label><br/>
+                            <span>01064323735</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix visible-xs"></div>
+                <div class="col-sm-3 col-xs-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <label>Supervisor Name</label><br/>
+                            <span>Mohamed Maher</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <label>Supervisor Phone</label><br/>
+                            <span>01064323735</span>
+                        </div>
+                    </div>
                 </div>
             </div>
             <form>
@@ -42,39 +89,55 @@
                     <table class="table table-bordered">
                         <tr>
                             <th class="col-sm-1">#</th>
-                            <th class="col-sm-3">Kid Name</th>
+                            <th class="col-sm-2">Kid Name</th>
+                            <th class="col-sm-1">Pick up time</th>
                             <th class="col-sm-1">Bus Check In</th>
                             <th class="col-sm-1">Reception Check In</th>
-                            <th class="col-sm-1">Pick up time</th>
-                            <th class="col-sm-2">Bus Participation</th>
-                            <th class="col-sm-3">Kid Address</th>
+                            <th class="col-sm-2">Kid Address</th>
+                            <th class="col-sm-1">Contact Name</th>
+                            <th class="col-sm-1">Contact Photo</th>
+                            <th class="col-sm-1">Contact Primary Number</th>
+                            <th class="col-sm-1">Contact Alternative Number</th>
+                            <th class="col-sm-1">Bus Participation</th>
                         </tr>
                         <tr>
                             <td>1</td>
                             <td>Ali mohamed</td>
+                            <td>08:25 AM</td>
                             <td><input type="checkbox" class="form-control" /></td>
                             <td><input type="checkbox" class="form-control" disabled/></td>
-                            <td>08:25 AM</td>
-                            <td>1 week left</td>
                             <td>25 شارع طلعت حرب القاهرة</td>
+                            <td>Mohamed Maher</td>
+                            <td><button class="btn btn-primary btn-sm viewEventPhotos">View</button></td>
+                            <td>01064323735</td>
+                            <td>01064323735</td>
+                            <td>1 week left</td>
                         </tr>
                         <tr>
                             <td>1</td>
                             <td>Ali mohamed</td>
+                            <td>08:25 AM</td>
                             <td><input type="checkbox" class="form-control" /></td>
                             <td><input type="checkbox" class="form-control" disabled/></td>
-                            <td>08:25 AM</td>
-                            <td>1 week left</td>
                             <td>25 شارع طلعت حرب القاهرة</td>
+                            <td>Mohamed Maher</td>
+                            <td><button class="btn btn-primary btn-sm viewEventPhotos">View</button></td>
+                            <td>01064323735</td>
+                            <td>01064323735</td>
+                            <td>1 week left</td>
                         </tr>
                         <tr>
                             <td>1</td>
                             <td>Ali mohamed</td>
+                            <td>08:25 AM</td>
                             <td><input type="checkbox" class="form-control" /></td>
                             <td><input type="checkbox" class="form-control" disabled/></td>
-                            <td>08:25 AM</td>
-                            <td>1 week left</td>
                             <td>25 شارع طلعت حرب القاهرة</td>
+                            <td>Mohamed Maher</td>
+                            <td><button class="btn btn-primary btn-sm viewEventPhotos">View</button></td>
+                            <td>01064323735</td>
+                            <td>01064323735</td>
+                            <td>1 week left</td>
                         </tr>
                     </table>
                 </div>
@@ -82,69 +145,146 @@
         </div>
         <div role="tabpanel" class="tab-pane" id="checkOut">
             <div class="info row text-center">
-                <div class="col-sm-2 col-xs-4">
-                    <label>Date</label><br/>
-                    <span><?php echo date('d M Y'); ?></span>
+                <div class="col-sm-3 col-xs-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <label>Date</label><br/>
+                            <span><?php echo date('d M Y'); ?></span>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-2 col-xs-4">
-                    <label>Time</label><br/>
-                    <span><?php echo date('h:m A'); ?></span>
+                <div class="col-sm-3 col-xs-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <label>Time</label><br/>
+                            <span><?php echo date('h:m A'); ?></span>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-2 col-xs-4">
-                    <label>No. kids</label><br/>
-                    <span>20</span>
+                <div class="clearfix visible-xs"></div>
+                <div class="col-sm-3 col-xs-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <label>No. kids</label><br/>
+                            <span>20</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-2 col-xs-4">
-                    <label>Variation</label><br/>
-                    <span>0</span>
+                <div class="col-sm-3 col-xs-6">
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">
+                            <label>Variation</label><br/>
+                            <span>0</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-2 col-xs-4">
-                    <label>Bus Number</label><br/>
-                    <span>ب ض س - 561</span>
+                <div class="clearfix visible-xs"></div>
+                <div class="col-sm-3 col-xs-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <label>Bus Number</label><br/>
+                            <span>ب ض س - 561</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-2 col-xs-4">
-                    <label>Walk line</label><br/>
-                    <span>المنيا الجديدة - المنيا</span>
+                <div class="col-sm-3 col-xs-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <label>Walk line</label><br/>
+                            <span>المنيا الجديدة - المنيا</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix visible-xs"></div>
+                <div class="col-sm-3 col-xs-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <label>Driver Name</label><br/>
+                            <span>Ahmed Ali</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <label>Driver Phone</label><br/>
+                            <span>01064323735</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix visible-xs"></div>
+                <div class="col-sm-3 col-xs-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <label>Supervisor Name</label><br/>
+                            <span>Mohamed Maher</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <label>Supervisor Phone</label><br/>
+                            <span>01064323735</span>
+                        </div>
+                    </div>
                 </div>
             </div>
             <form>
                 <div class="table-responsive">
                     <table class="table table-bordered">
                         <tr>
+
                             <th class="col-sm-1">#</th>
-                            <th class="col-sm-3">Kid Name</th>
-                            <th class="col-sm-1">Bus Check Out</th>
-                            <th class="col-sm-1">Reception Check Out</th>
+                            <th class="col-sm-2">Kid Name</th>
                             <th class="col-sm-1">Arrive time</th>
-                            <th class="col-sm-2">Bus Participation</th>
-                            <th class="col-sm-3">Kid Address</th>
+                            <th class="col-sm-1">Reception Check Out</th>
+                            <th class="col-sm-1">Bus Check Out</th>
+                            <th class="col-sm-2">Kid Address</th>
+                            <th class="col-sm-1">Contact Name</th>
+                            <th class="col-sm-1">Contact Photo</th>
+                            <th class="col-sm-1">Contact Primary Number</th>
+                            <th class="col-sm-1">Contact Alternative Number</th>
+                            <th class="col-sm-1">Bus Participation</th>
                         </tr>
                         <tr>
                             <td>1</td>
                             <td>Ali mohamed</td>
+                            <td>02:25 PM</td>
+                            <td><input type="checkbox" class="form-control" disabled /></td>
                             <td><input type="checkbox" class="form-control" /></td>
-                            <td><input type="checkbox" class="form-control" disabled/></td>
-                            <td>01:25 PM</td>
-                            <td>1 week left</td>
                             <td>25 شارع طلعت حرب القاهرة</td>
+                            <td>Mohamed Maher</td>
+                            <td><button class="btn btn-primary btn-sm viewEventPhotos">View</button></td>
+                            <td>01064323735</td>
+                            <td>01064323735</td>
+                            <td>1 week left</td>
                         </tr>
                         <tr>
                             <td>1</td>
                             <td>Ali mohamed</td>
+                            <td>02:25 PM</td>
+                            <td><input type="checkbox" class="form-control" disabled /></td>
                             <td><input type="checkbox" class="form-control" /></td>
-                            <td><input type="checkbox" class="form-control" disabled/></td>
-                            <td>01:25 PM</td>
-                            <td>1 week left</td>
                             <td>25 شارع طلعت حرب القاهرة</td>
+                            <td>Mohamed Maher</td>
+                            <td><button class="btn btn-primary btn-sm viewEventPhotos">View</button></td>
+                            <td>01064323735</td>
+                            <td>01064323735</td>
+                            <td>1 week left</td>
                         </tr>
                         <tr>
                             <td>1</td>
                             <td>Ali mohamed</td>
+                            <td>02:25 PM</td>
+                            <td><input type="checkbox" class="form-control" disabled /></td>
                             <td><input type="checkbox" class="form-control" /></td>
-                            <td><input type="checkbox" class="form-control" disabled/></td>
-                            <td>01:25 PM</td>
-                            <td>1 week left</td>
                             <td>25 شارع طلعت حرب القاهرة</td>
+                            <td>Mohamed Maher</td>
+                            <td><button class="btn btn-primary btn-sm viewEventPhotos">View</button></td>
+                            <td>01064323735</td>
+                            <td>01064323735</td>
+                            <td>1 week left</td>
                         </tr>
                     </table>
                 </div>

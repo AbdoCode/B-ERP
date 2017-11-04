@@ -73,25 +73,25 @@
 /* End Daily Tasks */
 /* Start Classes */
 .classes .btn-group,
-.busPage .btn-group,
+.attend .btn-group,
 .daily-statistics .btn-group{float: right;margin-right: 10px}
 .classes .btn-group li,
-.busPage .btn-group li,
+.attend .btn-group li,
 .daily-statistics .btn-group li{list-style: none;float: left;padding: 0;border: none;margin-right: 0}
-.busPage .btn-group li,
+.attend .btn-group li,
 .daily-statistics .btn-group li{min-width: 100px}
 .classes .btn-group li a,
-.busPage .btn-group li a,
+.attend .btn-group li a,
 .daily-statistics .btn-group li a{color: #FFF;text-decoration: none;display: block;padding: 6px 12px;border: 1px solid transparent}
 .classes .preparations-check{float: left;text-align: center}
 .classes .preparations-check input[type="checkbox"]{margin: 5px auto 0;width: 15px;height: 15px}
 @media (max-width: 768px) {
     .classes .btn-group{margin-right: 0;float: none;padding: 0;width: 100%}
     .daily-statistics .btn-group,
-    .busPage .btn-group{width: 100%;padding: 0;margin-right: 0}
+    .attend .btn-group{width: 100%;padding: 0;margin-right: 0}
     .classes .btn-group li{margin-bottom: 4px;margin-right: 4px;border-radius: 4px !important}
     .daily-statistics .btn-group li{width: 50%}
-    .busPage .btn-group li{width: 33.33333333%;min-width: auto}
+    .attend .btn-group li{width: 33.33333333%;min-width: auto}
     .classes .preparations-check input[type="checkbox"]{width: 20px;height: 20px}
     .classes .preparations-check{width: 100%;margin-bottom: 5px}
     .classes .preparations-check label{margin-bottom: 0}
@@ -204,11 +204,11 @@ form.forget-password .form-group:last-of-type{display: none}
 }
 /* End performance sheet */
 /* Start Bus */
-.busPage .info label{font-size: 22px}
-.busPage form input[type="checkbox"]{margin: auto;height: 15px;width: 15px}
+.attend .info label{font-size: 22px}
+.attend form input[type="checkbox"]{margin: auto;height: 15px;width: 15px}
 @media (max-width: 768px){
-    .busPage .info > div{margin-bottom: 10px}
-    .busPage form input[type="checkbox"]{height: 20px;width: 20px}
+    .attend .info label{font-size: 14px}
+    .attend form input[type="checkbox"]{height: 20px;width: 20px}
 }
 /* End Bus */
 /* Start Add event */
@@ -227,31 +227,29 @@ form.forget-password .form-group:last-of-type{display: none}
     .view-event-request .table-responsive{padding: 0}
 }
 /* End Add event */
-/* Start Reception logistics */
-.add-reception-logistics .btn-group{float: right;margin-right: 30px}
-.add-reception-logistics .btn-group button{margin: 10px 0}
-.add-reception-logistics table tr th,
-.add-reception-logistics table tr td{border-top: none;text-align: center}
-.add-reception-logistics table input{min-width: 150px}
-.add-reception-logistics .SumoSelect{width: 100%}
-.add-reception-logistics .row{margin-top: 10px}
-.add-reception-logistics button[type='submit']{margin: 20px 0}
+/* Start logistics */
+.add-logistics .btn-group{float: right;margin-right: 30px}
+.add-logistics .btn-group button{margin: 10px 0}
+.add-logistics table tr th,
+.add-logistics table tr td{border-top: none;text-align: center}
+.add-logistics table input{min-width: 150px}
+.add-logistics button[type='submit']{margin: 20px 0}
+.add-logistics .SumoSelect{width: 100%}
 @media (max-width: 768px) {
-    .add-reception-logistics .btn-group{margin-right: 0}
-    .add-reception-logistics .SumoSelect{margin-bottom: 10px}
-    .add-reception-logistics button[type='submit']{margin: 10px 0}
+    .add-logistics .btn-group{margin-right: 0}
+    .add-logistics button[type='submit']{margin: 10px 0}
 }
-/* End Reception logistics */
-/* Start view-reception-logistics */
-.view-reception-logistics{padding-bottom: 10px}
-.view-reception-logistics h2{margin-bottom: 30px}
-.view-reception-logistics .info{margin-bottom: 20px;overflow: hidden}
-.view-reception-logistics .info label{font-size: 20px}
-.view-reception-logistics textarea {margin-bottom: 10px}
+/* End logistics */
+/* Start view-logistics */
+.view-logistics{padding-bottom: 10px}
+.view-logistics h2{margin-bottom: 30px}
+.view-logistics .info{margin-bottom: 20px;overflow: hidden}
+.view-logistics .info label{font-size: 20px}
+.view-logistics textarea {margin-bottom: 10px}
 @media (max-width: 768px) {
-    .view-reception-logistics textarea{margin-top: 10px}
+    .view-logistics textarea{margin-top: 10px}
 }
-/* End view-reception-logistics */
+/* End view-logistics */
 /* Start Class Table */
 .edit-class-table .table > tbody > tr > td{padding: 0}
 .add-class-table input{width: 100%;padding: 8px;border: none}
@@ -310,7 +308,8 @@ textarea{resize: none}
 .container-for-btn-group .btn{float: right;margin-right: 10px}
 .add-forms .SumoSelect{width: 100%}
 .add-forms h2{margin-bottom: 30px}
-.add-forms .control-label{text-align: left}
+.add-forms .control-label,
+.add-logistics .control-label{text-align: left}
 .contRow{overflow: hidden;margin-bottom: 8px}
 div.uploads label{color: #FFF}
 div.uploads label,

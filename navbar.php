@@ -124,13 +124,13 @@
                     <li><a href="bus-attend.php">F</a></li>
                 </ul>
             </li>
-            <li <?php if (basename($_SERVER['PHP_SELF']) == 'reception-logistics.php' || basename($_SERVER['PHP_SELF']) == 'check-in-out.php' || basename($_SERVER['PHP_SELF']) == 'time-table.php' || basename($_SERVER['PHP_SELF']) == 'add-new-time-table.php') echo 'class="active"' ?>>
+            <li <?php if (basename($_SERVER['PHP_SELF']) == 'logistics.php' || basename($_SERVER['PHP_SELF']) == 'check-in-out.php' || basename($_SERVER['PHP_SELF']) == 'time-table.php' || basename($_SERVER['PHP_SELF']) == 'add-new-time-table.php') echo 'class="active"' ?>>
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                     Logistics <span class="glyphicon glyphicon-triangle-right"></span>
                 </a>
                 <ul class="dropdown-menu">
                     <li><a href="check-in-out.php">Check in/out</a></li>
-                    <li><a href="reception-logistics.php">Reception Logistics</a></li>
+                    <li><a href="logistics.php">Logistics</a></li>
                     <li><a href="time-table.php">Time tables</a></li>
                 </ul>
             </li>
@@ -158,6 +158,17 @@
             <li <?php if (basename($_SERVER['PHP_SELF']) == 'performance-review.php') echo 'class="active"' ?>><a href="performance-review.php">Performance Review</a></li>
             <li <?php if (basename($_SERVER['PHP_SELF']) == 'tasks.php') echo 'class="active"' ?>><a href="tasks.php">Tasks</a></li>
             <li <?php if (basename($_SERVER['PHP_SELF']) == 'db-management.php') echo 'class="active"' ?>><a href="db-management.php">DB Management</a></li>
+            <li <?php if (basename($_SERVER['PHP_SELF']) == 'reception-checkinout.php') echo 'class="active"' ?>><a href="reception-checkinout.php">Check In/Out</a></li>
+            <li <?php if (basename($_SERVER['PHP_SELF']) == 'staff-checkinout.php') echo 'class="active"' ?>><a href="staff-checkinout.php">Staff Check In/Out</a></li>
+            <li <?php if (basename($_SERVER['PHP_SELF']) == 'zone-reservations.php') echo 'class="active"' ?>><a href="zone-reservations.php">Zone Reservations</a></li>
+            <li <?php if (basename($_SERVER['PHP_SELF']) == 'daily-communications.php' || basename($_SERVER['PHP_SELF']) == '' || basename($_SERVER['PHP_SELF']) == '') echo 'class="active"' ?>>
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    Customers <span class="glyphicon glyphicon-triangle-right"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="daily-communications.php">Daily Communications</a></li>
+                </ul>
+            </li>
         </ul>
     </aside>
     <div class="col-sm-10">

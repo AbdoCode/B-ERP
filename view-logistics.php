@@ -4,18 +4,22 @@
     include 'init.php';
     include 'navbar.php';
 ?>
-<div class="view-reception-logistics">
-    <h2>Reception Logistics</h2>
+<div class="view-logistics">
+    <h2>view logistics</h2>
     <div class="info text-center">
-        <div class="col-sm-4">
+        <div class="col-sm-3">
             <label>Date</label>
             <p>17 Sep 2017</p>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-3">
+            <label>Dead Line</label>
+            <p>30 Sep 2017</p>
+        </div>
+        <div class="col-sm-3">
             <label>Requester name</label>
             <p>Doaa</p>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-3">
             <label>Forward To</label>
             <p>Hoda</p>
         </div>
