@@ -12,7 +12,7 @@
         </a>
     </div>
     <div class="input-group col-sm-6 col-xs-12 center-block">
-        <input type="search" class="form-control" placeholder="Task title/date assigned..." />
+        <input type="search" class="form-control" placeholder="Task title/Assigned Date..." />
         <div class="input-group-btn center-block">
             <button class="btn btn-default" type="submit"><i class="fa fa-search fa-fw"></i></button>
         </div>
@@ -22,7 +22,7 @@
             <tr>
                 <th class="col-sm-1">#</th>
                 <th class="col-sm-4">Task title</th>
-                <th class="col-sm-3">Date assigned</th>
+                <th class="col-sm-3">Assigned date</th>
                 <th class="col-sm-3">Assigned from</th>
                 <th class="col-sm-1">Details</th>
             </tr>

@@ -180,6 +180,13 @@ $(function () {
     addRow(".add-logistics .container-for-btn-group button", ".add-logistics .table", '<tr><td><input type="text" class="form-control"></td><td><input type="number" class="form-control"></td><td><input type="number" class="form-control"></td></tr>');
     // add new row in table at add-event
     addRow(".add-event .container-for-btn-group button", ".add-event .table", '<tr><td><input type="text" class="form-control" placeholder="type objective..."/></td><td><input type="text" class="form-control" placeholder="type activities..."/></td><td><input type="text" class="form-control" placeholder="Ex: 500LE"></td></tr>');
+    // function to add Front
+    function addRowFront($startButton, $divToAppend, $content) {
+        $($startButton).on('click', function () {
+            $($divToAppend).prepend($content);
+        });
+    }
+    addRowFront(".add-course-day", ".view-zone-courses .table tbody", ' <tr> <form> <td>+1</td> <td><input type="number" class="form-control"></td><td><input type="time" class="form-control"></td><td><input type="time" class="form-control"></td> <td colspan="3"><button type="submit" class="btn btn-sm btn-success">Add</button></td> </form> </tr>');
     // calculate width for preparations-checks
     if (windowVar.innerWidth() > 768) {
         $(".classes .preparations form").each(function () {
@@ -214,4 +221,13 @@ $(function () {
     });
     // center 404 error photo
     errorImg.css("marginTop", (($(window).height() - $("nav").outerHeight()) - errorImg.height()) / 2);
+    // pagination for tables
+    $('.pagination-demo').twbsPagination({
+        first:'&laquo;',
+        prev:'&lsaquo;',
+        next:'&rsaquo;',
+        last:'&raquo;',
+        totalPages: 10,
+        visiblePages: 4
+    });
 });

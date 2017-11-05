@@ -179,6 +179,9 @@ form.forget-password .form-group:last-of-type{display: none}
 .performance-sheet h2{margin: 10px 0 30px 20px}
 .performance-sheet .rates{font-size: 18px;border-right: 1px solid #000}
 .performance-sheet .rates .rate{margin-bottom: 20px}
+.performance-sheet .rates .rate:last-of-type{padding-top: 20px}
+.performance-sheet .rates .rate:last-of-type label,
+.performance-sheet .rates .rate:last-of-type span{font-size: 26px}
 .performance-sheet .rates .rate label,
 .performance-sheet .general-info label{color: #A00}
 @media (max-width: 768px){
@@ -189,16 +192,23 @@ form.forget-password .form-group:last-of-type{display: none}
 
 }
 @media print {
-    body {visibility:hidden}
-    .performance-sheet {visibility:visible}
+    .noprint * {display:none}
+    body {visibility: hidden}
+    .performance-sheet {visibility: visible}
+    :before, :after{display: none}
     .performance-sheet h2{margin-bottom: 30px}
     .performance-sheet .rates{font-size: 18px;border-right: 1px solid #000}
     .performance-sheet .rates .rate{margin-bottom: 30px;float: left;width: 50%}
+    .performance-sheet .rates .rate:last-of-type{width: 100%}
+    .performance-sheet .rates .rate:last-of-type{padding-top: 20px}
+    .performance-sheet .rates .rate:last-of-type label,
+    .performance-sheet .rates .rate:last-of-type span{font-size: 26px}
     .col-lg-2, .col-lg-4, .col-lg-10{float: left}
     .col-sm-10 {width: 100%}
-    .col-lg-10 {width: 83.33333333%}
+    .col-lg-10, .col-xs-10 {width: 83.33333333%}
     .col-lg-4 {width: 33.33333333%}
     .col-lg-2 {width: 16.66666667%}
+    .col-xs-push-1 {left: 8.33333333%}
     .col-lg-push-10 {left: 83.33333333%}
     .col-lg-pull-2 {right: 16.66666667%}
 }
@@ -321,6 +331,7 @@ div.uploads input[type="file"]{visibility: hidden}
 select[multiple], select[size] {
     height: 100% !important;
 }
+.pagination{margin: 0}
 @media (max-width: 768px) {
     h2{text-align: center}
     .table-responsive{margin-top: 5px}

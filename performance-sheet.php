@@ -6,7 +6,7 @@
 ?>
 <div class="performance-sheet-print hidden-xs">
     <div class="container-for-btn-group">
-        <button class="btn btn-default" type="button" onclick="window.print();return false;">
+        <button class="btn btn-default" type="button" onclick="window.print()">
             <span class="glyphicon glyphicon-print" aria-hidden="true"></span> Print
         </button>
     </div>
@@ -62,6 +62,11 @@
                     <div class="rate col-lg-4 col-xs-6">
                         <label>Attendance Rate</label><br/>
                         <span>40%</span>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="rate col-xs-10 col-xs-push-1">
+                        <label>Overall Performance:</label>
+                        <span>Needs Improvement</span>
                     </div>
                 </div>
             </div>

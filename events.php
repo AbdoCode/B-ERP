@@ -21,15 +21,17 @@
         </div>
     </div>
     <div class="table-responsive">
-        <table class="table table-bordered table-hover">
-            <tr>
-                <th class="col-sm-1">#</th>
-                <th class="col-sm-4">Name</th>
-                <th class="col-sm-1">Status</th>
-                <th class="col-sm-2">From</th>
-                <th class="col-sm-2">to</th>
-                <th class="col-sm-1">Details</th>
-            </tr>
+        <table class="table table-bordered table-hover table-striped">
+            <thead>
+                <tr>
+                    <th class="col-sm-1">#</th>
+                    <th class="col-sm-4">Name</th>
+                    <th class="col-sm-1">Status</th>
+                    <th class="col-sm-2">From</th>
+                    <th class="col-sm-2">to</th>
+                    <th class="col-sm-1">Details</th>
+                </tr>
+            </thead>
             <tr>
                 <td>1</td>
                 <td>Photo Session</td>

@@ -3,9 +3,17 @@
     $pageTitle = 'Home';
     include 'init.php';
     include 'navbar.php';
+$pages = 5;
 ?>
 <div class="staff">
     <h2><?php echo $_GET['type']; ?> Staff</h2>
+    <div class="hidden-xs">
+        <div class="container-for-btn-group">
+            <button class="btn btn-default" type="button" onclick="window.print()">
+                <span class="glyphicon glyphicon-print" aria-hidden="true"></span> Print
+            </button>
+        </div>
+    </div>
     <div class="input-group col-sm-6 col-xs-12 center-block">
         <input type="search" class="form-control" placeholder="Name/Job title/Period/Date..." />
         <div class="input-group-btn center-block">
@@ -13,23 +21,25 @@
         </div>
     </div>
     <div class="table-responsive">
-        <table class="table table-bordered table-hover">
-            <tr>
-                <th class="col-sm-1">#</th>
-                <th class="col-sm-2">Name</th>
-                <th class="col-sm-1">Job Title</th>
-                <th class="col-sm-1">Date of Birth</th>
-                <th class="col-sm-2">Address</th>
-                <th class="col-sm-2">Educational Degree</th>
-                <th class="col-sm-1">Mobile Number</th>
-                <th class="col-sm-1">Email</th>
-                <th class="col-sm-1">Date Of Employment</th>
-                <?php
-                    if($_GET['type'] == 'old'){
-                        echo '<th class="col-sm-1">Date Of Resignation</th>';
-                    }
-                ?>
-            </tr>
+        <table class="table table-bordered table-hover table-striped">
+            <thead>
+                <tr>
+                    <th class="col-sm-1">#</th>
+                    <th class="col-sm-2">Name</th>
+                    <th class="col-sm-1">Job Title</th>
+                    <th class="col-sm-1">Date of Birth</th>
+                    <th class="col-sm-2">Address</th>
+                    <th class="col-sm-2">Educational Degree</th>
+                    <th class="col-sm-1">Mobile Number</th>
+                    <th class="col-sm-1">Email</th>
+                    <th class="col-sm-1">Date Of Employment</th>
+                    <?php
+                        if($_GET['type'] == 'old'){
+                            echo '<th class="col-sm-1">Date Of Resignation</th>';
+                        }
+                    ?>
+                </tr>
+            </thead>
             <tr>
                 <td>1</td>
                 <td>Mohamed Maher Mahfouz</td>
@@ -63,6 +73,9 @@
                 ?>
             </tr>
         </table>
+    </div>
+    <div class="text-center">
+        <ul class="pagination pagination-demo"></ul>
     </div>
 </div>
 <?php
