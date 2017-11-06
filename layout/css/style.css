@@ -308,6 +308,19 @@ form.forget-password .form-group:last-of-type{display: none}
 /* Start db-management */
 .db-management form .SumoSelect{width: 100%}
 /* End db-management */
+/* Start view income */
+.view-income .receipt{width: 600px;border: 2px solid #000;padding: 10px;margin: auto}
+.view-income .receipt h5{font-weight: bold;margin: 10px 0 5px}
+.view-income .receipt .head-of-receipt{border-bottom: 5px double #000;padding-bottom: 10px;position: relative}
+.view-income .receipt .head-of-receipt .receipt-number{position: absolute;color: #A00;font-weight: bold;font-size:16px;right: 10px;top: -5px}
+.view-income .receipt .receipt-sign{float: right;margin-bottom: 10px}
+.view-income .receipt .tail-of-receipt{border-top: 2px solid #000}
+.view-income h3{margin: 10px 0}
+@media (max-width: 768px) {
+    .view-income .receipt{width: 100%;margin-bottom: 20px}
+    .view-income .receipt .head-of-receipt .receipt-number{top: -20px}
+}
+/* End view income */
 /* Start framework */
 h2{font-weight: bold;text-transform: capitalize}
 table a,

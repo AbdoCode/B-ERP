@@ -187,6 +187,8 @@ $(function () {
         });
     }
     addRowFront(".add-course-day", ".view-zone-courses .table tbody", ' <tr> <form> <td>+1</td> <td><input type="number" class="form-control"></td><td><input type="time" class="form-control"></td><td><input type="time" class="form-control"></td> <td colspan="3"><button type="submit" class="btn btn-sm btn-success">Add</button></td> </form> </tr>');
+    addRowFront(".add-course-drive", ".driver-transportation .table tbody", '<tr> <form></form> <td>+1</td> <td><input type="time" class="form-control"/></td> <td><input type="text" class="form-control"/></td> <td><input type="number" class="form-control"/></td> <td>-</td> <td><input type="number" class="form-control"/></td> <td><input type="number" class="form-control"/></td> <td><input type="text" class="form-control"/></td> <td><input type="text" class="form-control"/></td> <td><textarea class="form-control"></textarea></td> <td><button class="btn btn-sm btn-success" type="submit">Add</button></td> </tr>');
+    addRowFront(".add-new-operation", ".gasoline-consumption .table tbody", '<tr> <td>+1</td> <td><input type="number" class="form-control"></td> <td><input type="number" class="form-control"></td> <td><input type="text" class="form-control"></td> <td><input type="number" class="form-control"></td> <td><input type="text" class="form-control"></td> <td><input type="text" class="form-control"></td> <td><textarea class="form-control"></textarea></td> <td><button class="btn btn-sm btn-success">Add</button></td> </tr>');
     // calculate width for preparations-checks
     if (windowVar.innerWidth() > 768) {
         $(".classes .preparations form").each(function () {

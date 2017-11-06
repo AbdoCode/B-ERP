@@ -158,7 +158,7 @@
             <li <?php if (basename($_SERVER['PHP_SELF']) == 'performance-review.php') echo 'class="active"' ?>><a href="performance-review.php">Performance Review</a></li>
             <li <?php if (basename($_SERVER['PHP_SELF']) == 'tasks.php') echo 'class="active"' ?>><a href="tasks.php">Tasks</a></li>
             <li <?php if (basename($_SERVER['PHP_SELF']) == 'db-management.php') echo 'class="active"' ?>><a href="db-management.php">DB Management</a></li>
-            <li <?php if (basename($_SERVER['PHP_SELF']) == 'reception-checkinout.php') echo 'class="active"' ?>><a href="reception-checkinout.php">Check In/Out</a></li>
+            <li <?php if (basename($_SERVER['PHP_SELF']) == 'reception-checkinout.php') echo 'class="active"' ?>><a href="reception-checkinout.php">Kids Check In/Out</a></li>
             <li <?php if (basename($_SERVER['PHP_SELF']) == 'staff-checkinout.php') echo 'class="active"' ?>><a href="staff-checkinout.php">Staff Check In/Out</a></li>
             <li <?php if (basename($_SERVER['PHP_SELF']) == 'zone-reservations.php' || basename($_SERVER['PHP_SELF']) == 'zone-meeting.php' || basename($_SERVER['PHP_SELF']) == 'zone-courses.php') echo 'class="active"' ?>>
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
@@ -171,6 +171,9 @@
                 </ul>
             </li>
             <li <?php if (basename($_SERVER['PHP_SELF']) == 'customers.php') echo 'class="active"' ?>><a href="customers.php">Customers</a></li>
+            <li <?php if (basename($_SERVER['PHP_SELF']) == 'drivers.php') echo 'class="active"' ?>><a href="drivers.php">Drivers</a></li>
+            <li <?php if (basename($_SERVER['PHP_SELF']) == 'rec-income.php' || basename($_SERVER['PHP_SELF']) == 'add-rec-income.php') echo 'class="active"' ?>><a href="rec-income.php">Income</a></li>
+            <li <?php if (basename($_SERVER['PHP_SELF']) == 'branches.php' || basename($_SERVER['PHP_SELF']) == 'add-new-branch.php') echo 'class="active"' ?>><a href="branches.php">Branches</a></li>
         </ul>
     </aside>
     <div class="col-sm-10">
