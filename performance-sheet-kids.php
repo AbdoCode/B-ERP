@@ -6,7 +6,7 @@
 ?>
 <div class="performance-sheet-print hidden-xs">
     <div class="container-for-btn-group">
-        <button class="btn btn-default" type="button" onclick="window.print();return false;">
+        <button class="btn btn-default" type="button" onclick="window.print()">
             <span class="glyphicon glyphicon-print" aria-hidden="true"></span> Print
         </button>
     </div>

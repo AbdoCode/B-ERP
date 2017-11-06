@@ -6,7 +6,7 @@
 ?>
 <div class="profile edit-profile">
     <div class="container-fluid">
-        <form>
+        <form class="form-horizontal">
             <div class="row">
                 <div class="col-sm-3 col-sm-push-9">
                     <div class="profile-img">
@@ -15,7 +15,7 @@
                             <label for="image_uploads" class="btn btn-primary">
                                 <span class="glyphicon glyphicon-upload"></span> Upload Image
                             </label>
-                            <input type="file" id="image_uploads" class="btn btn-primary" accept=".jpg, .jpeg, .png">
+                            <input type="file" id="image_uploads" class="btn btn-primary" accept="image/*">
                         </div>
                     </div>
                 </div>
@@ -26,36 +26,38 @@
                         </div>
                         <div class="panel-body">
                             <div class="infoRow">
-                                <label>Name:</label>
+                                <label class="control-label">Name:</label>
                                 <input type="text" class="form-control">
                             </div>
                             <div class="infoRow">
-                                <label>Date of Birth:</label>
-                                <input type="date" class="form-control">
+                                <label class="control-label">Job Title:</label>
+                                <select>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>x</option>
+                                    <option>4</option>
+                                </select>
                             </div>
                             <div class="infoRow">
-                                <label>Address:</label>
+                                <label class="control-label">Mobile Number:</label>
                                 <input type="text" class="form-control">
                             </div>
                             <div class="infoRow">
-                                <label>Job Title:</label>
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="infoRow">
-                                <label>Mobile Number:</label>
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="infoRow">
-                                <label>Email:</label>
+                                <label class="control-label">Email:</label>
                                 <input type="email" class="form-control">
                             </div>
                             <div class="infoRow">
-                                <label>Date Of Employment:</label>
+                                <label class="control-label">Qualifications:</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="infoRow">
+                                <label class="control-label">Date of Birth:</label>
                                 <input type="date" class="form-control">
                             </div>
                             <div class="infoRow">
-                                <label>Date Of Resignation:</label>
-                                <input type="date" class="form-control">
+                                <label class="control-label">Address:</label>
+                                <input type="text" class="form-control">
                             </div>
                         </div>
                     </div>
@@ -68,7 +70,27 @@
                             <h3 class="panel-title">Other Information</h3>
                         </div>
                         <div class="panel-body">
-                            More
+                            <div class="infoRow">
+                                <label class="control-label">Date Of Employment:</label>
+                                <input type="date" class="form-control">
+                            </div>
+                            <div class="infoRow">
+                                <label class="control-label">Date Of Resignation:</label>
+                                <input type="date" class="form-control">
+                            </div>
+                            <div class="infoRow">
+                                <label class="control-label">Photo Papers:</label>
+                                <div style="position: relative" class="uploads">
+                                    <label for="image_uploads" class="btn btn-primary">
+                                        <span class="glyphicon glyphicon-upload"></span> Upload Image
+                                    </label>
+                                    <input type="file" id="image_uploads" class="btn btn-primary" accept="image/*">
+                                </div>
+                            </div>
+                            <div class="infoRow">
+                                <label class="control-label">Notes:</label>
+                                <textarea class="form-control" cols="3"></textarea>
+                            </div>
                         </div>
                     </div>
                 </div>

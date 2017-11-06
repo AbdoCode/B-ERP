@@ -26,17 +26,19 @@
                 </div>
             </div>
             <div class="table-responsive">
-                <table class="table table-bordered table-hover">
-                    <tr>
-                        <th class="col-sm-1">#</th>
-                        <th class="col-sm-3">Name</th>
-                        <th class="col-sm-1">Age</th>
-                        <th class="col-sm-2">Attendance Rate <br/>(14 Sep 2017 - 20 Nov 2017)</th>
-                        <th class="col-sm-2">Bus</th>
-                        <th class="col-sm-1">Matarials</th>
-                        <th class="col-sm-1">Performance sheet</th>
-                        <th class="col-sm-1">Issue</th>
-                    </tr>
+                <table class="table table-bordered table-hover table-striped">
+                    <thead>
+                        <tr>
+                            <th class="col-sm-1">#</th>
+                            <th class="col-sm-3">Name</th>
+                            <th class="col-sm-1">Age</th>
+                            <th class="col-sm-2">Attendance Rate</th>
+                            <th class="col-sm-2">Bus</th>
+                            <th class="col-sm-1">Matarials</th>
+                            <th class="col-sm-1">Performance sheet</th>
+                            <th class="col-sm-1">Issue</th>
+                        </tr>
+                    </thead>
                     <tr>
                         <td>1</td>
                         <td><a href="kids-profile.php">Mohamed Maher Mahfouz</a></td>

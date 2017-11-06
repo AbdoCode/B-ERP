@@ -30,10 +30,19 @@
                     <button type="submit" class="btn btn-success btn-block">Send</button>
                 </div>
             </form>
+            <div class="form-group">
+                <button type="button" class="btn btn-default btn-block">Extract to flash memory</button>
+            </div>
+            <div class="form-group">
+                <a href="deletion-history.php" class="btn btn-info btn-block">Deletion history</a>
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn btn-danger btn-block">Make offline</button>
+            </div>
         </div>
         <div class="col-sm-9 col-sm-pull-3">
             <div class="container-for-btn-group">
-                <button class="btn btn-default" type="button" onclick="window.print();return false;">
+                <button class="btn btn-default" type="button" onclick="window.print()">
                     <span class="glyphicon glyphicon-print" aria-hidden="true"></span> Print
                 </button>
             </div>

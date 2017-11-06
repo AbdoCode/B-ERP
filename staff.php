@@ -3,7 +3,6 @@
     $pageTitle = 'Home';
     include 'init.php';
     include 'navbar.php';
-$pages = 5;
 ?>
 <div class="staff">
     <h2><?php echo $_GET['type']; ?> Staff</h2>

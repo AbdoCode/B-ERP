@@ -6,7 +6,7 @@
 ?>
 <div class="profile edit-profile">
     <div class="container-fluid">
-        <form>
+        <form class="form-horizontal">
             <div class="row">
                 <div class="col-sm-3 col-sm-push-9">
                     <div class="profile-img">
@@ -26,19 +26,19 @@
                         </div>
                         <div class="panel-body">
                             <div class="infoRow">
-                                <label>Name:</label>
+                                <label class="control-label">Name:</label>
                                 <input type="text" class="form-control">
                             </div>
                             <div class="infoRow">
-                                <label>Date of Birth:</label>
+                                <label class="control-label">Date of Birth:</label>
                                 <input type="date" class="form-control">
                             </div>
                             <div class="infoRow">
-                                <label>Address:</label>
+                                <label class="control-label">Address:</label>
                                 <input type="text" class="form-control">
                             </div>
                             <div class="infoRow">
-                                <label>Class:</label>
+                                <label class="control-label">Class:</label>
                                 <select>
                                     <option value="A1">A1</option>
                                     <option value="A2">A2</option>
@@ -49,7 +49,7 @@
                                 </select>
                             </div>
                             <div class="infoRow">
-                                <label>Bus:</label>
+                                <label class="control-label">Bus:</label>
                                 <select>
                                     <option value="">A1</option>
                                     <option value="">A2</option>
@@ -71,19 +71,19 @@
                         </div>
                         <div class="panel-body">
                             <div class="infoRow">
-                                <label>Name:</label>
+                                <label class="control-label">Name:</label>
                                 <input type="text" class="form-control">
                             </div>
                             <div class="infoRow">
-                                <label>Mobile number:</label>
+                                <label class="control-label">Mobile number:</label>
                                 <input type="text" class="form-control">
                             </div>
                             <div class="infoRow">
-                                <label>Job:</label>
+                                <label class="control-label">Job:</label>
                                 <input type="text" class="form-control">
                             </div>
                             <div class="infoRow">
-                                <label>Email:</label>
+                                <label class="control-label">Email:</label>
                                 <input type="email" class="form-control">
                             </div>
                         </div>
@@ -98,15 +98,15 @@
                         </div>
                         <div class="panel-body">
                             <div class="infoRow">
-                                <label>Name:</label>
+                                <label class="control-label">Name:</label>
                                 <input type="text" class="form-control">
                             </div>
                             <div class="infoRow">
-                                <label>Mobile number:</label>
+                                <label class="control-label">Mobile number:</label>
                                 <input type="text" class="form-control">
                             </div>
                             <div class="infoRow">
-                                <label>Job:</label>
+                                <label class="control-label">Job:</label>
                                 <input type="text" class="form-control">
                             </div>
                         </div>
@@ -121,11 +121,11 @@
                         </div>
                         <div class="panel-body">
                             <div class="infoRow">
-                                <label>Mobile number to call in emergency:</label>
+                                <label class="control-label">Mobile number to call in emergency:</label>
                                 <input type="text" class="form-control">
                             </div>
                             <div class="infoRow">
-                                <label>The person allowed to take kid "absent parents":</label>
+                                <label class="control-label">The person allowed to take kid "absent parents":</label>
                                 <input type="text" class="form-control">
                             </div>
 

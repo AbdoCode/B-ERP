@@ -174,6 +174,8 @@
             <li <?php if (basename($_SERVER['PHP_SELF']) == 'drivers.php') echo 'class="active"' ?>><a href="drivers.php">Drivers</a></li>
             <li <?php if (basename($_SERVER['PHP_SELF']) == 'rec-income.php' || basename($_SERVER['PHP_SELF']) == 'add-rec-income.php') echo 'class="active"' ?>><a href="rec-income.php">Income</a></li>
             <li <?php if (basename($_SERVER['PHP_SELF']) == 'branches.php' || basename($_SERVER['PHP_SELF']) == 'add-new-branch.php') echo 'class="active"' ?>><a href="branches.php">Branches</a></li>
+            <li <?php if (basename($_SERVER['PHP_SELF']) == 'c-staff.php') echo 'class="active"' ?>><a href="c-staff.php">Staff</a></li>
+            <li <?php if (basename($_SERVER['PHP_SELF']) == 'new-term.php') echo 'class="active"' ?>><a href="new-term.php">New Term</a></li>
         </ul>
     </aside>
     <div class="col-sm-10">
