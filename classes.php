@@ -261,7 +261,7 @@
                     <button class="btn btn-default" type="submit"><i class="fa fa-search fa-fw"></i></button>
                 </div>
             </div>
-            <div class="customRate col-sm-5 col-xs-12 center-block">
+            <div class="customRate col-xs-12 center-block text-center">
                 <form class="form-horizontal">
                     <label class="control-label">Custom Rate</label>
                     <input type="date" class="form-control">
@@ -405,7 +405,7 @@
                     <button class="btn btn-default" type="submit"><i class="fa fa-search fa-fw"></i></button>
                 </div>
             </div>
-            <div class="customRate col-sm-5 col-xs-12 center-block">
+            <div class="customRate col-xs-12 center-block text-center">
                 <form class="form-horizontal">
                     <label class="control-label">Custom Rate</label>
                     <input type="date" class="form-control">

@@ -160,7 +160,7 @@
             <li <?php if (basename($_SERVER['PHP_SELF']) == 'db-management.php') echo 'class="active"' ?>><a href="db-management.php">DB Management</a></li>
             <li <?php if (basename($_SERVER['PHP_SELF']) == 'reception-checkinout.php') echo 'class="active"' ?>><a href="reception-checkinout.php">Kids Check In/Out</a></li>
             <li <?php if (basename($_SERVER['PHP_SELF']) == 'staff-checkinout.php') echo 'class="active"' ?>><a href="staff-checkinout.php">Staff Check In/Out</a></li>
-            <li <?php if (basename($_SERVER['PHP_SELF']) == 'zone-reservations.php' || basename($_SERVER['PHP_SELF']) == 'zone-meeting.php' || basename($_SERVER['PHP_SELF']) == 'zone-courses.php') echo 'class="active"' ?>>
+            <li <?php if (basename($_SERVER['PHP_SELF']) == 'zone-reservations.php' || basename($_SERVER['PHP_SELF']) == 'zone-prices.php' || basename($_SERVER['PHP_SELF']) == 'zone-meeting.php' || basename($_SERVER['PHP_SELF']) == 'zone-courses.php') echo 'class="active"' ?>>
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                     Zone <span class="glyphicon glyphicon-triangle-right"></span>
                 </a>
@@ -168,6 +168,7 @@
                     <li><a href="zone-reservations.php">Co-working Space</a></li>
                     <li><a href="zone-meeting.php">Meeting</a></li>
                     <li><a href="zone-courses.php">Courses</a></li>
+                    <li><a href="zone-prices.php">Zone Prices</a></li>
                 </ul>
             </li>
             <li <?php if (basename($_SERVER['PHP_SELF']) == 'customers.php') echo 'class="active"' ?>><a href="customers.php">Customers</a></li>

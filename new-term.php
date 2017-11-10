@@ -22,9 +22,10 @@
         <div class="form-group">
             <label for="subject" class="col-xs-2 control-label">No. Subjects</label>
             <div class="col-sm-10 col-sm-push-0 col-xs-9 col-xs-push-1">
-                <input type="number" class="form-control" id="subject">
+                <input type="number" class="form-control noSubjects" id="subject">
             </div>
         </div>
+        <div class="subjectNames"></div>
         <div class="form-group">
             <label for="exam" class="col-xs-2 control-label">No. Exam per subject</label>
             <div class="col-sm-10 col-sm-push-0 col-xs-9 col-xs-push-1">

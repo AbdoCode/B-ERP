@@ -244,6 +244,14 @@ $(function () {
             $(".timeCount").append('<div class="form-group"> <label for="timeFrom" class="col-xs-3 control-label">Time From<br />Day '+ (i+1) +'</label> <div class="col-sm-9 col-xs-9"> <input type="time" class="form-control" id="timeFrom"> </div> </div> <div class="form-group"> <label for="timeTo" class="col-xs-3 control-label">Time To<br />Day '+ (i+1) +'</label> <div class="col-sm-9 col-xs-9"> <input type="time" class="form-control" id="timeTo"> </div> </div>');
         }
     });
+    // subject Name in new term
+    $(".noSubjects").one('blur', function () {
+        $(this).prop('disabled', true);
+        var number = $(this).val();
+        for (var i = 0; i < number; i++) {
+            $(".subjectNames").append('<div class="form-group"> <label for="subject' + (i+1) + '" class="col-xs-2 control-label">Subjects ' + (i+1) + '</label> <div class="col-sm-10 col-sm-push-0 col-xs-9 col-xs-push-1"> <input type="text" class="form-control" id="subject' + (i+1) + '" placeholder="Type subject ' + (i+1) + ' name..."> </div> </div>');
+        }
+    });
 });
 
 
