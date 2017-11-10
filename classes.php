@@ -30,12 +30,11 @@
                     <thead>
                         <tr>
                             <th class="col-sm-1">#</th>
-                            <th class="col-sm-3">Name</th>
+                            <th class="col-sm-4">Name</th>
                             <th class="col-sm-1">Age</th>
-                            <th class="col-sm-2">Attendance Rate</th>
                             <th class="col-sm-2">Bus</th>
                             <th class="col-sm-1">Matarials</th>
-                            <th class="col-sm-1">Performance sheet</th>
+                            <th class="col-sm-2">Performance sheet</th>
                             <th class="col-sm-1">Issue</th>
                         </tr>
                     </thead>
@@ -43,7 +42,6 @@
                         <td>1</td>
                         <td><a href="kids-profile.php">Mohamed Maher Mahfouz</a></td>
                         <td>22</td>
-                        <td>20.3%</td>
                         <td>Not Participant</td>
                         <td>16/50</td>
                         <td><a href="performance-sheet-kids.php" class="btn btn-primary btn-sm">View</a></td>
@@ -51,9 +49,26 @@
                     </tr>
                     <tr>
                         <td>1</td>
-                        <td>Mohamed Maher Mahfouz</td>
+                        <td><a href="kids-profile.php">Mohamed Maher Mahfouz</a></td>
                         <td>22</td>
-                        <td>20.3%</td>
+                        <td>Not Participant</td>
+                        <td>16/50</td>
+                        <td><a href="performance-sheet-kids.php" class="btn btn-primary btn-sm">View</a></td>
+                        <td><a href="add-kid-issue.php?id=1" class="btn btn-primary btn-sm">Add</a></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><a href="kids-profile.php">Mohamed Maher Mahfouz</a></td>
+                        <td>22</td>
+                        <td>Not Participant</td>
+                        <td>16/50</td>
+                        <td><a href="performance-sheet-kids.php" class="btn btn-primary btn-sm">View</a></td>
+                        <td><a href="add-kid-issue.php?id=1" class="btn btn-primary btn-sm">Add</a></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><a href="kids-profile.php">Mohamed Maher Mahfouz</a></td>
+                        <td>22</td>
                         <td>Not Participant</td>
                         <td>16/50</td>
                         <td><a href="performance-sheet-kids.php" class="btn btn-primary btn-sm">View</a></td>
@@ -142,6 +157,66 @@
                     <button class="btn btn-default" type="submit"><i class="fa fa-search fa-fw"></i></button>
                 </div>
             </div>
+            <div style="margin-top: 10px">
+                <label>E = Excellent | V = Very good | G = Good | N = Need More Time</label>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover table-striped">
+                    <thead>
+                        <tr>
+                            <th class="col-sm-1">#</th>
+                            <th class="col-sm-3">Name</th>
+                            <th class="col-sm-1" colspan="2">Subject 1</th>
+                            <th class="col-sm-1" colspan="2">Subject 2</th>
+                            <th class="col-sm-1" colspan="2">Subject 3</th>
+                            <th class="col-sm-1" colspan="2">Subject 4</th>
+                            <th class="col-sm-1" colspan="2">Subject 5</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th>1<sup>st</sup> MidTerm</th>
+                            <th>2<sup>nd</sup> MidTerm</th>
+                            <th>1<sup>st</sup> MidTerm</th>
+                            <th>2<sup>nd</sup> MidTerm</th>
+                            <th>1<sup>st</sup> MidTerm</th>
+                            <th>2<sup>nd</sup> MidTerm</th>
+                            <th>1<sup>st</sup> MidTerm</th>
+                            <th>2<sup>nd</sup> MidTerm</th>
+                            <th>1<sup>st</sup> MidTerm</th>
+                            <th>2<sup>nd</sup> MidTerm</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>1</td>
+                        <td><a href="kids-profile.php">Mohamed Maher Mahfouz</a></td>
+                        <td>E</td>
+                        <td>N</td>
+                        <td>G</td>
+                        <td>V</td>
+                        <td>V</td>
+                        <td>G</td>
+                        <td>E</td>
+                        <td>N</td>
+                        <td>G</td>
+                        <td>E</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><a href="kids-profile.php">Mohamed Maher Mahfouz</a></td>
+                        <td>E</td>
+                        <td>N</td>
+                        <td>G</td>
+                        <td>V</td>
+                        <td>V</td>
+                        <td>G</td>
+                        <td>E</td>
+                        <td>N</td>
+                        <td>G</td>
+                        <td>E</td>
+                    </tr>
+                </table>
+            </div>
         </div>
         <div role="tabpanel" class="tab-pane" id="workPlan">
             <div class="input-group col-sm-5 col-xs-12 center-block">
@@ -186,13 +261,22 @@
                     <button class="btn btn-default" type="submit"><i class="fa fa-search fa-fw"></i></button>
                 </div>
             </div>
+            <div class="customRate col-sm-5 col-xs-12 center-block">
+                <form class="form-horizontal">
+                    <label class="control-label">Custom Rate</label>
+                    <input type="date" class="form-control">
+                    <input type="date" class="form-control">
+                    <button type="button" class="btn btn-info">View</button>
+                </form>
+            </div>
             <div class="table-responsive">
                 <table class="table table-bordered table-hover">
                     <tr>
                         <th class="col-sm-1">#</th>
                         <th class="col-sm-4">Name</th>
-                        <th class="col-sm-3">Attendance (<?php echo date('d M Y'); ?>)</th>
-                        <th class="col-sm-3">Attendance Rate</th>
+                        <th class="col-sm-2">Attendance (<?php echo date('d M Y'); ?>)</th>
+                        <th class="col-sm-2">Attendance Rate</th>
+                        <th class="col-sm-2">Custom Attendance Rate</th>
                         <th class="col-sm-1">Term</th>
                     </tr>
                     <tr>
@@ -200,6 +284,7 @@
                         <td>Mohamed Maher Mahfouz</td>
                         <td>Absence</td>
                         <td>20.3%</td>
+                        <td>-</td>
                         <td>Fall 2017</td>
                     </tr>
                     <tr>
@@ -207,6 +292,7 @@
                         <td>Mohamed Maher Mahfouz</td>
                         <td>Presence</td>
                         <td>20.3%</td>
+                        <td>-</td>
                         <td>Fall 2017</td>
                     </tr>
                 </table>
@@ -319,13 +405,22 @@
                     <button class="btn btn-default" type="submit"><i class="fa fa-search fa-fw"></i></button>
                 </div>
             </div>
+            <div class="customRate col-sm-5 col-xs-12 center-block">
+                <form class="form-horizontal">
+                    <label class="control-label">Custom Rate</label>
+                    <input type="date" class="form-control">
+                    <input type="date" class="form-control">
+                    <button type="button" class="btn btn-info">View</button>
+                </form>
+            </div>
             <div class="table-responsive">
                 <table class="table table-bordered table-hover">
                     <tr>
                         <th class="col-sm-1">#</th>
-                        <th class="col-sm-5">Name</th>
+                        <th class="col-sm-3">Name</th>
                         <th class="col-sm-2">Term</th>
                         <th class="col-sm-2">Attendance rate</th>
+                        <th class="col-sm-2">Custom Attendance rate</th>
                         <th class="col-sm-2">Performance sheet</th>
                     </tr>
                     <tr>
@@ -333,6 +428,7 @@
                         <td><a href="profile.php">Mohamed Maher Mahfouz</a></td>
                         <td>Fall 2017</td>
                         <td>20.3%</td>
+                        <td>-</td>
                         <td><a href="performance-sheet.php" class="btn btn-primary btn-sm">View</a></td>
                     </tr>
                     <tr>
@@ -340,6 +436,7 @@
                         <td>Mohamed Maher Mahfouz</td>
                         <td>Fall 2017</td>
                         <td>20.3%</td>
+                        <td>-</td>
                         <td><a href="performance-sheet.php" class="btn btn-primary btn-sm">View</a></td>
                     </tr>
                     <tr>
@@ -347,6 +444,7 @@
                         <td>Mohamed Maher Mahfouz</td>
                         <td>Fall 2017</td>
                         <td>20.3%</td>
+                        <td>-</td>
                         <td><a href="performance-sheet.php" class="btn btn-primary btn-sm">View</a></td>
                     </tr>
                 </table>

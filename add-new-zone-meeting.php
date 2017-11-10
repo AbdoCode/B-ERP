@@ -44,7 +44,7 @@
             </div>
         </div>
         <div class="form-group">
-            <div class="col-sm-4 col-sm-push-4 col-xs-22">
+            <div class="col-sm-4 col-sm-push-4 col-xs-12">
                 <button type="submit" class="btn btn-success btn-block">Add</button>
             </div>
         </div>

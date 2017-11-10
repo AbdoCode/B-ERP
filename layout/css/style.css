@@ -327,6 +327,20 @@ form.forget-password .form-group:last-of-type{display: none}
     .view-income .receipt .head-of-receipt .receipt-number{top: -20px}
 }
 /* End view income */
+/* Start CustomRate */
+.customRate{float: none;margin: 10px auto 0;overflow: hidden}
+.customRate input{width: auto}
+.customRate label,
+.customRate input{margin-right: 3px}
+.customRate label,
+.customRate input,
+.customRate button{float: left}
+@media (max-width: 768px) {
+    .customRate label,
+    .customRate input,
+    .customRate button{width: 100%;margin-bottom: 5px}
+}
+/* End CustomRate */
 /* Start framework */
 h2{font-weight: bold;text-transform: capitalize}
 table a,

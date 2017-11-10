@@ -234,4 +234,32 @@ $(function () {
         totalPages: 10,
         visiblePages: 4
     });
+    // Calc variation between Dates
+    $(".endRateDate").one('change', function () {
+        var start = new Date($(".startRateDate").val()),
+            end = new Date($(this).val()),
+            diff = new Date(end - start),
+            days = (diff/1000/60/60/24) + 1;
+        for (var i = 0; i < days; i++) {
+            $(".timeCount").append('<div class="form-group"> <label for="timeFrom" class="col-xs-3 control-label">Time From<br />Day '+ (i+1) +'</label> <div class="col-sm-9 col-xs-9"> <input type="time" class="form-control" id="timeFrom"> </div> </div> <div class="form-group"> <label for="timeTo" class="col-xs-3 control-label">Time To<br />Day '+ (i+1) +'</label> <div class="col-sm-9 col-xs-9"> <input type="time" class="form-control" id="timeTo"> </div> </div>');
+        }
+    });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

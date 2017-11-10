@@ -41,26 +41,17 @@
             <div class="form-group">
                 <label for="dateFrom" class="col-xs-3 control-label">Date From</label>
                 <div class="col-sm-9 col-xs-9">
-                    <input type="date" class="form-control" id="dateFrom">
+                    <input type="date" class="form-control startRateDate" id="dateFrom">
                 </div>
             </div>
             <div class="form-group">
                 <label for="dateTo" class="col-xs-3 control-label">Date To</label>
                 <div class="col-sm-9 col-xs-9">
-                    <input type="date" class="form-control" id="dateTo">
+                    <input type="date" class="form-control endRateDate" id="dateTo">
                 </div>
             </div>
-            <div class="form-group">
-                <label for="timeFrom" class="col-xs-3 control-label">Time From</label>
-                <div class="col-sm-9 col-xs-9">
-                    <input type="time" class="form-control" id="timeFrom">
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="timeTo" class="col-xs-3 control-label">Time To</label>
-                <div class="col-sm-9 col-xs-9">
-                    <input type="time" class="form-control" id="timeTo">
-                </div>
+            <div class="timeCount">
+
             </div>
             <div class="form-group">
                 <label class="col-xs-3 control-label">Files:</label>
