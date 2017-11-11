@@ -13,6 +13,12 @@
         <a href="edit-profile.php" class="btn btn-primary">
             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add Staff
         </a>
+        <a href="staff-attend-history.php" class="btn btn-primary">
+            <span class="glyphicon glyphicon-duplicate" aria-hidden="true"></span> Staff Attendance History
+        </a>
+        <a href="staff-attend-details-months.php" class="btn btn-primary">
+            <span class="glyphicon glyphicon-duplicate" aria-hidden="true"></span> Attendance Details Reports
+        </a>
     </div>
     <div class="input-group col-sm-6 col-xs-12 center-block">
         <input type="search" class="form-control" placeholder="Name/Job title/branch/Date..." />

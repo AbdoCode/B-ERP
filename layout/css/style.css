@@ -74,23 +74,23 @@
 /* Start Classes */
 .classes .btn-group,
 .attend .btn-group,
-.daily-statistics .btn-group{float: right;margin-right: 10px}
+.statistics .btn-group{float: right;margin-right: 10px}
 .classes .btn-group li,
 .attend .btn-group li,
-.daily-statistics .btn-group li{list-style: none;float: left;padding: 0;border: none;margin-right: 0}
+.statistics .btn-group li{list-style: none;float: left;padding: 0;border: none;margin-right: 0}
 .attend .btn-group li,
-.daily-statistics .btn-group li{min-width: 100px}
+.statistics .btn-group li{min-width: 100px}
 .classes .btn-group li a,
 .attend .btn-group li a,
-.daily-statistics .btn-group li a{color: #FFF;text-decoration: none;display: block;padding: 6px 12px;border: 1px solid transparent}
+.statistics .btn-group li a{color: #FFF;text-decoration: none;display: block;padding: 6px 12px;border: 1px solid transparent}
 .classes .preparations-check{float: left;text-align: center}
 .classes .preparations-check input[type="checkbox"]{margin: 5px auto 0;width: 15px;height: 15px}
 @media (max-width: 768px) {
     .classes .btn-group{margin-right: 0;float: none;padding: 0;width: 100%}
-    .daily-statistics .btn-group,
+    .statistics .btn-group,
     .attend .btn-group{width: 100%;padding: 0;margin-right: 0}
     .classes .btn-group li{margin-bottom: 4px;margin-right: 4px;border-radius: 4px !important}
-    .daily-statistics .btn-group li{width: 50%}
+    .statistics .btn-group li{width: 50%}
     .attend .btn-group li{width: 33.33333333%;min-width: auto}
     .classes .preparations-check input[type="checkbox"]{width: 20px;height: 20px}
     .classes .preparations-check{width: 100%;margin-bottom: 5px}
@@ -267,19 +267,19 @@ form.forget-password .form-group:last-of-type{display: none}
     .add-class-table input{min-width: 150px}
 }
 /* End Class Table */
-/* Start daily-statistics */
-.daily-statistics{padding: 0 20px}
-.daily-statistics .stat h4{margin-bottom: 0; font-size: 24px}
-.daily-statistics .stat .number{font-size: 50px;font-weight: bold}
-.daily-statistics .chart-container {height: auto;margin: auto;border: 1px solid #DDD;padding: 10px}
-.daily-statistics .tab-pane > div:last-of-type .chart-container{height: 350px}
-.daily-statistics .tab-pane > div {margin: 20px 0}
+/* Start statistics */
+.statistics{padding: 0 20px}
+.statistics .stat h4{margin-bottom: 0; font-size: 24px}
+.statistics .stat .number{font-size: 50px;font-weight: bold}
+.statistics .chart-container {height: auto;margin: auto;border: 1px solid #DDD;padding: 10px}
+.statistics .tab-pane > div:last-of-type .chart-container{height: 350px}
+.statistics .tab-pane > div {margin: 20px 0}
 @media (max-width: 768px) {
-    .daily-statistics{padding: 0}
-    .daily-statistics .stat .number{font-size: 20px}
-    .daily-statistics .chart-container {height: auto;border: 1px solid #DDD;padding: 5px}
+    .statistics{padding: 0}
+    .statistics .stat .number{font-size: 20px}
+    .statistics .chart-container {height: auto;border: 1px solid #DDD;padding: 5px}
 }
-/* End daily-statistics */
+/* End statistics */
 /* Start Profile */
 .profile{padding: 40px 0}
 .profile .panel,

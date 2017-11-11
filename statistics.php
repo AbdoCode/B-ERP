@@ -4,13 +4,16 @@
     include 'init.php';
     include 'navbar.php';
 ?>
-<div class="daily-statistics">
-    <h2>Daily Statistics</h2>
+<div class="statistics">
+    <h2>Statistics</h2>
     <div class="container-for-btn-group">
         <ul class="btn-group" role="tablist">
             <li role="presentation" class="btn btn-primary active"><a href="#graphs" role="tab" data-toggle="tab">Graphs</a></li>
             <li role="presentation" class="btn btn-primary"><a href="#numbers" role="tab" data-toggle="tab">Numbers</a></li>
         </ul>
+        <a href="statistics-access.php" class="btn btn-primary">
+            <span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Statistics Access
+        </a>
     </div>
     <div class="tab-content">
         <div role="tabpanel" class="tab-pane row active" id="graphs">

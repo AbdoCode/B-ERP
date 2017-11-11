@@ -143,7 +143,7 @@
                     <li><a href="kids-grades.php">Kids Grades</a></li>
                 </ul>
             </li>
-            <li <?php if (basename($_SERVER['PHP_SELF']) == 'daily-statistics.php') echo 'class="active"' ?>><a href="daily-statistics.php">Daily Statistics</a></li>
+            <li <?php if (basename($_SERVER['PHP_SELF']) == 'statistics.php') echo 'class="active"' ?>><a href="statistics.php">Statistics</a></li>
             <li <?php if (basename($_SERVER['PHP_SELF']) == 'assigned-tasks.php' || basename($_SERVER['PHP_SELF']) == 'view-assigned-task.php') echo 'class="active"' ?>><a href="assigned-tasks.php">Assigned Tasks</a></li>
             <li <?php if (basename($_SERVER['PHP_SELF']) == 'staff.php') echo 'class="active"' ?>>
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
