@@ -4,7 +4,7 @@
     include 'init.php';
     include 'navbar.php';
 ?>
-<div class="add-event">
+<div class="add-event add-forms">
     <h2>Add New Event</h2>
     <div class="row">
         <form class="form-horizontal col-sm-5">
@@ -33,9 +33,15 @@
                 </div>
             </div>
             <div class="form-group">
-                <label for="number" class="col-xs-3 control-label">Kids Number</label>
+                <label class="col-xs-3 control-label">Kids No.</label>
                 <div class="col-sm-9 col-xs-9">
-                    <input type="text" class="form-control" id="number" placeholder="Kids Number">
+                    <select>
+                        <?php
+                            for ($i = 0; $i <= 300; $i++) {
+                                echo '<option value="'.$i.'">'.$i.'</option>';
+                            }
+                        ?>
+                    </select>
                 </div>
             </div>
             <div class="form-group">
@@ -68,40 +74,90 @@
         <div class="col-sm-7">
             <div class="table-responsive">
                 <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th class="col-sm-5">Objectives</th>
+                            <th class="col-sm-5">Activities</th>
+                            <th class="col-sm-2">Budget</th>
+                        </tr>
+                    </thead>
                     <tr>
-                        <th class="col-sm-5">Objectives</th>
-                        <th class="col-sm-5">Activities</th>
-                        <th class="col-sm-2">Budget</th>
+                        <td><input type="text" class="form-control" placeholder="type objective..."/></td>
+                        <td><input type="text" class="form-control" placeholder="type activities..."/></td>
+                        <td>
+                            <select class="form-control normalSelect">
+                                <?php
+                                    for ($i = 0; $i <= 1000; $i++) {
+                                        echo '<option value="'.$i.'">'.$i.'</option>';
+                                    }
+                                ?>
+                            </select>
+                        </td>
                     </tr>
                     <tr>
                         <td><input type="text" class="form-control" placeholder="type objective..."/></td>
                         <td><input type="text" class="form-control" placeholder="type activities..."/></td>
-                        <td><input type="text" class="form-control" placeholder="Ex: 500LE"></td>
+                        <td>
+                            <select class="form-control normalSelect">
+                                <?php
+                                    for ($i = 0; $i <= 1000; $i++) {
+                                        echo '<option value="'.$i.'">'.$i.'</option>';
+                                    }
+                                ?>
+                            </select>
+                        </td>
                     </tr>
                     <tr>
                         <td><input type="text" class="form-control" placeholder="type objective..."/></td>
                         <td><input type="text" class="form-control" placeholder="type activities..."/></td>
-                        <td><input type="text" class="form-control" placeholder="Ex: 500LE"></td>
+                        <td>
+                            <select class="form-control normalSelect">
+                                <?php
+                                    for ($i = 0; $i <= 1000; $i++) {
+                                        echo '<option value="'.$i.'">'.$i.'</option>';
+                                    }
+                                ?>
+                            </select>
+                        </td>
                     </tr>
                     <tr>
                         <td><input type="text" class="form-control" placeholder="type objective..."/></td>
                         <td><input type="text" class="form-control" placeholder="type activities..."/></td>
-                        <td><input type="text" class="form-control" placeholder="Ex: 500LE"></td>
+                        <td>
+                            <select class="form-control normalSelect">
+                                <?php
+                                    for ($i = 0; $i <= 1000; $i++) {
+                                        echo '<option value="'.$i.'">'.$i.'</option>';
+                                    }
+                                ?>
+                            </select>
+                        </td>
                     </tr>
                     <tr>
                         <td><input type="text" class="form-control" placeholder="type objective..."/></td>
                         <td><input type="text" class="form-control" placeholder="type activities..."/></td>
-                        <td><input type="text" class="form-control" placeholder="Ex: 500LE"></td>
+                        <td>
+                            <select class="form-control normalSelect">
+                                <?php
+                                    for ($i = 0; $i <= 1000; $i++) {
+                                        echo '<option value="'.$i.'">'.$i.'</option>';
+                                    }
+                                ?>
+                            </select>
+                        </td>
                     </tr>
                     <tr>
                         <td><input type="text" class="form-control" placeholder="type objective..."/></td>
                         <td><input type="text" class="form-control" placeholder="type activities..."/></td>
-                        <td><input type="text" class="form-control" placeholder="Ex: 500LE"></td>
-                    </tr>
-                    <tr>
-                        <td><input type="text" class="form-control" placeholder="type objective..."/></td>
-                        <td><input type="text" class="form-control" placeholder="type activities..."/></td>
-                        <td><input type="text" class="form-control" placeholder="Ex: 500LE"></td>
+                        <td>
+                            <select class="form-control normalSelect">
+                                <?php
+                                    for ($i = 0; $i <= 1000; $i++) {
+                                        echo '<option value="'.$i.'">'.$i.'</option>';
+                                    }
+                                ?>
+                            </select>
+                        </td>
                     </tr>
                     <tfoot>
                         <tr>

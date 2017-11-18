@@ -222,12 +222,10 @@ form.forget-password .form-group:last-of-type{display: none}
 }
 /* End Bus */
 /* Start Add event */
-.add-event,
 .view-event-request{margin-bottom: 10px}
-.add-event h2,
 .view-event-request h2{margin-bottom: 30px}
 .add-event table input.form-control{min-width: 150px}
-.add-event form .control-label,
+.add-event table select.form-control{min-width: 100px}
 .view-event-request .form-horizontal .control-label{text-align: left}
 .view-event-request .sum label{color: #A00}
 .add-event button.add{margin-top: 20px}
@@ -353,7 +351,7 @@ textarea{resize: none}
 .add-forms h2{margin-bottom: 30px}
 .add-forms .control-label,
 .add-logistics .control-label{text-align: left}
-.contRow{overflow: hidden;margin-bottom: 8px}
+.contRow{margin-bottom: 8px}
 div.uploads label{color: #FFF}
 div.uploads label,
 div.uploads input[type="file"]{position: absolute;top: 0;left: 0;width: 100%}
@@ -367,6 +365,7 @@ select[multiple], select[size] {
 .pagination{margin: 0}
 @media (max-width: 768px) {
     h2{text-align: center}
+    .contRow{overflow: hidden}
     .table-responsive{margin-top: 5px}
     .container-for-btn-group .btn{margin-right: 0}
     .input-group.center-block{display: table}

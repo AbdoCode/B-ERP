@@ -19,21 +19,24 @@
     </div>
     <div class="table-responsive">
         <table class="table table-bordered table-hover">
-            <tr>
-                <th class="col-sm-1">#</th>
-                <th class="col-sm-2">Title</th>
-                <th class="col-sm-1">Status</th>
-                <th class="col-sm-1">Added Date</th>
-                <th class="col-sm-1">Added Time</th>
-                <th class="col-sm-1">Forward From</th>
-                <th class="col-sm-1">Escalation level</th>
-                <th class="col-sm-1">Solution Acting</th>
-                <th class="col-sm-2">Solution time</th>
-                <th class="col-sm-1">Details</th>
-            </tr>
+            <thead>
+                <tr>
+                    <th class="col-sm-1">#</th>
+                    <th class="col-sm-2">Title</th>
+                    <th class="col-sm-1">Type</th>
+                    <th class="col-sm-1">Status</th>
+                    <th class="col-sm-1">Added Date</th>
+                    <th class="col-sm-1">Added Time</th>
+                    <th class="col-sm-1">Forward From</th>
+                    <th class="col-sm-1">Forward To</th>
+                    <th class="col-sm-1">Solution Acting</th>
+                    <th class="col-sm-1">Details</th>
+                </tr>
+            </thead>
             <tr>
                 <td>1</td>
                 <td>Logistics Problem</td>
+                <td>Type</td>
                 <td>Solved</td>
                 <td>17 Oct 2016</td>
                 <td>10:00 AM</td>
@@ -42,19 +45,19 @@
                     <span>Doaa</span>
                 </td>
                 <td>
-                    <span>Supervisor</span><br/>
-                    <span>Hoda</span>
+                    <span>Receptionist</span><br/>
+                    <span>Doaa</span>
                 </td>
                 <td>
                     <span>Supervisor</span><br/>
                     <span>Hoda</span>
                 </td>
-                <td>equation for calculate solution time</td>
-                <td><a href="view-issue.php" class="btn btn-primary btn-sm">View</a></td>
+                <td><a href="view-issue.php?type=<?php echo $_GET['type']; ?>" class="btn btn-primary btn-sm">View</a></td>
             </tr>
             <tr>
                 <td>1</td>
                 <td>Logistics Problem</td>
+                <td>Type</td>
                 <td>Not Solved</td>
                 <td>17 Oct 2016</td>
                 <td>10:00 AM</td>
@@ -63,19 +66,19 @@
                     <span>Doaa</span>
                 </td>
                 <td>
-                    <span>Supervisor</span><br/>
-                    <span>Hoda</span>
+                    <span>Receptionist</span><br/>
+                    <span>Doaa</span>
                 </td>
                 <td>
                     <span>Supervisor</span><br/>
                     <span>Hoda</span>
                 </td>
-                <td>equation for calculate solution time</td>
-                <td><a href="view-issue.php" class="btn btn-primary btn-sm">View</a></td>
+                <td><a href="view-issue.php?type=<?php echo $_GET['type']; ?>" class="btn btn-primary btn-sm">View</a></td>
             </tr>
             <tr>
                 <td>1</td>
                 <td>Logistics Problem</td>
+                <td>Type</td>
                 <td>Solved</td>
                 <td>17 Oct 2016</td>
                 <td>10:00 AM</td>
@@ -84,15 +87,14 @@
                     <span>Doaa</span>
                 </td>
                 <td>
-                    <span>Supervisor</span><br/>
-                    <span>Hoda</span>
+                    <span>Receptionist</span><br/>
+                    <span>Doaa</span>
                 </td>
                 <td>
                     <span>Supervisor</span><br/>
                     <span>Hoda</span>
                 </td>
-                <td>equation for calculate solution time</td>
-                <td><a href="view-issue.php" class="btn btn-primary btn-sm">View</a></td>
+                <td><a href="view-issue.php?type=<?php echo $_GET['type']; ?>" class="btn btn-primary btn-sm">View</a></td>
             </tr>
         </table>
     </div>

@@ -35,9 +35,14 @@
             </div>
         </div>
         <div class="form-group">
-            <label for="date" class="col-xs-1 control-label">Date</label>
+            <label class="col-xs-1 control-label">Date</label>
             <div class="col-sm-11 col-sm-push-0 col-xs-10 col-xs-push-1">
-                <input type="date" class="form-control" id="date">
+                <select>
+                    <option>week 1</option>
+                    <option>week 2</option>
+                    <option>week 3</option>
+                    <option>week 4</option>
+                </select>
             </div>
         </div>
         <div class="form-group">

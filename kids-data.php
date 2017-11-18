@@ -17,23 +17,35 @@
             <button class="btn btn-default" type="submit"><i class="fa fa-search fa-fw"></i></button>
         </div>
     </div>
+    <div class="customRate col-xs-12 center-block text-center">
+        <form class="form-horizontal">
+            <label class="control-label">Custom Rate</label>
+            <input type="date" class="form-control">
+            <input type="date" class="form-control">
+            <button type="button" class="btn btn-info">View</button>
+        </form>
+    </div>
     <div class="table-responsive">
-        <table class="table table-bordered table-hover">
-            <tr>
-                <th class="col-sm-1">#</th>
-                <th class="col-sm-3">Name</th>
-                <th class="col-sm-1">Class</th>
-                <th class="col-sm-2">Attendance Rate</th>
-                <th class="col-sm-2">Bus Participation</th>
-                <th class="col-sm-1">Material</th>
-                <th class="col-sm-1">Performance sheet</th>
-                <th class="col-sm-1">Issue</th>
-            </tr>
+        <table class="table table-bordered table-hover table-striped">
+            <thead>
+                <tr>
+                    <th class="col-sm-1">#</th>
+                    <th class="col-sm-2">Name</th>
+                    <th class="col-sm-1">Class</th>
+                    <th class="col-sm-1">Attendance Rate</th>
+                    <th class="col-sm-1">Custom Attendance Rate</th>
+                    <th class="col-sm-1">Bus Participation</th>
+                    <th class="col-sm-1">Material</th>
+                    <th class="col-sm-1">Performance sheet</th>
+                    <th class="col-sm-1">Issue</th>
+                </tr>
+            </thead>
             <tr>
                 <td>1</td>
                 <td><a href="kids-profile.php?id=1">Mohamed Maher Mahfouz</a></td>
                 <td>B2</td>
                 <td>20.3%</td>
+                <td>-</td>
                 <td>Not Participant</td>
                 <td>16/50</td>
                 <td><a href="performance-sheet-kids.php" class="btn btn-primary btn-sm">View</a></td>
@@ -44,6 +56,7 @@
                 <td>Mohamed Maher Mahfouz</td>
                 <td>A2</td>
                 <td>20.3%</td>
+                <td>-</td>
                 <td>Not Participant</td>
                 <td>16/50</td>
                 <td><a href="performance-sheet-kids.php" class="btn btn-primary btn-sm">View</a></td>

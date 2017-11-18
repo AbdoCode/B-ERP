@@ -170,6 +170,18 @@
             </form>
         </div>
     </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <form>
+                <div class="form-group col-sm-4 col-xs-12">
+                    <button type="submit" class="btn btn-danger btn-block">Cancelled</button>
+                </div>
+                <div class="form-group col-sm-4 col-xs-12">
+                    <button type="submit" class="btn btn-warning btn-block">Postpone</button>
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
 <?php
     include $templates . 'footer.php';
