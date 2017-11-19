@@ -59,7 +59,7 @@
                         </div>
                         <div class="infoRow">
                             <label>Material:</label>
-                            <p><a href="store-book.php">20/50</a></p>
+                            <p><a href="p-store-book.php">20/25</a></p>
                         </div>
                     </div>
                 </div>

@@ -52,15 +52,6 @@
                 </div>
             </div>
         </div>
-        <div class="clearfix visible-xs"></div>
-        <label class="col-sm-2 col-xs-4">Files:</label>
-        <div class="col-sm-4 col-xs-8">
-            <form method="get" action="<?php ?>">
-                <button type="submit" class="btn btn-sm btn-primary">
-                    <span class="glyphicon glyphicon-download"></span> Download
-                </button>
-            </form>
-        </div>
     </div>
     <div class="contRow">
         <label class="col-sm-2 col-xs-4">Videos:</label>
@@ -76,6 +67,16 @@
                     <input type="file" id="videos_upload" class="btn btn-primary" accept="video/*" multiple>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="contRow">
+        <label class="col-sm-2 col-xs-4">Files:</label>
+        <div class="col-sm-4 col-xs-8">
+            <form method="get" action="<?php ?>">
+                <button type="submit" class="btn btn-sm btn-primary">
+                    <span class="glyphicon glyphicon-download"></span> Download
+                </button>
+            </form>
         </div>
     </div>
     <div class="table-responsive">

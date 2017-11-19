@@ -29,6 +29,7 @@
                     <th class="col-sm-1">Added Time</th>
                     <th class="col-sm-1">Forward From</th>
                     <th class="col-sm-1">Forward To</th>
+                    <th class="col-sm-1">Escalation level</th>
                     <th class="col-sm-1">Solution Acting</th>
                     <th class="col-sm-1">Details</th>
                 </tr>
@@ -40,6 +41,10 @@
                 <td>Solved</td>
                 <td>17 Oct 2016</td>
                 <td>10:00 AM</td>
+                <td>
+                    <span>Receptionist</span><br/>
+                    <span>Doaa</span>
+                </td>
                 <td>
                     <span>Receptionist</span><br/>
                     <span>Doaa</span>
@@ -70,6 +75,10 @@
                     <span>Doaa</span>
                 </td>
                 <td>
+                    <span>Receptionist</span><br/>
+                    <span>Doaa</span>
+                </td>
+                <td>
                     <span>Supervisor</span><br/>
                     <span>Hoda</span>
                 </td>
@@ -82,6 +91,10 @@
                 <td>Solved</td>
                 <td>17 Oct 2016</td>
                 <td>10:00 AM</td>
+                <td>
+                    <span>Receptionist</span><br/>
+                    <span>Doaa</span>
+                </td>
                 <td>
                     <span>Receptionist</span><br/>
                     <span>Doaa</span>

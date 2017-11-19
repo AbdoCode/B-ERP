@@ -339,6 +339,10 @@ form.forget-password .form-group:last-of-type{display: none}
     .customRate button{width: 100%;margin-bottom: 5px}
 }
 /* End CustomRate */
+/* Start StoreBook */
+.store-book .table td button,
+.store-book .table td .badge{margin-bottom: 13px}
+/* End StoreBook */
 /* Start framework */
 h2{font-weight: bold;text-transform: capitalize}
 table a,
@@ -352,6 +356,7 @@ textarea{resize: none}
 .add-forms .control-label,
 .add-logistics .control-label{text-align: left}
 .contRow{margin-bottom: 8px}
+.view-event .contRow{overflow: hidden}
 div.uploads label{color: #FFF}
 div.uploads label,
 div.uploads input[type="file"]{position: absolute;top: 0;left: 0;width: 100%}

@@ -178,6 +178,7 @@
             <li <?php if (basename($_SERVER['PHP_SELF']) == 'c-staff.php') echo 'class="active"' ?>><a href="c-staff.php">Staff</a></li>
             <li <?php if (basename($_SERVER['PHP_SELF']) == 'new-term.php') echo 'class="active"' ?>><a href="new-term.php">New Term</a></li>
             <li <?php if (basename($_SERVER['PHP_SELF']) == 'users.php') echo 'class="active"' ?>><a href="users.php">Users</a></li>
+            <li <?php if (basename($_SERVER['PHP_SELF']) == 'store-book.php' || basename($_SERVER['PHP_SELF']) == 'p-store-book.php') echo 'class="active"' ?>><a href="store-book.php">Store Book</a></li>
         </ul>
     </aside>
     <div class="col-sm-10">
