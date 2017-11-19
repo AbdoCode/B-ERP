@@ -85,7 +85,7 @@
                         <td><input type="text" class="form-control" placeholder="type objective..."/></td>
                         <td><input type="text" class="form-control" placeholder="type activities..."/></td>
                         <td>
-                            <select class="form-control normalSelect">
+                            <select class="form-control normalSelect sumBudget">
                                 <?php
                                     for ($i = 0; $i <= 1000; $i++) {
                                         echo '<option value="'.$i.'">'.$i.'</option>';
@@ -98,7 +98,7 @@
                         <td><input type="text" class="form-control" placeholder="type objective..."/></td>
                         <td><input type="text" class="form-control" placeholder="type activities..."/></td>
                         <td>
-                            <select class="form-control normalSelect">
+                            <select class="form-control normalSelect sumBudget">
                                 <?php
                                     for ($i = 0; $i <= 1000; $i++) {
                                         echo '<option value="'.$i.'">'.$i.'</option>';
@@ -111,7 +111,7 @@
                         <td><input type="text" class="form-control" placeholder="type objective..."/></td>
                         <td><input type="text" class="form-control" placeholder="type activities..."/></td>
                         <td>
-                            <select class="form-control normalSelect">
+                            <select class="form-control normalSelect sumBudget">
                                 <?php
                                     for ($i = 0; $i <= 1000; $i++) {
                                         echo '<option value="'.$i.'">'.$i.'</option>';
@@ -124,7 +124,7 @@
                         <td><input type="text" class="form-control" placeholder="type objective..."/></td>
                         <td><input type="text" class="form-control" placeholder="type activities..."/></td>
                         <td>
-                            <select class="form-control normalSelect">
+                            <select class="form-control normalSelect sumBudget">
                                 <?php
                                     for ($i = 0; $i <= 1000; $i++) {
                                         echo '<option value="'.$i.'">'.$i.'</option>';
@@ -137,7 +137,7 @@
                         <td><input type="text" class="form-control" placeholder="type objective..."/></td>
                         <td><input type="text" class="form-control" placeholder="type activities..."/></td>
                         <td>
-                            <select class="form-control normalSelect">
+                            <select class="form-control normalSelect sumBudget">
                                 <?php
                                     for ($i = 0; $i <= 1000; $i++) {
                                         echo '<option value="'.$i.'">'.$i.'</option>';
@@ -150,7 +150,7 @@
                         <td><input type="text" class="form-control" placeholder="type objective..."/></td>
                         <td><input type="text" class="form-control" placeholder="type activities..."/></td>
                         <td>
-                            <select class="form-control normalSelect">
+                            <select class="form-control normalSelect sumBudget">
                                 <?php
                                     for ($i = 0; $i <= 1000; $i++) {
                                         echo '<option value="'.$i.'">'.$i.'</option>';
@@ -166,7 +166,7 @@
                         </tr>
                         <tr>
                             <td colspan="2">13</td>
-                            <td>90LE</td>
+                            <td id="sumBudgetDiv">0 LE.</td>
                         </tr>
                     </tfoot>
                 </table>

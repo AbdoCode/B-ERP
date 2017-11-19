@@ -105,27 +105,27 @@
                     <tr>
                         <td>This is Objective</td>
                         <td>This is Activity</td>
-                        <td>900LE</td>
+                        <td>900 LE</td>
                     </tr>
                     <tr>
                         <td>This is Objective</td>
                         <td>This is Activity</td>
-                        <td>900LE</td>
+                        <td>900 LE</td>
                     </tr>
                     <tr>
                         <td>This is Objective</td>
                         <td>This is Activity</td>
-                        <td>900LE</td>
+                        <td>900 LE</td>
                     </tr>
                     <tr>
                         <td>This is Objective</td>
                         <td>This is Activity</td>
-                        <td>900LE</td>
+                        <td>900 LE</td>
                     </tr>
                     <tr>
                         <td>This is Objective</td>
                         <td>This is Activity</td>
-                        <td>900LE</td>
+                        <td>900 LE</td>
                     </tr>
                 </table>
             </div>
@@ -133,7 +133,7 @@
                 <div class="form-group">
                     <label class="col-sm-4 col-xs-5 control-label">Total Budget:</label>
                     <div class="col-sm-8 col-xs-7">
-                        <p class="form-control-static">6800LE</p>
+                        <p class="form-control-static">6800 LE</p>
                     </div>
                 </div>
                 <div class="form-group">
