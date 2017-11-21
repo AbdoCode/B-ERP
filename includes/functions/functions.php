@@ -3,8 +3,8 @@
     function getTitle() {
         global $pageTitle;
         if (isset($pageTitle)) {
-            echo $pageTitle;
+            echo $pageTitle . ' | Back-Packers';
         } else {
-            echo 'Default';
+            echo 'Back-Packers';
         }
     }

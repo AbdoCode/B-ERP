@@ -263,6 +263,23 @@ $(function () {
         });
         $("#sumBudgetDiv").html(temp + ' LE.');
     });
+    // calc number in store book
+    $(".number-of-item").on('change', function () {
+        var numberOfItem = parseInt($(this).val());
+        $(".add-number").on('click', function () {
+            var outputNumber = parseInt($(this).siblings(".output-number").html());
+            outputNumber += numberOfItem;
+            $(this).siblings(".output-number").html(outputNumber);
+        });
+        $(".discharge-number").on('click', function () {
+            var outputNumber = parseInt($(this).siblings(".output-number").html());
+            outputNumber -= numberOfItem;
+            if (outputNumber < 0) {
+                outputNumber = 0;
+            }
+            $(this).siblings(".output-number").html(outputNumber);
+        });
+    });
 });
 
 

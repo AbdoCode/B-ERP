@@ -343,6 +343,21 @@ form.forget-password .form-group:last-of-type{display: none}
 .store-book .table td button,
 .store-book .table td .badge{margin-bottom: 13px}
 /* End StoreBook */
+/* Start index */
+.index .carousel-inner,
+.index .carousel-inner img{width: 100%;height: 422px;max-height: 422px;min-height: 422px}
+.index .about-us{margin: 30px auto}
+.index .video-div iframe{width: 560px; height: 315px}
+.index .copyright{border-top: 2px dotted #000;margin-top: 10px}
+.index .copyright abbr{text-decoration: none;border: 0}
+@media (max-width: 768px) {
+    .index .navbar .navbar-header {float: left}
+    .index .navbar .nav {float: right;margin-right: 0}
+    .index .about-us{margin: 10px auto}
+    .index .video-div iframe{width: 100%; height: auto}
+    .index .copyright{text-align: center}
+}
+/* End index */
 /* Start framework */
 h2{font-weight: bold;text-transform: capitalize}
 table a,

@@ -36,16 +36,17 @@
                             <option value="item5">Item5</option>
                             <option value="item6">Item6</option>
                         </select>
-                        <select>
+                        <select class="number-of-item">
+                            <option value="" disabled selected>Choose Number of item</option>
                             <?php
-                                for ($i = 0; $i <= 100; $i++) {
+                                for ($i = 1; $i <= 100; $i++) {
                                     echo '<option value="'.$i.'">'.$i.'</option>';
                                 }
                             ?>
                         </select>
-                        <button class="btn btn-sm btn-success" type="button">Add</button>
-                        <button class="btn btn-sm btn-danger" type="button">Discharge</button>
-                        <label class="badge Number-of-selected-item-from-database">1</label>
+                        <button class="btn btn-sm btn-success add-number" type="button">Add</button>
+                        <button class="btn btn-sm btn-danger discharge-number" type="button">Discharge</button>
+                        <label class="badge output-number">1</label>
                     </form>
                 </td>
             </tr>
@@ -63,16 +64,17 @@
                             <option value="item5">Item5</option>
                             <option value="item6">Item6</option>
                         </select>
-                        <select>
+                        <select class="number-of-item">
+                            <option value="" disabled selected>Choose Number of item</option>
                             <?php
-                                for ($i = 0; $i <= 100; $i++) {
+                                for ($i = 1; $i <= 100; $i++) {
                                     echo '<option value="'.$i.'">'.$i.'</option>';
                                 }
                             ?>
                         </select>
-                        <button class="btn btn-sm btn-success" type="button">Add</button>
-                        <button class="btn btn-sm btn-danger" type="button">Discharge</button>
-                        <label class="badge Number-of-selected-item-from-database">1</label>
+                        <button class="btn btn-sm btn-success add-number" type="button">Add</button>
+                        <button class="btn btn-sm btn-danger discharge-number" type="button">Discharge</button>
+                        <label class="badge output-number">1</label>
                     </form>
                 </td>
             </tr>
@@ -90,16 +92,17 @@
                             <option value="item5">Item5</option>
                             <option value="item6">Item6</option>
                         </select>
-                        <select>
+                        <select class="number-of-item">
+                            <option value="" disabled selected>Choose Number of item</option>
                             <?php
-                                for ($i = 0; $i <= 100; $i++) {
+                                for ($i = 1; $i <= 100; $i++) {
                                     echo '<option value="'.$i.'">'.$i.'</option>';
                                 }
                             ?>
                         </select>
-                        <button class="btn btn-sm btn-success" type="button">Add</button>
-                        <button class="btn btn-sm btn-danger" type="button">Discharge</button>
-                        <label class="badge Number-of-selected-item-from-database">1</label>
+                        <button class="btn btn-sm btn-success add-number" type="button">Add</button>
+                        <button class="btn btn-sm btn-danger discharge-number" type="button">Discharge</button>
+                        <label class="badge output-number">1</label>
                     </form>
                 </td>
             </tr>
@@ -117,16 +120,17 @@
                             <option value="item5">Item5</option>
                             <option value="item6">Item6</option>
                         </select>
-                        <select>
+                        <select class="number-of-item">
+                            <option value="" disabled selected>Choose Number of item</option>
                             <?php
-                                for ($i = 0; $i <= 100; $i++) {
+                                for ($i = 1; $i <= 100; $i++) {
                                     echo '<option value="'.$i.'">'.$i.'</option>';
                                 }
                             ?>
                         </select>
-                        <button class="btn btn-sm btn-success" type="button">Add</button>
-                        <button class="btn btn-sm btn-danger" type="button">Discharge</button>
-                        <label class="badge Number-of-selected-item-from-database">1</label>
+                        <button class="btn btn-sm btn-success add-number" type="button">Add</button>
+                        <button class="btn btn-sm btn-danger discharge-number" type="button">Discharge</button>
+                        <label class="badge output-number">1</label>
                     </form>
                 </td>
             </tr>
