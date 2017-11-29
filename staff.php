@@ -6,13 +6,6 @@
 ?>
 <div class="staff">
     <h2><?php echo $_GET['type']; ?> Staff</h2>
-    <div class="hidden-xs">
-        <div class="container-for-btn-group">
-            <button class="btn btn-default" type="button" onclick="window.print()">
-                <span class="glyphicon glyphicon-print" aria-hidden="true"></span> Print
-            </button>
-        </div>
-    </div>
     <div class="input-group col-sm-6 col-xs-12 center-block">
         <input type="search" class="form-control" placeholder="Name/Job title/Period/Date..." />
         <div class="input-group-btn center-block">

@@ -7,9 +7,6 @@
 <div class="staff">
     <h2>staff</h2>
     <div class="container-for-btn-group">
-        <button class="btn btn-default hidden-xs" type="button" onclick="window.print()">
-            <span class="glyphicon glyphicon-print" aria-hidden="true"></span> Print
-        </button>
         <a href="edit-profile.php" class="btn btn-primary">
             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add Staff
         </a>

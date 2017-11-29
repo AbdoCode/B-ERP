@@ -41,11 +41,6 @@
             </div>
         </div>
         <div class="col-sm-9 col-sm-pull-3">
-            <div class="container-for-btn-group">
-                <button class="btn btn-default" type="button" onclick="window.print()">
-                    <span class="glyphicon glyphicon-print" aria-hidden="true"></span> Print
-                </button>
-            </div>
             <div class="input-group col-sm-5 col-xs-12 center-block">
                 <input type="search" class="form-control" placeholder="Kid name/Job title..." />
                 <div class="input-group-btn center-block">

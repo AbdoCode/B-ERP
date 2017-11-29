@@ -5,14 +5,7 @@
     include 'navbar.php';
 ?>
 <div class="view-income">
-    <h2>View income</h2>
-    <div class="hidden-xs">
-        <div class="container-for-btn-group">
-            <button class="btn btn-default" type="button" onclick="window.print()">
-                <span class="glyphicon glyphicon-print" aria-hidden="true"></span> Print
-            </button>
-        </div>
-    </div>
+    <h2 class="hidden-print">View income</h2>
     <div class="receipt">
         <div class="head-of-receipt">
             <h5>Back-Packers Investment & Trading Co.</h5>

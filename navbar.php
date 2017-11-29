@@ -181,4 +181,10 @@
             <li <?php if (basename($_SERVER['PHP_SELF']) == 'store-book.php' || basename($_SERVER['PHP_SELF']) == 'p-store-book.php') echo 'class="active"' ?>><a href="store-book.php">Store Book</a></li>
         </ul>
     </aside>
-    <div class="col-sm-10">
+    <div class="col-sm-10 vis">
+        <div style="margin-top: 10px" class="hidden-print"></div>
+        <div class="container-for-btn-group hidden-print hidden-xs">
+            <button class="btn btn-default" type="button" onclick="window.print()">
+                <span class="glyphicon glyphicon-print" aria-hidden="true"></span> Print Page
+            </button>
+        </div>

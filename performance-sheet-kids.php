@@ -4,13 +4,6 @@
     include 'init.php';
     include 'navbar.php';
 ?>
-<div class="performance-sheet-print hidden-xs">
-    <div class="container-for-btn-group">
-        <button class="btn btn-default" type="button" onclick="window.print()">
-            <span class="glyphicon glyphicon-print" aria-hidden="true"></span> Print
-        </button>
-    </div>
-</div>
 <div class="performance-sheet">
     <div class="row">
         <h2>Mohamed Maher</h2>
