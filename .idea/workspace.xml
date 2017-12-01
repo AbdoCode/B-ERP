@@ -1,96 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="597a9482-fa08-471e-8566-9bf89cea1a8e" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/deploy.php" afterPath="$PROJECT_DIR$/dep.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/404-not-found.php" afterPath="$PROJECT_DIR$/404-not-found.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/access-denied.php" afterPath="$PROJECT_DIR$/access-denied.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/activities.php" afterPath="$PROJECT_DIR$/activities.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add-activities.php" afterPath="$PROJECT_DIR$/add-activities.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add-administration-issue.php" afterPath="$PROJECT_DIR$/add-administration-issue.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add-class-preparations.php" afterPath="$PROJECT_DIR$/add-class-preparations.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add-class-table.php" afterPath="$PROJECT_DIR$/add-class-table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add-customer.php" afterPath="$PROJECT_DIR$/add-customer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add-daily-tasks.php" afterPath="$PROJECT_DIR$/add-daily-tasks.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add-event.php" afterPath="$PROJECT_DIR$/add-event.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add-kid-issue.php" afterPath="$PROJECT_DIR$/add-kid-issue.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add-logistics.php" afterPath="$PROJECT_DIR$/add-logistics.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add-new-branch.php" afterPath="$PROJECT_DIR$/add-new-branch.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add-new-reservation.php" afterPath="$PROJECT_DIR$/add-new-reservation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add-new-time-table.php" afterPath="$PROJECT_DIR$/add-new-time-table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add-new-zone-course.php" afterPath="$PROJECT_DIR$/add-new-zone-course.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add-new-zone-meeting.php" afterPath="$PROJECT_DIR$/add-new-zone-meeting.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add-objectives.php" afterPath="$PROJECT_DIR$/add-objectives.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add-rec-income.php" afterPath="$PROJECT_DIR$/add-rec-income.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add-workplan.php" afterPath="$PROJECT_DIR$/add-workplan.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/approvals-workplan.php" afterPath="$PROJECT_DIR$/approvals-workplan.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assign-new-task.php" afterPath="$PROJECT_DIR$/assign-new-task.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assigned-tasks.php" afterPath="$PROJECT_DIR$/assigned-tasks.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/branches.php" afterPath="$PROJECT_DIR$/branches.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bus-attend.php" afterPath="$PROJECT_DIR$/bus-attend.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/c-staff-attend.php" afterPath="$PROJECT_DIR$/c-staff-attend.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/c-staff.php" afterPath="$PROJECT_DIR$/c-staff.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/check-in-out.php" afterPath="$PROJECT_DIR$/check-in-out.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes.php" afterPath="$PROJECT_DIR$/classes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/confirmation-workplan.php" afterPath="$PROJECT_DIR$/confirmation-workplan.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/customers.php" afterPath="$PROJECT_DIR$/customers.php" />
+    <list default="true" id="597a9482-fa08-471e-8566-9bf89cea1a8e" name="Default" comment="code edit">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daily-tasks.php" afterPath="$PROJECT_DIR$/daily-tasks.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db-management.php" afterPath="$PROJECT_DIR$/db-management.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deletion-history.php" afterPath="$PROJECT_DIR$/deletion-history.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/driver-transportation.php" afterPath="$PROJECT_DIR$/driver-transportation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/drivers.php" afterPath="$PROJECT_DIR$/drivers.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/edit-kids-profile.php" afterPath="$PROJECT_DIR$/edit-kids-profile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/edit-profile.php" afterPath="$PROJECT_DIR$/edit-profile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/edit-user.php" afterPath="$PROJECT_DIR$/edit-user.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event-requests.php" afterPath="$PROJECT_DIR$/event-requests.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/events.php" afterPath="$PROJECT_DIR$/events.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forget-password.php" afterPath="$PROJECT_DIR$/forget-password.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gasoline-consumption.php" afterPath="$PROJECT_DIR$/gasoline-consumption.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/issues.php" afterPath="$PROJECT_DIR$/issues.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kids-data.php" afterPath="$PROJECT_DIR$/kids-data.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kids-grades.php" afterPath="$PROJECT_DIR$/kids-grades.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kids-profile.php" afterPath="$PROJECT_DIR$/kids-profile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logistics-approval.php" afterPath="$PROJECT_DIR$/logistics-approval.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logistics.php" afterPath="$PROJECT_DIR$/logistics.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/new-term.php" afterPath="$PROJECT_DIR$/new-term.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/p-store-book.php" afterPath="$PROJECT_DIR$/p-store-book.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/performance-review.php" afterPath="$PROJECT_DIR$/performance-review.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/performance-sheet-kids.php" afterPath="$PROJECT_DIR$/performance-sheet-kids.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/performance-sheet.php" afterPath="$PROJECT_DIR$/performance-sheet.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profile.php" afterPath="$PROJECT_DIR$/profile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rec-income.php" afterPath="$PROJECT_DIR$/rec-income.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reception-checkinout.php" afterPath="$PROJECT_DIR$/reception-checkinout.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff-attend-details-months.php" afterPath="$PROJECT_DIR$/staff-attend-details-months.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff-attend-details-reports.php" afterPath="$PROJECT_DIR$/staff-attend-details-reports.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff-attend-history.php" afterPath="$PROJECT_DIR$/staff-attend-history.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff-checkinout.php" afterPath="$PROJECT_DIR$/staff-checkinout.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staff.php" afterPath="$PROJECT_DIR$/staff.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistics-access.php" afterPath="$PROJECT_DIR$/statistics-access.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistics.php" afterPath="$PROJECT_DIR$/statistics.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/store-book.php" afterPath="$PROJECT_DIR$/store-book.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subject.php" afterPath="$PROJECT_DIR$/subject.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tasks.php" afterPath="$PROJECT_DIR$/tasks.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/time-table.php" afterPath="$PROJECT_DIR$/time-table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users.php" afterPath="$PROJECT_DIR$/users.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view-activity.php" afterPath="$PROJECT_DIR$/view-activity.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view-approvals-workplan.php" afterPath="$PROJECT_DIR$/view-approvals-workplan.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view-assigned-task.php" afterPath="$PROJECT_DIR$/view-assigned-task.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view-class-table-details.php" afterPath="$PROJECT_DIR$/view-class-table-details.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view-class-table.php" afterPath="$PROJECT_DIR$/view-class-table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view-confirmation-workplan.php" afterPath="$PROJECT_DIR$/view-confirmation-workplan.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view-event-request.php" afterPath="$PROJECT_DIR$/view-event-request.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view-event.php" afterPath="$PROJECT_DIR$/view-event.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view-issue.php" afterPath="$PROJECT_DIR$/view-issue.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view-logistics.php" afterPath="$PROJECT_DIR$/view-logistics.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view-rec-income.php" afterPath="$PROJECT_DIR$/view-rec-income.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view-time-table.php" afterPath="$PROJECT_DIR$/view-time-table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view-workplan.php" afterPath="$PROJECT_DIR$/view-workplan.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view-zone-courses.php" afterPath="$PROJECT_DIR$/view-zone-courses.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zone-courses.php" afterPath="$PROJECT_DIR$/zone-courses.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zone-meeting.php" afterPath="$PROJECT_DIR$/zone-meeting.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zone-prices.php" afterPath="$PROJECT_DIR$/zone-prices.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zone-reservations.php" afterPath="$PROJECT_DIR$/zone-reservations.php" />
     </list>
     <ignored path="BackPackersz.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -113,50 +26,53 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="daily-tasks.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="daily-tasks.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/daily-tasks.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.655172">
-              <caret line="65" column="20" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.571912">
+              <caret line="62" column="25" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
               <folding>
-                <marker date="1512155007041" expanded="true" signature="548:792" placeholder="SELECT user_..user_daily_tasks..." />
-                <marker date="1512155007041" expanded="true" signature="548:805" placeholder="SELECT user_..user_daily_tasks..." />
-                <marker date="1512155007041" expanded="true" signature="1009:1187" placeholder="INSERT INTO ..." />
-                <marker date="1512155007041" expanded="true" signature="1269:1348" placeholder="..." />
-                <marker date="1512155007041" expanded="true" signature="1299:1348" placeholder="..." />
-                <marker date="1512155007041" expanded="true" signature="1436:1621" placeholder="..." />
-                <marker date="1512155007041" expanded="true" signature="1499:1610" placeholder="..." />
-                <marker date="1512155007041" expanded="true" signature="1736:1944" placeholder="..." />
-                <marker date="1512155007041" expanded="true" signature="2003:2200" placeholder="SELECT daily..daily_tasks..." />
-                <marker date="1512155007041" expanded="true" signature="2003:2224" placeholder="SELECT daily..daily_tasks..." />
-                <marker date="1512155007041" expanded="true" signature="2373:2394" placeholder="..." />
-                <marker date="1512155007041" expanded="true" signature="2373:2395" placeholder="..." />
-                <marker date="1512155007041" expanded="true" signature="2373:2441" placeholder="..." />
-                <marker date="1512155007041" expanded="true" signature="2373:2442" placeholder="..." />
-                <marker date="1512155007041" expanded="true" signature="2373:3812" placeholder="..." />
-                <marker date="1512155007041" expanded="true" signature="2491:3628" placeholder="..." />
-                <marker date="1512155007041" expanded="true" signature="2568:2895" placeholder="..." />
-                <marker date="1512155007041" expanded="true" signature="2968:3606" placeholder="..." />
-                <marker date="1512155007041" expanded="true" signature="3650:3720" placeholder="..." />
-                <marker date="1512155007041" expanded="true" signature="3650:3721" placeholder="..." />
-                <marker date="1512155007041" expanded="true" signature="3650:3727" placeholder="..." />
-                <marker date="1512155007041" expanded="true" signature="3650:3794" placeholder="..." />
+                <marker date="1512157418148" expanded="true" signature="551:795" placeholder="SELECT user_..user_daily_tasks..." />
+                <marker date="1512157418148" expanded="true" signature="551:808" placeholder="SELECT user_..user_daily_tasks..." />
+                <marker date="1512157418148" expanded="true" signature="1012:1190" placeholder="INSERT INTO ..." />
+                <marker date="1512157418148" expanded="true" signature="1272:1351" placeholder="..." />
+                <marker date="1512157418148" expanded="true" signature="1302:1351" placeholder="..." />
+                <marker date="1512157418148" expanded="true" signature="1439:1624" placeholder="..." />
+                <marker date="1512157418148" expanded="true" signature="1502:1613" placeholder="..." />
+                <marker date="1512157418148" expanded="true" signature="1739:1947" placeholder="..." />
+                <marker date="1512157418148" expanded="true" signature="2006:2203" placeholder="SELECT daily..daily_tasks..." />
+                <marker date="1512157418148" expanded="true" signature="2006:2227" placeholder="SELECT daily..daily_tasks..." />
+                <marker date="1512157418148" expanded="true" signature="2376:2397" placeholder="..." />
+                <marker date="1512157418148" expanded="true" signature="2376:2398" placeholder="..." />
+                <marker date="1512157418148" expanded="true" signature="2376:2444" placeholder="..." />
+                <marker date="1512157418148" expanded="true" signature="2376:2445" placeholder="..." />
+                <marker date="1512157418148" expanded="true" signature="2376:3797" placeholder="..." />
+                <marker date="1512157418148" expanded="true" signature="2494:2561" placeholder="..." />
+                <marker date="1512157418148" expanded="true" signature="2494:2562" placeholder="..." />
+                <marker date="1512157418148" expanded="true" signature="2494:3613" placeholder="..." />
+                <marker date="1512157418148" expanded="true" signature="2562:2880" placeholder="..." />
+                <marker date="1512157418148" expanded="true" signature="2953:3084" placeholder="..." />
+                <marker date="1512157418148" expanded="true" signature="2953:3591" placeholder="..." />
+                <marker date="1512157418148" expanded="true" signature="3635:3705" placeholder="..." />
+                <marker date="1512157418148" expanded="true" signature="3635:3706" placeholder="..." />
+                <marker date="1512157418148" expanded="true" signature="3635:3712" placeholder="..." />
+                <marker date="1512157418148" expanded="true" signature="3635:3779" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add-daily-tasks.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="add-daily-tasks.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/add-daily-tasks.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.39593908">
-              <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+            <state vertical-scroll-proportion="-5.37931">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding>
-                <marker date="1512155007065" expanded="true" signature="588:703" placeholder="INSERT INTO ..." />
-                <marker date="1512155007065" expanded="true" signature="897:960" placeholder="SELECT user_..sys_users..." />
-                <marker date="1512155007065" expanded="true" signature="1133:1230" placeholder="INSERT INTO ..." />
-                <marker date="1512155007065" expanded="true" signature="2155:2187" placeholder="SELECT job_t..job_titles..." />
-                <marker date="1512155007065" expanded="true" signature="3281:3488" placeholder="SELECT sys_u..sys_users..." />
+                <marker date="1512155090289" expanded="true" signature="591:706" placeholder="INSERT INTO ..." />
+                <marker date="1512155090289" expanded="true" signature="900:963" placeholder="SELECT user_..sys_users..." />
+                <marker date="1512155090289" expanded="true" signature="1136:1233" placeholder="INSERT INTO ..." />
+                <marker date="1512155090289" expanded="true" signature="2158:2190" placeholder="SELECT job_t..job_titles..." />
+                <marker date="1512155090289" expanded="true" signature="3284:3491" placeholder="SELECT sys_u..sys_users..." />
               </folding>
             </state>
           </provider>
@@ -219,8 +135,8 @@
         <option value="$PROJECT_DIR$/activities.php" />
         <option value="$PROJECT_DIR$/navbar.php" />
         <option value="$PROJECT_DIR$/deploy.php" />
-        <option value="$PROJECT_DIR$/daily-tasks.php" />
         <option value="$PROJECT_DIR$/add-daily-tasks.php" />
+        <option value="$PROJECT_DIR$/daily-tasks.php" />
       </list>
     </option>
   </component>
@@ -425,18 +341,6 @@
       <workItem from="1511892263478" duration="7287000" />
       <workItem from="1511958964098" duration="9132000" />
       <workItem from="1512002951961" duration="5168000" />
-    </task>
-    <task id="LOCAL-00015" summary="Mohamed Edit">
-      <created>1508397808515</created>
-      <option name="number" value="00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1508397808515</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Mohamed Edit">
-      <created>1508401399597</created>
-      <option name="number" value="00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1508401399597</updated>
     </task>
     <task id="LOCAL-00017" summary="Mohamed Edit">
       <created>1508408471130</created>
@@ -720,7 +624,19 @@
       <option name="project" value="LOCAL" />
       <updated>1512154552506</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="code edit">
+      <created>1512155024757</created>
+      <option name="number" value="00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1512155024758</updated>
+    </task>
+    <task id="LOCAL-00065" summary="code edit">
+      <created>1512155109323</created>
+      <option name="number" value="00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1512155109323</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1101,7 +1017,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dep.php">
+    <entry file="file://$PROJECT_DIR$/deploy.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.04399323">
           <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
@@ -1146,47 +1062,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/daily-tasks.php">
+    <entry file="file://$PROJECT_DIR$/add-daily-tasks.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.655172">
-          <caret line="65" column="20" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
+        <state vertical-scroll-proportion="-5.37931">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
-            <marker date="1512155007041" expanded="true" signature="548:792" placeholder="SELECT user_..user_daily_tasks..." />
-            <marker date="1512155007041" expanded="true" signature="548:805" placeholder="SELECT user_..user_daily_tasks..." />
-            <marker date="1512155007041" expanded="true" signature="1009:1187" placeholder="INSERT INTO ..." />
-            <marker date="1512155007041" expanded="true" signature="1269:1348" placeholder="..." />
-            <marker date="1512155007041" expanded="true" signature="1299:1348" placeholder="..." />
-            <marker date="1512155007041" expanded="true" signature="1436:1621" placeholder="..." />
-            <marker date="1512155007041" expanded="true" signature="1499:1610" placeholder="..." />
-            <marker date="1512155007041" expanded="true" signature="1736:1944" placeholder="..." />
-            <marker date="1512155007041" expanded="true" signature="2003:2200" placeholder="SELECT daily..daily_tasks..." />
-            <marker date="1512155007041" expanded="true" signature="2003:2224" placeholder="SELECT daily..daily_tasks..." />
-            <marker date="1512155007041" expanded="true" signature="2373:2394" placeholder="..." />
-            <marker date="1512155007041" expanded="true" signature="2373:2395" placeholder="..." />
-            <marker date="1512155007041" expanded="true" signature="2373:2441" placeholder="..." />
-            <marker date="1512155007041" expanded="true" signature="2373:2442" placeholder="..." />
-            <marker date="1512155007041" expanded="true" signature="2373:3812" placeholder="..." />
-            <marker date="1512155007041" expanded="true" signature="2491:3628" placeholder="..." />
-            <marker date="1512155007041" expanded="true" signature="2568:2895" placeholder="..." />
-            <marker date="1512155007041" expanded="true" signature="2968:3606" placeholder="..." />
-            <marker date="1512155007041" expanded="true" signature="3650:3720" placeholder="..." />
-            <marker date="1512155007041" expanded="true" signature="3650:3721" placeholder="..." />
-            <marker date="1512155007041" expanded="true" signature="3650:3727" placeholder="..." />
-            <marker date="1512155007041" expanded="true" signature="3650:3794" placeholder="..." />
+            <marker date="1512155090289" expanded="true" signature="591:706" placeholder="INSERT INTO ..." />
+            <marker date="1512155090289" expanded="true" signature="900:963" placeholder="SELECT user_..sys_users..." />
+            <marker date="1512155090289" expanded="true" signature="1136:1233" placeholder="INSERT INTO ..." />
+            <marker date="1512155090289" expanded="true" signature="2158:2190" placeholder="SELECT job_t..job_titles..." />
+            <marker date="1512155090289" expanded="true" signature="3284:3491" placeholder="SELECT sys_u..sys_users..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/add-daily-tasks.php">
+    <entry file="file://$PROJECT_DIR$/daily-tasks.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39593908">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.571912">
+          <caret line="62" column="25" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
           <folding>
-            <marker date="1512155007065" expanded="true" signature="588:703" placeholder="INSERT INTO ..." />
-            <marker date="1512155007065" expanded="true" signature="897:960" placeholder="SELECT user_..sys_users..." />
-            <marker date="1512155007065" expanded="true" signature="1133:1230" placeholder="INSERT INTO ..." />
-            <marker date="1512155007065" expanded="true" signature="2155:2187" placeholder="SELECT job_t..job_titles..." />
-            <marker date="1512155007065" expanded="true" signature="3281:3488" placeholder="SELECT sys_u..sys_users..." />
+            <marker date="1512157418148" expanded="true" signature="551:795" placeholder="SELECT user_..user_daily_tasks..." />
+            <marker date="1512157418148" expanded="true" signature="551:808" placeholder="SELECT user_..user_daily_tasks..." />
+            <marker date="1512157418148" expanded="true" signature="1012:1190" placeholder="INSERT INTO ..." />
+            <marker date="1512157418148" expanded="true" signature="1272:1351" placeholder="..." />
+            <marker date="1512157418148" expanded="true" signature="1302:1351" placeholder="..." />
+            <marker date="1512157418148" expanded="true" signature="1439:1624" placeholder="..." />
+            <marker date="1512157418148" expanded="true" signature="1502:1613" placeholder="..." />
+            <marker date="1512157418148" expanded="true" signature="1739:1947" placeholder="..." />
+            <marker date="1512157418148" expanded="true" signature="2006:2203" placeholder="SELECT daily..daily_tasks..." />
+            <marker date="1512157418148" expanded="true" signature="2006:2227" placeholder="SELECT daily..daily_tasks..." />
+            <marker date="1512157418148" expanded="true" signature="2376:2397" placeholder="..." />
+            <marker date="1512157418148" expanded="true" signature="2376:2398" placeholder="..." />
+            <marker date="1512157418148" expanded="true" signature="2376:2444" placeholder="..." />
+            <marker date="1512157418148" expanded="true" signature="2376:2445" placeholder="..." />
+            <marker date="1512157418148" expanded="true" signature="2376:3797" placeholder="..." />
+            <marker date="1512157418148" expanded="true" signature="2494:2561" placeholder="..." />
+            <marker date="1512157418148" expanded="true" signature="2494:2562" placeholder="..." />
+            <marker date="1512157418148" expanded="true" signature="2494:3613" placeholder="..." />
+            <marker date="1512157418148" expanded="true" signature="2562:2880" placeholder="..." />
+            <marker date="1512157418148" expanded="true" signature="2953:3084" placeholder="..." />
+            <marker date="1512157418148" expanded="true" signature="2953:3591" placeholder="..." />
+            <marker date="1512157418148" expanded="true" signature="3635:3705" placeholder="..." />
+            <marker date="1512157418148" expanded="true" signature="3635:3706" placeholder="..." />
+            <marker date="1512157418148" expanded="true" signature="3635:3712" placeholder="..." />
+            <marker date="1512157418148" expanded="true" signature="3635:3779" placeholder="..." />
           </folding>
         </state>
       </provider>

@@ -64,9 +64,9 @@ where user_daily_tasks.task_owner = '".$_SESSION['userID']."'");
                 <td>'.$rowIncrementer++.'</td>
                 <td>'.$row['task_content'].'</td>
                 <td>
-                    <select class="dailyTasksStatus" name="status" disabled>
+                    <select class="dailyTasksStatus" name="status">
                         <option disabled selected value="">select status</option>
-                        <option value="completed" selected>Completed</option>
+                        <option value="completed">Completed</option>
                         <option value="pending">Pending</option>
                         <option value="inprogress">In progress</option>
                     </select>
