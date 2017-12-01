@@ -65,19 +65,23 @@ $jobTitle = $_SESSION['userJobTitle'];
 //                    }
 //                }
 //            ?>
-
-            <li <?php if (basename($_SERVER['PHP_SELF']) == 'daily-tasks.php') echo 'class="active"' ?>><a href="daily-tasks.php">Daily Tasks</a></li>
-
             <?php
 
-            if($jobTitle == 'Teacher' || $jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Supervisor' || $jobTitle == 'Operation Manager' || $jobTitle == 'Bus Worker' || $jobTitle == 'Accountant' || $jobTitle == 'Academy Head')
+            if($jobTitle != 'Bus Worker')
+            {
+                echo'<li ';
+                if (basename($_SERVER['PHP_SELF']) == 'daily-tasks.php') echo 'class="active"';
+                echo'><a href="daily-tasks.php">Daily Tasks</a></li>';
+            }
+
+            if($jobTitle == 'Teacher' || $jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Supervisor' || $jobTitle == 'Operation Manager' || $jobTitle == 'Accountant' || $jobTitle == 'Academy Head')
             {
                 echo'<li ';
                 if (basename($_SERVER['PHP_SELF']) == 'activities.php') echo 'class="active"';
                 echo'><a href="activities.php">Activities</a></li>';
             }
 
-            if($jobTitle == 'Teacher' || $jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Supervisor' || $jobTitle == 'Receptionist' || $jobTitle == 'Operation Manager' || $jobTitle == 'Bus Worker' || $jobTitle == 'Academy Head')
+            if($jobTitle == 'Teacher' || $jobTitle == 'CEO' || $jobTitle == 'G.M')
             {
                 echo '<li ';
                 if (basename($_SERVER['PHP_SELF']) == 'subject.php') echo 'class="active"';
@@ -93,7 +97,7 @@ $jobTitle = $_SESSION['userJobTitle'];
             </li>';
             }
 
-            if($jobTitle == 'Teacher' || $jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Supervisor' || $jobTitle == 'Receptionist' || $jobTitle == 'Operation Manager' || $jobTitle == 'Bus Worker' || $jobTitle == 'Academy Head')
+            if($jobTitle == 'Teacher' || $jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Operation Manager' ||  $jobTitle == 'Academy Head')
             {
                 echo'<li ';
                 if (basename($_SERVER['PHP_SELF']) == 'classes.php') echo 'class="active"';
@@ -109,7 +113,7 @@ $jobTitle = $_SESSION['userJobTitle'];
             </li>';
             }
 
-            if($jobTitle == 'Teacher' || $jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Supervisor' || $jobTitle == 'Receptionist' || $jobTitle == 'Operation Manager' || $jobTitle == 'Bus Worker' || $jobTitle == 'Academy Head')
+            if($jobTitle == 'Teacher' || $jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Supervisor' || $jobTitle == 'Receptionist' || $jobTitle == 'Operation Manager' || $jobTitle == 'Academy Head')
             {
                 echo'<li ';
                 if (basename($_SERVER['PHP_SELF']) == 'events.php' || basename($_SERVER['PHP_SELF']) == 'event-requests.php') echo 'class="active"';
@@ -124,7 +128,7 @@ $jobTitle = $_SESSION['userJobTitle'];
             </li>';
             }
 
-            if($jobTitle == 'Teacher' || $jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Supervisor' || $jobTitle == 'Receptionist' || $jobTitle == 'Operation Manager' || $jobTitle == 'Bus Worker' || $jobTitle == 'Academy Head')
+            if($jobTitle == 'Teacher' || $jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Supervisor' || $jobTitle == 'Receptionist' || $jobTitle == 'Operation Manager' || $jobTitle == 'Academy Head')
             {
                 echo'<li ';
                 if (basename($_SERVER['PHP_SELF']) == 'issues.php') echo 'class="active"';
@@ -138,7 +142,7 @@ $jobTitle = $_SESSION['userJobTitle'];
             </li>';
             }
 
-            if($jobTitle == 'Teacher' || $jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Supervisor' || $jobTitle == 'Receptionist' || $jobTitle == 'Operation Manager' || $jobTitle == 'Bus Worker' || $jobTitle == 'Academy Head')
+            if($jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Operation Manager' || $jobTitle == 'Academy Head')
             {
                 echo'<li ';
                 if (basename($_SERVER['PHP_SELF']) == 'approvals-workplan.php' || basename($_SERVER['PHP_SELF']) == 'confirmation-workplan.php') echo 'class="active"';
@@ -152,7 +156,7 @@ $jobTitle = $_SESSION['userJobTitle'];
             </li>';
             }
 
-            if($jobTitle == 'Teacher' || $jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Supervisor' || $jobTitle == 'Receptionist' || $jobTitle == 'Operation Manager' || $jobTitle == 'Bus Worker' || $jobTitle == 'Academy Head')
+            if($jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Bus Worker')
             {
                 echo'<li ';
                 if (basename($_SERVER['PHP_SELF']) == 'bus-attend-am.php' || basename($_SERVER['PHP_SELF']) == 'bus-attend-pm.php') echo 'class="active"';
@@ -169,7 +173,7 @@ $jobTitle = $_SESSION['userJobTitle'];
             </li>';
             }
 
-            if($jobTitle == 'Teacher' || $jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Supervisor' || $jobTitle == 'Receptionist' || $jobTitle == 'Operation Manager' || $jobTitle == 'Bus Worker' || $jobTitle == 'Academy Head')
+            if($jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Supervisor' || $jobTitle == 'Receptionist' || $jobTitle == 'Operation Manager')
             {
                 echo'<li ';
                 if (basename($_SERVER['PHP_SELF']) == 'logistics.php' || basename($_SERVER['PHP_SELF']) == 'check-in-out.php' || basename($_SERVER['PHP_SELF']) == 'time-table.php' || basename($_SERVER['PHP_SELF']) == 'add-new-time-table.php') echo 'class="active"';
@@ -184,7 +188,7 @@ $jobTitle = $_SESSION['userJobTitle'];
             </li>';
             }
 
-            if($jobTitle == 'Teacher' || $jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Supervisor' || $jobTitle == 'Receptionist' || $jobTitle == 'Operation Manager' || $jobTitle == 'Bus Worker' || $jobTitle == 'Academy Head')
+            if($jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Supervisor' || $jobTitle == 'Receptionist' || $jobTitle == 'Operation Manager')
             {
                 echo'<li ';
                 if (basename($_SERVER['PHP_SELF']) == 'kids-data.php' || basename($_SERVER['PHP_SELF']) == 'kids-grades.php') echo 'class="active"';
@@ -192,13 +196,14 @@ $jobTitle = $_SESSION['userJobTitle'];
                 Kids <span class="glyphicon glyphicon-triangle-right"></span>
             </a>
             <ul class="dropdown-menu">
-                <li><a href="kids-data.php">Kids Data</a></li>
-                <li><a href="kids-grades.php">Kids Grades</a></li>
-            </ul>
+                <li><a href="kids-data.php">Kids Data</a></li>';
+
+                if($jobTitle != 'Receptionist') echo'<li><a href="kids-grades.php">Kids Grades</a></li>';
+            echo'</ul>
             </li>';
             }
 
-            if($jobTitle == 'Teacher' || $jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Supervisor' || $jobTitle == 'Receptionist' || $jobTitle == 'Operation Manager' || $jobTitle == 'Bus Worker' || $jobTitle == 'Academy Head')
+            if($jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Supervisor' || $jobTitle == 'Receptionist' || $jobTitle == 'Operation Manager')
             {
                 echo'<li ';
                 if (basename($_SERVER['PHP_SELF']) == 'staff.php') echo 'class="active"';
@@ -212,7 +217,7 @@ $jobTitle = $_SESSION['userJobTitle'];
             </li>';
             }
 
-            if($jobTitle == 'Teacher' || $jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Supervisor' || $jobTitle == 'Receptionist' || $jobTitle == 'Operation Manager' || $jobTitle == 'Bus Worker' || $jobTitle == 'Academy Head')
+            if($jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Receptionist' || $jobTitle == 'Operation Manager')
             {
                 echo'<li ';
                 if (basename($_SERVER['PHP_SELF']) == 'zone-reservations.php' || basename($_SERVER['PHP_SELF']) == 'zone-prices.php' || basename($_SERVER['PHP_SELF']) == 'zone-meeting.php' || basename($_SERVER['PHP_SELF']) == 'zone-courses.php') echo 'class="active"';
@@ -222,13 +227,15 @@ $jobTitle = $_SESSION['userJobTitle'];
             <ul class="dropdown-menu">
                 <li><a href="zone-reservations.php">Co-working Space</a></li>
                 <li><a href="zone-meeting.php">Meeting</a></li>
-                <li><a href="zone-courses.php">Courses</a></li>
-                <li><a href="zone-prices.php">Zone Prices</a></li>
-            </ul>
+                <li><a href="zone-courses.php">Courses</a></li>';
+
+                if($jobTitle != 'Receptionist')echo'<li><a href="zone-prices.php">Zone Prices</a></li>';
+
+            echo'</ul>
             </li>';
             }
 
-            if($jobTitle == 'Teacher' || $jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Supervisor' || $jobTitle == 'Operation Manager' || $jobTitle == 'Bus Worker' || $jobTitle == 'Accountant' || $jobTitle == 'Academy Head')
+            if($jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Supervisor' || $jobTitle == 'Operation Manager')
             {
                 echo'<li ';
             if (basename($_SERVER['PHP_SELF']) == 'statistics.php') echo 'class="active"';
@@ -242,98 +249,98 @@ $jobTitle = $_SESSION['userJobTitle'];
                 echo'><a href="assigned-tasks.php">Assigned Tasks</a></li>';
             }
 
-            if($jobTitle == 'Teacher' || $jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Supervisor' || $jobTitle == 'Operation Manager' || $jobTitle == 'Bus Worker' || $jobTitle == 'Accountant' || $jobTitle == 'Academy Head')
+            if($jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Operation Manager')
             {
                 echo'<li ';
                 if (basename($_SERVER['PHP_SELF']) == 'logistics-approval.php') echo 'class="active"';
                 echo'><a href="logistics-approval.php">Logistics</a></li>';
             }
 
-            if($jobTitle == 'Teacher' || $jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Supervisor' || $jobTitle == 'Operation Manager' || $jobTitle == 'Bus Worker' || $jobTitle == 'Accountant' || $jobTitle == 'Academy Head')
+            if($jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Operation Manager')
             {
                 echo'<li ';
                 if (basename($_SERVER['PHP_SELF']) == 'performance-review.php') echo 'class="active"';
                 echo'><a href="performance-review.php">Performance Review</a></li>';
             }
 
-            if($jobTitle == 'Teacher' || $jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Supervisor' || $jobTitle == 'Operation Manager' || $jobTitle == 'Bus Worker' || $jobTitle == 'Accountant' || $jobTitle == 'Academy Head')
+            if($jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Operation Manager')
             {
                 echo'<li ';
                 if (basename($_SERVER['PHP_SELF']) == 'tasks.php') echo 'class="active"';
                 echo'><a href="tasks.php">Tasks</a></li>';
             }
 
-            if($jobTitle == 'Teacher' || $jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Supervisor' || $jobTitle == 'Operation Manager' || $jobTitle == 'Bus Worker' || $jobTitle == 'Accountant' || $jobTitle == 'Academy Head')
+            if($jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Operation Manager')
             {
                 echo'<li ';
                 if (basename($_SERVER['PHP_SELF']) == 'db-management.php') echo 'class="active"';
                 echo'><a href="db-management.php">DB Management</a></li>';
             }
 
-            if($jobTitle == 'Teacher' || $jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Supervisor' || $jobTitle == 'Operation Manager' || $jobTitle == 'Bus Worker' || $jobTitle == 'Accountant' || $jobTitle == 'Academy Head')
+            if($jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Receptionist')
             {
                 echo'<li ';
                 if (basename($_SERVER['PHP_SELF']) == 'reception-checkinout.php') echo 'class="active"';
                 echo'><a href="reception-checkinout.php">Kids Check In/Out</a></li>';
             }
 
-            if($jobTitle == 'Teacher' || $jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Supervisor' || $jobTitle == 'Operation Manager' || $jobTitle == 'Bus Worker' || $jobTitle == 'Accountant' || $jobTitle == 'Academy Head')
+            if($jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Receptionist')
             {
                 echo'<li ';
                 if (basename($_SERVER['PHP_SELF']) == 'staff-checkinout.php') echo 'class="active"';
                 echo'><a href="staff-checkinout.php">Staff Check In/Out</a></li>';
             }
 
-            if($jobTitle == 'Teacher' || $jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Supervisor' || $jobTitle == 'Operation Manager' || $jobTitle == 'Bus Worker' || $jobTitle == 'Accountant' || $jobTitle == 'Academy Head')
+            if($jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Receptionist')
             {
                 echo'<li ';
                 if (basename($_SERVER['PHP_SELF']) == 'customers.php') echo 'class="active"';
                 echo'><a href="customers.php">Customers</a></li>';
             }
 
-            if($jobTitle == 'Teacher' || $jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Supervisor' || $jobTitle == 'Operation Manager' || $jobTitle == 'Bus Worker' || $jobTitle == 'Accountant' || $jobTitle == 'Academy Head')
+            if($jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Receptionist')
             {
                 echo'<li ';
                 if (basename($_SERVER['PHP_SELF']) == 'drivers.php') echo 'class="active"';
                 echo'><a href="drivers.php">Drivers</a></li>';
             }
 
-            if($jobTitle == 'Teacher' || $jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Supervisor' || $jobTitle == 'Operation Manager' || $jobTitle == 'Bus Worker' || $jobTitle == 'Accountant' || $jobTitle == 'Academy Head')
+            if($jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Receptionist')
             {
                 echo'<li ';
                 if (basename($_SERVER['PHP_SELF']) == 'rec-income.php' || basename($_SERVER['PHP_SELF']) == 'add-rec-income.php') echo 'class="active"';
                 echo'><a href="rec-income.php">Income</a></li>';
             }
 
-            if($jobTitle == 'Teacher' || $jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Supervisor' || $jobTitle == 'Operation Manager' || $jobTitle == 'Bus Worker' || $jobTitle == 'Accountant' || $jobTitle == 'Academy Head')
+            if($jobTitle == 'CEO' || $jobTitle == 'G.M')
             {
                 echo'<li ';
                 if (basename($_SERVER['PHP_SELF']) == 'branches.php' || basename($_SERVER['PHP_SELF']) == 'add-new-branch.php') echo 'class="active"';
                 echo'><a href="branches.php">Branches</a></li>';
             }
 
-            if($jobTitle == 'Teacher' || $jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Supervisor' || $jobTitle == 'Operation Manager' || $jobTitle == 'Bus Worker' || $jobTitle == 'Accountant' || $jobTitle == 'Academy Head')
+            if($jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Operation Manager')
             {
                 echo'<li ';
                 if (basename($_SERVER['PHP_SELF']) == 'c-staff.php') echo 'class="active"';
                 echo'><a href="c-staff.php">Staff</a></li>';
             }
 
-            if($jobTitle == 'Teacher' || $jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Supervisor' || $jobTitle == 'Operation Manager' || $jobTitle == 'Bus Worker' || $jobTitle == 'Accountant' || $jobTitle == 'Academy Head')
+            if($jobTitle == 'CEO' || $jobTitle == 'G.M')
             {
                 echo'<li ';
                 if (basename($_SERVER['PHP_SELF']) == 'new-term.php') echo 'class="active"';
                 echo'><a href="new-term.php">New Term</a></li>';
             }
 
-            if($jobTitle == 'Teacher' || $jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Supervisor' || $jobTitle == 'Operation Manager' || $jobTitle == 'Bus Worker' || $jobTitle == 'Accountant' || $jobTitle == 'Academy Head')
+            if($jobTitle == 'CEO' || $jobTitle == 'G.M')
             {
                 echo'<li ';
                 if (basename($_SERVER['PHP_SELF']) == 'users.php') echo 'class="active"';
                 echo'><a href="users.php">Users</a></li>';
             }
 
-            if($jobTitle == 'Teacher' || $jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Supervisor' || $jobTitle == 'Operation Manager' || $jobTitle == 'Bus Worker' || $jobTitle == 'Accountant' || $jobTitle == 'Academy Head')
+            if($jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Receptionist')
             {
                 echo'<li ';
                 if (basename($_SERVER['PHP_SELF']) == 'store-book.php' || basename($_SERVER['PHP_SELF']) == 'p-store-book.php') echo 'class="active"';
