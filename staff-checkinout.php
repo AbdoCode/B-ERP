@@ -1,7 +1,7 @@
 <?php
     session_start();
     $pageTitle = 'Check In/Out';
-    include 'dep.php';
+    include 'deploy.php';
     include 'navbar.php';
 ?>
 <div class="attend">

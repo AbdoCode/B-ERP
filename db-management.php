@@ -1,7 +1,7 @@
 <?php
     session_start();
     $pageTitle = 'DB Management';
-    include 'dep.php';
+    include 'deploy.php';
     include 'navbar.php';
 ?>
 <div class="db-management">

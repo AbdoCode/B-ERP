@@ -1,7 +1,7 @@
 <?php
     session_start();
     $pageTitle = 'Home';
-    include 'dep.php';
+    include 'deploy.php';
     include 'navbar.php';
 ?>
 <div class="assign-new-task">

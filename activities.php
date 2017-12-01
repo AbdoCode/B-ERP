@@ -1,7 +1,7 @@
 <?php
     session_start();
     $pageTitle = 'Activities';
-    include 'dep.php';
+    include 'deploy.php';
     ob_start();
     include 'navbar.php';
 

@@ -1,7 +1,7 @@
 <?php
     session_start();
     $pageTitle = 'Kids Data';
-    include 'dep.php';
+    include 'deploy.php';
     include 'navbar.php';
 ?>
 <div class="kids-data">
