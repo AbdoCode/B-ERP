@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="597a9482-fa08-471e-8566-9bf89cea1a8e" name="Default" comment="">
+    <list default="true" id="597a9482-fa08-471e-8566-9bf89cea1a8e" name="Default" comment="code edit">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BackPackersz.iws" />
@@ -28,8 +28,8 @@
       <file leaf-file-name="navbar.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/navbar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.17597292">
-              <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+            <state vertical-scroll-proportion="0.571912">
+              <caret line="13" column="50" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
               <folding>
                 <marker date="1512125645319" expanded="true" signature="4320:4427" placeholder="..." />
                 <marker date="1512125645319" expanded="true" signature="4470:4740" placeholder="..." />
@@ -333,12 +333,6 @@
       <workItem from="1511958964098" duration="9132000" />
       <workItem from="1512002951961" duration="5168000" />
     </task>
-    <task id="LOCAL-00008" summary="Mohamed Edit">
-      <created>1508204795906</created>
-      <option name="number" value="00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1508204795906</updated>
-    </task>
     <task id="LOCAL-00009" summary="Mohamed Edit">
       <created>1508239632819</created>
       <option name="number" value="00009" />
@@ -627,7 +621,13 @@
       <option name="project" value="LOCAL" />
       <updated>1512126534276</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="code edit">
+      <created>1512127184079</created>
+      <option name="number" value="00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1512127184080</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1044,8 +1044,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/navbar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17597292">
-          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+        <state vertical-scroll-proportion="0.571912">
+          <caret line="13" column="50" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
           <folding>
             <marker date="1512125645319" expanded="true" signature="4320:4427" placeholder="..." />
             <marker date="1512125645319" expanded="true" signature="4470:4740" placeholder="..." />
