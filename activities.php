@@ -1,8 +1,16 @@
 <?php
     session_start();
-    $pageTitle = 'Home';
+    $pageTitle = 'Activities';
     include 'deploy.php';
+    ob_start();
     include 'navbar.php';
+
+//if($_SESSION['userJobTitle'] == 'Teacher')
+//{
+//    header('Location: access-denied.php?page='.$pageTitle.'');
+//}
+
+
 ?>
 <div class="activities">
     <h2>Activities</h2>

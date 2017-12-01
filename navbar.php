@@ -54,21 +54,29 @@ $jobTitle = $_SESSION['userJobTitle'];
     <aside class="mainAside col-sm-2" id="mainAside">
         <ul class="nav nav-pills nav-stacked">
             <li class="asideBack"><a href="#"><i class="fa fa-caret-left fa-fw fa-lg"></i>Back</a></li>
-            <?php
-                $stmt = $connect->prepare("SELECT * FROM sys_tabs");
-                $stmt->execute();
-                while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-                    if ($row['href'] == '#') {
-                        echo '';
-                    } else {
-                        echo '';
-                    }
-                }
-            ?>
+<!--            --><?php
+//                $stmt = $connect->prepare("SELECT * FROM sys_tabs");
+//                $stmt->execute();
+//                while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+//                    if ($row['href'] == '#') {
+//                        echo '';
+//                    } else {
+//                        echo '';
+//                    }
+//                }
+//            ?>
+
             <li <?php if (basename($_SERVER['PHP_SELF']) == 'daily-tasks.php') echo 'class="active"' ?>><a href="daily-tasks.php">Daily Tasks</a></li>
             <li <?php if (basename($_SERVER['PHP_SELF']) == 'activities.php') echo 'class="active"' ?>><a href="activities.php">Activities</a></li>
-            <li <?php if (basename($_SERVER['PHP_SELF']) == 'subject.php') echo 'class="active"' ?>>
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+
+
+            <?php
+
+            if($jobTitle = 'Teacher' || $jobTitle = 'CEO' || $jobTitle = 'G.M' || $jobTitle = 'Supervisor' || $jobTitle = 'Receptionist' || $jobTitle = 'Operation Manager' || $jobTitle = 'Bus Worker' || $jobTitle = 'Accountant' || $jobTitle = 'Academy Head')
+            {
+                echo'<li ';
+                if (basename($_SERVER['PHP_SELF']) == 'subject.php') echo 'class="active"';
+                echo'><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                     Subjects <span class="glyphicon glyphicon-triangle-right"></span>
                 </a>
                 <ul class="dropdown-menu">
@@ -77,9 +85,13 @@ $jobTitle = $_SESSION['userJobTitle'];
                     <li><a href="subject.php">Math</a></li>
                     <li><a href="subject.php">Arabic</a></li>
                 </ul>
-            </li>
-            <li <?php if (basename($_SERVER['PHP_SELF']) == 'classes.php') echo 'class="active"' ?>>
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            </li>';
+            }
+            else if( $jobTitle = 'CEO' || $jobTitle = 'G.M' || $jobTitle = 'Supervisor' || $jobTitle = 'Receptionist' || $jobTitle = 'Operation Manager' || $jobTitle = 'Bus Worker' || $jobTitle = 'Accountant' || $jobTitle = 'Academy Head')
+            {
+                echo'<li ';
+                if (basename($_SERVER['PHP_SELF']) == 'classes.php') echo 'class="active"';
+                echo'><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                     Classes <span class="glyphicon glyphicon-triangle-right"></span>
                 </a>
                 <ul class="dropdown-menu">
@@ -88,7 +100,10 @@ $jobTitle = $_SESSION['userJobTitle'];
                     <li><a href="classes.php">Class C</a></li>
                     <li><a href="classes.php">Class F</a></li>
                 </ul>
-            </li>
+            </li>';
+            }
+            ?>
+
             <li <?php if (basename($_SERVER['PHP_SELF']) == 'events.php' || basename($_SERVER['PHP_SELF']) == 'event-requests.php') echo 'class="active"' ?>>
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                     Events <span class="glyphicon glyphicon-triangle-right"></span>
