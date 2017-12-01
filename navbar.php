@@ -142,7 +142,7 @@ $jobTitle = $_SESSION['userJobTitle'];
             </li>';
             }
 
-            if($jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Operation Manager' || $jobTitle == 'Academy Head')
+            if($jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Academy Head')
             {
                 echo'<li ';
                 if (basename($_SERVER['PHP_SELF']) == 'approvals-workplan.php' || basename($_SERVER['PHP_SELF']) == 'confirmation-workplan.php') echo 'class="active"';
@@ -182,9 +182,9 @@ $jobTitle = $_SESSION['userJobTitle'];
             </a>
             <ul class="dropdown-menu">
                 <li><a href="check-in-out.php">Check in/out</a></li>
-                <li><a href="logistics.php">Logistics</a></li>
-                <li><a href="time-table.php">Time tables</a></li>
-            </ul>
+                <li><a href="logistics.php">Logistics</a></li>';
+               if($jobTitle != 'Receptionist' && $jobTitle != 'Operation Manager') echo'<li><a href="time-table.php">Time tables</a></li>';
+            echo'</ul>
             </li>';
             }
 
@@ -319,7 +319,7 @@ $jobTitle = $_SESSION['userJobTitle'];
                 echo'><a href="branches.php">Branches</a></li>';
             }
 
-            if($jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Operation Manager')
+            if($jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Operation Manager' || $jobTitle == 'Receptionist')
             {
                 echo'<li ';
                 if (basename($_SERVER['PHP_SELF']) == 'c-staff.php') echo 'class="active"';
