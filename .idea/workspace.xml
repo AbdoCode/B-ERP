@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="597a9482-fa08-471e-8566-9bf89cea1a8e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daily-tasks.php" afterPath="$PROJECT_DIR$/daily-tasks.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BackPackersz.iws" />
@@ -29,8 +28,8 @@
       <file leaf-file-name="daily-tasks.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/daily-tasks.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.79187816">
-              <caret line="70" column="40" selection-start-line="70" selection-start-column="40" selection-end-line="70" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.8358714">
+              <caret line="71" column="29" selection-start-line="71" selection-start-column="29" selection-end-line="71" selection-end-column="29" />
               <folding>
                 <marker date="1512154429458" expanded="true" signature="551:795" placeholder="SELECT user_..user_daily_tasks..." />
                 <marker date="1512154429458" expanded="true" signature="551:808" placeholder="SELECT user_..user_daily_tasks..." />
@@ -371,12 +370,6 @@
       <workItem from="1511958964098" duration="9132000" />
       <workItem from="1512002951961" duration="5168000" />
     </task>
-    <task id="LOCAL-00013" summary="Mohamed Edit">
-      <created>1508291782524</created>
-      <option name="number" value="00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1508291782524</updated>
-    </task>
     <task id="LOCAL-00014" summary="Mohamed Edit">
       <created>1508394154766</created>
       <option name="number" value="00014" />
@@ -665,7 +658,13 @@
       <option name="project" value="LOCAL" />
       <updated>1512150632661</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="code edit">
+      <created>1512154476415</created>
+      <option name="number" value="00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1512154476415</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1102,8 +1101,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/daily-tasks.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.79187816">
-          <caret line="70" column="40" selection-start-line="70" selection-start-column="40" selection-end-line="70" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.8358714">
+          <caret line="71" column="29" selection-start-line="71" selection-start-column="29" selection-end-line="71" selection-end-column="29" />
           <folding>
             <marker date="1512154429458" expanded="true" signature="551:795" placeholder="SELECT user_..user_daily_tasks..." />
             <marker date="1512154429458" expanded="true" signature="551:808" placeholder="SELECT user_..user_daily_tasks..." />
