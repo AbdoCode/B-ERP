@@ -6,11 +6,16 @@
 ?>
 <div class="daily-tasks">
     <h2>Daily Tasks</h2>
-    <div class="container-for-btn-group">
+<?php
+
+if($jobTitle != 'Receptionist' && $jobTitle != 'Teacher')
+    echo'<div class="container-for-btn-group">
         <a href="add-daily-tasks.php" class="btn btn-primary">
             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add Daily Task
         </a>
-    </div>
+    </div>';
+?>
+
     <div class="table-responsive">
         <table class="table table-bordered table-hover">
             <tr>
@@ -20,7 +25,7 @@
             </tr>
             <tr>
                 <td>1</td>
-                <td>Task name Task name Task name Task name Task name Task name Task name Task name </td>
+                <td>Task name</td>
                 <td>
                     <select class="dailyTasksStatus" name="status">
                         <option disabled selected value="">select status</option>
