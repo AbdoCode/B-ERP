@@ -1,7 +1,7 @@
 <?php
     session_start();
     $pageTitle = 'Staff Attendance';
-    include 'deploy.php';
+    include 'dep.php';
     include 'navbar.php';
 ?>
 <div class="c-staff-attend">

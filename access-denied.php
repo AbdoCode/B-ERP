@@ -1,7 +1,7 @@
 <?php
 session_start();
 $pageTitle = 'Access Denied';
-include 'deploy.php';
+include 'dep.php';
 include 'navbar.php';
 $var=$_GET['page'];
 ?>

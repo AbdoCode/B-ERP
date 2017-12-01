@@ -1,7 +1,7 @@
 <?php
     session_start();
     $pageTitle = 'Workplan Confirmation';
-    include 'deploy.php';
+    include 'dep.php';
     include 'navbar.php';
 ?>
 <div class="workplan">

@@ -1,7 +1,7 @@
 <?php
     session_start();
     $pageTitle = 'Daily Statistics';
-    include 'deploy.php';
+    include 'dep.php';
     include 'navbar.php';
 ?>
 <div class="statistics">
