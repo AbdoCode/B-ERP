@@ -8,11 +8,11 @@ include 'DB_connect.php';
 
 // Routes
 $templates 	= 'includes/templates/'; // Templates Directory
-$functions	= '../functions/'; // Functions Directory
+$functions	= 'includes/functions/'; // Functions Directory
 $pages	= 'includes/pages/'; // Pages Directory
 $css 	= 'layout/css/'; // Css Directory
 $js 	= 'layout/js/'; // Js Directory
 
 // Include The Important Files
 include $functions . 'functions.php';
-include  'header.php';
+include $templates . 'header.php';
