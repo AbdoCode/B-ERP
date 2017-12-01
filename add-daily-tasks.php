@@ -4,10 +4,17 @@
     include 'deploy.php';
     include 'navbar.php';
 
-if(isset($_POST['forward'])==true)
-{
-    echo'<script>alert("form is working")</script>';
-}
+    $taskName = '';
+    $employeeJobTitle = '';
+    $employeeName = '';
+
+    if(isset($_POST['forward'])==true)
+    {
+        $taskName = $_POST['task_name'];
+        $employeeJobTitle = $_POST['job_title'];
+        $employeeName = $_POST['employee_name'];
+
+    }
 
 ?>
 <div class="add-daily-tasks">
@@ -21,24 +28,46 @@ if(isset($_POST['forward'])==true)
         </div>
         <div class="form-group">
             <label for="jobTitle" class="control-label col-sm-1">Job Title</label>
-            <div class="col-sm-11">
-                <select class="form-control" id="jobTitle" multiple name="job_title[]">
-                    <option>CEO</option>
-                    <option>General Manager</option>
-                    <option>Academy Head</option>
-                    <option>Supervisor</option>
+            <div class="col-sm-9">
+                    <select class="form-control" id="jobTitle" name="job_title">
+                        <option></option>
+                        <?php
+                    $stmt = $connect->prepare("SELECT job_title FROM job_titles");
+                    $stmt->execute();
+                    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                        echo'<option value="'.$row['job_title'].'">'.$row['job_title'].'</option>';
+                        /*echo '<option ';
+                        if($employeeJobTitle == 'Teacher' ) echo 'selected';
+                        echo'>Teacher</option>';*/
+                    }
+                    ?>
                 </select>
             </div>
+
+            <div class="col-sm-2">
+                <button class="btn btn-success btn-block" name="getEmployees">Get Employees</button>
+                </div>
+
         </div>
         <div class="form-group">
             <label for="employee" class="control-label col-sm-1">To</label>
             <div class="col-sm-11">
                 <select class="form-control" id="employee" multiple name="employee_name[]">
-                    <option>All</option>
-                    <option>Ahmed</option>
-                    <option>Mohamed</option>
-                    <option>Ibrahim</option>
-                    <option>Ali</option>
+
+                    <?php
+                    if(isset($_POST['getEmployees']) == true){
+                        $employeeJobTitle = $_POST['job_title'];
+                            $stmt = $connect->prepare("SELECT sys_users.username FROM sys_users
+JOIN staff on sys_users.staff_id = staff.staff_id
+JOIN job_titles ON staff.job_title_id = job_titles.job_title_id
+WHERE job_titles.job_title = '".$employeeJobTitle."' ");
+                            $stmt->execute();
+                            while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                                echo'<option value="'.$row['username'].'">'.$row['username'].'</option>';
+                            }
+                        }
+                    ?>
+
                 </select>
             </div>
         </div>
