@@ -1,7 +1,7 @@
 <?php
     session_start();
     $pageTitle = 'Bus Check In/Out';
-    include 'init.php';
+    include 'deploy.php';
     include 'navbar.php';
 ?>
 <div class="attend">

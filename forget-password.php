@@ -1,6 +1,6 @@
 <?php
     $pageTitle = 'Forget Password';
-    include 'init.php';
+    include 'deploy.php';
 ?>
 
 <div class="login text-center">

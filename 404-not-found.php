@@ -1,7 +1,7 @@
 <?php
     session_start();
     $pageTitle = '404-Not Found';
-    include 'init.php';
+    include 'deploy.php';
     include 'navbar.php';
 ?>
 <div class="error-path">

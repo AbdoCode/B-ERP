@@ -1,7 +1,7 @@
 <?php
     session_start();
     $pageTitle = 'Month';
-    include 'init.php';
+    include 'deploy.php';
     include 'navbar.php';
 ?>
 <div class="staff-attend-details-reports">

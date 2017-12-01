@@ -1,7 +1,7 @@
 <?php
     session_start();
     $pageTitle = 'Home';
-    include 'init.php';
+    include 'deploy.php';
     include 'navbar.php';
 ?>
 <div class="new-term add-forms">

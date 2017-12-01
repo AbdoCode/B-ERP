@@ -1,7 +1,7 @@
 <?php
     session_start();
     $pageTitle = 'Home';
-    include 'init.php';
+    include 'deploy.php';
 ?>
 <div class="index">
     <nav class="navbar navbar-inverse navbar-static-top">
