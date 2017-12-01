@@ -1,3 +1,4 @@
+
 <?php
     session_start();
     $pageTitle = 'Home';
@@ -8,12 +9,15 @@
     $employeeJobTitle = '';
     $employeeName = '';
 
-    if(isset($_POST['forward'])==true)
+    if(isset($_POST['task_name']) == true)
     {
         $taskName = $_POST['task_name'];
+    }
+    if(isset($_POST['forward'])==true && isset($_POST['employee_name']) == true)
+    {
         $employeeJobTitle = $_POST['job_title'];
         $employeeName = $_POST['employee_name'];
-
+        header("Refresh:0.1; url=daily-tasks.php");
     }
 
 ?>
@@ -23,7 +27,7 @@
         <div class="form-group">
             <label for="name" class="control-label col-sm-1">Name</label>
             <div class="col-sm-11">
-                <input type="text" class="form-control" placeholder="Type Task Name..." id="name" name="task_name">
+                <input type="text" class="form-control" placeholder="Type Task Name" id="name" name="task_name" value="<?php echo $taskName ?>">
             </div>
         </div>
         <div class="form-group">
