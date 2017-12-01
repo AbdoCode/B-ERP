@@ -15,4 +15,4 @@ $js 	= 'layout/js/'; // Js Directory
 
 // Include The Important Files
 include $functions . 'functions.php';
-include $templates . 'header.php';
+include  'header.php';

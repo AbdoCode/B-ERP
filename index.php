@@ -1,7 +1,7 @@
 <?php
     session_start();
     $pageTitle = 'Home';
-    include 'deploy.php';
+    include 'includes/templates/loginManagement.php';
 ?>
 <div class="index">
     <nav class="navbar navbar-inverse navbar-static-top">
