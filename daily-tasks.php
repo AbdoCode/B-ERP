@@ -8,8 +8,26 @@ if(isset($_POST['save']) && isset($_POST['status']))
 {
     $status = $_POST['status'];
     $taskID = $_POST['save'];
+    $taskProgressExecutionDate = date("Y-m-d");
+    $progressRate = '';
 
-    //echo'<script>alert("'.$status.' ++ '.$taskID.'")</script>';
+    if($status == 'completed') {$progressRate = '100 %'; $status = '2';}
+    else if($status == 'pending') {$progressRate = '0 %'; $status = '0';}
+    else {$progressRate = $status; $status = '1';}
+
+            $gettingUserDailyTaskId = $connect->prepare("SELECT user_daily_tasks.user_daily_tasks_id FROM user_daily_tasks
+JOIN daily_tasks on user_daily_tasks.daily_task_id = daily_tasks.daily_task_id
+WHERE user_daily_tasks.task_owner = '".$_SESSION['userID']."'
+AND user_daily_tasks.daily_task_id = '".$taskID."' ");
+    
+    $gettingUserDailyTaskId->execute();
+    if($row = $gettingUserDailyTaskId->fetch(PDO::FETCH_ASSOC)) {
+        $userDailyTaskId = $row['user_daily_tasks_id'];
+        $addTaskProgressRate = "INSERT INTO daily_tasks_progress(status, progress_rate, execution_date, user_daily_tasks_id)
+VALUES ('$status', '$progressRate', '$taskProgressExecutionDate', '$userDailyTaskId')";
+        $connect->exec($addTaskProgressRate);
+
+    }
 }
 
 ?>
@@ -46,24 +64,23 @@ where user_daily_tasks.task_owner = '".$_SESSION['userID']."'");
                 <td>'.$rowIncrementer++.'</td>
                 <td>'.$row['task_content'].'</td>
                 <td>
-                    <select class="dailyTasksStatus" name="status">
+                    <select class="dailyTasksStatus" name="status" disabled>
                         <option disabled selected value="">select status</option>
-                        <option value="completed">Completed</option>
+                        <option value="completed" selected>Completed</option>
                         <option value="pending">Pending</option>
                         <option value="inprogress">In progress</option>
                     </select>
                     <select class="inprogressStatus hide" name="status">
                         <option disabled selected value="">select percentage</option>
-                        <option value="10%">10%</option>
-                        <option value="20%">20%</option>
-                        <option value="30%">30%</option>
-                        <option value="40%">40%</option>
-                        <option value="50%">50%</option>
-                        <option value="60%">60%</option>
-                        <option value="70%">70%</option>
-                        <option value="80%">80%</option>
-                        <option value="90%">90%</option>
-                        <option value="100%">100%</option>
+                        <option value="10 %">10%</option>
+                        <option value="20 %">20%</option>
+                        <option value="30 %">30%</option>
+                        <option value="40 %">40%</option>
+                        <option value="50 %">50%</option>
+                        <option value="60 %">60%</option>
+                        <option value="70 %">70%</option>
+                        <option value="80 %">80%</option>
+                        <option value="90 %">90%</option>
                     </select>
                 </td>
 
@@ -73,7 +90,6 @@ where user_daily_tasks.task_owner = '".$_SESSION['userID']."'");
             </tr>';
             }
             ?>
-
 
         </table>
     </div>
