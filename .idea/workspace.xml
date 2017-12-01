@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="597a9482-fa08-471e-8566-9bf89cea1a8e" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/includes/templates/connect.php" afterPath="$PROJECT_DIR$/includes/templates/DB_connect.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.php" afterPath="$PROJECT_DIR$/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/navbar.php" afterPath="$PROJECT_DIR$/navbar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notification.php" afterPath="$PROJECT_DIR$/notification.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/templates/loginManagement.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BackPackersz.iws" />
@@ -40,26 +37,10 @@
         </entry>
       </file>
       <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../fuzzy_system/login.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.724138">
-              <caret line="102" column="18" selection-start-line="102" selection-start-column="18" selection-end-line="102" selection-end-column="18" />
-              <folding>
-                <marker date="1512047375130" expanded="true" signature="411:532" placeholder="SELECT staff..staff..." />
-                <marker date="1512047375130" expanded="true" signature="667:737" placeholder="SELECT job_t..job_titles..." />
-                <marker date="1512047375130" expanded="true" signature="970:1067" placeholder="SELECT user_..sys_users..." />
-                <marker date="1512047375130" expanded="true" signature="1127:1224" placeholder="SELECT user_..sys_users..." />
-                <marker date="1512047375130" expanded="true" signature="3373:3416" placeholder="SELECT branc..branches..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-8.068966">
+              <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
               <folding>
                 <marker date="1512100393583" expanded="true" signature="371:492" placeholder="SELECT staff..staff..." />
                 <marker date="1512100393583" expanded="true" signature="611:681" placeholder="SELECT job_t..job_titles..." />
@@ -93,10 +74,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="access-denied.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="access-denied.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/access-denied.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.689655">
+            <state vertical-scroll-proportion="0.13197969">
               <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
               <folding />
             </state>
@@ -111,9 +92,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/add-new-branch.php" />
-        <option value="$PROJECT_DIR$/branches.php" />
-        <option value="$PROJECT_DIR$/../form.php" />
         <option value="$PROJECT_DIR$/../osama/form.php" />
         <option value="$PROJECT_DIR$/../osama/student_info.sql" />
         <option value="$PROJECT_DIR$/staff.php" />
@@ -161,7 +139,10 @@
         <option value="$PROJECT_DIR$/layout/js/script.js" />
         <option value="$PROJECT_DIR$/init.php" />
         <option value="$PROJECT_DIR$/navbar.php" />
+        <option value="$PROJECT_DIR$/includes/templates/loginManagemant.php" />
         <option value="$PROJECT_DIR$/login.php" />
+        <option value="$PROJECT_DIR$/includes/templates/loginManagement.php" />
+        <option value="$PROJECT_DIR$/../../fuzzy_system/includes/templates/loginManagement.php" />
       </list>
     </option>
   </component>
@@ -284,7 +265,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jsx.switch.disabled" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../fuzzy_system/login.php" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../fuzzy_system/includes/templates/loginManagement.php" />
     <property name="recentsLimit" value="5" />
   </component>
   <component name="RecentsManager">
@@ -661,7 +642,13 @@
       <option name="project" value="LOCAL" />
       <updated>1512100144307</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="code edit">
+      <created>1512100434362</created>
+      <option name="number" value="00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1512100434362</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -669,9 +656,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="745" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19281524" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19281524" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329653" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -716,20 +703,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/includes/templates/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="66" selection-start-line="4" selection-start-column="66" selection-end-line="4" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/new-term.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zone-prices.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1016,14 +989,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/access-denied.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.689655">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../fuzzy_system/deploy.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.91201353">
@@ -1040,6 +1005,66 @@
             <marker date="1512100178614" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..notifications..." />
             <marker date="1512100178614" expanded="true" signature="-1:-1" placeholder="..." />
             <marker date="1512100178614" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../fuzzy_system/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42808798">
+          <caret line="102" column="18" selection-start-line="102" selection-start-column="18" selection-end-line="102" selection-end-column="18" />
+          <folding>
+            <marker date="1512047375130" expanded="true" signature="-1:-1" placeholder="SELECT staff..staff..." />
+            <marker date="1512047375130" expanded="true" signature="-1:-1" placeholder="SELECT job_t..job_titles..." />
+            <marker date="1512047375130" expanded="true" signature="-1:-1" placeholder="SELECT user_..sys_users..." />
+            <marker date="1512047375130" expanded="true" signature="-1:-1" placeholder="SELECT user_..sys_users..." />
+            <marker date="1512047375130" expanded="true" signature="-1:-1" placeholder="SELECT branc..branches..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/templates/loginManagement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43993232">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../fuzzy_system/includes/templates/loginManagement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43993232">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../fuzzy_system/navbar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.413794">
+          <caret line="68" column="11" selection-start-line="68" selection-start-column="11" selection-end-line="68" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.068966">
+          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+          <folding>
+            <marker date="1512100393583" expanded="true" signature="371:492" placeholder="SELECT staff..staff..." />
+            <marker date="1512100393583" expanded="true" signature="611:681" placeholder="SELECT job_t..job_titles..." />
+            <marker date="1512100393583" expanded="true" signature="894:991" placeholder="SELECT user_..sys_users..." />
+            <marker date="1512100393583" expanded="true" signature="1043:1140" placeholder="SELECT user_..sys_users..." />
+            <marker date="1512100393583" expanded="true" signature="3353:3396" placeholder="SELECT branc..branches..." />
           </folding>
         </state>
       </provider>
@@ -1062,47 +1087,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logout.php">
+    <entry file="file://$PROJECT_DIR$/access-denied.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.13197969">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../fuzzy_system/navbar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.413794">
-          <caret line="68" column="11" selection-start-line="68" selection-start-column="11" selection-end-line="68" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../fuzzy_system/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.724138">
-          <caret line="102" column="18" selection-start-line="102" selection-start-column="18" selection-end-line="102" selection-end-column="18" />
-          <folding>
-            <marker date="1512047375130" expanded="true" signature="411:532" placeholder="SELECT staff..staff..." />
-            <marker date="1512047375130" expanded="true" signature="667:737" placeholder="SELECT job_t..job_titles..." />
-            <marker date="1512047375130" expanded="true" signature="970:1067" placeholder="SELECT user_..sys_users..." />
-            <marker date="1512047375130" expanded="true" signature="1127:1224" placeholder="SELECT user_..sys_users..." />
-            <marker date="1512047375130" expanded="true" signature="3373:3416" placeholder="SELECT branc..branches..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1512100393583" expanded="true" signature="371:492" placeholder="SELECT staff..staff..." />
-            <marker date="1512100393583" expanded="true" signature="611:681" placeholder="SELECT job_t..job_titles..." />
-            <marker date="1512100393583" expanded="true" signature="894:991" placeholder="SELECT user_..sys_users..." />
-            <marker date="1512100393583" expanded="true" signature="1043:1140" placeholder="SELECT user_..sys_users..." />
-            <marker date="1512100393583" expanded="true" signature="3353:3396" placeholder="SELECT branc..branches..." />
-          </folding>
         </state>
       </provider>
     </entry>
