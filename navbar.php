@@ -176,16 +176,18 @@ $jobTitle = $_SESSION['userJobTitle'];
             if($jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Supervisor' || $jobTitle == 'Receptionist' || $jobTitle == 'Operation Manager')
             {
                 echo'<li ';
-                if (basename($_SERVER['PHP_SELF']) == 'logistics.php' || basename($_SERVER['PHP_SELF']) == 'check-in-out.php' || basename($_SERVER['PHP_SELF']) == 'time-table.php' || basename($_SERVER['PHP_SELF']) == 'add-new-time-table.php') echo 'class="active"';
+                if (basename($_SERVER['PHP_SELF']) == 'logistics.php' || basename($_SERVER['PHP_SELF']) == 'check-in-out.php' || basename($_SERVER['PHP_SELF']) == 'time-table.php' || basename($_SERVER['PHP_SELF']) == 'add-new-time-table.php' || (basename($_SERVER['PHP_SELF']) == 'logistics-approval.php') ) echo 'class="active"';
                 echo'><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                 Logistics <span class="glyphicon glyphicon-triangle-right"></span>
             </a>
             <ul class="dropdown-menu">
                 <li><a href="check-in-out.php">Check in/out</a></li>
-                <li><a href="logistics.php">Logistics</a></li>';
-               if($jobTitle != 'Receptionist' && $jobTitle != 'Operation Manager') echo'<li><a href="time-table.php">Time tables</a></li>';
-            echo'</ul>
-            </li>';
+                <li><a href="logistics.php">Reception Logistics</a></li>';
+                if($jobTitle != 'Receptionist' && $jobTitle != 'Operation Manager')
+                    echo'<li><a href="time-table.php">Time tables</a></li>';
+                if($jobTitle != 'Receptionist')
+                    echo'<li><a href="logistics-approval.php">Logistics Approval</a></li>';
+            echo'</ul></li>';
             }
 
             if($jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Supervisor' || $jobTitle == 'Receptionist' || $jobTitle == 'Operation Manager')
@@ -217,7 +219,7 @@ $jobTitle = $_SESSION['userJobTitle'];
             </li>';
             }
 
-            if($jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Receptionist' || $jobTitle == 'Operation Manager')
+            if($jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Receptionist')
             {
                 echo'<li ';
                 if (basename($_SERVER['PHP_SELF']) == 'zone-reservations.php' || basename($_SERVER['PHP_SELF']) == 'zone-prices.php' || basename($_SERVER['PHP_SELF']) == 'zone-meeting.php' || basename($_SERVER['PHP_SELF']) == 'zone-courses.php') echo 'class="active"';
@@ -247,13 +249,6 @@ $jobTitle = $_SESSION['userJobTitle'];
                 echo'<li ';
             if (basename($_SERVER['PHP_SELF']) == 'assigned-tasks.php' || basename($_SERVER['PHP_SELF']) == 'view-assigned-task.php') echo 'class="active"';
                 echo'><a href="assigned-tasks.php">Assigned Tasks</a></li>';
-            }
-
-            if($jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Operation Manager')
-            {
-                echo'<li ';
-                if (basename($_SERVER['PHP_SELF']) == 'logistics-approval.php') echo 'class="active"';
-                echo'><a href="logistics-approval.php">Logistics</a></li>';
             }
 
             if($jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Operation Manager')
