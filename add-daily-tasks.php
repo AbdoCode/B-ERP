@@ -17,6 +17,27 @@
     {
         $employeeJobTitle = $_POST['job_title'];
         $employeeName = $_POST['employee_name'];
+        $employeeID= '';
+        $addedBy = $_SESSION['userID'];
+        $dateTaskAdded = date("Y-m-d");
+
+        $addDailyTask = "INSERT INTO daily_tasks (task_content, date_added, added_by)
+    VALUES ('$taskName', '$dateTaskAdded', '$addedBy')";
+        $connect->exec($addDailyTask);
+
+        $thisInsertedID = $connect->lastInsertId();
+
+        foreach($employeeName as $employeeNames)
+        {
+            $stmt = $connect->prepare("SELECT user_id FROM sys_users where username = '$employeeNames'");
+            $stmt->execute();
+            if ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                $employeeID = $row['user_id'];
+                $addDailyUserTask="INSERT INTO user_daily_tasks (task_owner, daily_task_id) VALUES ('$employeeID','$thisInsertedID')";
+                $connect->exec($addDailyUserTask);
+            }
+        }
+
         header("Refresh:0.1; url=daily-tasks.php");
     }
 

@@ -7,7 +7,9 @@
 if(isset($_POST['save']) && isset($_POST['status']))
 {
     $status = $_POST['status'];
-    echo'<script>alert("'.$status.'")</script>';
+    $taskID = $_POST['save'];
+
+    //echo'<script>alert("'.$status.' ++ '.$taskID.'")</script>';
 }
 
 ?>
@@ -33,9 +35,16 @@ if($jobTitle != 'Receptionist' && $jobTitle != 'Teacher')
                 <th class="col-sm-5">Status</th>
                 <th class="col-sm-2">Action</th>
             </tr>
-            <tr>
-                <td>1</td>
-                <td>Task name</td>
+            <?php
+            $stmt = $connect->prepare("SELECT daily_tasks.task_content, daily_tasks.daily_task_id FROM daily_tasks
+JOIN user_daily_tasks on daily_tasks.daily_task_id = user_daily_tasks.daily_task_id
+where user_daily_tasks.task_owner = '".$_SESSION['userID']."'");
+            $stmt->execute();
+            $rowIncrementer=1;
+            while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                echo'<tr>
+                <td>'.$rowIncrementer++.'</td>
+                <td>'.$row['task_content'].'</td>
                 <td>
                     <select class="dailyTasksStatus" name="status">
                         <option disabled selected value="">select status</option>
@@ -59,9 +68,13 @@ if($jobTitle != 'Receptionist' && $jobTitle != 'Teacher')
                 </td>
 
                 <td>
-                    <button class="btn btn-success btn-block" name="save">Save</button>
+                    <button class="btn btn-success btn-block" value="'.$row['daily_task_id'].'" name="save">Save</button>
                 </td>
-            </tr>
+            </tr>';
+            }
+            ?>
+
+
         </table>
     </div>
 </div>
