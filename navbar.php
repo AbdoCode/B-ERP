@@ -1,3 +1,8 @@
+<?php
+
+$jobTitle = $_SESSION['userJobTitle'];
+
+?>
 <nav class="navbar navbar-inverse navbar-static-top">
     <div class="container-fluid">
         <div class="row">
@@ -18,7 +23,7 @@
             <div class="collapse navbar-collapse" id="mainCollapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo $sessionUser ?><span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo '<b>'.$jobTitle .'</b>'.' '.$_SESSION['userName'] ?><span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="add-event.php">Add Event</a></li>
                             <li><a href="add-kid-issue.php">Add Issue for kid</a></li>

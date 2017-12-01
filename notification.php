@@ -1,5 +1,5 @@
 <?php
-    include_once 'includes/templates/connect.php';
+    include_once 'includes/templates/DB_connect.php';
     $stmt = $connect->prepare("SELECT * FROM notifications");
     $stmt->execute();
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
