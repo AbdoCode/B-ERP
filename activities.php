@@ -2,7 +2,6 @@
     session_start();
     $pageTitle = 'Activities';
     include 'deploy.php';
-    ob_start();
     include 'navbar.php';
 
 //if($_SESSION['userJobTitle'] == 'Teacher')
@@ -36,10 +35,25 @@
                 <th class="col-sm-2">Time</th>
                 <th class="col-sm-1">Details</th>
             </tr>
-            <tr>
-                <td>1</td>
-                <td>Funday</td>
-                <td>A</td>
+            <?php
+            $stmt = $connect->prepare("SELECT * FROM activities");
+            $stmt->execute();
+            $activityIncrementer=1;
+            while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                echo '<tr>
+                <td>'.$activityIncrementer++.'</td>
+                <td>'.$row['activity_name'].'</td>
+                <td>';
+
+                $getActivityClasses = $connect->prepare("SELECT classes.class_name FROM classes
+JOIN class_activities on classes.class_id = class_activities.class_id
+WHERE class_activities.activity_id = '".$row['activity_id']."'");
+                $getActivityClasses->execute();
+                while ($row2 = $getActivityClasses->fetch(PDO::FETCH_ASSOC)) {
+                    echo $row2['class_name'] . ',';
+                }
+                echo'
+                </td>
                 <td>
                     <select class="tableStatus" name="status">
                         <option disabled selected value="">select status</option>
@@ -48,26 +62,13 @@
                         <option value="inprogress">In progress</option>
                     </select>
                 </td>
-                <td>17 Aug 2017</td>
-                <td>05:20 AM</td>
-                <td><a href="view-activity.php" class="btn btn-primary btn-sm">View</a></td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Trip</td>
-                <td>All</td>
-                <td>
-                    <select class="tableStatus" name="status">
-                        <option disabled selected value="">select status</option>
-                        <option value="completed">Completed</option>
-                        <option value="pending">Pending</option>
-                        <option value="inprogress">In progress</option>
-                    </select>
-                </td>
-                <td>18 Sep 2017</td>
-                <td>05:20 AM</td>
-                <td><a href="view-activity.php" class="btn btn-primary btn-sm">View</a></td>
-            </tr>
+                <td>'.$row['activity_date'].'</td>
+                <td>'.$row['activity_time'].'</td>
+                <td><a href="view-activity.php?act_id='.$row['activity_id'].'" class="btn btn-primary btn-sm">View</a></td>
+            </tr>';
+            }
+            ?>
+
         </table>
     </div>
 </div>

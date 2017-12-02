@@ -1,18 +1,51 @@
 <?php
     session_start();
-    $pageTitle = 'Home';
+    $pageTitle = 'View Activity';
     include 'deploy.php';
     include 'navbar.php';
-?>
+
+$thisActivityId = $_GET['act_id'];
+
+$activityName = '';
+$activityDate = '';
+$activityTime = '';
+$activityClasses = '';
+//$activityPics = $_POST['activity_photos'];
+$activityDetails = '';
+$activityDateAdded = '';
+$activityAddedBy = '';
+
+$stmt = $connect->prepare("SELECT * FROM activities WHERE activity_id = '$thisActivityId'");
+$stmt->execute();
+if ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+
+    $activityName = $row['activity_name'];
+    $activityDate = $row['activity_date'];
+    $activityTime = $row['activity_time'];
+    $activityDetails = $row['activity_details'];
+    $activityDateAdded = $row['activity_details'];
+    $activityAddedBy = $row['added_by'];
+
+    $getActivityClasses = $connect->prepare("SELECT classes.class_name FROM classes
+JOIN class_activities on classes.class_id = class_activities.class_id
+WHERE class_activities.activity_id = '".$thisActivityId."'");
+    $getActivityClasses->execute();
+    while ($row2 = $getActivityClasses->fetch(PDO::FETCH_ASSOC)) {
+        $activityClasses .= $row2['class_name'] . ', ';
+    }
+
+}
+
+echo'
 <div class="view-activity">
-    <h2 class="text-center">Activity Name</h2>
+    <h2 class="text-center">'.$activityName.'</h2>
     <div class="contRow">
         <label class="col-xs-1">Date:</label>
-        <p class="col-sm-11 col-sm-push-0 col-xs-9 col-xs-push-2">17 Aug 2017</p>
+        <p class="col-sm-11 col-sm-push-0 col-xs-9 col-xs-push-2">'.$activityDate.'</p>
     </div>
     <div class="contRow">
         <label class="col-xs-1">Class:</label>
-        <p class="col-sm-11 col-sm-push-0 col-xs-9 col-xs-push-2">A</p>
+        <p class="col-sm-11 col-sm-push-0 col-xs-9 col-xs-push-2">'.$activityClasses.'</p>
     </div>
     <div class="contRow">
         <label class="col-xs-1">Status:</label>
@@ -20,7 +53,7 @@
     </div>
     <div class="contRow">
         <label class="col-sm-1 col-xs-12">Details:</label>
-        <p class="col-sm-11 col-xs-12">This is Details for this activity This is Details for this activity This is Details for this activity This is Details for this activity This is Details for this activity This is Details for this activity</p>
+        <p class="col-sm-11 col-xs-12">'.$activityDetails.'</p>
     </div>
     <div class="contRow">
         <label class="col-sm-1 control-label">Photos:</label>
@@ -46,7 +79,7 @@
             </a>
         </div>
     </div>
-</div>
-<?php
-    include $templates . 'footer.php';
+</div>';
+
+include $templates . 'footer.php';
 ?>
