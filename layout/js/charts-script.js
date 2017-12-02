@@ -1,6 +1,6 @@
 /***************************************** bar Chart **************************************************/
 var bardata = {
-    labels: ["Kids", "Teachers", "CEO", "blabla", "Mohamed", "hoba", "lalalal"],
+    labels: ["Kids", "Teachers", "CEO", "G.M", "Operation Managers", "Receptionists", "Supervisors", "Supervisors"],
     datasets: [{
         label: "Numbers",
         backgroundColor: "rgba(0, 51, 153, 0.8)",
@@ -8,7 +8,7 @@ var bardata = {
         borderWidth: 2,
         hoverBackgroundColor: "rgba(0, 0, 153, 0.9)",
         hoverBorderColor: "rgba(0, 0, 153,1)",
-        data: [65, 59, 20, 81, 56, 55, 40]
+        data: [65, 59, 20, 81, 56, 55, 40,90]
     }]
 };
 
