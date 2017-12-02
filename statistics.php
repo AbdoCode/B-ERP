@@ -27,6 +27,13 @@
                     <canvas id="doughnut"></canvas>
                 </div>
             </div>
+
+            <div class="col-xs-12 col-sm-6">
+                <div class="chart-container">
+                    <canvas id="doughnut"></canvas>
+                </div>
+            </div>
+
             <div class="col-xs-12">
                 <div class="chart-container">
                     <canvas id="bar"></canvas>

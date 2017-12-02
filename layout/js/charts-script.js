@@ -1,14 +1,14 @@
 /***************************************** bar Chart **************************************************/
 var bardata = {
-    labels: ["Kids", "Teachers", "CEO", "G.M", "Operation Managers", "Receptionists", "Supervisors", "Supervisors"],
+    labels: ["Kids", "Teachers", "Operation Manager", "Supervisors", "Academy Heads", "Receptionist"],
     datasets: [{
-        label: "Numbers",
+        label: "New Members For This Month ( December )",
         backgroundColor: "rgba(0, 51, 153, 0.8)",
         borderColor: "rgba(0, 51, 153,1)",
         borderWidth: 2,
         hoverBackgroundColor: "rgba(0, 0, 153, 0.9)",
         hoverBorderColor: "rgba(0, 0, 153,1)",
-        data: [65, 59, 20, 81, 56, 55, 40,90]
+        data: [27, 8, 7, 4, 6, 3]
     }]
 };
 
@@ -37,12 +37,12 @@ Chart.Bar('bar', {
 /***************************************** bar Charts **************************************************/
 /***************************************** pie Charts **************************************************/
 var piedata = {
-    labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
+    labels: ["BackPackerz", "EbnBatota", "Samaloote"],
     datasets: [
         {
             label: "Population (millions)",
-            backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
-            data: [2478, 5267, 734, 784, 433]
+            backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f"],
+            data: [136, 92, 31]
         }
     ]
 };
@@ -50,7 +50,7 @@ var piedata = {
 var pieoptions = {
     title: {
         display: true,
-        text: 'Predicted world population (millions) in 2050'
+        text: 'Number of kids per branch until now'
     }
 };
 
@@ -62,19 +62,19 @@ var myPieChart = new Chart(pie, {
 /***************************************** pie Charts **************************************************/
 /***************************************** doughnut Charts **************************************************/
 var doughnutdata = {
-    labels: ["IOS", "Android", "Blackberry", "Symbian", "Sony", "Others"],
+    labels: ["Completed", "Postponed", "Cancelled", "In Progress", "Pending"],
     datasets: [{
         backgroundColor: ["rgba(52, 152, 219,0.8)", "rgba(231, 76, 60,0.8)", "rgba(155, 89, 182,0.8)", "rgba(38, 185, 154,0.8)", "rgba(255,99,132,1)", "rgba(189, 195, 199,0.8)"],
         borderWidth: 2,
         hoverBackgroundColor: ["rgba(52, 152, 219,1)", "rgba(231, 76, 60,1)", "rgba(155, 89, 182,1)", "rgba(38, 185, 154,1)", "rgba(255,99,132,1)", "rgba(189, 195, 199,1)"],
-        data: [65, 59, 20, 81, 56, 55]
+        data: [7, 2, 1, 3, 5]
     }]
 };
 
 var doughnutoptions = {
     title: {
         display: true,
-        text: 'Mobile phone to blabla bla'
+        text: 'Number of Events for this Month ( December )'
     }
 };
 
