@@ -7,28 +7,27 @@
 
 if(isset($_POST['save']) && isset($_POST['status']))
 {
-    $status = $_POST['status'];
-    $taskID = $_POST['save'];
-    $taskProgressExecutionDate = date("Y-m-d");
-    $progressRate = '';
+        $status = $_POST['status'];
+        $taskID = $_POST['save'];
+        $taskProgressExecutionDate = date("Y-m-d");
+        $progressRate = '';
 
-    if($status == 'completed') {$progressRate = '100 %'; $status = '2';}
-    else if($status == 'pending') {$progressRate = '0 %'; $status = '0';}
-    else {$progressRate = $status; $status = '1';}
+        if($status == 'completed') {$progressRate = '100 %'; $status = '2';}
+        else if($status == 'pending') {$progressRate = '0 %'; $status = '0';}
+        else {$progressRate = $status; $status = '1';}
 
-            $gettingUserDailyTaskId = $connect->prepare("SELECT user_daily_tasks.user_daily_tasks_id FROM user_daily_tasks
+        $gettingUserDailyTaskId = $connect->prepare("SELECT user_daily_tasks.user_daily_tasks_id FROM user_daily_tasks
 JOIN daily_tasks on user_daily_tasks.daily_task_id = daily_tasks.daily_task_id
 WHERE user_daily_tasks.task_owner = '".$_SESSION['userID']."'
 AND user_daily_tasks.daily_task_id = '".$taskID."' ");
-    
-    $gettingUserDailyTaskId->execute();
-    if($row = $gettingUserDailyTaskId->fetch(PDO::FETCH_ASSOC)) {
-        $userDailyTaskId = $row['user_daily_tasks_id'];
-        $addTaskProgressRate = "INSERT INTO daily_tasks_progress(status, progress_rate, execution_date, user_daily_tasks_id)
-VALUES ('$status', '$progressRate', '$taskProgressExecutionDate', '$userDailyTaskId')";
-        $connect->exec($addTaskProgressRate);
 
-    }
+        $gettingUserDailyTaskId->execute();
+        if($row = $gettingUserDailyTaskId->fetch(PDO::FETCH_ASSOC)) {
+            $userDailyTaskId = $row['user_daily_tasks_id'];
+            $addTaskProgressRate = "INSERT INTO daily_tasks_progress(status, progress_rate, execution_date, user_daily_tasks_id)
+VALUES ('$status', '$progressRate', '$taskProgressExecutionDate', '$userDailyTaskId')";
+            $connect->exec($addTaskProgressRate);
+        }
 }
 
 ?>
@@ -65,7 +64,7 @@ where user_daily_tasks.task_owner = '".$_SESSION['userID']."'");
                 echo'<tr>
                 <td>'.$rowIncrementer++.'</td>
                 <td>'.$row['task_content'].'</td>
-                <td><select class="dailyTasksStatus" name="status">';
+                <td>';
                 $gettingTaskProgress = $connect->prepare("SELECT daily_tasks_progress.status, daily_tasks_progress.progress_rate
 FROM daily_tasks_progress
 JOIN user_daily_tasks on daily_tasks_progress.user_daily_tasks_id = user_daily_tasks.user_daily_tasks_id
@@ -73,12 +72,14 @@ where user_daily_tasks.daily_task_id = '".$row['daily_task_id']."' AND user_dail
                 $gettingTaskProgress->execute();
                 $row2 = $gettingTaskProgress->fetch(PDO::FETCH_ASSOC);
 
-                echo'
-
+                if($row2['status'] == '2') echo'Completed';
+                else if($row2['status'] == '1') echo'In Progress until <b>'.$row2['progress_rate'].'</b> %';
+                else echo'
+                    <select class="dailyTasksStatus" name="status">
                         <option disabled selected value="">select status</option>
-                        <option value="completed"'; if($row2['status'] == '2') echo'selected';echo'>Completed</option>
-                        <option value="pending"'; if($row2['status'] == '0') echo'selected';echo'>Pending</option>
-                        <option value="inprogress"'; if($row2['status'] == '1') echo'selected';echo'>In Progress</option>
+                        <option value="completed">Completed</option>
+                        <option value="pending">Pending</option>
+                        <option value="inprogress">In Progress</option>
                     </select>
                     <select class="inprogressStatus hide" name="status">
                         <option disabled selected value="">select percentage</option>
