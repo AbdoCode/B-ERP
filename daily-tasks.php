@@ -3,6 +3,7 @@
     $pageTitle = 'Home';
     include 'deploy.php';
     include 'navbar.php';
+    include 'daily-functions.php';
 
 if(isset($_POST['save']) && isset($_POST['status']))
 {
