@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="597a9482-fa08-471e-8566-9bf89cea1a8e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/daily-functions.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daily-tasks.php" afterPath="$PROJECT_DIR$/daily-tasks.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -30,8 +29,8 @@
       <file leaf-file-name="navbar.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/navbar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="74" column="13" selection-start-line="74" selection-start-column="13" selection-end-line="74" selection-end-column="13" />
+            <state vertical-scroll-proportion="-13.448276">
+              <caret line="89" column="20" selection-start-line="89" selection-start-column="20" selection-end-line="89" selection-end-column="20" />
               <folding>
                 <marker date="1512391506499" expanded="true" signature="4320:4427" placeholder="..." />
                 <marker date="1512391506499" expanded="true" signature="4470:4740" placeholder="..." />
@@ -61,19 +60,20 @@
       <file leaf-file-name="daily-tasks.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/daily-tasks.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7038917">
-              <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.9084507">
+              <caret line="101" column="19" selection-start-line="101" selection-start-column="19" selection-end-line="101" selection-end-column="19" />
               <folding>
-                <marker date="1512557693159" expanded="true" signature="586:843" placeholder="SELECT user_..user_daily_tasks..." />
-                <marker date="1512557693159" expanded="true" signature="1047:1225" placeholder="INSERT INTO ..." />
-                <marker date="1512557693159" expanded="true" signature="1475:1660" placeholder="..." />
-                <marker date="1512557693159" expanded="true" signature="1538:1649" placeholder="..." />
-                <marker date="1512557693159" expanded="true" signature="2042:2263" placeholder="SELECT daily..daily_tasks..." />
-                <marker date="1512557693159" expanded="true" signature="2412:3833" placeholder="..." />
-                <marker date="1512557693159" expanded="true" signature="2530:3649" placeholder="..." />
-                <marker date="1512557693159" expanded="true" signature="2598:2916" placeholder="..." />
-                <marker date="1512557693159" expanded="true" signature="2989:3627" placeholder="..." />
-                <marker date="1512557693159" expanded="true" signature="3671:3815" placeholder="..." />
+                <marker date="1512582647212" expanded="true" signature="586:843" placeholder="SELECT user_..user_daily_tasks..." />
+                <marker date="1512582647212" expanded="true" signature="1047:1225" placeholder="INSERT INTO ..." />
+                <marker date="1512582647212" expanded="true" signature="1475:1660" placeholder="..." />
+                <marker date="1512582647212" expanded="true" signature="1538:1649" placeholder="..." />
+                <marker date="1512582647212" expanded="true" signature="2042:2263" placeholder="SELECT daily..daily_tasks..." />
+                <marker date="1512582647212" expanded="true" signature="2413:2578" placeholder="..." />
+                <marker date="1512582647212" expanded="true" signature="2640:2943" placeholder="SELECT daily..daily_tasks_progress..." />
+                <marker date="1512582647212" expanded="true" signature="2640:2944" placeholder="SELECT daily..daily_tasks_progress..." />
+                <marker date="1512582647212" expanded="true" signature="2640:2968" placeholder="SELECT daily..daily_tasks_progress..." />
+                <marker date="1512582647212" expanded="true" signature="3656:4294" placeholder="..." />
+                <marker date="1512582647212" expanded="true" signature="4379:4523" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -82,8 +82,8 @@
       <file leaf-file-name="daily-functions.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/daily-functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.689655">
-              <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
+            <state vertical-scroll-proportion="-0.8965517">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -92,8 +92,8 @@
       <file leaf-file-name="activities.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/activities.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.827586">
-              <caret line="64" column="50" selection-start-line="64" selection-start-column="50" selection-end-line="64" selection-end-column="50" />
+            <state vertical-scroll-proportion="-0.8965517">
+              <caret line="35" column="48" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
               <folding>
                 <marker date="1512177196484" expanded="true" signature="1350:1374" placeholder="SELECT * FRO..activities..." />
                 <marker date="1512177196484" expanded="true" signature="1529:1653" placeholder="..." />
@@ -216,7 +216,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -227,7 +227,30 @@
       <autoscrollFromSource />
       <sortByType />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="B-ERP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="B-ERP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="B-ERP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
@@ -345,12 +368,6 @@
       <workItem from="1511892263478" duration="7287000" />
       <workItem from="1511958964098" duration="9132000" />
       <workItem from="1512002951961" duration="5168000" />
-    </task>
-    <task id="LOCAL-00022" summary="Mohamed Edit">
-      <created>1508666344097</created>
-      <option name="number" value="00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1508666344097</updated>
     </task>
     <task id="LOCAL-00023" summary="Mohamed Edit">
       <created>1508669283608</created>
@@ -640,7 +657,13 @@
       <option name="project" value="LOCAL" />
       <updated>1512553769008</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="code edit">
+      <created>1512564505643</created>
+      <option name="number" value="00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1512564505643</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -650,7 +673,7 @@
     <frame x="0" y="0" width="1366" height="745" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19281524" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19213313" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329653" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -671,6 +694,28 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39905363" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329653" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921174" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329653" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19213313" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921174" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39905363" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -999,13 +1044,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/add-daily-tasks.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07614213">
-          <caret line="92" column="22" selection-start-line="92" selection-start-column="22" selection-end-line="92" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/access-denied.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21996616">
@@ -1027,10 +1065,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/activities.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.8965517">
+          <caret line="35" column="48" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
+          <folding>
+            <marker date="1512177196484" expanded="true" signature="1350:1374" placeholder="SELECT * FRO..activities..." />
+            <marker date="1512177196484" expanded="true" signature="1529:1653" placeholder="..." />
+            <marker date="1512177196484" expanded="true" signature="1715:1886" placeholder="SELECT class..classes..." />
+            <marker date="1512177196484" expanded="true" signature="2150:2553" placeholder="..." />
+            <marker date="1512177196484" expanded="true" signature="2213:2531" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/navbar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="74" column="13" selection-start-line="74" selection-start-column="13" selection-end-line="74" selection-end-column="13" />
+        <state vertical-scroll-proportion="-13.448276">
+          <caret line="89" column="20" selection-start-line="89" selection-start-column="20" selection-end-line="89" selection-end-column="20" />
           <folding>
             <marker date="1512391506499" expanded="true" signature="4320:4427" placeholder="..." />
             <marker date="1512391506499" expanded="true" signature="4470:4740" placeholder="..." />
@@ -1056,43 +1108,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/activities.php">
+    <entry file="file://$PROJECT_DIR$/add-daily-tasks.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.827586">
-          <caret line="64" column="50" selection-start-line="64" selection-start-column="50" selection-end-line="64" selection-end-column="50" />
+        <state vertical-scroll-proportion="0.089788735">
+          <caret line="92" column="22" selection-start-line="92" selection-start-column="22" selection-end-line="92" selection-end-column="22" />
           <folding>
-            <marker date="1512177196484" expanded="true" signature="1350:1374" placeholder="SELECT * FRO..activities..." />
-            <marker date="1512177196484" expanded="true" signature="1529:1653" placeholder="..." />
-            <marker date="1512177196484" expanded="true" signature="1715:1886" placeholder="SELECT class..classes..." />
-            <marker date="1512177196484" expanded="true" signature="2150:2553" placeholder="..." />
-            <marker date="1512177196484" expanded="true" signature="2213:2531" placeholder="..." />
+            <marker date="1512155090289" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1512155090289" expanded="true" signature="-1:-1" placeholder="SELECT user_..sys_users..." />
+            <marker date="1512155090289" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1512155090289" expanded="true" signature="-1:-1" placeholder="SELECT job_t..job_titles..." />
+            <marker date="1512155090289" expanded="true" signature="-1:-1" placeholder="SELECT sys_u..sys_users..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/daily-functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.689655">
-          <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
+        <state vertical-scroll-proportion="-0.8965517">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/daily-tasks.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7038917">
-          <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.9084507">
+          <caret line="101" column="19" selection-start-line="101" selection-start-column="19" selection-end-line="101" selection-end-column="19" />
           <folding>
-            <marker date="1512557693159" expanded="true" signature="586:843" placeholder="SELECT user_..user_daily_tasks..." />
-            <marker date="1512557693159" expanded="true" signature="1047:1225" placeholder="INSERT INTO ..." />
-            <marker date="1512557693159" expanded="true" signature="1475:1660" placeholder="..." />
-            <marker date="1512557693159" expanded="true" signature="1538:1649" placeholder="..." />
-            <marker date="1512557693159" expanded="true" signature="2042:2263" placeholder="SELECT daily..daily_tasks..." />
-            <marker date="1512557693159" expanded="true" signature="2412:3833" placeholder="..." />
-            <marker date="1512557693159" expanded="true" signature="2530:3649" placeholder="..." />
-            <marker date="1512557693159" expanded="true" signature="2598:2916" placeholder="..." />
-            <marker date="1512557693159" expanded="true" signature="2989:3627" placeholder="..." />
-            <marker date="1512557693159" expanded="true" signature="3671:3815" placeholder="..." />
+            <marker date="1512582647212" expanded="true" signature="586:843" placeholder="SELECT user_..user_daily_tasks..." />
+            <marker date="1512582647212" expanded="true" signature="1047:1225" placeholder="INSERT INTO ..." />
+            <marker date="1512582647212" expanded="true" signature="1475:1660" placeholder="..." />
+            <marker date="1512582647212" expanded="true" signature="1538:1649" placeholder="..." />
+            <marker date="1512582647212" expanded="true" signature="2042:2263" placeholder="SELECT daily..daily_tasks..." />
+            <marker date="1512582647212" expanded="true" signature="2413:2578" placeholder="..." />
+            <marker date="1512582647212" expanded="true" signature="2640:2943" placeholder="SELECT daily..daily_tasks_progress..." />
+            <marker date="1512582647212" expanded="true" signature="2640:2944" placeholder="SELECT daily..daily_tasks_progress..." />
+            <marker date="1512582647212" expanded="true" signature="2640:2968" placeholder="SELECT daily..daily_tasks_progress..." />
+            <marker date="1512582647212" expanded="true" signature="3656:4294" placeholder="..." />
+            <marker date="1512582647212" expanded="true" signature="4379:4523" placeholder="..." />
           </folding>
         </state>
       </provider>

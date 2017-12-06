@@ -61,15 +61,24 @@ where user_daily_tasks.task_owner = '".$_SESSION['userID']."'");
             $stmt->execute();
             $rowIncrementer=1;
             while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+
                 echo'<tr>
                 <td>'.$rowIncrementer++.'</td>
                 <td>'.$row['task_content'].'</td>
-                <td>
-                    <select class="dailyTasksStatus" name="status">
+                <td><select class="dailyTasksStatus" name="status">';
+                $gettingTaskProgress = $connect->prepare("SELECT daily_tasks_progress.status, daily_tasks_progress.progress_rate
+FROM daily_tasks_progress
+JOIN user_daily_tasks on daily_tasks_progress.user_daily_tasks_id = user_daily_tasks.user_daily_tasks_id
+where user_daily_tasks.daily_task_id = '".$row['daily_task_id']."' AND user_daily_tasks.task_owner = '".$_SESSION['userID']."' ");
+                $gettingTaskProgress->execute();
+                $row2 = $gettingTaskProgress->fetch(PDO::FETCH_ASSOC);
+
+                echo'
+
                         <option disabled selected value="">select status</option>
-                        <option value="completed">Completed</option>
-                        <option value="pending">Pending</option>
-                        <option value="inprogress">In progress</option>
+                        <option value="completed"'; if($row2['status'] == '2') echo'selected';echo'>Completed</option>
+                        <option value="pending"'; if($row2['status'] == '0') echo'selected';echo'>Pending</option>
+                        <option value="inprogress"'; if($row2['status'] == '1') echo'selected';echo'>In Progress</option>
                     </select>
                     <select class="inprogressStatus hide" name="status">
                         <option disabled selected value="">select percentage</option>
@@ -83,6 +92,8 @@ where user_daily_tasks.task_owner = '".$_SESSION['userID']."'");
                         <option value="80 %">80%</option>
                         <option value="90 %">90%</option>
                     </select>
+                ';
+                echo'
                 </td>
 
                 <td>
