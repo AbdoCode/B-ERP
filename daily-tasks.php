@@ -37,7 +37,7 @@ VALUES ('$status', '$progressRate', '$taskProgressExecutionDate', '$userDailyTas
     <h2>Daily Tasks</h2>
 <?php
 
-if($jobTitle != 'Receptionist' && $jobTitle != 'Teacher')
+if($jobTitle != 'Customer Care' && $jobTitle != 'Teacher')
     echo'<div class="container-for-btn-group">
         <a href="add-daily-tasks.php" class="btn btn-primary">
             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add Daily Task
