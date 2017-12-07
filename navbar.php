@@ -23,7 +23,7 @@ $jobTitle = $_SESSION['userJobTitle'];
             <div class="collapse navbar-collapse" id="mainCollapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo '<b>'.$jobTitle .'</b>'.' '.$_SESSION['userName'] ?><span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo '<b>'.$jobTitle .'</b>'.' '. ucfirst($_SESSION['userName']) ?><span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="add-event.php">Add Event</a></li>
                             <li><a href="add-kid-issue.php">Add Issue for kid</a></li>
@@ -342,14 +342,34 @@ $jobTitle = $_SESSION['userJobTitle'];
                 echo'><a href="store-book.php">Store Book</a></li>';
             }
 
+            if($jobTitle == 'CEO' || $jobTitle == 'G.M')
+            {
+                echo'<li ';
+                if (basename($_SERVER['PHP_SELF']) == 'landing-page-control.php') echo 'class="active"';
+                echo'><a href="landing-page-control.php">Landing Page Control</a></li>';
+            }
+
             ?>
 
         </ul>
     </aside>
     <div class="col-sm-10 vis">
         <div style="margin-top: 10px" class="hidden-print"></div>
-        <div class="container-for-btn-group hidden-print hidden-xs">
-            <button class="btn btn-default" type="button" onclick="window.print()">
+        <div class="main-buttons hidden-print">
+            <button class="btn btn-default backButton" type="button">
+                <span class="glyphicon glyphicon-chevron-left"></span> Back
+            </button>
+            <select class="form-control" id="branch" name="branch">
+                <?php
+                    $stmt = $connect->prepare("SELECT branch_id, branch_name FROM branches");
+                    $stmt->execute();
+                    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                        echo '<option value="'.$row['branch_id'].'">'.$row['branch_name'].'</option>';
+                    }
+                ?>
+            </select>
+            <button class="btn btn-default hidden-xs printButton" type="button" onclick="window.print()">
                 <span class="glyphicon glyphicon-print" aria-hidden="true"></span> Print Page
             </button>
         </div>
+        <div class="clearfix"></div>

@@ -64,7 +64,18 @@
                         <h3 class="panel-title">Other Information</h3>
                     </div>
                     <div class="panel-body">
-                        More
+                        <div class="infoRow">
+                            <label>Branch:</label>
+                            <p>Ebn-batota</p>
+                        </div>
+                        <div class="infoRow">
+                            <label>Class:</label>
+                            <p>Class A1</p>
+                        </div>
+                        <div class="infoRow">
+                            <label>Subject:</label>
+                            <p>English</p>
+                        </div>
                     </div>
                 </div>
             </div>

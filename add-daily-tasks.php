@@ -52,6 +52,12 @@
             </div>
         </div>
         <div class="form-group">
+            <label for="time" class="control-label col-sm-1">Time</label>
+            <div class="col-sm-11">
+                <input type="time" class="form-control" placeholder="Type Task Time" id="time" name="task_time" value="">
+            </div>
+        </div>
+        <div class="form-group">
             <label for="jobTitle" class="control-label col-sm-1">Job Title</label>
             <div class="col-sm-9">
                     <select class="form-control" id="jobTitle" name="job_title">

@@ -361,6 +361,10 @@ select[multiple], select[size] {
     height: 100% !important;
 }
 .pagination{margin: 0}
+.main-buttons .printButton{float: right}
+.main-buttons .SumoSelect{margin-top: 1px;margin-left: 10px}
+.main-buttons .SumoSelect,
+.main-buttons .backButton{float: left}
 @media (max-width: 768px) {
     h2{text-align: center}
     .contRow{overflow: hidden}
@@ -368,6 +372,8 @@ select[multiple], select[size] {
     .container-for-btn-group .btn{margin-right: 0}
     .input-group.center-block{display: table}
     .input-group-btn.center-block{display: table-cell}
+    .main-buttons .SumoSelect{margin-left: 5px;margin-top: 10px;width: 140px}
+    .main-buttons .backButton{margin-left: 30px;margin-top: 9px}
 }
 /* End framework */
 /* Start Print Section */
