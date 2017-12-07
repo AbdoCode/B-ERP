@@ -18,7 +18,7 @@
         </div>
     </div>
     <div class="table-responsive">
-        <table class="table table-bordered table-hover">
+        <table class="table table-bordered ">
             <tr>
                 <th class="col-sm-1">#</th>
                 <th class="col-sm-3">Forward to</th>
@@ -36,7 +36,7 @@
             <tr>
                 <td>1</td>
                 <td>Hadeer</td>
-                <td>Confirmed</td>
+                <td>Not Confirmed</td>
                 <td>17 Sep 2017</td>
                 <td><a href="view-logistics.php" class="btn btn-primary btn-sm">View</a></td>
             </tr>

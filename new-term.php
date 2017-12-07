@@ -47,7 +47,7 @@
                 </button>
             </div>
             <div class="table-responsive">
-                <table class="table table-bordered table-hover table-striped weekend-table">
+                <table class="table table-bordered  table-striped weekend-table">
                     <thead>
                         <tr>
                             <th class="col-sm-7">Name</th>
@@ -77,24 +77,182 @@
                 </button>
             </div>
             <div class="table-responsive">
-                <table class="table table-bordered table-hover table-striped price-table">
+                <table class="table table-bordered  table-striped price-table">
                     <thead>
                         <tr>
-                            <th class="col-sm-7">Name</th>
+                            <th class="col-sm-1">#</th>
+                            <th class="col-sm-6">Name</th>
                             <th class="col-sm-5">Price</th>
                         </tr>
                     </thead>
                     <tr>
-                        <td><input type="text" class="form-control"></td>
-                        <td><input type="number" class="form-control" placeholder="Price in LE..."></td>
+                        <td>1</td>
+                        <td>Nursery Participation (First Term)</td>
+                        <td>
+                            <select>
+                                <?php
+                                    for ($i = 0; $i <= 5000; $i += 5) {
+                                        echo '<option value="'.$i.'">'.$i.'</option>';
+                                    }
+                                ?>
+                            </select>
+                        </td>
                     </tr>
                     <tr>
-                        <td><input type="text" class="form-control"></td>
-                        <td><input type="number" class="form-control" placeholder="Price in LE..."></td>
+                        <td>2</td>
+                        <td>Nursery Participation (Second Term)</td>
+                        <td>
+                            <select>
+                                <?php
+                                    for ($i = 0; $i <= 5000; $i += 5) {
+                                        echo '<option value="'.$i.'">'.$i.'</option>';
+                                    }
+                                ?>
+                            </select>
+                        </td>
                     </tr>
                     <tr>
-                        <td><input type="text" class="form-control"></td>
-                        <td><input type="number" class="form-control" placeholder="Price in LE..."></td>
+                        <td>3</td>
+                        <td>Nursery Participation (Summer Term)</td>
+                        <td>
+                            <select>
+                                <?php
+                                    for ($i = 0; $i <= 5000; $i += 5) {
+                                        echo '<option value="'.$i.'">'.$i.'</option>';
+                                    }
+                                ?>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Daily استضافة</td>
+                        <td>
+                            <select>
+                                <?php
+                                    for ($i = 0; $i <= 5000; $i += 5) {
+                                        echo '<option value="'.$i.'">'.$i.'</option>';
+                                    }
+                                ?>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Weekly استضافة</td>
+                        <td>
+                            <select>
+                                <?php
+                                    for ($i = 0; $i <= 5000; $i += 5) {
+                                        echo '<option value="'.$i.'">'.$i.'</option>';
+                                    }
+                                ?>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Monthly Participation For Nursery</td>
+                        <td>
+                            <select>
+                                <?php
+                                    for ($i = 0; $i <= 5000; $i += 5) {
+                                        echo '<option value="'.$i.'">'.$i.'</option>';
+                                    }
+                                ?>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Discount In Case Brother Participation</td>
+                        <td>
+                            <select>
+                                <?php
+                                    for ($i = 0; $i <= 100; $i += 1) {
+                                        echo '<option value="'.$i.'%">'.$i.'%</option>';
+                                    }
+                                ?>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Monthly Bus Participation (Miniya)</td>
+                        <td>
+                            <select>
+                                <?php
+                                    for ($i = 0; $i <= 5000; $i += 5) {
+                                        echo '<option value="'.$i.'">'.$i.'</option>';
+                                    }
+                                ?>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Monthly Bus Participation (New Miniya)</td>
+                        <td>
+                            <select>
+                                <?php
+                                    for ($i = 0; $i <= 5000; $i += 5) {
+                                        echo '<option value="'.$i.'">'.$i.'</option>';
+                                    }
+                                ?>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Half Monthly Bus Participation (Miniya)</td>
+                        <td>
+                            <select>
+                                <?php
+                                    for ($i = 0; $i <= 5000; $i += 5) {
+                                        echo '<option value="'.$i.'">'.$i.'</option>';
+                                    }
+                                ?>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Half Monthly Bus Participation (New Miniya)</td>
+                        <td>
+                            <select>
+                                <?php
+                                    for ($i = 0; $i <= 5000; $i += 5) {
+                                        echo '<option value="'.$i.'">'.$i.'</option>';
+                                    }
+                                ?>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>Monthly Bus Participation (One direction only)</td>
+                        <td>
+                            <select>
+                                <?php
+                                    for ($i = 0; $i <= 5000; $i += 5) {
+                                        echo '<option value="'.$i.'">'.$i.'</option>';
+                                    }
+                                ?>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>Weekly Bus Participation</td>
+                        <td>
+                            <select>
+                                <?php
+                                    for ($i = 0; $i <= 5000; $i += 5) {
+                                        echo '<option value="'.$i.'">'.$i.'</option>';
+                                    }
+                                ?>
+                            </select>
+                        </td>
                     </tr>
                 </table>
             </div>

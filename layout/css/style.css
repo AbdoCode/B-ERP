@@ -361,6 +361,7 @@ select[multiple], select[size] {
     height: 100% !important;
 }
 .pagination{margin: 0}
+.new-term{margin-bottom: 10px}
 .main-buttons .printButton{float: right}
 .main-buttons .SumoSelect{margin-top: 1px;margin-left: 10px}
 .main-buttons .SumoSelect,
