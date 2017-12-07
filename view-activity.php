@@ -29,7 +29,8 @@ if ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
     $status = $row['activity_status'];
 
     if($status == '1') $activityStatus = 'Completed';
-    else $activityStatus = 'Canceled';
+    else if($status == '0') $activityStatus = 'Canceled';
+    else $activityStatus = 'In Progress';
 
     $getActivityClasses = $connect->prepare("SELECT classes.class_name FROM classes
 JOIN class_activities on classes.class_id = class_activities.class_id

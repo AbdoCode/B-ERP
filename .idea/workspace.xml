@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="597a9482-fa08-471e-8566-9bf89cea1a8e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/activities.php" afterPath="$PROJECT_DIR$/activities.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view-activity.php" afterPath="$PROJECT_DIR$/view-activity.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -79,11 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activities.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="activities.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/activities.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7478849">
-              <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+            <state vertical-scroll-proportion="-0.8965517">
+              <caret line="61" column="18" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
               <folding>
                 <marker date="1512659718677" expanded="true" signature="572:654" placeholder="UPDATE activ..." />
                 <marker date="1512659718677" expanded="true" signature="1955:1979" placeholder="SELECT * FRO..activities..." />
@@ -94,6 +93,32 @@
                 <marker date="1512659718677" expanded="true" signature="2755:3348" placeholder="..." />
                 <marker date="1512659718677" expanded="true" signature="3006:3129" placeholder="..." />
                 <marker date="1512659718677" expanded="true" signature="3006:3302" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view-activity.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/view-activity.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.43993232">
+              <caret line="54" column="10" selection-start-line="54" selection-start-column="10" selection-end-line="54" selection-end-column="10" />
+              <folding>
+                <marker date="1512660500118" expanded="true" signature="399:461" placeholder="SELECT * FRO..activities..." />
+                <marker date="1512660500118" expanded="true" signature="1039:1206" placeholder="SELECT class..classes..." />
+                <marker date="1512660500118" expanded="true" signature="1411:3372" placeholder="..." />
+                <marker date="1512660500118" expanded="true" signature="1488:1633" placeholder="..." />
+                <marker date="1512660500118" expanded="true" signature="1659:1808" placeholder="..." />
+                <marker date="1512660500118" expanded="true" signature="1834:1983" placeholder="..." />
+                <marker date="1512660500118" expanded="true" signature="2009:2143" placeholder="..." />
+                <marker date="1512660500118" expanded="true" signature="2169:3365" placeholder="..." />
+                <marker date="1512660500118" expanded="true" signature="2310:3354" placeholder="..." />
+                <marker date="1512660500118" expanded="true" signature="2366:2815" placeholder="..." />
+                <marker date="1512660500118" expanded="true" signature="2408:2515" placeholder="..." />
+                <marker date="1512660500118" expanded="true" signature="2550:2655" placeholder="..." />
+                <marker date="1512660500118" expanded="true" signature="2690:2796" placeholder="..." />
+                <marker date="1512660500118" expanded="true" signature="2917:3078" placeholder="..." />
+                <marker date="1512660500118" expanded="true" signature="3181:3339" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -362,12 +387,6 @@
       <workItem from="1511892263478" duration="7287000" />
       <workItem from="1511958964098" duration="9132000" />
       <workItem from="1512002951961" duration="5168000" />
-    </task>
-    <task id="LOCAL-00026" summary="Mohamed Edit">
-      <created>1508723268453</created>
-      <option name="number" value="00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1508723268453</updated>
     </task>
     <task id="LOCAL-00027" summary="Mohamed Edit">
       <created>1508723316954</created>
@@ -657,7 +676,13 @@
       <option name="project" value="LOCAL" />
       <updated>1512643183237</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="code edit">
+      <created>1512660373039</created>
+      <option name="number" value="00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1512660373039</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1160,35 +1185,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view-activity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.04399323">
-          <caret line="46" column="10" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="10" />
-          <folding>
-            <marker date="1512660090776" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..activities..." />
-            <marker date="1512660090776" expanded="true" signature="-1:-1" placeholder="SELECT class..classes..." />
-            <marker date="1512660090776" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1512660090776" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1512660090776" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1512660090776" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1512660090776" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1512660090776" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1512660090776" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1512660090776" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1512660090776" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1512660090776" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1512660090776" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1512660090776" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1512660090776" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1512660090776" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/activities.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7478849">
-          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+        <state vertical-scroll-proportion="-0.8965517">
+          <caret line="61" column="18" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
           <folding>
             <marker date="1512659718677" expanded="true" signature="572:654" placeholder="UPDATE activ..." />
             <marker date="1512659718677" expanded="true" signature="1955:1979" placeholder="SELECT * FRO..activities..." />
@@ -1199,6 +1199,30 @@
             <marker date="1512659718677" expanded="true" signature="2755:3348" placeholder="..." />
             <marker date="1512659718677" expanded="true" signature="3006:3129" placeholder="..." />
             <marker date="1512659718677" expanded="true" signature="3006:3302" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view-activity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43993232">
+          <caret line="54" column="10" selection-start-line="54" selection-start-column="10" selection-end-line="54" selection-end-column="10" />
+          <folding>
+            <marker date="1512660500118" expanded="true" signature="399:461" placeholder="SELECT * FRO..activities..." />
+            <marker date="1512660500118" expanded="true" signature="1039:1206" placeholder="SELECT class..classes..." />
+            <marker date="1512660500118" expanded="true" signature="1411:3372" placeholder="..." />
+            <marker date="1512660500118" expanded="true" signature="1488:1633" placeholder="..." />
+            <marker date="1512660500118" expanded="true" signature="1659:1808" placeholder="..." />
+            <marker date="1512660500118" expanded="true" signature="1834:1983" placeholder="..." />
+            <marker date="1512660500118" expanded="true" signature="2009:2143" placeholder="..." />
+            <marker date="1512660500118" expanded="true" signature="2169:3365" placeholder="..." />
+            <marker date="1512660500118" expanded="true" signature="2310:3354" placeholder="..." />
+            <marker date="1512660500118" expanded="true" signature="2366:2815" placeholder="..." />
+            <marker date="1512660500118" expanded="true" signature="2408:2515" placeholder="..." />
+            <marker date="1512660500118" expanded="true" signature="2550:2655" placeholder="..." />
+            <marker date="1512660500118" expanded="true" signature="2690:2796" placeholder="..." />
+            <marker date="1512660500118" expanded="true" signature="2917:3078" placeholder="..." />
+            <marker date="1512660500118" expanded="true" signature="3181:3339" placeholder="..." />
           </folding>
         </state>
       </provider>
