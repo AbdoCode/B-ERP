@@ -89,10 +89,10 @@ $jobTitle = $_SESSION['userJobTitle'];
                     Subjects <span class="glyphicon glyphicon-triangle-right"></span>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="subject.php">English</a></li>
-                    <li><a href="subject.php">Science</a></li>
-                    <li><a href="subject.php">Math</a></li>
-                    <li><a href="subject.php">Arabic</a></li>
+                    <li><a href="subject.php?sub_name=English">English</a></li>
+                    <li><a href="subject.php?sub_name=Science">Science</a></li>
+                    <li><a href="subject.php?sub_name=Math">Math</a></li>
+                    <li><a href="subject.php?sub_name=Arabic">Arabic</a></li>
                 </ul>
             </li>';
             }

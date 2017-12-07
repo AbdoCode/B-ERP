@@ -12,8 +12,8 @@ $searchCondition = '';
 
 if(isset($_POST['status']))
 {
-    $signPosition= strpos($_POST['status'],'=');
-    $activityID=substr($_POST['status'],0,$signPosition);
+    $signPosition = strpos($_POST['status'],'=');
+    $activityID = substr($_POST['status'],0,$signPosition);
     $statusChosen = substr($_POST['status'],$signPosition+1);
     $status = '';
 
