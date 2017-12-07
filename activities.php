@@ -8,6 +8,7 @@
 //{
 //    header('Location: access-denied.php?page='.$pageTitle.'');
 //}
+$searchCondition = '';
 
 if(isset($_POST['status']))
 {
@@ -23,7 +24,13 @@ if(isset($_POST['status']))
     $changeActivityStatus->execute();
 
 }
+$gettingActivitiesStatement = " SELECT * FROM activities";
 
+    if(isset($_POST['searchCondition']))
+    {
+        $searchCondition = $_POST['searchCondition'];
+        $gettingActivitiesStatement = " SELECT * FROM activities WHERE activity_name LIKE '%".$_POST['searchCondition']."%'";
+    }
 
 ?>
 <script>
@@ -41,7 +48,7 @@ if(isset($_POST['status']))
         </a>
     </div>
     <div class="input-group col-sm-5 col-xs-12 center-block">
-        <input type="search" class="form-control" placeholder="Activity name..." />
+        <input type="search" class="form-control" placeholder="Activity name..." name="searchCondition" value="<?php echo $searchCondition;?>" />
         <div class="input-group-btn center-block">
             <button class="btn btn-default" type="submit"><i class="fa fa-search fa-fw"></i></button>
         </div>
@@ -58,10 +65,10 @@ if(isset($_POST['status']))
                 <th class="col-sm-1">Details</th>
             </tr>
             <?php
-            $stmt = $connect->prepare("SELECT * FROM activities");
-            $stmt->execute();
+            $gettingActivities = $connect->prepare($gettingActivitiesStatement);
+            $gettingActivities->execute();
             $activityIncrementer=1;
-            while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+            while ($row = $gettingActivities->fetch(PDO::FETCH_ASSOC)) {
                 echo '<tr>
                 <td>'.$activityIncrementer++.'</td>
                 <td>'.$row['activity_name'].'</td>

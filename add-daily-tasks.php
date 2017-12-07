@@ -1,4 +1,3 @@
-
 <?php
     session_start();
     $pageTitle = 'Home';
@@ -42,9 +41,15 @@
     }
 
 ?>
+    <script>
+        function reload(){
+            document.getElementById("form1").submit();
+        }
+
+    </script>
 <div class="add-daily-tasks">
     <h2>Add new daily task</h2>
-    <form class="form-horizontal" method="post">
+    <form class="form-horizontal" method="post" id="form1">
         <div class="form-group">
             <label for="name" class="control-label col-sm-1">Name</label>
             <div class="col-sm-11">
@@ -53,8 +58,8 @@
         </div>
         <div class="form-group">
             <label for="jobTitle" class="control-label col-sm-1">Job Title</label>
-            <div class="col-sm-9">
-                    <select class="form-control" id="jobTitle" name="job_title">
+            <div class="col-sm-11">
+                    <select class="form-control" id="jobTitle" name="job_title" onchange="reload()">
                         <option></option>
                         <?php
                     $stmt = $connect->prepare("SELECT job_title FROM job_titles");
@@ -69,10 +74,6 @@
                 </select>
             </div>
 
-            <div class="col-sm-2">
-                <button class="btn btn-success btn-block" name="getEmployees">Get Employees</button>
-                </div>
-
         </div>
         <div class="form-group">
             <label for="employee" class="control-label col-sm-1">To</label>
@@ -80,7 +81,7 @@
                 <select class="form-control" id="employee" multiple name="employee_name[]">
 
                     <?php
-                    if(isset($_POST['getEmployees']) == true){
+                    if(isset($_POST['job_title']) == true){
                         $employeeJobTitle = $_POST['job_title'];
                             $stmt = $connect->prepare("SELECT sys_users.username FROM sys_users
 JOIN staff on sys_users.staff_id = staff.staff_id
