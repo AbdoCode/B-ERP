@@ -9,9 +9,25 @@
 //    header('Location: access-denied.php?page='.$pageTitle.'');
 //}
 
+if(isset($_POST['status']))
+{
+    $signPosition= strpos($_POST['status'],'=');
+    $activity_id=substr($_POST['status'],0,$signPosition);
+    $status = substr($_POST['status'],$signPosition+1);
+
+
+}
+
 
 ?>
-<div class="activities">
+<script>
+    function reload(){
+        document.getElementById("form").submit();
+    }
+
+</script>
+    <form method="post" id="form">
+<div class="activities" >
     <h2>Activities</h2>
     <div class="container-for-btn-group">
         <a href="add-activities.php" class="btn btn-primary">
@@ -55,11 +71,11 @@ WHERE class_activities.activity_id = '".$row['activity_id']."'");
                 echo'
                 </td>
                 <td>
-                    <select class="tableStatus" name="status">
+                    <select class="tableStatus" name="status" onchange="reload()">
                         <option disabled selected value="">select status</option>
-                        <option value="completed">Completed</option>
-                        <option value="pending">Pending</option>
-                        <option value="inprogress">In progress</option>
+                        <option value="'.$row['activity_id'].'=completed">Completed</option>
+                        <option value="'.$row['activity_id'].'=pending">Pending</option>
+                        <option value="'.$row['activity_id'].'=inprogress">In progress</option>
                     </select>
                 </td>
                 <td>'.$row['activity_date'].'</td>
@@ -72,6 +88,7 @@ WHERE class_activities.activity_id = '".$row['activity_id']."'");
         </table>
     </div>
 </div>
+    </form>
 <?php
     include $templates . 'footer.php';
 ?>

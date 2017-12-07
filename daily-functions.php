@@ -1,5 +1,9 @@
 <?php
-function user($userID)
+function startNewDay($userID)
 {
-    echo'<script>alert("'.$userID.'")</script>';
+    $thisDay = date("Y-m-d");
+    if($thisDay)
+    {
+
+    }
 }
