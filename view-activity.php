@@ -14,6 +14,7 @@ $activityClasses = '';
 $activityDetails = '';
 $activityDateAdded = '';
 $activityAddedBy = '';
+$activityStatus = '';
 
 $stmt = $connect->prepare("SELECT * FROM activities WHERE activity_id = '$thisActivityId'");
 $stmt->execute();
@@ -25,6 +26,10 @@ if ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
     $activityDetails = $row['activity_details'];
     $activityDateAdded = $row['activity_details'];
     $activityAddedBy = $row['added_by'];
+    $status = $row['activity_status'];
+
+    if($status == '1') $activityStatus = 'Completed';
+    else $activityStatus = 'Canceled';
 
     $getActivityClasses = $connect->prepare("SELECT classes.class_name FROM classes
 JOIN class_activities on classes.class_id = class_activities.class_id
@@ -49,7 +54,7 @@ echo'
     </div>
     <div class="contRow">
         <label class="col-xs-1">Status:</label>
-        <p class="col-sm-11 col-sm-push-0 col-xs-9 col-xs-push-2">Completed</p>
+        <p class="col-sm-11 col-sm-push-0 col-xs-9 col-xs-push-2">'.$activityStatus.'</p>
     </div>
     <div class="contRow">
         <label class="col-sm-1 col-xs-12">Details:</label>

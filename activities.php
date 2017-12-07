@@ -12,9 +12,15 @@
 if(isset($_POST['status']))
 {
     $signPosition= strpos($_POST['status'],'=');
-    $activity_id=substr($_POST['status'],0,$signPosition);
-    $status = substr($_POST['status'],$signPosition+1);
+    $activityID=substr($_POST['status'],0,$signPosition);
+    $statusChosen = substr($_POST['status'],$signPosition+1);
+    $status = '';
 
+    if($statusChosen == 'completed') $status = '1';
+    else $status = '0';
+
+    $changeActivityStatus = $connect->prepare("UPDATE activities SET activity_status = '$status' WHERE activity_id= '$activityID'");
+    $changeActivityStatus->execute();
 
 }
 
@@ -71,13 +77,16 @@ WHERE class_activities.activity_id = '".$row['activity_id']."'");
                 echo'
                 </td>
                 <td>
-                    <select class="tableStatus" name="status" onchange="reload()">
+                ';
+                if($row['activity_status'] == '1') echo'Completed';
+                else if($row['activity_status'] == '0') echo'Canceled';
+                else echo'   <select class="tableStatus" name="status" onchange="reload()">
                         <option disabled selected value="">select status</option>
                         <option value="'.$row['activity_id'].'=completed">Completed</option>
-                        <option value="'.$row['activity_id'].'=pending">Pending</option>
-                        <option value="'.$row['activity_id'].'=inprogress">In progress</option>
+                        <option value="'.$row['activity_id'].'=canceled">Canceled</option>
                     </select>
-                </td>
+                ';
+                echo'</td>
                 <td>'.$row['activity_date'].'</td>
                 <td>'.$row['activity_time'].'</td>
                 <td><a href="view-activity.php?act_id='.$row['activity_id'].'" class="btn btn-primary btn-sm">View</a></td>
