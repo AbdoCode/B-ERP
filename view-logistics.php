@@ -25,7 +25,7 @@
         </div>
     </div>
     <div class="table-responsive">
-        <table class="table table-bordered table-hover">
+        <table class="table table-bordered ">
             <tr>
                 <th class="col-sm-1">#</th>
                 <th class="col-sm-5">Type</th>

@@ -30,11 +30,12 @@
                                 <div class="panel-body">
                                     <form>
                                         <div class="table-responsive">
-                                            <table class="table table-bordered table-hover">
+                                            <table class="table table-bordered ">
                                                 <tr>
                                                     <th class="col-sm-2">Day</th>
-                                                    <th class="col-sm-5">Lesson</th>
-                                                    <th class="col-sm-5">Activity</th>
+                                                    <th class="col-sm-4">Lesson</th>
+                                                    <th class="col-sm-4">Activity</th>
+                                                    <th class="col-sm-2">Time</th>
                                                 </tr>
                                                 <tr>
                                                     <td>Saturday</td>
@@ -52,22 +53,13 @@
                                                             </div>
                                                         </div>
                                                     </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Saturday</td>
                                                     <td>
-                                                        <div class="form-group">
-                                                            <div>
-                                                                <input type="text" class="form-control" placeholder="type lesson here...">
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="form-group">
-                                                            <div>
-                                                                <input type="text" class="form-control" placeholder="type activity here...">
-                                                            </div>
-                                                        </div>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -86,6 +78,14 @@
                                                             </div>
                                                         </div>
                                                     </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Saturday</td>
@@ -102,6 +102,39 @@
                                                                 <input type="text" class="form-control" placeholder="type activity here...">
                                                             </div>
                                                         </div>
+                                                    </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Saturday</td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <div>
+                                                                <input type="text" class="form-control" placeholder="type lesson here...">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <div>
+                                                                <input type="text" class="form-control" placeholder="type activity here...">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -119,6 +152,14 @@
                                                                 <input type="text" class="form-control" placeholder="type activity here...">
                                                             </div>
                                                         </div>
+                                                    </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -144,11 +185,12 @@
                                 <div class="panel-body">
                                     <form>
                                         <div class="table-responsive">
-                                            <table class="table table-bordered table-hover">
+                                            <table class="table table-bordered ">
                                                 <tr>
                                                     <th class="col-sm-2">Day</th>
-                                                    <th class="col-sm-5">Lesson</th>
-                                                    <th class="col-sm-5">Activity</th>
+                                                    <th class="col-sm-4">Lesson</th>
+                                                    <th class="col-sm-4">Activity</th>
+                                                    <th class="col-sm-2">Time</th>
                                                 </tr>
                                                 <tr>
                                                     <td>Saturday</td>
@@ -166,22 +208,13 @@
                                                             </div>
                                                         </div>
                                                     </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Saturday</td>
                                                     <td>
-                                                        <div class="form-group">
-                                                            <div>
-                                                                <input type="text" class="form-control" placeholder="type lesson here...">
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="form-group">
-                                                            <div>
-                                                                <input type="text" class="form-control" placeholder="type activity here...">
-                                                            </div>
-                                                        </div>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -200,6 +233,14 @@
                                                             </div>
                                                         </div>
                                                     </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Saturday</td>
@@ -216,6 +257,39 @@
                                                                 <input type="text" class="form-control" placeholder="type activity here...">
                                                             </div>
                                                         </div>
+                                                    </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Saturday</td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <div>
+                                                                <input type="text" class="form-control" placeholder="type lesson here...">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <div>
+                                                                <input type="text" class="form-control" placeholder="type activity here...">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -233,6 +307,14 @@
                                                                 <input type="text" class="form-control" placeholder="type activity here...">
                                                             </div>
                                                         </div>
+                                                    </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -258,11 +340,12 @@
                                 <div class="panel-body">
                                     <form>
                                         <div class="table-responsive">
-                                            <table class="table table-bordered table-hover">
+                                            <table class="table table-bordered ">
                                                 <tr>
                                                     <th class="col-sm-2">Day</th>
-                                                    <th class="col-sm-5">Lesson</th>
-                                                    <th class="col-sm-5">Activity</th>
+                                                    <th class="col-sm-4">Lesson</th>
+                                                    <th class="col-sm-4">Activity</th>
+                                                    <th class="col-sm-2">Time</th>
                                                 </tr>
                                                 <tr>
                                                     <td>Saturday</td>
@@ -280,22 +363,13 @@
                                                             </div>
                                                         </div>
                                                     </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Saturday</td>
                                                     <td>
-                                                        <div class="form-group">
-                                                            <div>
-                                                                <input type="text" class="form-control" placeholder="type lesson here...">
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="form-group">
-                                                            <div>
-                                                                <input type="text" class="form-control" placeholder="type activity here...">
-                                                            </div>
-                                                        </div>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -314,6 +388,14 @@
                                                             </div>
                                                         </div>
                                                     </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Saturday</td>
@@ -330,6 +412,39 @@
                                                                 <input type="text" class="form-control" placeholder="type activity here...">
                                                             </div>
                                                         </div>
+                                                    </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Saturday</td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <div>
+                                                                <input type="text" class="form-control" placeholder="type lesson here...">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <div>
+                                                                <input type="text" class="form-control" placeholder="type activity here...">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -347,6 +462,14 @@
                                                                 <input type="text" class="form-control" placeholder="type activity here...">
                                                             </div>
                                                         </div>
+                                                    </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -372,11 +495,12 @@
                                 <div class="panel-body">
                                     <form>
                                         <div class="table-responsive">
-                                            <table class="table table-bordered table-hover">
+                                            <table class="table table-bordered ">
                                                 <tr>
                                                     <th class="col-sm-2">Day</th>
-                                                    <th class="col-sm-5">Lesson</th>
-                                                    <th class="col-sm-5">Activity</th>
+                                                    <th class="col-sm-4">Lesson</th>
+                                                    <th class="col-sm-4">Activity</th>
+                                                    <th class="col-sm-2">Time</th>
                                                 </tr>
                                                 <tr>
                                                     <td>Saturday</td>
@@ -394,22 +518,13 @@
                                                             </div>
                                                         </div>
                                                     </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Saturday</td>
                                                     <td>
-                                                        <div class="form-group">
-                                                            <div>
-                                                                <input type="text" class="form-control" placeholder="type lesson here...">
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="form-group">
-                                                            <div>
-                                                                <input type="text" class="form-control" placeholder="type activity here...">
-                                                            </div>
-                                                        </div>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -428,6 +543,14 @@
                                                             </div>
                                                         </div>
                                                     </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Saturday</td>
@@ -444,6 +567,39 @@
                                                                 <input type="text" class="form-control" placeholder="type activity here...">
                                                             </div>
                                                         </div>
+                                                    </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Saturday</td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <div>
+                                                                <input type="text" class="form-control" placeholder="type lesson here...">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <div>
+                                                                <input type="text" class="form-control" placeholder="type activity here...">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -461,6 +617,14 @@
                                                                 <input type="text" class="form-control" placeholder="type activity here...">
                                                             </div>
                                                         </div>
+                                                    </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -501,11 +665,12 @@
                                 <div class="panel-body">
                                     <form>
                                         <div class="table-responsive">
-                                            <table class="table table-bordered table-hover">
+                                            <table class="table table-bordered ">
                                                 <tr>
                                                     <th class="col-sm-2">Day</th>
-                                                    <th class="col-sm-5">Lesson</th>
-                                                    <th class="col-sm-5">Activity</th>
+                                                    <th class="col-sm-4">Lesson</th>
+                                                    <th class="col-sm-4">Activity</th>
+                                                    <th class="col-sm-2">Time</th>
                                                 </tr>
                                                 <tr>
                                                     <td>Saturday</td>
@@ -523,22 +688,13 @@
                                                             </div>
                                                         </div>
                                                     </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Saturday</td>
                                                     <td>
-                                                        <div class="form-group">
-                                                            <div>
-                                                                <input type="text" class="form-control" placeholder="type lesson here...">
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="form-group">
-                                                            <div>
-                                                                <input type="text" class="form-control" placeholder="type activity here...">
-                                                            </div>
-                                                        </div>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -557,6 +713,14 @@
                                                             </div>
                                                         </div>
                                                     </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Saturday</td>
@@ -573,6 +737,39 @@
                                                                 <input type="text" class="form-control" placeholder="type activity here...">
                                                             </div>
                                                         </div>
+                                                    </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Saturday</td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <div>
+                                                                <input type="text" class="form-control" placeholder="type lesson here...">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <div>
+                                                                <input type="text" class="form-control" placeholder="type activity here...">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -590,6 +787,14 @@
                                                                 <input type="text" class="form-control" placeholder="type activity here...">
                                                             </div>
                                                         </div>
+                                                    </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -615,11 +820,12 @@
                                 <div class="panel-body">
                                     <form>
                                         <div class="table-responsive">
-                                            <table class="table table-bordered table-hover">
+                                            <table class="table table-bordered ">
                                                 <tr>
                                                     <th class="col-sm-2">Day</th>
-                                                    <th class="col-sm-5">Lesson</th>
-                                                    <th class="col-sm-5">Activity</th>
+                                                    <th class="col-sm-4">Lesson</th>
+                                                    <th class="col-sm-4">Activity</th>
+                                                    <th class="col-sm-2">Time</th>
                                                 </tr>
                                                 <tr>
                                                     <td>Saturday</td>
@@ -637,22 +843,13 @@
                                                             </div>
                                                         </div>
                                                     </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Saturday</td>
                                                     <td>
-                                                        <div class="form-group">
-                                                            <div>
-                                                                <input type="text" class="form-control" placeholder="type lesson here...">
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="form-group">
-                                                            <div>
-                                                                <input type="text" class="form-control" placeholder="type activity here...">
-                                                            </div>
-                                                        </div>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -671,6 +868,14 @@
                                                             </div>
                                                         </div>
                                                     </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Saturday</td>
@@ -687,6 +892,39 @@
                                                                 <input type="text" class="form-control" placeholder="type activity here...">
                                                             </div>
                                                         </div>
+                                                    </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Saturday</td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <div>
+                                                                <input type="text" class="form-control" placeholder="type lesson here...">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <div>
+                                                                <input type="text" class="form-control" placeholder="type activity here...">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -704,6 +942,14 @@
                                                                 <input type="text" class="form-control" placeholder="type activity here...">
                                                             </div>
                                                         </div>
+                                                    </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -729,11 +975,12 @@
                                 <div class="panel-body">
                                     <form>
                                         <div class="table-responsive">
-                                            <table class="table table-bordered table-hover">
+                                            <table class="table table-bordered ">
                                                 <tr>
                                                     <th class="col-sm-2">Day</th>
-                                                    <th class="col-sm-5">Lesson</th>
-                                                    <th class="col-sm-5">Activity</th>
+                                                    <th class="col-sm-4">Lesson</th>
+                                                    <th class="col-sm-4">Activity</th>
+                                                    <th class="col-sm-2">Time</th>
                                                 </tr>
                                                 <tr>
                                                     <td>Saturday</td>
@@ -751,22 +998,13 @@
                                                             </div>
                                                         </div>
                                                     </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Saturday</td>
                                                     <td>
-                                                        <div class="form-group">
-                                                            <div>
-                                                                <input type="text" class="form-control" placeholder="type lesson here...">
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="form-group">
-                                                            <div>
-                                                                <input type="text" class="form-control" placeholder="type activity here...">
-                                                            </div>
-                                                        </div>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -785,6 +1023,14 @@
                                                             </div>
                                                         </div>
                                                     </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Saturday</td>
@@ -801,6 +1047,39 @@
                                                                 <input type="text" class="form-control" placeholder="type activity here...">
                                                             </div>
                                                         </div>
+                                                    </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Saturday</td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <div>
+                                                                <input type="text" class="form-control" placeholder="type lesson here...">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <div>
+                                                                <input type="text" class="form-control" placeholder="type activity here...">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -818,6 +1097,14 @@
                                                                 <input type="text" class="form-control" placeholder="type activity here...">
                                                             </div>
                                                         </div>
+                                                    </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -843,11 +1130,12 @@
                                 <div class="panel-body">
                                     <form>
                                         <div class="table-responsive">
-                                            <table class="table table-bordered table-hover">
+                                            <table class="table table-bordered ">
                                                 <tr>
                                                     <th class="col-sm-2">Day</th>
-                                                    <th class="col-sm-5">Lesson</th>
-                                                    <th class="col-sm-5">Activity</th>
+                                                    <th class="col-sm-4">Lesson</th>
+                                                    <th class="col-sm-4">Activity</th>
+                                                    <th class="col-sm-2">Time</th>
                                                 </tr>
                                                 <tr>
                                                     <td>Saturday</td>
@@ -865,22 +1153,13 @@
                                                             </div>
                                                         </div>
                                                     </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Saturday</td>
                                                     <td>
-                                                        <div class="form-group">
-                                                            <div>
-                                                                <input type="text" class="form-control" placeholder="type lesson here...">
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="form-group">
-                                                            <div>
-                                                                <input type="text" class="form-control" placeholder="type activity here...">
-                                                            </div>
-                                                        </div>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -899,6 +1178,14 @@
                                                             </div>
                                                         </div>
                                                     </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Saturday</td>
@@ -915,6 +1202,39 @@
                                                                 <input type="text" class="form-control" placeholder="type activity here...">
                                                             </div>
                                                         </div>
+                                                    </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Saturday</td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <div>
+                                                                <input type="text" class="form-control" placeholder="type lesson here...">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <div>
+                                                                <input type="text" class="form-control" placeholder="type activity here...">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -932,6 +1252,14 @@
                                                                 <input type="text" class="form-control" placeholder="type activity here...">
                                                             </div>
                                                         </div>
+                                                    </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -972,11 +1300,12 @@
                                 <div class="panel-body">
                                     <form>
                                         <div class="table-responsive">
-                                            <table class="table table-bordered table-hover">
+                                            <table class="table table-bordered ">
                                                 <tr>
                                                     <th class="col-sm-2">Day</th>
-                                                    <th class="col-sm-5">Lesson</th>
-                                                    <th class="col-sm-5">Activity</th>
+                                                    <th class="col-sm-4">Lesson</th>
+                                                    <th class="col-sm-4">Activity</th>
+                                                    <th class="col-sm-2">Time</th>
                                                 </tr>
                                                 <tr>
                                                     <td>Saturday</td>
@@ -994,22 +1323,13 @@
                                                             </div>
                                                         </div>
                                                     </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Saturday</td>
                                                     <td>
-                                                        <div class="form-group">
-                                                            <div>
-                                                                <input type="text" class="form-control" placeholder="type lesson here...">
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="form-group">
-                                                            <div>
-                                                                <input type="text" class="form-control" placeholder="type activity here...">
-                                                            </div>
-                                                        </div>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -1028,6 +1348,14 @@
                                                             </div>
                                                         </div>
                                                     </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Saturday</td>
@@ -1044,6 +1372,39 @@
                                                                 <input type="text" class="form-control" placeholder="type activity here...">
                                                             </div>
                                                         </div>
+                                                    </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Saturday</td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <div>
+                                                                <input type="text" class="form-control" placeholder="type lesson here...">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <div>
+                                                                <input type="text" class="form-control" placeholder="type activity here...">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -1061,6 +1422,14 @@
                                                                 <input type="text" class="form-control" placeholder="type activity here...">
                                                             </div>
                                                         </div>
+                                                    </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -1086,11 +1455,12 @@
                                 <div class="panel-body">
                                     <form>
                                         <div class="table-responsive">
-                                            <table class="table table-bordered table-hover">
+                                            <table class="table table-bordered ">
                                                 <tr>
                                                     <th class="col-sm-2">Day</th>
-                                                    <th class="col-sm-5">Lesson</th>
-                                                    <th class="col-sm-5">Activity</th>
+                                                    <th class="col-sm-4">Lesson</th>
+                                                    <th class="col-sm-4">Activity</th>
+                                                    <th class="col-sm-2">Time</th>
                                                 </tr>
                                                 <tr>
                                                     <td>Saturday</td>
@@ -1108,22 +1478,13 @@
                                                             </div>
                                                         </div>
                                                     </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Saturday</td>
                                                     <td>
-                                                        <div class="form-group">
-                                                            <div>
-                                                                <input type="text" class="form-control" placeholder="type lesson here...">
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="form-group">
-                                                            <div>
-                                                                <input type="text" class="form-control" placeholder="type activity here...">
-                                                            </div>
-                                                        </div>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -1142,6 +1503,14 @@
                                                             </div>
                                                         </div>
                                                     </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Saturday</td>
@@ -1158,6 +1527,39 @@
                                                                 <input type="text" class="form-control" placeholder="type activity here...">
                                                             </div>
                                                         </div>
+                                                    </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Saturday</td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <div>
+                                                                <input type="text" class="form-control" placeholder="type lesson here...">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <div>
+                                                                <input type="text" class="form-control" placeholder="type activity here...">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -1175,6 +1577,14 @@
                                                                 <input type="text" class="form-control" placeholder="type activity here...">
                                                             </div>
                                                         </div>
+                                                    </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -1200,11 +1610,12 @@
                                 <div class="panel-body">
                                     <form>
                                         <div class="table-responsive">
-                                            <table class="table table-bordered table-hover">
+                                            <table class="table table-bordered ">
                                                 <tr>
                                                     <th class="col-sm-2">Day</th>
-                                                    <th class="col-sm-5">Lesson</th>
-                                                    <th class="col-sm-5">Activity</th>
+                                                    <th class="col-sm-4">Lesson</th>
+                                                    <th class="col-sm-4">Activity</th>
+                                                    <th class="col-sm-2">Time</th>
                                                 </tr>
                                                 <tr>
                                                     <td>Saturday</td>
@@ -1222,22 +1633,13 @@
                                                             </div>
                                                         </div>
                                                     </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Saturday</td>
                                                     <td>
-                                                        <div class="form-group">
-                                                            <div>
-                                                                <input type="text" class="form-control" placeholder="type lesson here...">
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="form-group">
-                                                            <div>
-                                                                <input type="text" class="form-control" placeholder="type activity here...">
-                                                            </div>
-                                                        </div>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -1256,6 +1658,14 @@
                                                             </div>
                                                         </div>
                                                     </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Saturday</td>
@@ -1272,6 +1682,39 @@
                                                                 <input type="text" class="form-control" placeholder="type activity here...">
                                                             </div>
                                                         </div>
+                                                    </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Saturday</td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <div>
+                                                                <input type="text" class="form-control" placeholder="type lesson here...">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <div>
+                                                                <input type="text" class="form-control" placeholder="type activity here...">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -1289,6 +1732,14 @@
                                                                 <input type="text" class="form-control" placeholder="type activity here...">
                                                             </div>
                                                         </div>
+                                                    </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -1314,11 +1765,12 @@
                                 <div class="panel-body">
                                     <form>
                                         <div class="table-responsive">
-                                            <table class="table table-bordered table-hover">
+                                            <table class="table table-bordered ">
                                                 <tr>
                                                     <th class="col-sm-2">Day</th>
-                                                    <th class="col-sm-5">Lesson</th>
-                                                    <th class="col-sm-5">Activity</th>
+                                                    <th class="col-sm-4">Lesson</th>
+                                                    <th class="col-sm-4">Activity</th>
+                                                    <th class="col-sm-2">Time</th>
                                                 </tr>
                                                 <tr>
                                                     <td>Saturday</td>
@@ -1336,22 +1788,13 @@
                                                             </div>
                                                         </div>
                                                     </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Saturday</td>
                                                     <td>
-                                                        <div class="form-group">
-                                                            <div>
-                                                                <input type="text" class="form-control" placeholder="type lesson here...">
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="form-group">
-                                                            <div>
-                                                                <input type="text" class="form-control" placeholder="type activity here...">
-                                                            </div>
-                                                        </div>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -1370,6 +1813,14 @@
                                                             </div>
                                                         </div>
                                                     </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Saturday</td>
@@ -1386,6 +1837,39 @@
                                                                 <input type="text" class="form-control" placeholder="type activity here...">
                                                             </div>
                                                         </div>
+                                                    </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Saturday</td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <div>
+                                                                <input type="text" class="form-control" placeholder="type lesson here...">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <div>
+                                                                <input type="text" class="form-control" placeholder="type activity here...">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -1403,6 +1887,14 @@
                                                                 <input type="text" class="form-control" placeholder="type activity here...">
                                                             </div>
                                                         </div>
+                                                    </td>
+                                                    <td>
+                                                        <select>
+                                                            <option value="9 - 11">9 - 11</option>
+                                                            <option value="11 - 1">11 - 1</option>
+                                                            <option value="1 - 3">1 - 3</option>
+                                                            <option value="3 - 5">3 - 5</option>
+                                                        </select>
                                                     </td>
                                                 </tr>
                                             </table>

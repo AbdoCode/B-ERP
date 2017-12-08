@@ -26,7 +26,7 @@
                 </div>
             </div>
             <div class="table-responsive">
-                <table class="table table-bordered table-hover table-striped">
+                <table class="table table-bordered  table-striped">
                     <thead>
                         <tr>
                             <th class="col-sm-1">#</th>
@@ -90,7 +90,7 @@
                 </a>
             </div>
             <div class="table-responsive">
-                <table class="table table-bordered table-hover">
+                <table class="table table-bordered ">
                     <tr class="info">
                         <th class="col-sm-2">Day</th>
                         <th class="col-sm-2">7-9</th>
@@ -161,7 +161,7 @@
                 <label>E = Excellent | V = Very good | G = Good | N = Need More Time</label>
             </div>
             <div class="table-responsive">
-                <table class="table table-bordered table-hover table-striped">
+                <table class="table table-bordered  table-striped">
                     <thead>
                         <tr>
                             <th class="col-sm-1">#</th>
@@ -226,7 +226,7 @@
                 </div>
             </div>
             <div class="table-responsive">
-                <table class="table table-bordered table-hover">
+                <table class="table table-bordered ">
                     <tr>
                         <th class="col-sm-1">#</th>
                         <th class="col-sm-4">Teacher name</th>
@@ -270,7 +270,7 @@
                 </form>
             </div>
             <div class="table-responsive">
-                <table class="table table-bordered table-hover">
+                <table class="table table-bordered ">
                     <tr>
                         <th class="col-sm-1">#</th>
                         <th class="col-sm-4">Name</th>
@@ -311,7 +311,7 @@
                 </div>
             </div>
             <div class="table-responsive">
-                <table class="table table-bordered table-hover">
+                <table class="table table-bordered ">
                     <tr>
                         <th class="col-sm-1">#</th>
                         <th class="col-sm-2">Teacher name</th>
@@ -414,7 +414,7 @@
                 </form>
             </div>
             <div class="table-responsive">
-                <table class="table table-bordered table-hover">
+                <table class="table table-bordered ">
                     <tr>
                         <th class="col-sm-1">#</th>
                         <th class="col-sm-3">Name</th>

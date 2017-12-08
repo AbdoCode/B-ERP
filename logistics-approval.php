@@ -4,7 +4,7 @@
     include 'deploy.php';
     include 'navbar.php';
 ?>
-<div class="logistics">
+<div class="logistics-approval">
     <h2>logistics approval</h2>
     <div class="input-group col-sm-5 col-xs-12 center-block">
         <input type="search" class="form-control" placeholder="Supervisor name/Date/Status..." />
@@ -13,7 +13,7 @@
         </div>
     </div>
     <div class="table-responsive">
-        <table class="table table-bordered table-hover">
+        <table class="table table-bordered ">
             <tr>
                 <th class="col-sm-1">#</th>
                 <th class="col-sm-2">Requester Name</th>

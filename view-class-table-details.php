@@ -7,7 +7,7 @@
 <div class="add-class-table">
     <h2>Before Edit Table</h2>
     <div class="table-responsive">
-        <table class="table table-bordered table-hover">
+        <table class="table table-bordered ">
             <tr class="info">
                 <th class="col-sm-2">Day</th>
                 <th class="col-sm-2">7-9</th>
@@ -68,7 +68,7 @@
     </div>
     <h2>After Edit Table</h2>
     <div class="table-responsive">
-        <table class="table table-bordered table-hover">
+        <table class="table table-bordered ">
             <tr class="info">
                 <th class="col-sm-2">Day</th>
                 <th class="col-sm-2">7-9</th>

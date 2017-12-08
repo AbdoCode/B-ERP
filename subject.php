@@ -51,7 +51,7 @@
                                                 <div id="firstwoctober" class="panel-collapse collapse" role="tabpanel" aria-labelledby="first">
                                                     <div class="panel-body">
                                                         <div class="table-responsive">
-                                                            <table class="table table-bordered table-hover">
+                                                            <table class="table table-bordered ">
                                                                 <tr>
                                                                     <th class="col-sm-1">#</th>
                                                                     <th class="col-sm-11">Objectives</th>
@@ -80,7 +80,7 @@
                                                 <div id="secondwoctober" class="panel-collapse collapse" role="tabpanel" aria-labelledby="second">
                                                     <div class="panel-body">
                                                         <div class="table-responsive">
-                                                            <table class="table table-bordered table-hover">
+                                                            <table class="table table-bordered ">
                                                                 <tr>
                                                                     <th class="col-sm-1">#</th>
                                                                     <th class="col-sm-11">Objectives</th>
@@ -109,7 +109,7 @@
                                                 <div id="thirdwoctober" class="panel-collapse collapse" role="tabpanel" aria-labelledby="third">
                                                     <div class="panel-body">
                                                         <div class="table-responsive">
-                                                            <table class="table table-bordered table-hover">
+                                                            <table class="table table-bordered ">
                                                                 <tr>
                                                                     <th class="col-sm-1">#</th>
                                                                     <th class="col-sm-11">Objectives</th>
@@ -138,7 +138,7 @@
                                                 <div id="fourthwoctober" class="panel-collapse collapse" role="tabpanel" aria-labelledby="fourth">
                                                     <div class="panel-body">
                                                         <div class="table-responsive">
-                                                            <table class="table table-bordered table-hover">
+                                                            <table class="table table-bordered ">
                                                                 <tr>
                                                                     <th class="col-sm-1">#</th>
                                                                     <th class="col-sm-11">Objectives</th>
@@ -182,7 +182,7 @@
                                                 <div id="firstwnovember" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="first">
                                                     <div class="panel-body">
                                                         <div class="table-responsive">
-                                                            <table class="table table-bordered table-hover">
+                                                            <table class="table table-bordered ">
                                                                 <tr>
                                                                     <th class="col-sm-1">#</th>
                                                                     <th class="col-sm-11">Objectives</th>
@@ -211,7 +211,7 @@
                                                 <div id="secondwnovember" class="panel-collapse collapse" role="tabpanel" aria-labelledby="second">
                                                     <div class="panel-body">
                                                         <div class="table-responsive">
-                                                            <table class="table table-bordered table-hover">
+                                                            <table class="table table-bordered ">
                                                                 <tr>
                                                                     <th class="col-sm-1">#</th>
                                                                     <th class="col-sm-11">Objectives</th>
@@ -240,7 +240,7 @@
                                                 <div id="thirdwnovember" class="panel-collapse collapse" role="tabpanel" aria-labelledby="third">
                                                     <div class="panel-body">
                                                         <div class="table-responsive">
-                                                            <table class="table table-bordered table-hover">
+                                                            <table class="table table-bordered ">
                                                                 <tr>
                                                                     <th class="col-sm-1">#</th>
                                                                     <th class="col-sm-11">Objectives</th>
@@ -269,7 +269,7 @@
                                                 <div id="fourthwnovember" class="panel-collapse collapse" role="tabpanel" aria-labelledby="fourth">
                                                     <div class="panel-body">
                                                         <div class="table-responsive">
-                                                            <table class="table table-bordered table-hover">
+                                                            <table class="table table-bordered ">
                                                                 <tr>
                                                                     <th class="col-sm-1">#</th>
                                                                     <th class="col-sm-11">Objectives</th>
@@ -313,7 +313,7 @@
                                                 <div id="firstwdecember" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="first">
                                                     <div class="panel-body">
                                                         <div class="table-responsive">
-                                                            <table class="table table-bordered table-hover">
+                                                            <table class="table table-bordered ">
                                                                 <tr>
                                                                     <th class="col-sm-1">#</th>
                                                                     <th class="col-sm-11">Objectives</th>
@@ -342,7 +342,7 @@
                                                 <div id="secondwdecember" class="panel-collapse collapse" role="tabpanel" aria-labelledby="second">
                                                     <div class="panel-body">
                                                         <div class="table-responsive">
-                                                            <table class="table table-bordered table-hover">
+                                                            <table class="table table-bordered ">
                                                                 <tr>
                                                                     <th class="col-sm-1">#</th>
                                                                     <th class="col-sm-11">Objectives</th>
@@ -371,7 +371,7 @@
                                                 <div id="thirdwdecember" class="panel-collapse collapse" role="tabpanel" aria-labelledby="third">
                                                     <div class="panel-body">
                                                         <div class="table-responsive">
-                                                            <table class="table table-bordered table-hover">
+                                                            <table class="table table-bordered ">
                                                                 <tr>
                                                                     <th class="col-sm-1">#</th>
                                                                     <th class="col-sm-11">Objectives</th>
@@ -400,7 +400,7 @@
                                                 <div id="fourthwdecember" class="panel-collapse collapse" role="tabpanel" aria-labelledby="fourth">
                                                     <div class="panel-body">
                                                         <div class="table-responsive">
-                                                            <table class="table table-bordered table-hover">
+                                                            <table class="table table-bordered ">
                                                                 <tr>
                                                                     <th class="col-sm-1">#</th>
                                                                     <th class="col-sm-11">Objectives</th>
@@ -458,14 +458,16 @@
                                                             <table class="table table-bordered">
                                                                 <tr>
                                                                     <th class="col-sm-2">Day</th>
-                                                                    <th class="col-sm-4">Lesson</th>
-                                                                    <th class="col-sm-4">Activity</th>
+                                                                    <th class="col-sm-3">Lesson</th>
+                                                                    <th class="col-sm-3">Activity</th>
+                                                                    <th class="col-sm-2">Time</th>
                                                                     <th class="col-sm-2">Status</th>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -479,6 +481,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -492,6 +495,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -505,6 +509,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -518,6 +523,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -546,14 +552,16 @@
                                                             <table class="table table-bordered">
                                                                 <tr>
                                                                     <th class="col-sm-2">Day</th>
-                                                                    <th class="col-sm-4">Lesson</th>
-                                                                    <th class="col-sm-4">Activity</th>
+                                                                    <th class="col-sm-3">Lesson</th>
+                                                                    <th class="col-sm-3">Activity</th>
+                                                                    <th class="col-sm-2">Time</th>
                                                                     <th class="col-sm-2">Status</th>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -567,6 +575,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -580,6 +589,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -593,6 +603,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -606,6 +617,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -634,14 +646,16 @@
                                                             <table class="table table-bordered">
                                                                 <tr>
                                                                     <th class="col-sm-2">Day</th>
-                                                                    <th class="col-sm-4">Lesson</th>
-                                                                    <th class="col-sm-4">Activity</th>
+                                                                    <th class="col-sm-3">Lesson</th>
+                                                                    <th class="col-sm-3">Activity</th>
+                                                                    <th class="col-sm-2">Time</th>
                                                                     <th class="col-sm-2">Status</th>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -655,6 +669,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -668,6 +683,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -681,6 +697,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -694,6 +711,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -722,14 +740,16 @@
                                                             <table class="table table-bordered">
                                                                 <tr>
                                                                     <th class="col-sm-2">Day</th>
-                                                                    <th class="col-sm-4">Lesson</th>
-                                                                    <th class="col-sm-4">Activity</th>
+                                                                    <th class="col-sm-3">Lesson</th>
+                                                                    <th class="col-sm-3">Activity</th>
+                                                                    <th class="col-sm-2">Time</th>
                                                                     <th class="col-sm-2">Status</th>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -743,6 +763,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -756,6 +777,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -769,6 +791,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -782,6 +805,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -825,14 +849,16 @@
                                                             <table class="table table-bordered">
                                                                 <tr>
                                                                     <th class="col-sm-2">Day</th>
-                                                                    <th class="col-sm-4">Lesson</th>
-                                                                    <th class="col-sm-4">Activity</th>
+                                                                    <th class="col-sm-3">Lesson</th>
+                                                                    <th class="col-sm-3">Activity</th>
+                                                                    <th class="col-sm-2">Time</th>
                                                                     <th class="col-sm-2">Status</th>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -846,6 +872,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -859,6 +886,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -872,6 +900,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -885,6 +914,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -913,14 +943,16 @@
                                                             <table class="table table-bordered">
                                                                 <tr>
                                                                     <th class="col-sm-2">Day</th>
-                                                                    <th class="col-sm-4">Lesson</th>
-                                                                    <th class="col-sm-4">Activity</th>
+                                                                    <th class="col-sm-3">Lesson</th>
+                                                                    <th class="col-sm-3">Activity</th>
+                                                                    <th class="col-sm-2">Time</th>
                                                                     <th class="col-sm-2">Status</th>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -934,6 +966,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -947,6 +980,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -960,6 +994,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -973,6 +1008,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -1001,14 +1037,16 @@
                                                             <table class="table table-bordered">
                                                                 <tr>
                                                                     <th class="col-sm-2">Day</th>
-                                                                    <th class="col-sm-4">Lesson</th>
-                                                                    <th class="col-sm-4">Activity</th>
+                                                                    <th class="col-sm-3">Lesson</th>
+                                                                    <th class="col-sm-3">Activity</th>
+                                                                    <th class="col-sm-2">Time</th>
                                                                     <th class="col-sm-2">Status</th>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -1022,6 +1060,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -1035,6 +1074,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -1048,6 +1088,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -1061,6 +1102,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -1089,14 +1131,16 @@
                                                             <table class="table table-bordered">
                                                                 <tr>
                                                                     <th class="col-sm-2">Day</th>
-                                                                    <th class="col-sm-4">Lesson</th>
-                                                                    <th class="col-sm-4">Activity</th>
+                                                                    <th class="col-sm-3">Lesson</th>
+                                                                    <th class="col-sm-3">Activity</th>
+                                                                    <th class="col-sm-2">Time</th>
                                                                     <th class="col-sm-2">Status</th>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -1110,6 +1154,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -1123,6 +1168,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -1136,6 +1182,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -1149,6 +1196,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -1192,14 +1240,16 @@
                                                             <table class="table table-bordered">
                                                                 <tr>
                                                                     <th class="col-sm-2">Day</th>
-                                                                    <th class="col-sm-4">Lesson</th>
-                                                                    <th class="col-sm-4">Activity</th>
+                                                                    <th class="col-sm-3">Lesson</th>
+                                                                    <th class="col-sm-3">Activity</th>
+                                                                    <th class="col-sm-2">Time</th>
                                                                     <th class="col-sm-2">Status</th>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -1213,6 +1263,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -1226,6 +1277,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -1239,6 +1291,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -1252,6 +1305,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -1280,14 +1334,16 @@
                                                             <table class="table table-bordered">
                                                                 <tr>
                                                                     <th class="col-sm-2">Day</th>
-                                                                    <th class="col-sm-4">Lesson</th>
-                                                                    <th class="col-sm-4">Activity</th>
+                                                                    <th class="col-sm-3">Lesson</th>
+                                                                    <th class="col-sm-3">Activity</th>
+                                                                    <th class="col-sm-2">Time</th>
                                                                     <th class="col-sm-2">Status</th>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -1301,6 +1357,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -1314,6 +1371,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -1327,6 +1385,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -1340,6 +1399,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -1368,14 +1428,16 @@
                                                             <table class="table table-bordered">
                                                                 <tr>
                                                                     <th class="col-sm-2">Day</th>
-                                                                    <th class="col-sm-4">Lesson</th>
-                                                                    <th class="col-sm-4">Activity</th>
+                                                                    <th class="col-sm-3">Lesson</th>
+                                                                    <th class="col-sm-3">Activity</th>
+                                                                    <th class="col-sm-2">Time</th>
                                                                     <th class="col-sm-2">Status</th>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -1389,6 +1451,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -1402,6 +1465,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -1415,6 +1479,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -1428,6 +1493,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -1456,14 +1522,16 @@
                                                             <table class="table table-bordered">
                                                                 <tr>
                                                                     <th class="col-sm-2">Day</th>
-                                                                    <th class="col-sm-4">Lesson</th>
-                                                                    <th class="col-sm-4">Activity</th>
+                                                                    <th class="col-sm-3">Lesson</th>
+                                                                    <th class="col-sm-3">Activity</th>
+                                                                    <th class="col-sm-2">Time</th>
                                                                     <th class="col-sm-2">Status</th>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -1477,6 +1545,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -1490,6 +1559,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -1503,6 +1573,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>
@@ -1516,6 +1587,7 @@
                                                                     <td>Saturday</td>
                                                                     <td>Lesson name</td>
                                                                     <td>Activity name</td>
+                                                                    <td>Time</td>
                                                                     <td>
                                                                         <select>
                                                                             <option disabled selected value="">select status</option>

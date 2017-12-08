@@ -8,7 +8,7 @@
     <h2>Class Table</h2>
     <form>
         <div class="table-responsive">
-            <table class="table table-bordered table-hover">
+            <table class="table table-bordered ">
                 <tr class="info">
                     <th class="col-sm-2">Day</th>
                     <th class="col-sm-2">7-9</th>

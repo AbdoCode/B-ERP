@@ -10,7 +10,7 @@
         <label>Date: 19 Sep 2014</label>
     </div>
     <div class="table-responsive">
-        <table class="table table-bordered table-hover">
+        <table class="table table-bordered ">
             <tr>
                 <th class="col-sm-4">Time From</th>
                 <th class="col-sm-4">Time To</th>

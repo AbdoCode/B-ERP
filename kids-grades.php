@@ -16,7 +16,7 @@
             <label>E = Excellent | V = Very good | G = Good | N = Need More Time</label>
         </div>
         <div class="table-responsive">
-            <table class="table table-bordered table-hover table-striped">
+            <table class="table table-bordered  table-striped">
                 <thead>
                 <tr>
                     <th class="col-sm-1">#</th>

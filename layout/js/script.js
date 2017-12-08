@@ -139,9 +139,9 @@ $(function () {
     // Function colorize rows
     function colorize($target) {
         $($target).each(function () {
-            if ($(this).html() === "Completed" || $(this).html() === "Solved" || $(this).html() === "Approved") {
+            if ($(this).html() === "Completed" || $(this).html() === "Solved" || $(this).html() === "Approved" || $(this).html() === "Confirmed") {
                 $(this).parent().addClass("success");
-            } else if ($(this).html() === "Pending" || $(this).html() === "Not Solved") {
+            } else if ($(this).html() === "Pending" || $(this).html() === "Not Solved" || $(this).html() === "Not Confirmed") {
                 $(this).parent().addClass("danger");
             } else if ($(this).html() === "Postponed" || $(this).html() === "Modifying") {
                 $(this).parent().addClass("info");
@@ -158,6 +158,14 @@ $(function () {
     colorize(".issues .table tr td:nth-of-type(4)");
     // Approvals workplan
     colorize(".approvals-workplan .table tr td:nth-of-type(3)");
+    // logistics
+    colorize(".logistics .table tr td:nth-of-type(3)");
+    // logistics-approval
+    colorize(".logistics-approval .table tr td:nth-of-type(6)");
+    // time-table
+    colorize(".time-table .table tr td:nth-of-type(3)");
+    // tasks
+    colorize(".tasks .table tr td:nth-of-type(5)");
     //open Boxes
     function openBox($openButton, $box, $closeButton) {
         $($openButton).on('click', function () {

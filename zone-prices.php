@@ -9,24 +9,104 @@
     <form class="form-horizontal">
         <div>
             <div class="table-responsive">
-                <table class="table table-bordered table-hover table-striped price-table">
+                <table class="table table-bordered  table-striped price-table">
                     <thead>
-                    <tr>
-                        <th class="col-sm-7">Name</th>
-                        <th class="col-sm-5">Price</th>
-                    </tr>
+                        <tr>
+                            <th class="col-sm-1">#</th>
+                            <th class="col-sm-6">Name</th>
+                            <th class="col-sm-5">Price</th>
+                        </tr>
                     </thead>
                     <tr>
-                        <td><input type="text" class="form-control"></td>
-                        <td><input type="number" class="form-control" placeholder="Price in LE..."></td>
+                        <td>1</td>
+                        <td>Bronze (25 Hours)</td>
+                        <td>
+                            <select>
+                                <?php
+                                    for ($i = 0; $i <= 500; $i += 5) {
+                                        echo '<option value="'.$i.'">'.$i.'</option>';
+                                    }
+                                ?>
+                            </select>
+                        </td>
                     </tr>
                     <tr>
-                        <td><input type="text" class="form-control"></td>
-                        <td><input type="number" class="form-control" placeholder="Price in LE..."></td>
+                        <td>2</td>
+                        <td>Silver (50 Hours)</td>
+                        <td>
+                            <select>
+                                <?php
+                                    for ($i = 0; $i <= 500; $i += 5) {
+                                        echo '<option value="'.$i.'">'.$i.'</option>';
+                                    }
+                                ?>
+                            </select>
+                        </td>
                     </tr>
                     <tr>
-                        <td><input type="text" class="form-control"></td>
-                        <td><input type="number" class="form-control" placeholder="Price in LE..."></td>
+                        <td>3</td>
+                        <td>Gold (70 Hours)</td>
+                        <td>
+                            <select>
+                                <?php
+                                    for ($i = 0; $i <= 500; $i += 5) {
+                                        echo '<option value="'.$i.'">'.$i.'</option>';
+                                    }
+                                ?>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Diamond (120 Hours)</td>
+                        <td>
+                            <select>
+                                <?php
+                                    for ($i = 0; $i <= 500; $i += 5) {
+                                        echo '<option value="'.$i.'">'.$i.'</option>';
+                                    }
+                                ?>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Coworking Space (24 Hours)</td>
+                        <td>
+                            <select>
+                                <?php
+                                    for ($i = 0; $i <= 500; $i += 5) {
+                                        echo '<option value="'.$i.'">'.$i.'</option>';
+                                    }
+                                ?>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Meetings (1 Hour)</td>
+                        <td>
+                            <select>
+                                <?php
+                                    for ($i = 0; $i <= 500; $i += 5) {
+                                        echo '<option value="'.$i.'">'.$i.'</option>';
+                                    }
+                                ?>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Meetings & Television (1 Hour)</td>
+                        <td>
+                            <select>
+                                <?php
+                                    for ($i = 0; $i <= 500; $i += 5) {
+                                        echo '<option value="'.$i.'">'.$i.'</option>';
+                                    }
+                                ?>
+                            </select>
+                        </td>
                     </tr>
                 </table>
             </div>
