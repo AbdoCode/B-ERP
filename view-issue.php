@@ -3,6 +3,9 @@
     $pageTitle = 'Home';
     include 'deploy.php';
     include 'navbar.php';
+
+
+
 ?>
 <div class="view-issue">
     <h2 class="text-center">Issue Name</h2>
