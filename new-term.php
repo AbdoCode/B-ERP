@@ -32,6 +32,13 @@
                 <input type="number" class="form-control" id="exam">
             </div>
         </div>
+        <div class="form-group">
+            <label for="class" class="col-xs-2 control-label">No. Classes</label>
+            <div class="col-sm-10 col-sm-push-0 col-xs-9 col-xs-push-1">
+                <input type="number" class="form-control noClasses" id="class">
+            </div>
+        </div>
+        <div class="classNames"></div>
         <div>
             <h3>Officially weekends</h3>
             <div class="container-for-btn-group">

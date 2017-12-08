@@ -31,10 +31,13 @@
                 </div>
             </form>
             <div class="form-group">
-                <button type="button" class="btn btn-default btn-block">Extract to flash memory</button>
+                <button type="button" class="btn btn-primary btn-block">Extract to flash memory</button>
             </div>
             <div class="form-group">
                 <a href="deletion-history.php" class="btn btn-info btn-block">Deletion history</a>
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn btn-warning btn-block">Logs</button>
             </div>
             <div class="form-group">
                 <button type="button" class="btn btn-danger btn-block">Make offline</button>

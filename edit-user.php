@@ -37,6 +37,27 @@
             </div>
         </div>
         <div class="form-group">
+            <label class="col-xs-2 control-label">Class</label>
+            <div class="col-sm-10 col-sm-push-0 col-xs-9 col-xs-push-1">
+                <select multiple>
+                    <option value="">Class A1</option>
+                    <option value="">Class A2</option>
+                    <option value="">Class B1</option>
+                    <option value="">Class B2</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-xs-2 control-label">Subject</label>
+            <div class="col-sm-10 col-sm-push-0 col-xs-9 col-xs-push-1">
+                <select multiple>
+                    <option value="">Arabic</option>
+                    <option value="">English</option>
+                    <option value="">Math</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
             <label class="col-xs-2 control-label">Access To</label>
             <div class="col-sm-10 col-sm-push-0 col-xs-9 col-xs-push-1">
                 <select>

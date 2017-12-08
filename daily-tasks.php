@@ -49,8 +49,9 @@ if($jobTitle != 'Customer Care' && $jobTitle != 'Teacher')
         <table class="table table-bordered table-hover">
             <tr>
                 <th class="col-sm-1">#</th>
-                <th class="col-sm-4">Tasks</th>
-                <th class="col-sm-5">Status</th>
+                <th class="col-sm-3">Tasks</th>
+                <th class="col-sm-4">Status</th>
+                <th class="col-sm-2">Time</th>
                 <th class="col-sm-2">Action</th>
             </tr>
             <?php
@@ -96,7 +97,7 @@ where user_daily_tasks.daily_task_id = '".$row['daily_task_id']."' AND user_dail
                 ';
                 echo'
                 </td>
-
+                <td>Time</td>
                 <td>
                     <button class="btn btn-success btn-block" value="'.$row['daily_task_id'].'" name="save">Save</button>
                 </td>

@@ -251,7 +251,15 @@ $(function () {
         $(this).prop('disabled', true);
         var number = $(this).val();
         for (var i = 0; i < number; i++) {
-            $(".subjectNames").append('<div class="form-group"> <label for="subject' + (i+1) + '" class="col-xs-2 control-label">Subjects ' + (i+1) + '</label> <div class="col-sm-10 col-sm-push-0 col-xs-9 col-xs-push-1"> <input type="text" class="form-control" id="subject' + (i+1) + '" placeholder="Type subject ' + (i+1) + ' name..."> </div> </div>');
+            $(".subjectNames").append('<div class="form-group"> <label for="subject' + (i+1) + '" class="col-xs-2 control-label">Subject ' + (i+1) + '</label> <div class="col-sm-10 col-sm-push-0 col-xs-9 col-xs-push-1"> <input type="text" class="form-control" id="subject' + (i+1) + '" placeholder="Type subject ' + (i+1) + ' name..."> </div> </div>');
+        }
+    });
+    // class Name in new term
+    $(".noClasses").one('blur', function () {
+        $(this).prop('disabled', true);
+        var number = $(this).val();
+        for (var i = 0; i < number; i++) {
+            $(".classNames").append('<div class="form-group"> <label for="class' + (i+1) + '" class="col-xs-2 control-label">Class ' + (i+1) + '</label> <div class="col-sm-10 col-sm-push-0 col-xs-9 col-xs-push-1"> <input type="text" class="form-control" id="class' + (i+1) + '" placeholder="Type class ' + (i+1) + ' name..."> </div> </div>');
         }
     });
     // Sum Budget in events
@@ -284,21 +292,3 @@ $(function () {
         }
     });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
