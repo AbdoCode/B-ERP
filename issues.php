@@ -3,6 +3,17 @@
     $pageTitle = 'Home';
     include 'deploy.php';
     include 'navbar.php';
+
+$gettingIssues = '';
+
+if($_GET['type'] == 'kid') {
+
+    $gettingIssues ="SELECT * FROM kid_issues";
+}
+else if($_GET['type'] == 'administration') {
+
+}
+
 ?>
 <div class="issues">
     <h2><?php echo $_GET['type']; ?>s Issues</h2>
@@ -34,81 +45,67 @@
                     <th class="col-sm-1">Details</th>
                 </tr>
             </thead>
-            <tr>
-                <td>1</td>
-                <td>Logistics Problem</td>
-                <td>Type</td>
-                <td>Solved</td>
-                <td>17 Oct 2016</td>
-                <td>10:00 AM</td>
-                <td>
-                    <span>Receptionist</span><br/>
-                    <span>Doaa</span>
+            <?php
+
+            $gettingAllIssues = $connect->prepare($gettingIssues);
+            $gettingAllIssues -> execute();
+            $issuesIncrementer = 1;
+            while ($row = $gettingAllIssues->fetch(PDO::FETCH_ASSOC)) {
+                echo '<tr>
+                <td>'.$issuesIncrementer++.'</td>
+                <td>'.$row['issue_title'].'</td>
+                <td>'.$row['issue_type'].'</td>';
+
+                if($row['status'] == '0')
+                    echo'<td>Not Solved</td>';
+                else
+                    echo'<td>Solved</td>';
+
+                echo'
+                <td>'.$row['date_added'].'</td>
+                <td>'.$row['time_added'].'</td>
+                <td>';
+
+                $getUsersForwardedFrom = $connect->prepare("SELECT job_titles.job_title,sys_users.username
+FROM kid_issues
+JOIN sys_users ON kid_issues.forwarded_from = sys_users.user_id
+JOIN staff ON sys_users.staff_id = staff.staff_id
+JOIN job_titles ON staff.job_title_id = job_titles.job_title_id
+WHERE kid_issues.kid_issue_id= '".$row['kid_issue_id']."'");
+                $getUsersForwardedFrom->execute();
+                while ($row3 = $getUsersForwardedFrom->fetch(PDO::FETCH_ASSOC)) {
+                    echo '<b>'.$row3['job_title'] . '</b> ' . $row3['username'] . '<br><br>';
+                }
+
+                echo'
+                </td>
+                <td>';
+
+                $getUsersForwardedTo = $connect->prepare("SELECT job_titles.job_title,sys_users.username
+FROM kid_issues_forwarding
+JOIN sys_users ON kid_issues_forwarding.forwarded_to = sys_users.user_id
+JOIN staff ON sys_users.staff_id = staff.staff_id
+JOIN job_titles ON staff.job_title_id = job_titles.job_title_id
+WHERE kid_issues_forwarding.kid_issue_id = '".$row['kid_issue_id']."'");
+                $getUsersForwardedTo->execute();
+                while ($row2 = $getUsersForwardedTo->fetch(PDO::FETCH_ASSOC)) {
+                    echo '<b>'.$row2['job_title'] . '</b> ' . $row2['username'] . '<br><br>';
+                }
+                echo'
                 </td>
                 <td>
                     <span>Receptionist</span><br/>
                     <span>Doaa</span>
                 </td>
                 <td>
-                    <span>Receptionist</span><br/>
-                    <span>Doaa</span>
-                </td>
-                <td>
-                    <span>Supervisor</span><br/>
+                    <span>'.$row['solved_by'].'</span><br/>
                     <span>Hoda</span>
                 </td>
-                <td><a href="view-issue.php?type=<?php echo $_GET['type']; ?>" class="btn btn-primary btn-sm">View</a></td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Logistics Problem</td>
-                <td>Type</td>
-                <td>Not Solved</td>
-                <td>17 Oct 2016</td>
-                <td>10:00 AM</td>
-                <td>
-                    <span>Receptionist</span><br/>
-                    <span>Doaa</span>
-                </td>
-                <td>
-                    <span>Receptionist</span><br/>
-                    <span>Doaa</span>
-                </td>
-                <td>
-                    <span>Receptionist</span><br/>
-                    <span>Doaa</span>
-                </td>
-                <td>
-                    <span>Supervisor</span><br/>
-                    <span>Hoda</span>
-                </td>
-                <td><a href="view-issue.php?type=<?php echo $_GET['type']; ?>" class="btn btn-primary btn-sm">View</a></td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Logistics Problem</td>
-                <td>Type</td>
-                <td>Solved</td>
-                <td>17 Oct 2016</td>
-                <td>10:00 AM</td>
-                <td>
-                    <span>Receptionist</span><br/>
-                    <span>Doaa</span>
-                </td>
-                <td>
-                    <span>Receptionist</span><br/>
-                    <span>Doaa</span>
-                </td>
-                <td>
-                    <span>Receptionist</span><br/>
-                    <span>Doaa</span>
-                </td>
-                <td>
-                    <span>Supervisor</span><br/>
-                    <span>Hoda</span>
-                </td>
-                <td><a href="view-issue.php?type=<?php echo $_GET['type']; ?>" class="btn btn-primary btn-sm">View</a></td>
-            </tr>
+                <td><a href="view-issue.php?type=<?php echo $_GET[\'type\']; ?>" class="btn btn-primary btn-sm">View</a></td>
+            </tr>';
+            }
+            ?>
+
         </table>
     </div>
 </div>
