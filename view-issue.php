@@ -4,14 +4,15 @@
     include 'deploy.php';
     include 'navbar.php';
 
+//$date1 = '2017-07-1';
+//$date2 = '2017-08-21';
+//
+//$date1ToSubtract = substr($date1,8);
+//$date2ToSubtract = substr($date2,8);
+//
+//$date = $date2ToSubtract - $date1ToSubtract;
+//echo'<script>alert("'.$date.'")</script>';
 
-
-/*$datetime1 = date_create('2017-12-7');
-$datetime2 = date_create('2017-12-12');
-$interval = date_diff($datetime1, $datetime2);
-echo $interval-> format('%R%a days');
-$interval ->*/
-//echo'<script>alert("'.$interval.'")</script>';
 
 $issueName = '';
 $issueType = '';
