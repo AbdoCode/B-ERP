@@ -45,7 +45,6 @@
         function reload(){
             document.getElementById("form1").submit();
         }
-
     </script>
 <div class="add-daily-tasks">
     <h2>Add new daily task</h2>

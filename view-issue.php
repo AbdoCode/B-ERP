@@ -5,7 +5,7 @@
     include 'navbar.php';
 
 //$date1 = '2017-07-1';
-//$date2 = '2017-08-21';
+//$date2 = '2017-07-21';
 //
 //$date1ToSubtract = substr($date1,8);
 //$date2ToSubtract = substr($date2,8);
@@ -137,8 +137,27 @@ WHERE admin_issues.issue_id = '".$issueId."'");
 }
 else header("Location: issues.php?type=kid ");
 
+if(isset($_POST['solve_issue']))
+{
+    echo'<script>alert("solved")</script>';
+}
+
+if(isset($_POST['forward_issue']))
+{
+    echo'<script>alert("forwarded")</script>';
+}
+
+
+
+
 
 echo'
+<script>
+        function reload(){
+            document.getElementById("view-issue-form").submit();
+        }
+    </script>
+
 <div class="view-issue">
     <h2 class="text-center">'.$issueName.'</h2>
     <div class="row">
@@ -198,40 +217,51 @@ echo'
             <p class="col-sm-11 col-xs-12">'.$issueDetails.'</p>
         </div>
     </div>
-    <form class="form-horizontal">
+    <form  class="form-horizontal" method="post" id="view-issue-form">
         <div class="form-group">
             <div class="col-sm-offset-4 col-sm-4 col-xs-12">
-                <button type="submit" class="btn btn-success btn-block">Solve</button>
+                <button type="submit" class="btn btn-success btn-block" name="solve_issue">Solve</button>
             </div>
         </div>
         <div class="form-group col-sm-5">
             <label for="jobTitle" class="col-sm-4 control-label">Job Title</label>
             <div class="col-sm-8">
-                <select class="form-control" id="jobTitle" multiple>
-                    <option>CEO</option>
-                    <option>General Manager</option>
-                    <option>Academy Head</option>
-                    <option>Supervisor</option>
-                </select>
+                <select class="form-control" id="jobTitle" name="job_title" onchange="reload()">
+                    <option></option>';
+    $stmt = $connect->prepare("SELECT job_title FROM job_titles");
+    $stmt->execute();
+
+    while ($row6 = $stmt->fetch(PDO::FETCH_ASSOC))
+        echo'<option value="'.$row6['job_title'].'">'.$row6['job_title'].'</option>';
+
+                echo'</select>
             </div>
         </div>
         <div class="form-group col-sm-5 col-sm-push-2">
             <label for="employee" class="col-sm-4 control-label">To</label>
             <div class="col-sm-8">
-                <select class="form-control" id="employee" multiple>
-                    <option>Ahmed</option>
-                    <option>Mohamed</option>
-                    <option>Ibrahim</option>
-                    <option>Ali</option>
-                </select>
+                <select class="form-control" id="employee" multiple name="employee_name[]">';
+
+        if(isset($_POST['job_title']) == true){
+            $employeeJobTitle = $_POST['job_title'];
+            $stmt = $connect->prepare("SELECT sys_users.username FROM sys_users
+        JOIN staff on sys_users.staff_id = staff.staff_id
+        JOIN job_titles ON staff.job_title_id = job_titles.job_title_id
+        WHERE job_titles.job_title = '".$employeeJobTitle."' ");
+            $stmt->execute();
+            while ($row7 = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                echo'<option value="'.$row7['username'].'">'.$row7['username'].'</option>';
+            }
+        }
+                echo'</select>
             </div>
         </div>
         <div class="form-group">
             <div class="col-sm-offset-4 col-sm-4 col-xs-12">
-                <button type="submit" class="btn btn-warning btn-block">Forward</button>
+                <button type="submit" class="btn btn-warning btn-block" name="forward_issue">Forward</button>
             </div>
         </div>
-    </form>
+        </form>
 </div>';
 
     include $templates . 'footer.php';
