@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="597a9482-fa08-471e-8566-9bf89cea1a8e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/remains" afterPath="$PROJECT_DIR$/remains" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view-issue.php" afterPath="$PROJECT_DIR$/view-issue.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -29,9 +30,25 @@
       <file leaf-file-name="view-activity.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view-activity.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="-8.068966">
+              <caret line="20" column="44" selection-start-line="18" selection-start-column="0" selection-end-line="20" selection-end-column="44" />
+              <folding>
+                <marker date="1512660500118" expanded="true" signature="399:461" placeholder="SELECT * FRO..activities..." />
+                <marker date="1512660500118" expanded="true" signature="1039:1206" placeholder="SELECT class..classes..." />
+                <marker date="1512660500118" expanded="true" signature="1411:3372" placeholder="..." />
+                <marker date="1512660500118" expanded="true" signature="1488:1633" placeholder="..." />
+                <marker date="1512660500118" expanded="true" signature="1659:1808" placeholder="..." />
+                <marker date="1512660500118" expanded="true" signature="1834:1983" placeholder="..." />
+                <marker date="1512660500118" expanded="true" signature="2009:2143" placeholder="..." />
+                <marker date="1512660500118" expanded="true" signature="2169:3365" placeholder="..." />
+                <marker date="1512660500118" expanded="true" signature="2310:3354" placeholder="..." />
+                <marker date="1512660500118" expanded="true" signature="2366:2815" placeholder="..." />
+                <marker date="1512660500118" expanded="true" signature="2408:2515" placeholder="..." />
+                <marker date="1512660500118" expanded="true" signature="2550:2655" placeholder="..." />
+                <marker date="1512660500118" expanded="true" signature="2690:2796" placeholder="..." />
+                <marker date="1512660500118" expanded="true" signature="2917:3078" placeholder="..." />
+                <marker date="1512660500118" expanded="true" signature="3181:3339" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -39,55 +56,57 @@
       <file leaf-file-name="view-issue.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/view-issue.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.13197969">
+              <caret line="241" column="97" selection-start-line="241" selection-start-column="97" selection-end-line="241" selection-end-column="97" />
               <folding>
-                <marker date="1512842374785" expanded="true" signature="745:801" placeholder="SELECT * FRO..kid_issues..." />
-                <marker date="1512842374785" expanded="true" signature="847:905" placeholder="SELECT * FRO..admin_issues..." />
-                <marker date="1512842374785" expanded="true" signature="1368:1650" placeholder="SELECT job_t..kid_issues..." />
-                <marker date="1512842374785" expanded="true" signature="1723:2012" placeholder="SELECT job_t..admin_issues..." />
-                <marker date="1512842374785" expanded="true" signature="2320:2638" placeholder="SELECT job_t..kid_issues_forwarding..." />
-                <marker date="1512842374785" expanded="true" signature="2709:3035" placeholder="SELECT job_t..admin_issues_forwarding..." />
-                <marker date="1512842374785" expanded="true" signature="3349:3731" placeholder="SELECT job_t..kid_issues..." />
-                <marker date="1512842374785" expanded="true" signature="3802:4198" placeholder="SELECT job_t..admin_issues..." />
-                <marker date="1512842374785" expanded="true" signature="4634:4912" placeholder="SELECT job_t..kid_issues..." />
-                <marker date="1512842374785" expanded="true" signature="4980:5264" placeholder="SELECT job_t..admin_issues..." />
-                <marker date="1512842374785" expanded="true" signature="5913:5994" placeholder="UPDATE kid_i..." />
-                <marker date="1512842374785" expanded="true" signature="6197:6280" placeholder="UPDATE kid_i..." />
-                <marker date="1512842374785" expanded="true" signature="6685:6747" placeholder="SELECT user_..sys_users..." />
-                <marker date="1512842374785" expanded="true" signature="6953:7085" placeholder="INSERT INTO ..." />
-                <marker date="1512842374785" expanded="true" signature="7329:7464" placeholder="INSERT INTO ..." />
-                <marker date="1512842374785" expanded="true" signature="7655:7771" placeholder="..." />
-                <marker date="1512842374785" expanded="true" signature="7682:7758" placeholder="{...}" />
-                <marker date="1512842374785" expanded="true" signature="7797:8027" placeholder="..." />
-                <marker date="1512842374785" expanded="true" signature="7867:8027" placeholder="..." />
-                <marker date="1512842374785" expanded="true" signature="7897:8027" placeholder="..." />
-                <marker date="1512842374785" expanded="true" signature="8248:8655" placeholder="..." />
-                <marker date="1512842374785" expanded="true" signature="8278:8446" placeholder="..." />
-                <marker date="1512842374785" expanded="true" signature="8476:8644" placeholder="..." />
-                <marker date="1512842374785" expanded="true" signature="8677:9102" placeholder="..." />
-                <marker date="1512842374785" expanded="true" signature="8707:8886" placeholder="..." />
-                <marker date="1512842374785" expanded="true" signature="8916:9091" placeholder="..." />
-                <marker date="1512842374785" expanded="true" signature="9124:9557" placeholder="..." />
-                <marker date="1512842374785" expanded="true" signature="9154:9335" placeholder="..." />
-                <marker date="1512842374785" expanded="true" signature="9365:9542" placeholder="..." />
-                <marker date="1512842374785" expanded="true" signature="9579:9799" placeholder="..." />
-                <marker date="1512842374785" expanded="true" signature="9609:9788" placeholder="..." />
-                <marker date="1512842374785" expanded="true" signature="9821:10005" placeholder="..." />
-                <marker date="1512842374785" expanded="true" signature="9851:9994" placeholder="..." />
-                <marker date="1512842374785" expanded="true" signature="10121:10651" placeholder="..." />
-                <marker date="1512842374785" expanded="true" signature="10122:10651" placeholder="..." />
-                <marker date="1512842374785" expanded="true" signature="10155:10356" placeholder="..." />
-                <marker date="1512842374785" expanded="true" signature="10216:10341" placeholder="..." />
-                <marker date="1512842374785" expanded="true" signature="10398:10651" placeholder="..." />
-                <marker date="1512842374785" expanded="true" signature="10516:10651" placeholder="..." />
-                <marker date="1512842374785" expanded="true" signature="10613:10651" placeholder="..." />
-                <marker date="1512842374785" expanded="true" signature="10686:10718" placeholder="SELECT job_t..job_titles..." />
-                <marker date="1512842374785" expanded="true" signature="11000:11204" placeholder="..." />
-                <marker date="1512842374785" expanded="true" signature="11111:11204" placeholder="..." />
-                <marker date="1512842374785" expanded="true" signature="11339:11574" placeholder="SELECT sys_u..sys_users..." />
-                <marker date="1512842374785" expanded="true" signature="11860:12067" placeholder="..." />
-                <marker date="1512842374785" expanded="true" signature="11921:12052" placeholder="..." />
+                <marker date="1512844192496" expanded="true" signature="519:575" placeholder="SELECT * FRO..kid_issues..." />
+                <marker date="1512844192496" expanded="true" signature="621:679" placeholder="SELECT * FRO..admin_issues..." />
+                <marker date="1512844192496" expanded="true" signature="1190:1472" placeholder="SELECT job_t..kid_issues..." />
+                <marker date="1512844192496" expanded="true" signature="1545:1834" placeholder="SELECT job_t..admin_issues..." />
+                <marker date="1512844192496" expanded="true" signature="2142:2460" placeholder="SELECT job_t..kid_issues_forwarding..." />
+                <marker date="1512844192496" expanded="true" signature="2531:2857" placeholder="SELECT job_t..admin_issues_forwarding..." />
+                <marker date="1512844192496" expanded="true" signature="3171:3553" placeholder="SELECT job_t..kid_issues..." />
+                <marker date="1512844192496" expanded="true" signature="3624:4020" placeholder="SELECT job_t..admin_issues..." />
+                <marker date="1512844192496" expanded="true" signature="4456:4734" placeholder="SELECT job_t..kid_issues..." />
+                <marker date="1512844192496" expanded="true" signature="4802:5086" placeholder="SELECT job_t..admin_issues..." />
+                <marker date="1512844192496" expanded="true" signature="5810:5891" placeholder="UPDATE kid_i..." />
+                <marker date="1512844192496" expanded="true" signature="6094:6177" placeholder="UPDATE kid_i..." />
+                <marker date="1512844192496" expanded="true" signature="6582:6644" placeholder="SELECT user_..sys_users..." />
+                <marker date="1512844192496" expanded="true" signature="6850:6982" placeholder="INSERT INTO ..." />
+                <marker date="1512844192496" expanded="true" signature="7226:7361" placeholder="INSERT INTO ..." />
+                <marker date="1512844192496" expanded="true" signature="7552:7668" placeholder="..." />
+                <marker date="1512844192496" expanded="true" signature="7579:7617" placeholder="{...}" />
+                <marker date="1512844192496" expanded="true" signature="7579:7655" placeholder="{...}" />
+                <marker date="1512844192496" expanded="true" signature="7694:7924" placeholder="..." />
+                <marker date="1512844192496" expanded="true" signature="7764:7924" placeholder="..." />
+                <marker date="1512844192496" expanded="true" signature="7794:7924" placeholder="..." />
+                <marker date="1512844192496" expanded="true" signature="8145:8552" placeholder="..." />
+                <marker date="1512844192496" expanded="true" signature="8175:8343" placeholder="..." />
+                <marker date="1512844192496" expanded="true" signature="8373:8541" placeholder="..." />
+                <marker date="1512844192496" expanded="true" signature="8574:8999" placeholder="..." />
+                <marker date="1512844192496" expanded="true" signature="8604:8783" placeholder="..." />
+                <marker date="1512844192496" expanded="true" signature="8813:8988" placeholder="..." />
+                <marker date="1512844192496" expanded="true" signature="9021:9454" placeholder="..." />
+                <marker date="1512844192496" expanded="true" signature="9051:9232" placeholder="..." />
+                <marker date="1512844192496" expanded="true" signature="9262:9439" placeholder="..." />
+                <marker date="1512844192496" expanded="true" signature="9476:9702" placeholder="..." />
+                <marker date="1512844192496" expanded="true" signature="9506:9645" placeholder="..." />
+                <marker date="1512844192496" expanded="true" signature="9506:9691" placeholder="..." />
+                <marker date="1512844192496" expanded="true" signature="9724:9908" placeholder="..." />
+                <marker date="1512844192496" expanded="true" signature="9754:9897" placeholder="..." />
+                <marker date="1512844192496" expanded="true" signature="10024:10554" placeholder="..." />
+                <marker date="1512844192496" expanded="true" signature="10025:10554" placeholder="..." />
+                <marker date="1512844192496" expanded="true" signature="10058:10259" placeholder="..." />
+                <marker date="1512844192496" expanded="true" signature="10119:10244" placeholder="..." />
+                <marker date="1512844192496" expanded="true" signature="10301:10554" placeholder="..." />
+                <marker date="1512844192496" expanded="true" signature="10419:10554" placeholder="..." />
+                <marker date="1512844192496" expanded="true" signature="10516:10554" placeholder="..." />
+                <marker date="1512844192496" expanded="true" signature="10589:10621" placeholder="SELECT job_t..job_titles..." />
+                <marker date="1512844192496" expanded="true" signature="10903:11107" placeholder="..." />
+                <marker date="1512844192496" expanded="true" signature="11014:11107" placeholder="..." />
+                <marker date="1512844192496" expanded="true" signature="11242:11477" placeholder="SELECT sys_u..sys_users..." />
+                <marker date="1512844192496" expanded="true" signature="11763:11970" placeholder="..." />
+                <marker date="1512844192496" expanded="true" signature="11824:11955" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -97,7 +116,7 @@
         <entry file="file://$PROJECT_DIR$/remains">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -373,12 +392,6 @@
       <workItem from="1512625529761" duration="6275000" />
       <workItem from="1512625186673" duration="843000" />
       <workItem from="1512622971915" duration="13000" />
-    </task>
-    <task id="LOCAL-00004" summary="Mohamed Edit">
-      <created>1508153151510</created>
-      <option name="number" value="00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1508153151510</updated>
     </task>
     <task id="LOCAL-00005" summary="Mohamed Edit">
       <created>1508155342069</created>
@@ -668,7 +681,13 @@
       <option name="project" value="LOCAL" />
       <updated>1512842313493</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="code edit">
+      <created>1512842400639</created>
+      <option name="number" value="00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1512842400639</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1022,6 +1041,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1056,22 +1076,6 @@
             <marker date="1512825837045" expanded="false" signature="-1:-1" placeholder="SELECT job_t..kid_issues..." />
             <marker date="1512825837045" expanded="false" signature="-1:-1" placeholder="SELECT job_t..admin_issues..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view-activity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/remains">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1118,57 +1122,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view-issue.php">
+    <entry file="file://$PROJECT_DIR$/remains">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view-activity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.068966">
+          <caret line="20" column="44" selection-start-line="18" selection-start-column="0" selection-end-line="20" selection-end-column="44" />
           <folding>
-            <marker date="1512842374785" expanded="true" signature="745:801" placeholder="SELECT * FRO..kid_issues..." />
-            <marker date="1512842374785" expanded="true" signature="847:905" placeholder="SELECT * FRO..admin_issues..." />
-            <marker date="1512842374785" expanded="true" signature="1368:1650" placeholder="SELECT job_t..kid_issues..." />
-            <marker date="1512842374785" expanded="true" signature="1723:2012" placeholder="SELECT job_t..admin_issues..." />
-            <marker date="1512842374785" expanded="true" signature="2320:2638" placeholder="SELECT job_t..kid_issues_forwarding..." />
-            <marker date="1512842374785" expanded="true" signature="2709:3035" placeholder="SELECT job_t..admin_issues_forwarding..." />
-            <marker date="1512842374785" expanded="true" signature="3349:3731" placeholder="SELECT job_t..kid_issues..." />
-            <marker date="1512842374785" expanded="true" signature="3802:4198" placeholder="SELECT job_t..admin_issues..." />
-            <marker date="1512842374785" expanded="true" signature="4634:4912" placeholder="SELECT job_t..kid_issues..." />
-            <marker date="1512842374785" expanded="true" signature="4980:5264" placeholder="SELECT job_t..admin_issues..." />
-            <marker date="1512842374785" expanded="true" signature="5913:5994" placeholder="UPDATE kid_i..." />
-            <marker date="1512842374785" expanded="true" signature="6197:6280" placeholder="UPDATE kid_i..." />
-            <marker date="1512842374785" expanded="true" signature="6685:6747" placeholder="SELECT user_..sys_users..." />
-            <marker date="1512842374785" expanded="true" signature="6953:7085" placeholder="INSERT INTO ..." />
-            <marker date="1512842374785" expanded="true" signature="7329:7464" placeholder="INSERT INTO ..." />
-            <marker date="1512842374785" expanded="true" signature="7655:7771" placeholder="..." />
-            <marker date="1512842374785" expanded="true" signature="7682:7758" placeholder="{...}" />
-            <marker date="1512842374785" expanded="true" signature="7797:8027" placeholder="..." />
-            <marker date="1512842374785" expanded="true" signature="7867:8027" placeholder="..." />
-            <marker date="1512842374785" expanded="true" signature="7897:8027" placeholder="..." />
-            <marker date="1512842374785" expanded="true" signature="8248:8655" placeholder="..." />
-            <marker date="1512842374785" expanded="true" signature="8278:8446" placeholder="..." />
-            <marker date="1512842374785" expanded="true" signature="8476:8644" placeholder="..." />
-            <marker date="1512842374785" expanded="true" signature="8677:9102" placeholder="..." />
-            <marker date="1512842374785" expanded="true" signature="8707:8886" placeholder="..." />
-            <marker date="1512842374785" expanded="true" signature="8916:9091" placeholder="..." />
-            <marker date="1512842374785" expanded="true" signature="9124:9557" placeholder="..." />
-            <marker date="1512842374785" expanded="true" signature="9154:9335" placeholder="..." />
-            <marker date="1512842374785" expanded="true" signature="9365:9542" placeholder="..." />
-            <marker date="1512842374785" expanded="true" signature="9579:9799" placeholder="..." />
-            <marker date="1512842374785" expanded="true" signature="9609:9788" placeholder="..." />
-            <marker date="1512842374785" expanded="true" signature="9821:10005" placeholder="..." />
-            <marker date="1512842374785" expanded="true" signature="9851:9994" placeholder="..." />
-            <marker date="1512842374785" expanded="true" signature="10121:10651" placeholder="..." />
-            <marker date="1512842374785" expanded="true" signature="10122:10651" placeholder="..." />
-            <marker date="1512842374785" expanded="true" signature="10155:10356" placeholder="..." />
-            <marker date="1512842374785" expanded="true" signature="10216:10341" placeholder="..." />
-            <marker date="1512842374785" expanded="true" signature="10398:10651" placeholder="..." />
-            <marker date="1512842374785" expanded="true" signature="10516:10651" placeholder="..." />
-            <marker date="1512842374785" expanded="true" signature="10613:10651" placeholder="..." />
-            <marker date="1512842374785" expanded="true" signature="10686:10718" placeholder="SELECT job_t..job_titles..." />
-            <marker date="1512842374785" expanded="true" signature="11000:11204" placeholder="..." />
-            <marker date="1512842374785" expanded="true" signature="11111:11204" placeholder="..." />
-            <marker date="1512842374785" expanded="true" signature="11339:11574" placeholder="SELECT sys_u..sys_users..." />
-            <marker date="1512842374785" expanded="true" signature="11860:12067" placeholder="..." />
-            <marker date="1512842374785" expanded="true" signature="11921:12052" placeholder="..." />
+            <marker date="1512660500118" expanded="true" signature="399:461" placeholder="SELECT * FRO..activities..." />
+            <marker date="1512660500118" expanded="true" signature="1039:1206" placeholder="SELECT class..classes..." />
+            <marker date="1512660500118" expanded="true" signature="1411:3372" placeholder="..." />
+            <marker date="1512660500118" expanded="true" signature="1488:1633" placeholder="..." />
+            <marker date="1512660500118" expanded="true" signature="1659:1808" placeholder="..." />
+            <marker date="1512660500118" expanded="true" signature="1834:1983" placeholder="..." />
+            <marker date="1512660500118" expanded="true" signature="2009:2143" placeholder="..." />
+            <marker date="1512660500118" expanded="true" signature="2169:3365" placeholder="..." />
+            <marker date="1512660500118" expanded="true" signature="2310:3354" placeholder="..." />
+            <marker date="1512660500118" expanded="true" signature="2366:2815" placeholder="..." />
+            <marker date="1512660500118" expanded="true" signature="2408:2515" placeholder="..." />
+            <marker date="1512660500118" expanded="true" signature="2550:2655" placeholder="..." />
+            <marker date="1512660500118" expanded="true" signature="2690:2796" placeholder="..." />
+            <marker date="1512660500118" expanded="true" signature="2917:3078" placeholder="..." />
+            <marker date="1512660500118" expanded="true" signature="3181:3339" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view-issue.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13197969">
+          <caret line="241" column="97" selection-start-line="241" selection-start-column="97" selection-end-line="241" selection-end-column="97" />
+          <folding>
+            <marker date="1512844192496" expanded="true" signature="519:575" placeholder="SELECT * FRO..kid_issues..." />
+            <marker date="1512844192496" expanded="true" signature="621:679" placeholder="SELECT * FRO..admin_issues..." />
+            <marker date="1512844192496" expanded="true" signature="1190:1472" placeholder="SELECT job_t..kid_issues..." />
+            <marker date="1512844192496" expanded="true" signature="1545:1834" placeholder="SELECT job_t..admin_issues..." />
+            <marker date="1512844192496" expanded="true" signature="2142:2460" placeholder="SELECT job_t..kid_issues_forwarding..." />
+            <marker date="1512844192496" expanded="true" signature="2531:2857" placeholder="SELECT job_t..admin_issues_forwarding..." />
+            <marker date="1512844192496" expanded="true" signature="3171:3553" placeholder="SELECT job_t..kid_issues..." />
+            <marker date="1512844192496" expanded="true" signature="3624:4020" placeholder="SELECT job_t..admin_issues..." />
+            <marker date="1512844192496" expanded="true" signature="4456:4734" placeholder="SELECT job_t..kid_issues..." />
+            <marker date="1512844192496" expanded="true" signature="4802:5086" placeholder="SELECT job_t..admin_issues..." />
+            <marker date="1512844192496" expanded="true" signature="5810:5891" placeholder="UPDATE kid_i..." />
+            <marker date="1512844192496" expanded="true" signature="6094:6177" placeholder="UPDATE kid_i..." />
+            <marker date="1512844192496" expanded="true" signature="6582:6644" placeholder="SELECT user_..sys_users..." />
+            <marker date="1512844192496" expanded="true" signature="6850:6982" placeholder="INSERT INTO ..." />
+            <marker date="1512844192496" expanded="true" signature="7226:7361" placeholder="INSERT INTO ..." />
+            <marker date="1512844192496" expanded="true" signature="7552:7668" placeholder="..." />
+            <marker date="1512844192496" expanded="true" signature="7579:7617" placeholder="{...}" />
+            <marker date="1512844192496" expanded="true" signature="7579:7655" placeholder="{...}" />
+            <marker date="1512844192496" expanded="true" signature="7694:7924" placeholder="..." />
+            <marker date="1512844192496" expanded="true" signature="7764:7924" placeholder="..." />
+            <marker date="1512844192496" expanded="true" signature="7794:7924" placeholder="..." />
+            <marker date="1512844192496" expanded="true" signature="8145:8552" placeholder="..." />
+            <marker date="1512844192496" expanded="true" signature="8175:8343" placeholder="..." />
+            <marker date="1512844192496" expanded="true" signature="8373:8541" placeholder="..." />
+            <marker date="1512844192496" expanded="true" signature="8574:8999" placeholder="..." />
+            <marker date="1512844192496" expanded="true" signature="8604:8783" placeholder="..." />
+            <marker date="1512844192496" expanded="true" signature="8813:8988" placeholder="..." />
+            <marker date="1512844192496" expanded="true" signature="9021:9454" placeholder="..." />
+            <marker date="1512844192496" expanded="true" signature="9051:9232" placeholder="..." />
+            <marker date="1512844192496" expanded="true" signature="9262:9439" placeholder="..." />
+            <marker date="1512844192496" expanded="true" signature="9476:9702" placeholder="..." />
+            <marker date="1512844192496" expanded="true" signature="9506:9645" placeholder="..." />
+            <marker date="1512844192496" expanded="true" signature="9506:9691" placeholder="..." />
+            <marker date="1512844192496" expanded="true" signature="9724:9908" placeholder="..." />
+            <marker date="1512844192496" expanded="true" signature="9754:9897" placeholder="..." />
+            <marker date="1512844192496" expanded="true" signature="10024:10554" placeholder="..." />
+            <marker date="1512844192496" expanded="true" signature="10025:10554" placeholder="..." />
+            <marker date="1512844192496" expanded="true" signature="10058:10259" placeholder="..." />
+            <marker date="1512844192496" expanded="true" signature="10119:10244" placeholder="..." />
+            <marker date="1512844192496" expanded="true" signature="10301:10554" placeholder="..." />
+            <marker date="1512844192496" expanded="true" signature="10419:10554" placeholder="..." />
+            <marker date="1512844192496" expanded="true" signature="10516:10554" placeholder="..." />
+            <marker date="1512844192496" expanded="true" signature="10589:10621" placeholder="SELECT job_t..job_titles..." />
+            <marker date="1512844192496" expanded="true" signature="10903:11107" placeholder="..." />
+            <marker date="1512844192496" expanded="true" signature="11014:11107" placeholder="..." />
+            <marker date="1512844192496" expanded="true" signature="11242:11477" placeholder="SELECT sys_u..sys_users..." />
+            <marker date="1512844192496" expanded="true" signature="11763:11970" placeholder="..." />
+            <marker date="1512844192496" expanded="true" signature="11824:11955" placeholder="..." />
           </folding>
         </state>
       </provider>

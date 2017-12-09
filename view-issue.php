@@ -4,15 +4,6 @@
     include 'deploy.php';
     include 'navbar.php';
 
-//$date1 = '2017-07-1';
-//$date2 = '2017-07-21';
-//
-//$date1ToSubtract = substr($date1,8);
-//$date2ToSubtract = substr($date2,8);
-//
-//$date = $date2ToSubtract - $date1ToSubtract;
-//echo'<script>alert("'.$date.'")</script>';
-
 $issueName = '';
 $issueType = '';
 $issueDate = '';
@@ -44,6 +35,7 @@ if(isset($_GET['type']) && isset($_GET['issue_id']))
         $issueDate = $row['date_added'];
         $issueTime = $row['time_added'];
         $issueStatus = $row['status'];
+        $issueSolvedWithin = $row['solved_at'];
 
         if($_GET['type'] == 'kid')
             $getUsersForwardedFrom = $connect->prepare("SELECT job_titles.job_title,sys_users.username
@@ -139,10 +131,14 @@ else header("Location: issues.php?type=kid");
 
 if(isset($_POST['solve_issue']))
 {
-    $SolutionDate = date("Y-m-d");
+
+    $solutionDate = date("Y-m-d");
     $issueId = $_GET['issue_id'];
     $userID = $_SESSION['userID'];
     $issueFor = $_GET['type'];
+
+    $solutionDuration = substr($solutionDate,8) - substr($issueDate,8);
+
 
     if($issueFor == 'kid')
     {
@@ -243,7 +239,7 @@ echo'
     <div class="row">
         <div class="contRow">
             <label class="col-sm-1 col-xs-2">Solution time:</label>
-            <p class="col-sm-11 col-sm-push-0 col-xs-8 col-xs-push-2">2 days 10 hrs 30 Mins</p>
+            <p class="col-sm-11 col-sm-push-0 col-xs-8 col-xs-push-2">'.$issueSolvedWithin.' Days</p>
         </div>
     </div>
     <div class="row">
