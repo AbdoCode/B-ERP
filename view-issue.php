@@ -135,21 +135,43 @@ WHERE admin_issues.issue_id = '".$issueId."'");
 
     }
 }
-else header("Location: issues.php?type=kid ");
+else header("Location: issues.php?type=kid");
 
 if(isset($_POST['solve_issue']))
 {
-    echo'<script>alert("solved")</script>';
+
 }
 
-if(isset($_POST['forward_issue']))
+if(isset($_POST['escalate_issue']) && isset($_POST['employee_names']))
 {
-    echo'<script>alert("forwarded")</script>';
+    $employeeNames = $_POST['employee_names'];
+    $EscalationDate = date("Y-m-d");
+    $issueId = $_GET['issue_id'];
+
+    foreach($employeeNames as $employeeName)
+    {
+        $stmt = $connect->prepare("SELECT user_id FROM sys_users where username = '$employeeName'");
+        $stmt->execute();
+        if ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+            $employeeID = $row['user_id'];
+
+            if($_GET['type'] == 'kid') {
+                $addEscalatedIssue = "INSERT INTO kid_issues_escalations (kid_issue_id, escalated_to, date_escalated ) VALUES ('$issueId','$employeeID','$EscalationDate')";
+                $connect->exec($addEscalatedIssue);
+                header("Location: view-issue.php?type=kid&issue_id=$issueId");
+
+            }
+            else if($_GET['type'] == 'administration') {
+                $addEscalatedIssue = "INSERT INTO admin_issues_escalations (admin_issue_id, escalated_to, date_escalated) VALUES ('$issueId','$employeeID','$EscalationDate')";
+                $connect->exec($addEscalatedIssue);
+                header("Location: view-issue.php?type=administration&issue_id=$issueId");
+            }
+                /*else
+                $addEscalatedIssue = '';
+*/
+        }
+    }
 }
-
-
-
-
 
 echo'
 <script>
@@ -217,7 +239,11 @@ echo'
             <p class="col-sm-11 col-xs-12">'.$issueDetails.'</p>
         </div>
     </div>
-    <form  class="form-horizontal" method="post" id="view-issue-form">
+    ';
+
+if($issueStatus == '0') {
+    echo '
+    <form  class="form-horizontal" method="post" id="view-issue-form" >
         <div class="form-group">
             <div class="col-sm-offset-4 col-sm-4 col-xs-12">
                 <button type="submit" class="btn btn-success btn-block" name="solve_issue">Solve</button>
@@ -232,37 +258,39 @@ echo'
     $stmt->execute();
 
     while ($row6 = $stmt->fetch(PDO::FETCH_ASSOC))
-        echo'<option value="'.$row6['job_title'].'">'.$row6['job_title'].'</option>';
+        echo '<option value="' . $row6['job_title'] . '">' . $row6['job_title'] . '</option>';
 
-                echo'</select>
+    echo '</select>
             </div>
         </div>
         <div class="form-group col-sm-5 col-sm-push-2">
             <label for="employee" class="col-sm-4 control-label">To</label>
             <div class="col-sm-8">
-                <select class="form-control" id="employee" multiple name="employee_name[]">';
+                <select class="form-control" id="employee" multiple name="employee_names[]">';
 
-        if(isset($_POST['job_title']) == true){
-            $employeeJobTitle = $_POST['job_title'];
-            $stmt = $connect->prepare("SELECT sys_users.username FROM sys_users
+    if (isset($_POST['job_title']) == true) {
+        $employeeJobTitle = $_POST['job_title'];
+        $stmt = $connect->prepare("SELECT sys_users.username FROM sys_users
         JOIN staff on sys_users.staff_id = staff.staff_id
         JOIN job_titles ON staff.job_title_id = job_titles.job_title_id
-        WHERE job_titles.job_title = '".$employeeJobTitle."' ");
-            $stmt->execute();
-            while ($row7 = $stmt->fetch(PDO::FETCH_ASSOC)) {
-                echo'<option value="'.$row7['username'].'">'.$row7['username'].'</option>';
-            }
+        WHERE job_titles.job_title = '" . $employeeJobTitle . "' ");
+        $stmt->execute();
+        while ($row7 = $stmt->fetch(PDO::FETCH_ASSOC)) {
+            echo '<option value="' . $row7['username'] . '">' . $row7['username'] . '</option>';
         }
-                echo'</select>
+    }
+    echo '</select>
             </div>
         </div>
         <div class="form-group">
             <div class="col-sm-offset-4 col-sm-4 col-xs-12">
-                <button type="submit" class="btn btn-warning btn-block" name="forward_issue">Forward</button>
+                <button type="submit" class="btn btn-warning btn-block" name="escalate_issue">Escalate</button>
             </div>
         </div>
-        </form>
-</div>';
+        </form>';
+}
+
+        echo'</div>';
 
     include $templates . 'footer.php';
 ?>
