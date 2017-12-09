@@ -5,13 +5,21 @@
     include 'navbar.php';
 
 $gettingIssuesStatement = '';
+$searchCondition = '';
 
-if($_GET['type'] == 'kid')
+if($_GET['type'] == 'kid' && isset($_POST['searchCondition'])) {
+    $searchCondition = $_POST['searchCondition'];
+    $gettingIssuesStatement = "SELECT * FROM kid_issues WHERE issue_title LIKE '%" . $_POST['searchCondition'] . "%'";
+}else if($_GET['type'] == 'administration' && isset($_POST['searchCondition'])) {
+    $searchCondition = $_POST['searchCondition'];
+    $gettingIssuesStatement = "SELECT * FROM admin_issues WHERE issue_title LIKE '%" . $_POST['searchCondition'] . "%'";
+}else if($_GET['type'] == 'kid')
     $gettingIssuesStatement ="SELECT * FROM kid_issues";
 else
     $gettingIssuesStatement ="SELECT * FROM admin_issues";
 
 ?>
+<form method="post">
 <div class="issues">
     <h2><?php echo $_GET['type']; ?>s Issues</h2>
     <div class="container-for-btn-group">
@@ -20,7 +28,7 @@ else
         </a>
     </div>
     <div class="input-group col-sm-5 col-xs-12 center-block">
-        <input type="search" class="form-control" placeholder="Issue name..." />
+        <input type="search" class="form-control" placeholder="Issue name..." name="searchCondition" value="<?php echo $searchCondition;?>" />
         <div class="input-group-btn center-block">
             <button class="btn btn-default" type="submit"><i class="fa fa-search fa-fw"></i></button>
         </div>
@@ -175,6 +183,7 @@ WHERE admin_issues.issue_id = '".$row['issue_id']."'");
         </table>
     </div>
 </div>
+    </form>
 <?php
     include $templates . 'footer.php';
 ?>

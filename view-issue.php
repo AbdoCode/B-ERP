@@ -13,7 +13,6 @@
 //$date = $date2ToSubtract - $date1ToSubtract;
 //echo'<script>alert("'.$date.'")</script>';
 
-
 $issueName = '';
 $issueType = '';
 $issueDate = '';
