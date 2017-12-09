@@ -139,16 +139,15 @@ if(isset($_POST['solve_issue']))
 
     $solutionDuration = substr($solutionDate,8) - substr($issueDate,8);
 
-
     if($issueFor == 'kid')
     {
-        $solveIssue = $connect->prepare("UPDATE kid_issues SET solved_by = '$userID',status = 1 WHERE issue_id= '$issueId'");
+        $solveIssue = $connect->prepare("UPDATE kid_issues SET solved_by = '$userID',solved_at = '$solutionDuration',status = 1 WHERE issue_id= '$issueId'");
         $solveIssue->execute();
         header("Location: view-issue.php?type=kid&issue_id=$issueId");
     }
     else if($issueFor == 'administration')
     {
-        $solveIssue = $connect->prepare("UPDATE admin_issues SET solved_by = '$userID',status = 1 WHERE issue_id= '$issueId'");
+        $solveIssue = $connect->prepare("UPDATE admin_issues SET solved_by = '$userID',solved_at = '$solutionDuration',status = 1 WHERE issue_id= '$issueId'");
         $solveIssue->execute();
         header("Location: view-issue.php?type=administration&issue_id=$issueId");
     }
@@ -238,9 +237,12 @@ echo'
         </div>
     <div class="row">
         <div class="contRow">
-            <label class="col-sm-1 col-xs-2">Solution time:</label>
-            <p class="col-sm-11 col-sm-push-0 col-xs-8 col-xs-push-2">'.$issueSolvedWithin.' Days</p>
-        </div>
+            <label class="col-sm-1 col-xs-2">Solution time:</label>';
+
+       if($issueSolvedWithin!='')
+           echo' <p class="col-sm-11 col-sm-push-0 col-xs-8 col-xs-push-2">'.$issueSolvedWithin.' Days</p>';
+
+echo'</div>
     </div>
     <div class="row">
         <div class="contRow">
