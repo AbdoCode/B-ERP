@@ -182,9 +182,6 @@ if(isset($_POST['escalate_issue']) && isset($_POST['employee_names']))
                 $connect->exec($addEscalatedIssue);
                 header("Location: view-issue.php?type=administration&issue_id=$issueId");
             }
-                /*else
-                $addEscalatedIssue = '';
-*/
         }
     }
 }
