@@ -139,7 +139,23 @@ else header("Location: issues.php?type=kid");
 
 if(isset($_POST['solve_issue']))
 {
+    $SolutionDate = date("Y-m-d");
+    $issueId = $_GET['issue_id'];
+    $userID = $_SESSION['userID'];
+    $issueFor = $_GET['type'];
 
+    if($issueFor == 'kid')
+    {
+        $solveIssue = $connect->prepare("UPDATE kid_issues SET solved_by = '$userID',status = 1 WHERE issue_id= '$issueId'");
+        $solveIssue->execute();
+        header("Location: view-issue.php?type=kid&issue_id=$issueId");
+    }
+    else if($issueFor == 'administration')
+    {
+        $solveIssue = $connect->prepare("UPDATE admin_issues SET solved_by = '$userID',status = 1 WHERE issue_id= '$issueId'");
+        $solveIssue->execute();
+        header("Location: view-issue.php?type=administration&issue_id=$issueId");
+    }
 }
 
 if(isset($_POST['escalate_issue']) && isset($_POST['employee_names']))
