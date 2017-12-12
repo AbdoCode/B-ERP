@@ -14,9 +14,9 @@ if($_GET['type'] == 'kid' && isset($_POST['searchCondition'])) {
     $searchCondition = $_POST['searchCondition'];
     $gettingIssuesStatement = "SELECT * FROM admin_issues WHERE issue_title LIKE '%" . $_POST['searchCondition'] . "%'";
 }else if($_GET['type'] == 'kid')
-    $gettingIssuesStatement ="SELECT * FROM kid_issues";
+    $gettingIssuesStatement ="SELECT * FROM kid_issues ORDER BY issue_id DESC";
 else
-    $gettingIssuesStatement ="SELECT * FROM admin_issues";
+    $gettingIssuesStatement ="SELECT * FROM admin_issues ORDER BY issue_id DESC";
 
 ?>
 <form method="post">
