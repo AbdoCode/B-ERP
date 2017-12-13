@@ -237,18 +237,27 @@ $jobTitle = $_SESSION['userJobTitle'];
             </li>';
             }
 
-            if($jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Supervisor' || $jobTitle == 'Operation Manager')
-            {
-                echo'<li ';
-            if (basename($_SERVER['PHP_SELF']) == 'statistics.php') echo 'class="active"';
-                echo'><a href="statistics.php">Statistics</a></li>';
-            }
-
             if($jobTitle == 'Teacher' || $jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Supervisor' || $jobTitle == 'Operation Manager' || $jobTitle == 'Bus Worker' || $jobTitle == 'Accountant' || $jobTitle == 'Academy Head')
             {
                 echo'<li ';
-            if (basename($_SERVER['PHP_SELF']) == 'assigned-tasks.php' || basename($_SERVER['PHP_SELF']) == 'view-assigned-task.php') echo 'class="active"';
-                echo'><a href="assigned-tasks.php">Assigned Tasks</a></li>';
+                if (basename($_SERVER['PHP_SELF']) == 'assigned-tasks.php' || basename($_SERVER['PHP_SELF']) == 'view-assigned-task.php' || basename($_SERVER['PHP_SELF']) == 'tasks.php') echo 'class="active"';
+                echo'><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                Tasks <span class="glyphicon glyphicon-triangle-right"></span>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="assigned-tasks.php">Assigned To Me</a></li>
+                <li><a href="tasks.php">Assigned From Me</a></li>';
+                //if($jobTitle != 'Customer Care')echo'<li><a href="zone-prices.php">Zone Prices</a></li>';
+                echo'</ul>
+            </li>';
+
+            }
+
+            if($jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Supervisor' || $jobTitle == 'Operation Manager')
+            {
+                echo'<li ';
+                if (basename($_SERVER['PHP_SELF']) == 'statistics.php') echo 'class="active"';
+                echo'><a href="statistics.php">Statistics</a></li>';
             }
 
             if($jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Operation Manager')
@@ -256,13 +265,6 @@ $jobTitle = $_SESSION['userJobTitle'];
                 echo'<li ';
                 if (basename($_SERVER['PHP_SELF']) == 'performance-review.php') echo 'class="active"';
                 echo'><a href="performance-review.php">Performance Review</a></li>';
-            }
-
-            if($jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Operation Manager')
-            {
-                echo'<li ';
-                if (basename($_SERVER['PHP_SELF']) == 'tasks.php') echo 'class="active"';
-                echo'><a href="tasks.php">Tasks</a></li>';
             }
 
             if($jobTitle == 'CEO' || $jobTitle == 'G.M' || $jobTitle == 'Operation Manager')

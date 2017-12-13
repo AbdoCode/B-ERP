@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="597a9482-fa08-471e-8566-9bf89cea1a8e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add-kid-issue.php" afterPath="$PROJECT_DIR$/add-kid-issue.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/navbar.php" afterPath="$PROJECT_DIR$/navbar.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BackPackersz.iws" />
@@ -82,22 +82,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add-daily-tasks.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/add-daily-tasks.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
-              <folding>
-                <marker date="1512849672123" expanded="true" signature="590:705" placeholder="INSERT INTO ..." />
-                <marker date="1512849672123" expanded="true" signature="899:962" placeholder="SELECT user_..sys_users..." />
-                <marker date="1512849672123" expanded="true" signature="1135:1232" placeholder="INSERT INTO ..." />
-                <marker date="1512849672123" expanded="true" signature="2607:2639" placeholder="SELECT job_t..job_titles..." />
-                <marker date="1512849672123" expanded="true" signature="3570:3777" placeholder="SELECT sys_u..sys_users..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="add-administration-issue.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/add-administration-issue.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -114,11 +98,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add-kid-issue.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="add-kid-issue.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/add-kid-issue.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.571912">
-              <caret line="40" column="42" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
+            <state vertical-scroll-proportion="-7.172414">
+              <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
               <folding>
                 <marker date="1513161641578" expanded="true" signature="817:1039" placeholder="INSERT INTO ..." />
                 <marker date="1513161641578" expanded="true" signature="817:1063" placeholder="INSERT INTO ..." />
@@ -145,19 +129,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activities.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/activities.php">
+      <file leaf-file-name="navbar.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/navbar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.586207">
-              <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.571912">
+              <caret line="250" column="0" selection-start-line="250" selection-start-column="0" selection-end-line="250" selection-end-column="0" />
               <folding>
-                <marker date="1512774668386" expanded="true" signature="598:680" placeholder="UPDATE activ..." />
-                <marker date="1512774668386" expanded="true" signature="757:781" placeholder="SELECT * FRO..activities..." />
-                <marker date="1512774668386" expanded="true" signature="926:1009" placeholder="SELECT * FRO..activities..." />
-                <marker date="1512774668386" expanded="true" signature="2542:2666" placeholder="..." />
-                <marker date="1512774668386" expanded="true" signature="2728:2899" placeholder="SELECT class..classes..." />
-                <marker date="1512774668386" expanded="true" signature="3163:3180" placeholder="..." />
-                <marker date="1512774668386" expanded="true" signature="3414:3710" placeholder="..." />
+                <marker date="1513166739868" expanded="true" signature="4330:4437" placeholder="..." />
+                <marker date="1513166739868" expanded="true" signature="4480:4814" placeholder="..." />
+                <marker date="1513166739868" expanded="true" signature="5302:5408" placeholder="..." />
+                <marker date="1513166739868" expanded="true" signature="5451:5725" placeholder="..." />
+                <marker date="1513166739868" expanded="true" signature="6301:6406" placeholder="..." />
+                <marker date="1513166739868" expanded="true" signature="6449:6668" placeholder="..." />
+                <marker date="1513166739868" expanded="true" signature="7186:7283" placeholder="..." />
+                <marker date="1513166739868" expanded="true" signature="7322:7489" placeholder="..." />
+                <marker date="1513166739868" expanded="true" signature="7961:8061" placeholder="..." />
+                <marker date="1513166739868" expanded="true" signature="8100:8268" placeholder="..." />
+                <marker date="1513166739868" expanded="true" signature="8725:8819" placeholder="..." />
+                <marker date="1513166739868" expanded="true" signature="8858:9156" placeholder="..." />
+                <marker date="1513166739868" expanded="true" signature="9857:9957" placeholder="..." />
+                <marker date="1513166739868" expanded="true" signature="9996:10138" placeholder="..." />
+                <marker date="1513166739868" expanded="true" signature="10972:11067" placeholder="..." />
+                <marker date="1513166739868" expanded="true" signature="11106:11169" placeholder="..." />
+                <marker date="1513166739868" expanded="true" signature="11762:11858" placeholder="..." />
+                <marker date="1513166739868" expanded="true" signature="11897:12059" placeholder="..." />
+                <marker date="1513166739868" expanded="true" signature="12633:12728" placeholder="..." />
+                <marker date="1513166739868" expanded="true" signature="12767:12973" placeholder="..." />
+                <marker date="1513166739868" expanded="true" signature="13769:13865" placeholder="..." />
+                <marker date="1513166739868" expanded="true" signature="13904:14043" placeholder="..." />
+                <marker date="1513166739868" expanded="true" signature="13904:14044" placeholder="..." />
+                <marker date="1513166739868" expanded="true" signature="19229:19272" placeholder="SELECT branc..branches..." />
               </folding>
             </state>
           </provider>
@@ -215,13 +216,13 @@
         <option value="$PROJECT_DIR$/tasks.php" />
         <option value="$PROJECT_DIR$/layout/js/script.js" />
         <option value="$PROJECT_DIR$/view-issue.php" />
-        <option value="$PROJECT_DIR$/navbar.php" />
         <option value="$PROJECT_DIR$/add-daily-tasks.php" />
         <option value="$PROJECT_DIR$/remains" />
         <option value="$PROJECT_DIR$/issues.php" />
         <option value="$PROJECT_DIR$/add-administration-issue.php" />
         <option value="$PROJECT_DIR$/../../fuzzy_system/add-kid-issue.php" />
         <option value="$PROJECT_DIR$/add-kid-issue.php" />
+        <option value="$PROJECT_DIR$/navbar.php" />
       </list>
     </option>
   </component>
@@ -436,12 +437,6 @@
       <workItem from="1512625529761" duration="6275000" />
       <workItem from="1512625186673" duration="843000" />
       <workItem from="1512622971915" duration="13000" />
-    </task>
-    <task id="LOCAL-00008" summary="Mohamed Edit">
-      <created>1508204795906</created>
-      <option name="number" value="00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1508204795906</updated>
     </task>
     <task id="LOCAL-00009" summary="Mohamed Edit">
       <created>1508239632819</created>
@@ -731,7 +726,13 @@
       <option name="project" value="LOCAL" />
       <updated>1513061796068</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="code edit">
+      <created>1513165928136</created>
+      <option name="number" value="00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1513165928137</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -741,8 +742,9 @@
     <frame x="0" y="0" width="1366" height="745" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19281524" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19213313" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329653" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -751,7 +753,6 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1080,13 +1081,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/navbar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37833038">
-          <caret line="358" column="68" selection-start-line="358" selection-start-column="68" selection-end-line="358" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/remains">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1153,11 +1147,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
           <folding>
-            <marker date="1512849672123" expanded="true" signature="590:705" placeholder="INSERT INTO ..." />
-            <marker date="1512849672123" expanded="true" signature="899:962" placeholder="SELECT user_..sys_users..." />
-            <marker date="1512849672123" expanded="true" signature="1135:1232" placeholder="INSERT INTO ..." />
-            <marker date="1512849672123" expanded="true" signature="2607:2639" placeholder="SELECT job_t..job_titles..." />
-            <marker date="1512849672123" expanded="true" signature="3570:3777" placeholder="SELECT sys_u..sys_users..." />
+            <marker date="1512849672123" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1512849672123" expanded="true" signature="-1:-1" placeholder="SELECT user_..sys_users..." />
+            <marker date="1512849672123" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1512849672123" expanded="true" signature="-1:-1" placeholder="SELECT job_t..job_titles..." />
+            <marker date="1512849672123" expanded="true" signature="-1:-1" placeholder="SELECT sys_u..sys_users..." />
           </folding>
         </state>
       </provider>
@@ -1175,13 +1169,13 @@
         <state vertical-scroll-proportion="-3.586207">
           <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
           <folding>
-            <marker date="1512774668386" expanded="true" signature="598:680" placeholder="UPDATE activ..." />
-            <marker date="1512774668386" expanded="true" signature="757:781" placeholder="SELECT * FRO..activities..." />
-            <marker date="1512774668386" expanded="true" signature="926:1009" placeholder="SELECT * FRO..activities..." />
-            <marker date="1512774668386" expanded="true" signature="2542:2666" placeholder="..." />
-            <marker date="1512774668386" expanded="true" signature="2728:2899" placeholder="SELECT class..classes..." />
-            <marker date="1512774668386" expanded="true" signature="3163:3180" placeholder="..." />
-            <marker date="1512774668386" expanded="true" signature="3414:3710" placeholder="..." />
+            <marker date="1512774668386" expanded="true" signature="-1:-1" placeholder="UPDATE activ..." />
+            <marker date="1512774668386" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..activities..." />
+            <marker date="1512774668386" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..activities..." />
+            <marker date="1512774668386" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1512774668386" expanded="true" signature="-1:-1" placeholder="SELECT class..classes..." />
+            <marker date="1512774668386" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1512774668386" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1210,8 +1204,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/add-kid-issue.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.571912">
-          <caret line="40" column="42" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
+        <state vertical-scroll-proportion="-7.172414">
+          <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
           <folding>
             <marker date="1513161641578" expanded="true" signature="817:1039" placeholder="INSERT INTO ..." />
             <marker date="1513161641578" expanded="true" signature="817:1063" placeholder="INSERT INTO ..." />
@@ -1233,6 +1227,39 @@
             <marker date="1513161641578" expanded="true" signature="5363:5570" placeholder="SELECT sys_u..sys_users..." />
             <marker date="1513161641578" expanded="true" signature="5953:6160" placeholder="..." />
             <marker date="1513161641578" expanded="true" signature="6012:6145" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/navbar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.571912">
+          <caret line="250" column="0" selection-start-line="250" selection-start-column="0" selection-end-line="250" selection-end-column="0" />
+          <folding>
+            <marker date="1513166739868" expanded="true" signature="4330:4437" placeholder="..." />
+            <marker date="1513166739868" expanded="true" signature="4480:4814" placeholder="..." />
+            <marker date="1513166739868" expanded="true" signature="5302:5408" placeholder="..." />
+            <marker date="1513166739868" expanded="true" signature="5451:5725" placeholder="..." />
+            <marker date="1513166739868" expanded="true" signature="6301:6406" placeholder="..." />
+            <marker date="1513166739868" expanded="true" signature="6449:6668" placeholder="..." />
+            <marker date="1513166739868" expanded="true" signature="7186:7283" placeholder="..." />
+            <marker date="1513166739868" expanded="true" signature="7322:7489" placeholder="..." />
+            <marker date="1513166739868" expanded="true" signature="7961:8061" placeholder="..." />
+            <marker date="1513166739868" expanded="true" signature="8100:8268" placeholder="..." />
+            <marker date="1513166739868" expanded="true" signature="8725:8819" placeholder="..." />
+            <marker date="1513166739868" expanded="true" signature="8858:9156" placeholder="..." />
+            <marker date="1513166739868" expanded="true" signature="9857:9957" placeholder="..." />
+            <marker date="1513166739868" expanded="true" signature="9996:10138" placeholder="..." />
+            <marker date="1513166739868" expanded="true" signature="10972:11067" placeholder="..." />
+            <marker date="1513166739868" expanded="true" signature="11106:11169" placeholder="..." />
+            <marker date="1513166739868" expanded="true" signature="11762:11858" placeholder="..." />
+            <marker date="1513166739868" expanded="true" signature="11897:12059" placeholder="..." />
+            <marker date="1513166739868" expanded="true" signature="12633:12728" placeholder="..." />
+            <marker date="1513166739868" expanded="true" signature="12767:12973" placeholder="..." />
+            <marker date="1513166739868" expanded="true" signature="13769:13865" placeholder="..." />
+            <marker date="1513166739868" expanded="true" signature="13904:14043" placeholder="..." />
+            <marker date="1513166739868" expanded="true" signature="13904:14044" placeholder="..." />
+            <marker date="1513166739868" expanded="true" signature="19229:19272" placeholder="SELECT branc..branches..." />
           </folding>
         </state>
       </provider>
