@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="597a9482-fa08-471e-8566-9bf89cea1a8e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add-administration-issue.php" afterPath="$PROJECT_DIR$/add-administration-issue.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/issues.php" afterPath="$PROJECT_DIR$/issues.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/remains" afterPath="$PROJECT_DIR$/remains" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add-kid-issue.php" afterPath="$PROJECT_DIR$/add-kid-issue.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BackPackersz.iws" />
@@ -28,37 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="issues.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/issues.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.586206">
-              <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
-              <folding>
-                <marker date="1513059396645" expanded="true" signature="305:390" placeholder="SELECT * FRO..kid_issues..." />
-                <marker date="1513059396645" expanded="true" signature="556:643" placeholder="SELECT * FRO..admin_issues..." />
-                <marker date="1513059396645" expanded="true" signature="709:733" placeholder="SELECT * FRO..kid_issues..." />
-                <marker date="1513059396645" expanded="true" signature="709:756" placeholder="SELECT * FRO..kid_issues..." />
-                <marker date="1513059396645" expanded="true" signature="794:820" placeholder="SELECT * FRO..admin_issues..." />
-                <marker date="1513059396645" expanded="true" signature="794:843" placeholder="SELECT * FRO..admin_issues..." />
-                <marker date="1513059396645" expanded="true" signature="2623:2729" placeholder="..." />
-                <marker date="1513059396645" expanded="true" signature="3426:3716" placeholder="SELECT job_t..kid_issues..." />
-                <marker date="1513059396645" expanded="true" signature="3805:4102" placeholder="SELECT job_t..admin_issues..." />
-                <marker date="1513059396645" expanded="true" signature="4526:4852" placeholder="SELECT job_t..kid_issues_forwarding..." />
-                <marker date="1513059396645" expanded="true" signature="4939:5273" placeholder="SELECT job_t..admin_issues_forwarding..." />
-                <marker date="1513059396645" expanded="true" signature="5582:5599" placeholder="..." />
-                <marker date="1513059396645" expanded="true" signature="5709:6099" placeholder="SELECT job_t..kid_issues..." />
-                <marker date="1513059396645" expanded="true" signature="6186:6590" placeholder="SELECT job_t..admin_issues..." />
-                <marker date="1513059396645" expanded="true" signature="7138:7424" placeholder="SELECT job_t..kid_issues..." />
-                <marker date="1513059396645" expanded="true" signature="7508:7800" placeholder="SELECT job_t..admin_issues..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="view-issue.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view-issue.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.689655">
+            <state vertical-scroll-proportion="-0.0">
               <caret line="157" column="4" selection-start-line="157" selection-start-column="4" selection-end-line="157" selection-end-column="4" />
               <folding>
                 <marker date="1512846139910" expanded="true" signature="519:575" placeholder="SELECT * FRO..kid_issues..." />
@@ -114,7 +85,7 @@
       <file leaf-file-name="add-daily-tasks.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/add-daily-tasks.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.551724">
+            <state vertical-scroll-proportion="0.0">
               <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
               <folding>
                 <marker date="1512849672123" expanded="true" signature="590:705" placeholder="INSERT INTO ..." />
@@ -127,27 +98,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add-administration-issue.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="add-administration-issue.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/add-administration-issue.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.52791876">
-              <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <marker date="1513059495852" expanded="true" signature="798:1024" placeholder="INSERT INTO ..." />
                 <marker date="1513059495852" expanded="true" signature="1199:1261" placeholder="SELECT user_..sys_users..." />
                 <marker date="1513059495852" expanded="true" signature="1425:1531" placeholder="INSERT INTO ..." />
-                <marker date="1513059495852" expanded="true" signature="2980:3309" placeholder="..." />
-                <marker date="1513059495852" expanded="true" signature="3133:3294" placeholder="..." />
-                <marker date="1513059495852" expanded="true" signature="3342:3877" placeholder="..." />
-                <marker date="1513059495852" expanded="true" signature="3498:3877" placeholder="..." />
-                <marker date="1513059495852" expanded="true" signature="3595:3877" placeholder="..." />
                 <marker date="1513059495852" expanded="true" signature="3708:3740" placeholder="SELECT job_t..job_titles..." />
-                <marker date="1513059495852" expanded="true" signature="4086:4391" placeholder="..." />
-                <marker date="1513059495852" expanded="true" signature="4235:4391" placeholder="..." />
-                <marker date="1513059495852" expanded="true" signature="4328:4391" placeholder="..." />
                 <marker date="1513059495852" expanded="true" signature="4532:4739" placeholder="SELECT sys_u..sys_users..." />
-                <marker date="1513059495852" expanded="true" signature="5122:5325" placeholder="..." />
-                <marker date="1513059495852" expanded="true" signature="5181:5310" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add-kid-issue.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/add-kid-issue.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.571912">
+              <caret line="40" column="42" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
+              <folding>
+                <marker date="1513161641578" expanded="true" signature="817:1039" placeholder="INSERT INTO ..." />
+                <marker date="1513161641578" expanded="true" signature="817:1063" placeholder="INSERT INTO ..." />
+                <marker date="1513161641578" expanded="true" signature="1236:1298" placeholder="SELECT user_..sys_users..." />
+                <marker date="1513161641578" expanded="true" signature="1460:1562" placeholder="INSERT INTO ..." />
+                <marker date="1513161641578" expanded="true" signature="2702:2734" placeholder="SELECT kid_i..kids..." />
+                <marker date="1513161641578" expanded="true" signature="3136:3508" placeholder="..." />
+                <marker date="1513161641578" expanded="true" signature="3294:3508" placeholder="..." />
+                <marker date="1513161641578" expanded="true" signature="3373:3508" placeholder="..." />
+                <marker date="1513161641578" expanded="true" signature="3742:4080" placeholder="..." />
+                <marker date="1513161641578" expanded="true" signature="3895:4065" placeholder="..." />
+                <marker date="1513161641578" expanded="true" signature="4113:4648" placeholder="..." />
+                <marker date="1513161641578" expanded="true" signature="4269:4648" placeholder="..." />
+                <marker date="1513161641578" expanded="true" signature="4366:4648" placeholder="..." />
+                <marker date="1513161641578" expanded="true" signature="4479:4511" placeholder="SELECT job_t..job_titles..." />
+                <marker date="1513161641578" expanded="true" signature="4917:5222" placeholder="..." />
+                <marker date="1513161641578" expanded="true" signature="5066:5222" placeholder="..." />
+                <marker date="1513161641578" expanded="true" signature="5159:5222" placeholder="..." />
+                <marker date="1513161641578" expanded="true" signature="5363:5570" placeholder="SELECT sys_u..sys_users..." />
+                <marker date="1513161641578" expanded="true" signature="5953:6160" placeholder="..." />
+                <marker date="1513161641578" expanded="true" signature="6012:6145" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -156,8 +148,8 @@
       <file leaf-file-name="activities.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/activities.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.62069">
-              <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+            <state vertical-scroll-proportion="-3.586207">
+              <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
               <folding>
                 <marker date="1512774668386" expanded="true" signature="598:680" placeholder="UPDATE activ..." />
                 <marker date="1512774668386" expanded="true" signature="757:781" placeholder="SELECT * FRO..activities..." />
@@ -171,16 +163,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add-kid-issue.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/add-kid-issue.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.275862">
-              <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -189,8 +171,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/daily-statistics.php" />
-        <option value="$PROJECT_DIR$/statistics.php" />
         <option value="$PROJECT_DIR$/statistics-access.php" />
         <option value="$PROJECT_DIR$/staff-attend-history.php" />
         <option value="$PROJECT_DIR$/c-staff.php" />
@@ -240,6 +220,8 @@
         <option value="$PROJECT_DIR$/remains" />
         <option value="$PROJECT_DIR$/issues.php" />
         <option value="$PROJECT_DIR$/add-administration-issue.php" />
+        <option value="$PROJECT_DIR$/../../fuzzy_system/add-kid-issue.php" />
+        <option value="$PROJECT_DIR$/add-kid-issue.php" />
       </list>
     </option>
   </component>
@@ -305,6 +287,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -325,7 +308,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -454,12 +436,6 @@
       <workItem from="1512625529761" duration="6275000" />
       <workItem from="1512625186673" duration="843000" />
       <workItem from="1512622971915" duration="13000" />
-    </task>
-    <task id="LOCAL-00007" summary="Mohamed Edit">
-      <created>1508201630146</created>
-      <option name="number" value="00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1508201630146</updated>
     </task>
     <task id="LOCAL-00008" summary="Mohamed Edit">
       <created>1508204795906</created>
@@ -749,7 +725,13 @@
       <option name="project" value="LOCAL" />
       <updated>1512847146126</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="code edit">
+      <created>1513061796067</created>
+      <option name="number" value="00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1513061796068</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -759,7 +741,7 @@
     <frame x="0" y="0" width="1366" height="745" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19281524" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19281524" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329653" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -804,13 +786,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/view-event.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="75" column="67" selection-start-line="75" selection-start-column="67" selection-end-line="75" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1112,41 +1087,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/activities.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.62069">
-          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-          <folding>
-            <marker date="1512774668386" expanded="true" signature="598:680" placeholder="UPDATE activ..." />
-            <marker date="1512774668386" expanded="true" signature="757:781" placeholder="SELECT * FRO..activities..." />
-            <marker date="1512774668386" expanded="true" signature="926:1009" placeholder="SELECT * FRO..activities..." />
-            <marker date="1512774668386" expanded="true" signature="2542:2666" placeholder="..." />
-            <marker date="1512774668386" expanded="true" signature="2728:2899" placeholder="SELECT class..classes..." />
-            <marker date="1512774668386" expanded="true" signature="3163:3180" placeholder="..." />
-            <marker date="1512774668386" expanded="true" signature="3414:3710" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/remains">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/add-kid-issue.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.275862">
-          <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view-issue.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.689655">
+        <state vertical-scroll-proportion="0.0">
           <caret line="157" column="4" selection-start-line="157" selection-start-column="4" selection-end-line="157" selection-end-column="4" />
           <folding>
             <marker date="1512846139910" expanded="true" signature="519:575" placeholder="SELECT * FRO..kid_issues..." />
@@ -1198,34 +1148,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/issues.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.586206">
-          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
-          <folding>
-            <marker date="1513059396645" expanded="true" signature="305:390" placeholder="SELECT * FRO..kid_issues..." />
-            <marker date="1513059396645" expanded="true" signature="556:643" placeholder="SELECT * FRO..admin_issues..." />
-            <marker date="1513059396645" expanded="true" signature="709:733" placeholder="SELECT * FRO..kid_issues..." />
-            <marker date="1513059396645" expanded="true" signature="709:756" placeholder="SELECT * FRO..kid_issues..." />
-            <marker date="1513059396645" expanded="true" signature="794:820" placeholder="SELECT * FRO..admin_issues..." />
-            <marker date="1513059396645" expanded="true" signature="794:843" placeholder="SELECT * FRO..admin_issues..." />
-            <marker date="1513059396645" expanded="true" signature="2623:2729" placeholder="..." />
-            <marker date="1513059396645" expanded="true" signature="3426:3716" placeholder="SELECT job_t..kid_issues..." />
-            <marker date="1513059396645" expanded="true" signature="3805:4102" placeholder="SELECT job_t..admin_issues..." />
-            <marker date="1513059396645" expanded="true" signature="4526:4852" placeholder="SELECT job_t..kid_issues_forwarding..." />
-            <marker date="1513059396645" expanded="true" signature="4939:5273" placeholder="SELECT job_t..admin_issues_forwarding..." />
-            <marker date="1513059396645" expanded="true" signature="5582:5599" placeholder="..." />
-            <marker date="1513059396645" expanded="true" signature="5709:6099" placeholder="SELECT job_t..kid_issues..." />
-            <marker date="1513059396645" expanded="true" signature="6186:6590" placeholder="SELECT job_t..admin_issues..." />
-            <marker date="1513059396645" expanded="true" signature="7138:7424" placeholder="SELECT job_t..kid_issues..." />
-            <marker date="1513059396645" expanded="true" signature="7508:7800" placeholder="SELECT job_t..admin_issues..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/add-daily-tasks.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.551724">
+        <state vertical-scroll-proportion="0.0">
           <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
           <folding>
             <marker date="1512849672123" expanded="true" signature="590:705" placeholder="INSERT INTO ..." />
@@ -1237,26 +1162,77 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/issues.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.4482758">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/activities.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.586207">
+          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+          <folding>
+            <marker date="1512774668386" expanded="true" signature="598:680" placeholder="UPDATE activ..." />
+            <marker date="1512774668386" expanded="true" signature="757:781" placeholder="SELECT * FRO..activities..." />
+            <marker date="1512774668386" expanded="true" signature="926:1009" placeholder="SELECT * FRO..activities..." />
+            <marker date="1512774668386" expanded="true" signature="2542:2666" placeholder="..." />
+            <marker date="1512774668386" expanded="true" signature="2728:2899" placeholder="SELECT class..classes..." />
+            <marker date="1512774668386" expanded="true" signature="3163:3180" placeholder="..." />
+            <marker date="1512774668386" expanded="true" signature="3414:3710" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../fuzzy_system/add-kid-issue.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48392555">
+          <caret line="40" column="58" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/add-administration-issue.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.52791876">
-          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <marker date="1513059495852" expanded="true" signature="798:1024" placeholder="INSERT INTO ..." />
             <marker date="1513059495852" expanded="true" signature="1199:1261" placeholder="SELECT user_..sys_users..." />
             <marker date="1513059495852" expanded="true" signature="1425:1531" placeholder="INSERT INTO ..." />
-            <marker date="1513059495852" expanded="true" signature="2980:3309" placeholder="..." />
-            <marker date="1513059495852" expanded="true" signature="3133:3294" placeholder="..." />
-            <marker date="1513059495852" expanded="true" signature="3342:3877" placeholder="..." />
-            <marker date="1513059495852" expanded="true" signature="3498:3877" placeholder="..." />
-            <marker date="1513059495852" expanded="true" signature="3595:3877" placeholder="..." />
             <marker date="1513059495852" expanded="true" signature="3708:3740" placeholder="SELECT job_t..job_titles..." />
-            <marker date="1513059495852" expanded="true" signature="4086:4391" placeholder="..." />
-            <marker date="1513059495852" expanded="true" signature="4235:4391" placeholder="..." />
-            <marker date="1513059495852" expanded="true" signature="4328:4391" placeholder="..." />
             <marker date="1513059495852" expanded="true" signature="4532:4739" placeholder="SELECT sys_u..sys_users..." />
-            <marker date="1513059495852" expanded="true" signature="5122:5325" placeholder="..." />
-            <marker date="1513059495852" expanded="true" signature="5181:5310" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add-kid-issue.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.571912">
+          <caret line="40" column="42" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
+          <folding>
+            <marker date="1513161641578" expanded="true" signature="817:1039" placeholder="INSERT INTO ..." />
+            <marker date="1513161641578" expanded="true" signature="817:1063" placeholder="INSERT INTO ..." />
+            <marker date="1513161641578" expanded="true" signature="1236:1298" placeholder="SELECT user_..sys_users..." />
+            <marker date="1513161641578" expanded="true" signature="1460:1562" placeholder="INSERT INTO ..." />
+            <marker date="1513161641578" expanded="true" signature="2702:2734" placeholder="SELECT kid_i..kids..." />
+            <marker date="1513161641578" expanded="true" signature="3136:3508" placeholder="..." />
+            <marker date="1513161641578" expanded="true" signature="3294:3508" placeholder="..." />
+            <marker date="1513161641578" expanded="true" signature="3373:3508" placeholder="..." />
+            <marker date="1513161641578" expanded="true" signature="3742:4080" placeholder="..." />
+            <marker date="1513161641578" expanded="true" signature="3895:4065" placeholder="..." />
+            <marker date="1513161641578" expanded="true" signature="4113:4648" placeholder="..." />
+            <marker date="1513161641578" expanded="true" signature="4269:4648" placeholder="..." />
+            <marker date="1513161641578" expanded="true" signature="4366:4648" placeholder="..." />
+            <marker date="1513161641578" expanded="true" signature="4479:4511" placeholder="SELECT job_t..job_titles..." />
+            <marker date="1513161641578" expanded="true" signature="4917:5222" placeholder="..." />
+            <marker date="1513161641578" expanded="true" signature="5066:5222" placeholder="..." />
+            <marker date="1513161641578" expanded="true" signature="5159:5222" placeholder="..." />
+            <marker date="1513161641578" expanded="true" signature="5363:5570" placeholder="SELECT sys_u..sys_users..." />
+            <marker date="1513161641578" expanded="true" signature="5953:6160" placeholder="..." />
+            <marker date="1513161641578" expanded="true" signature="6012:6145" placeholder="..." />
           </folding>
         </state>
       </provider>
