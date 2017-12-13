@@ -9,10 +9,10 @@ $searchCondition = '';
 
 if($_GET['type'] == 'kid' && isset($_POST['searchCondition'])) {
     $searchCondition = $_POST['searchCondition'];
-    $gettingIssuesStatement = "SELECT * FROM kid_issues WHERE issue_title LIKE '%" . $_POST['searchCondition'] . "%'";
+    $gettingIssuesStatement = "SELECT * FROM kid_issues WHERE issue_title LIKE '%" . $_POST['searchCondition'] . "%' ORDER BY issue_id DESC";
 }else if($_GET['type'] == 'administration' && isset($_POST['searchCondition'])) {
     $searchCondition = $_POST['searchCondition'];
-    $gettingIssuesStatement = "SELECT * FROM admin_issues WHERE issue_title LIKE '%" . $_POST['searchCondition'] . "%'";
+    $gettingIssuesStatement = "SELECT * FROM admin_issues WHERE issue_title LIKE '%" . $_POST['searchCondition'] . "%' ORDER BY issue_id DESC";
 }else if($_GET['type'] == 'kid')
     $gettingIssuesStatement ="SELECT * FROM kid_issues ORDER BY issue_id DESC";
 else
