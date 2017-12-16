@@ -5,12 +5,14 @@
     include 'navbar.php';
 
     $taskName = '';
+    $taskTime = '';
     $employeeJobTitle = '';
     $employeeName = '';
 
     if(isset($_POST['task_name']) == true)
     {
         $taskName = $_POST['task_name'];
+        $taskTime = $_POST['task_time'];
     }
     if(isset($_POST['forward'])==true && isset($_POST['employee_name']) == true)
     {
@@ -28,7 +30,7 @@
 
         foreach($employeeName as $employeeNames)
         {
-            $stmt = $connect->prepare("SELECT user_id FROM sys_users where username = '$employeeNames'");
+            $stmt = $connect->prepare("SELECT user_id FROM sys_users where staff_id = '$employeeNames'");
             $stmt->execute();
             if ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
                 $employeeID = $row['user_id'];
@@ -58,7 +60,7 @@
         <div class="form-group">
             <label for="time" class="control-label col-sm-1">Time</label>
             <div class="col-sm-11">
-                <input type="time" class="form-control" placeholder="Type Task Time" id="time" name="task_time" value="">
+                <input type="time" class="form-control" placeholder="Type Task Time" id="time" name="task_time" value="<?php echo $taskTime ?>">
             </div>
         </div>
         <div class="form-group">
@@ -88,13 +90,13 @@
                     <?php
                     if(isset($_POST['job_title']) == true){
                         $employeeJobTitle = $_POST['job_title'];
-                            $stmt = $connect->prepare("SELECT sys_users.username FROM sys_users
+                            $stmt = $connect->prepare("SELECT staff.staff_id,staff.name FROM sys_users
 JOIN staff on sys_users.staff_id = staff.staff_id
 JOIN job_titles ON staff.job_title_id = job_titles.job_title_id
 WHERE job_titles.job_title = '".$employeeJobTitle."' ");
                             $stmt->execute();
                             while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-                                echo'<option value="'.$row['username'].'">'.$row['username'].'</option>';
+                                echo'<option value="'.$row['staff_id'].'">'.$row['name'].'</option>';
                             }
                         }
                     ?>

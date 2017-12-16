@@ -33,7 +33,7 @@ VALUES ('$issueTitle','$issueType','$dateIssueAdded','$timeIssueAdded','$issueDe
 
     foreach($employeeNames as $employeeName)
     {
-        $stmt = $connect->prepare("SELECT user_id FROM sys_users where username = '$employeeName'");
+        $stmt = $connect->prepare("SELECT user_id FROM sys_users where staff_id = '$employeeName'");
         $stmt->execute();
         if ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
             $employeeID = $row['user_id'];
@@ -41,7 +41,7 @@ VALUES ('$issueTitle','$issueType','$dateIssueAdded','$timeIssueAdded','$issueDe
             $connect->exec($addAdminIssueForwarding);
         }
     }
-    header("Location: add-administration-issue.php");
+    header("Location: issues.php?type=administration");
 }
 
 ?>
@@ -97,13 +97,13 @@ VALUES ('$issueTitle','$issueType','$dateIssueAdded','$timeIssueAdded','$issueDe
                     <?php
                     if(isset($_POST['job_title']) == true){
                         $employeeJobTitle = $_POST['job_title'];
-                        $stmt = $connect->prepare("SELECT sys_users.username FROM sys_users
+                        $stmt = $connect->prepare("SELECT staff.staff_id,staff.name FROM sys_users
 JOIN staff on sys_users.staff_id = staff.staff_id
 JOIN job_titles ON staff.job_title_id = job_titles.job_title_id
 WHERE job_titles.job_title = '".$employeeJobTitle."' ");
                         $stmt->execute();
                         while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-                            echo'<option value="'.$row['username'].'">'.$row['username'].'</option>';
+                            echo'<option value="'.$row['staff_id'].'">'.$row['name'].'</option>';
                         }
                     }
                     ?>

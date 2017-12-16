@@ -55,7 +55,7 @@ if($jobTitle != 'Customer Care' && $jobTitle != 'Teacher')
                 <th class="col-sm-2">Action</th>
             </tr>
             <?php
-            $stmt = $connect->prepare("SELECT daily_tasks.task_content, daily_tasks.daily_task_id FROM daily_tasks
+            $stmt = $connect->prepare("SELECT daily_tasks.task_content,daily_tasks.time_to_execute, daily_tasks.daily_task_id FROM daily_tasks
 JOIN user_daily_tasks on daily_tasks.daily_task_id = user_daily_tasks.daily_task_id
 where user_daily_tasks.task_owner = '".$_SESSION['userID']."'");
             $stmt->execute();
@@ -97,7 +97,7 @@ where user_daily_tasks.daily_task_id = '".$row['daily_task_id']."' AND user_dail
                 ';
                 echo'
                 </td>
-                <td>Time</td>
+                <td>'.$row['time_to_execute'].'</td>
                 <td>
                     <button class="btn btn-success btn-block" value="'.$row['daily_task_id'].'" name="save">Save</button>
                 </td>

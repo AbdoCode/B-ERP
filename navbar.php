@@ -2,6 +2,15 @@
 
 $jobTitle = $_SESSION['userJobTitle'];
 
+$lastPage = basename($_SERVER['HTTP_REFERER']);
+
+if(isset($_POST['back']))
+{
+    $lastPage2=$_POST['back'];
+
+    header("Location: ".$_POST['back']."");
+
+}
 ?>
 <nav class="navbar navbar-inverse navbar-static-top">
     <div class="container-fluid">
@@ -358,7 +367,8 @@ $jobTitle = $_SESSION['userJobTitle'];
     <div class="col-sm-10 vis">
         <div style="margin-top: 10px" class="hidden-print"></div>
         <div class="main-buttons hidden-print">
-            <button class="btn btn-default backButton" type="button">
+            <form method="post">
+                <button class="btn btn-default backButton" type="submit" name="back" value="<? echo $lastPage; ?>">
                 <span class="glyphicon glyphicon-chevron-left"></span> Back
             </button>
             <select class="form-control" id="branch" name="branch">
@@ -373,5 +383,6 @@ $jobTitle = $_SESSION['userJobTitle'];
             <button class="btn btn-default hidden-xs printButton" type="button" onclick="window.print()">
                 <span class="glyphicon glyphicon-print" aria-hidden="true"></span> Print Page
             </button>
+            </form>
         </div>
         <div class="clearfix"></div>

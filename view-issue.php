@@ -38,14 +38,14 @@ if(isset($_GET['type']) && isset($_GET['issue_id']))
         $issueSolvedWithin = $row['solved_at'];
 
         if($_GET['type'] == 'kid')
-            $getUsersForwardedFrom = $connect->prepare("SELECT job_titles.job_title,sys_users.username
+            $getUsersForwardedFrom = $connect->prepare("SELECT job_titles.job_title,staff.name
 FROM kid_issues
 JOIN sys_users ON kid_issues.forwarded_from = sys_users.user_id
 JOIN staff ON sys_users.staff_id = staff.staff_id
 JOIN job_titles ON staff.job_title_id = job_titles.job_title_id
 WHERE kid_issues.issue_id= '".$issueId."'");
         else
-            $getUsersForwardedFrom = $connect->prepare("SELECT job_titles.job_title,sys_users.username
+            $getUsersForwardedFrom = $connect->prepare("SELECT job_titles.job_title,staff.name
 FROM admin_issues
 JOIN sys_users ON admin_issues.forwarded_from = sys_users.user_id
 JOIN staff ON sys_users.staff_id = staff.staff_id
@@ -54,18 +54,18 @@ WHERE admin_issues.issue_id = '".$issueId."'");
 
         $getUsersForwardedFrom->execute();
         if ($row2 = $getUsersForwardedFrom->fetch(PDO::FETCH_ASSOC)) {
-            $issueForwardedFrom= '<b>'.$row2['job_title'] . '</b> ' . $row2['username'];
+            $issueForwardedFrom= '<b>'.$row2['job_title'] . '</b> ' . $row2['name'];
         }
 
         if($_GET['type'] == 'kid')
-            $getUsersForwardedTo = $connect->prepare("SELECT job_titles.job_title,sys_users.username
+            $getUsersForwardedTo = $connect->prepare("SELECT job_titles.job_title,staff.name
 FROM kid_issues_forwarding
 JOIN sys_users ON kid_issues_forwarding.forwarded_to = sys_users.user_id
 JOIN staff ON sys_users.staff_id = staff.staff_id
 JOIN job_titles ON staff.job_title_id = job_titles.job_title_id
 WHERE kid_issues_forwarding.kid_issue_id = '".$issueId."'");
         else
-            $getUsersForwardedTo = $connect->prepare("SELECT job_titles.job_title,sys_users.username
+            $getUsersForwardedTo = $connect->prepare("SELECT job_titles.job_title,staff.name
 FROM admin_issues_forwarding
 JOIN sys_users ON admin_issues_forwarding.forwarded_to = sys_users.user_id
 JOIN staff ON sys_users.staff_id = staff.staff_id
@@ -74,11 +74,11 @@ WHERE admin_issues_forwarding.admin_issue_id = '".$issueId."'");
 
         $getUsersForwardedTo->execute();
         while ($row3 = $getUsersForwardedTo->fetch(PDO::FETCH_ASSOC)) {
-            $issueForwardedTo .= '<b>'.$row3['job_title'] . '</b> ' . $row3['username'] . ', ';
+            $issueForwardedTo .= '<b>'.$row3['job_title'] . '</b> ' . $row3['name'] . ', ';
         }
 
         if($_GET['type'] == 'kid')
-            $getUsersEscalatedTo = $connect->prepare("SELECT job_titles.job_title,sys_users.username
+            $getUsersEscalatedTo = $connect->prepare("SELECT job_titles.job_title,staff.name
 FROM kid_issues
 JOIN kid_issues_escalations ON kid_issues.issue_id = kid_issues_escalations.kid_issue_id
 JOIN sys_users ON kid_issues_escalations.escalated_to = sys_users.user_id
@@ -86,7 +86,7 @@ JOIN staff ON sys_users.staff_id = staff.staff_id
 JOIN job_titles ON staff.job_title_id = job_titles.job_title_id
 WHERE kid_issues.issue_id = '".$issueId."'");
         else
-            $getUsersEscalatedTo = $connect->prepare("SELECT job_titles.job_title,sys_users.username
+            $getUsersEscalatedTo = $connect->prepare("SELECT job_titles.job_title,staff.name
 FROM admin_issues
 JOIN admin_issues_escalations ON admin_issues.issue_id = admin_issues_escalations.admin_issue_id
 JOIN sys_users ON admin_issues_escalations.escalated_to = sys_users.user_id
@@ -97,20 +97,20 @@ WHERE admin_issues.issue_id = '".$issueId."'");
         $getUsersEscalatedTo->execute();
         $escalated = false;
         while ($row4 = $getUsersEscalatedTo->fetch(PDO::FETCH_ASSOC)) {
-            $issueEscalatedTo .=  '<b>'.$row4['job_title'] . '</b> ' . $row4['username'] . ', ';
+            $issueEscalatedTo .=  '<b>'.$row4['job_title'] . '</b> ' . $row4['name'] . ', ';
             $escalated = true;
         }
         if(!$escalated) $issueEscalatedTo = 'Not Escalated Yet';
 
         if($_GET['type'] == 'kid')
-            $getUsersSolvedBy = $connect->prepare("SELECT job_titles.job_title,sys_users.username
+            $getUsersSolvedBy = $connect->prepare("SELECT job_titles.job_title,staff.name
 FROM kid_issues
 JOIN sys_users ON kid_issues.solved_by = sys_users.user_id
 JOIN staff ON sys_users.staff_id = staff.staff_id
 JOIN job_titles ON staff.job_title_id = job_titles.job_title_id
 WHERE kid_issues.issue_id = '".$issueId."'");
         else
-            $getUsersSolvedBy = $connect->prepare("SELECT job_titles.job_title,sys_users.username
+            $getUsersSolvedBy = $connect->prepare("SELECT job_titles.job_title,staff.name
 FROM admin_issues
 JOIN sys_users ON admin_issues.solved_by = sys_users.user_id
 JOIN staff ON sys_users.staff_id = staff.staff_id
@@ -118,7 +118,7 @@ JOIN job_titles ON staff.job_title_id = job_titles.job_title_id
 WHERE admin_issues.issue_id = '".$issueId."'");
         $getUsersSolvedBy->execute();
         if($row5 = $getUsersSolvedBy->fetch(PDO::FETCH_ASSOC))
-            $issueSolvedBy = '<b>'.$row5['job_title'] . '</b> ' . $row5['username'];
+            $issueSolvedBy = '<b>'.$row5['job_title'] . '</b> ' . $row5['name'];
         else
             $issueSolvedBy = 'Not Solved Yet';
 
@@ -143,13 +143,13 @@ if(isset($_POST['solve_issue']))
     {
         $solveIssue = $connect->prepare("UPDATE kid_issues SET solved_by = '$userID',solved_at = '$solutionDuration',status = 1 WHERE issue_id= '$issueId'");
         $solveIssue->execute();
-        header("Location: view-issue.php?type=kid&issue_id=$issueId");
+        header("Location: issues.php?type=kid");
     }
     else if($issueFor == 'administration')
     {
         $solveIssue = $connect->prepare("UPDATE admin_issues SET solved_by = '$userID',solved_at = '$solutionDuration',status = 1 WHERE issue_id= '$issueId'");
         $solveIssue->execute();
-        header("Location: view-issue.php?type=administration&issue_id=$issueId");
+        header("Location: issues.php?type=administration");
     }
 }
 
@@ -161,7 +161,7 @@ if(isset($_POST['escalate_issue']) && isset($_POST['employee_names']))
 
     foreach($employeeNames as $employeeName)
     {
-        $stmt = $connect->prepare("SELECT user_id FROM sys_users where username = '$employeeName'");
+        $stmt = $connect->prepare("SELECT user_id FROM sys_users where staff_id = '$employeeName'");
         $stmt->execute();
         if ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
             $employeeID = $row['user_id'];
@@ -169,13 +169,13 @@ if(isset($_POST['escalate_issue']) && isset($_POST['employee_names']))
             if($_GET['type'] == 'kid') {
                 $addEscalatedIssue = "INSERT INTO kid_issues_escalations (kid_issue_id, escalated_to, date_escalated ) VALUES ('$issueId','$employeeID','$EscalationDate')";
                 $connect->exec($addEscalatedIssue);
-                header("Location: view-issue.php?type=kid&issue_id=$issueId");
+                header("Location: issues.php?type=kid");
 
             }
             else if($_GET['type'] == 'administration') {
                 $addEscalatedIssue = "INSERT INTO admin_issues_escalations (admin_issue_id, escalated_to, date_escalated) VALUES ('$issueId','$employeeID','$EscalationDate')";
                 $connect->exec($addEscalatedIssue);
-                header("Location: view-issue.php?type=administration&issue_id=$issueId");
+                header("Location: issues.php?type=administration");
             }
         }
     }
@@ -281,13 +281,13 @@ if($issueStatus == '0') {
 
     if (isset($_POST['job_title']) == true) {
         $employeeJobTitle = $_POST['job_title'];
-        $stmt = $connect->prepare("SELECT sys_users.username FROM sys_users
+        $stmt = $connect->prepare("SELECT staff.staff_id,staff.name FROM sys_users
         JOIN staff on sys_users.staff_id = staff.staff_id
         JOIN job_titles ON staff.job_title_id = job_titles.job_title_id
         WHERE job_titles.job_title = '" . $employeeJobTitle . "' ");
         $stmt->execute();
         while ($row7 = $stmt->fetch(PDO::FETCH_ASSOC)) {
-            echo '<option value="' . $row7['username'] . '">' . $row7['username'] . '</option>';
+            echo '<option value="' . $row7['staff_id'] . '">' . $row7['name'] . '</option>';
         }
     }
     echo '</select>
