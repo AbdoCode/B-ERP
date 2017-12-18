@@ -71,11 +71,6 @@
         </div>
         <div>
             <h3>Prices</h3>
-            <div class="container-for-btn-group">
-                <button type="button" class="btn btn-primary add-price-row">
-                    <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add Price Row
-                </button>
-            </div>
             <div class="table-responsive">
                 <table class="table table-bordered  table-striped price-table">
                     <thead>
@@ -126,7 +121,7 @@
                     </tr>
                     <tr>
                         <td>4</td>
-                        <td>Daily استضافة</td>
+                        <td>Daily Hosting</td>
                         <td>
                             <select>
                                 <?php
@@ -139,7 +134,7 @@
                     </tr>
                     <tr>
                         <td>5</td>
-                        <td>Weekly استضافة</td>
+                        <td>Weekly Hosting</td>
                         <td>
                             <select>
                                 <?php
@@ -178,7 +173,7 @@
                     </tr>
                     <tr>
                         <td>8</td>
-                        <td>Monthly Bus Participation (Miniya)</td>
+                        <td>Monthly Bus Participation (Minya)</td>
                         <td>
                             <select>
                                 <?php
@@ -191,7 +186,7 @@
                     </tr>
                     <tr>
                         <td>9</td>
-                        <td>Monthly Bus Participation (New Miniya)</td>
+                        <td>Monthly Bus Participation (New Minya)</td>
                         <td>
                             <select>
                                 <?php
@@ -204,7 +199,7 @@
                     </tr>
                     <tr>
                         <td>10</td>
-                        <td>Half Monthly Bus Participation (Miniya)</td>
+                        <td>Half Monthly Bus Participation (Minya)</td>
                         <td>
                             <select>
                                 <?php
@@ -217,7 +212,7 @@
                     </tr>
                     <tr>
                         <td>11</td>
-                        <td>Half Monthly Bus Participation (New Miniya)</td>
+                        <td>Half Monthly Bus Participation (New Minya)</td>
                         <td>
                             <select>
                                 <?php
