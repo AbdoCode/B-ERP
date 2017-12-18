@@ -4,6 +4,15 @@
     include 'deploy.php';
     include 'navbar.php';
 
+
+
+$datetime1 = date_create('2017-12-7');
+$datetime2 = date_create('2017-12-12');
+$interval = date_diff($datetime1, $datetime2);
+echo $interval-> format('%R%a days');
+$interval ->
+//echo'<script>alert("'.$interval.'")</script>';
+
 $issueName = '';
 $issueType = '';
 $issueDate = '';
@@ -35,17 +44,16 @@ if(isset($_GET['type']) && isset($_GET['issue_id']))
         $issueDate = $row['date_added'];
         $issueTime = $row['time_added'];
         $issueStatus = $row['status'];
-        $issueSolvedWithin = $row['solved_at'];
 
         if($_GET['type'] == 'kid')
-            $getUsersForwardedFrom = $connect->prepare("SELECT job_titles.job_title,staff.name
+            $getUsersForwardedFrom = $connect->prepare("SELECT job_titles.job_title,sys_users.username
 FROM kid_issues
 JOIN sys_users ON kid_issues.forwarded_from = sys_users.user_id
 JOIN staff ON sys_users.staff_id = staff.staff_id
 JOIN job_titles ON staff.job_title_id = job_titles.job_title_id
 WHERE kid_issues.issue_id= '".$issueId."'");
         else
-            $getUsersForwardedFrom = $connect->prepare("SELECT job_titles.job_title,staff.name
+            $getUsersForwardedFrom = $connect->prepare("SELECT job_titles.job_title,sys_users.username
 FROM admin_issues
 JOIN sys_users ON admin_issues.forwarded_from = sys_users.user_id
 JOIN staff ON sys_users.staff_id = staff.staff_id
@@ -54,18 +62,18 @@ WHERE admin_issues.issue_id = '".$issueId."'");
 
         $getUsersForwardedFrom->execute();
         if ($row2 = $getUsersForwardedFrom->fetch(PDO::FETCH_ASSOC)) {
-            $issueForwardedFrom= '<b>'.$row2['job_title'] . '</b> ' . $row2['name'];
+            $issueForwardedFrom= '<b>'.$row2['job_title'] . '</b> ' . $row2['username'];
         }
 
         if($_GET['type'] == 'kid')
-            $getUsersForwardedTo = $connect->prepare("SELECT job_titles.job_title,staff.name
+            $getUsersForwardedTo = $connect->prepare("SELECT job_titles.job_title,sys_users.username
 FROM kid_issues_forwarding
 JOIN sys_users ON kid_issues_forwarding.forwarded_to = sys_users.user_id
 JOIN staff ON sys_users.staff_id = staff.staff_id
 JOIN job_titles ON staff.job_title_id = job_titles.job_title_id
 WHERE kid_issues_forwarding.kid_issue_id = '".$issueId."'");
         else
-            $getUsersForwardedTo = $connect->prepare("SELECT job_titles.job_title,staff.name
+            $getUsersForwardedTo = $connect->prepare("SELECT job_titles.job_title,sys_users.username
 FROM admin_issues_forwarding
 JOIN sys_users ON admin_issues_forwarding.forwarded_to = sys_users.user_id
 JOIN staff ON sys_users.staff_id = staff.staff_id
@@ -74,11 +82,11 @@ WHERE admin_issues_forwarding.admin_issue_id = '".$issueId."'");
 
         $getUsersForwardedTo->execute();
         while ($row3 = $getUsersForwardedTo->fetch(PDO::FETCH_ASSOC)) {
-            $issueForwardedTo .= '<b>'.$row3['job_title'] . '</b> ' . $row3['name'] . ', ';
+            $issueForwardedTo .= '<b>'.$row3['job_title'] . '</b> ' . $row3['username'] . ', ';
         }
 
         if($_GET['type'] == 'kid')
-            $getUsersEscalatedTo = $connect->prepare("SELECT job_titles.job_title,staff.name
+            $getUsersEscalatedTo = $connect->prepare("SELECT job_titles.job_title,sys_users.username
 FROM kid_issues
 JOIN kid_issues_escalations ON kid_issues.issue_id = kid_issues_escalations.kid_issue_id
 JOIN sys_users ON kid_issues_escalations.escalated_to = sys_users.user_id
@@ -86,7 +94,7 @@ JOIN staff ON sys_users.staff_id = staff.staff_id
 JOIN job_titles ON staff.job_title_id = job_titles.job_title_id
 WHERE kid_issues.issue_id = '".$issueId."'");
         else
-            $getUsersEscalatedTo = $connect->prepare("SELECT job_titles.job_title,staff.name
+            $getUsersEscalatedTo = $connect->prepare("SELECT job_titles.job_title,sys_users.username
 FROM admin_issues
 JOIN admin_issues_escalations ON admin_issues.issue_id = admin_issues_escalations.admin_issue_id
 JOIN sys_users ON admin_issues_escalations.escalated_to = sys_users.user_id
@@ -97,20 +105,20 @@ WHERE admin_issues.issue_id = '".$issueId."'");
         $getUsersEscalatedTo->execute();
         $escalated = false;
         while ($row4 = $getUsersEscalatedTo->fetch(PDO::FETCH_ASSOC)) {
-            $issueEscalatedTo .=  '<b>'.$row4['job_title'] . '</b> ' . $row4['name'] . ', ';
+            $issueEscalatedTo .=  '<b>'.$row4['job_title'] . '</b> ' . $row4['username'] . ', ';
             $escalated = true;
         }
         if(!$escalated) $issueEscalatedTo = 'Not Escalated Yet';
 
         if($_GET['type'] == 'kid')
-            $getUsersSolvedBy = $connect->prepare("SELECT job_titles.job_title,staff.name
+            $getUsersSolvedBy = $connect->prepare("SELECT job_titles.job_title,sys_users.username
 FROM kid_issues
 JOIN sys_users ON kid_issues.solved_by = sys_users.user_id
 JOIN staff ON sys_users.staff_id = staff.staff_id
 JOIN job_titles ON staff.job_title_id = job_titles.job_title_id
 WHERE kid_issues.issue_id = '".$issueId."'");
         else
-            $getUsersSolvedBy = $connect->prepare("SELECT job_titles.job_title,staff.name
+            $getUsersSolvedBy = $connect->prepare("SELECT job_titles.job_title,sys_users.username
 FROM admin_issues
 JOIN sys_users ON admin_issues.solved_by = sys_users.user_id
 JOIN staff ON sys_users.staff_id = staff.staff_id
@@ -118,7 +126,7 @@ JOIN job_titles ON staff.job_title_id = job_titles.job_title_id
 WHERE admin_issues.issue_id = '".$issueId."'");
         $getUsersSolvedBy->execute();
         if($row5 = $getUsersSolvedBy->fetch(PDO::FETCH_ASSOC))
-            $issueSolvedBy = '<b>'.$row5['job_title'] . '</b> ' . $row5['name'];
+            $issueSolvedBy = '<b>'.$row5['job_title'] . '</b> ' . $row5['username'];
         else
             $issueSolvedBy = 'Not Solved Yet';
 
@@ -127,67 +135,10 @@ WHERE admin_issues.issue_id = '".$issueId."'");
 
     }
 }
-else header("Location: issues.php?type=kid");
+else header("Location: issues.php?type=kid ");
 
-if(isset($_POST['solve_issue']))
-{
-
-    $solutionDate = date("Y-m-d");
-    $issueId = $_GET['issue_id'];
-    $userID = $_SESSION['userID'];
-    $issueFor = $_GET['type'];
-
-    $solutionDuration = substr($solutionDate,8) - substr($issueDate,8);
-
-    if($issueFor == 'kid')
-    {
-        $solveIssue = $connect->prepare("UPDATE kid_issues SET solved_by = '$userID',solved_at = '$solutionDuration',status = 1 WHERE issue_id= '$issueId'");
-        $solveIssue->execute();
-        header("Location: issues.php?type=kid");
-    }
-    else if($issueFor == 'administration')
-    {
-        $solveIssue = $connect->prepare("UPDATE admin_issues SET solved_by = '$userID',solved_at = '$solutionDuration',status = 1 WHERE issue_id= '$issueId'");
-        $solveIssue->execute();
-        header("Location: issues.php?type=administration");
-    }
-}
-
-if(isset($_POST['escalate_issue']) && isset($_POST['employee_names']))
-{
-    $employeeNames = $_POST['employee_names'];
-    $EscalationDate = date("Y-m-d");
-    $issueId = $_GET['issue_id'];
-
-    foreach($employeeNames as $employeeName)
-    {
-        $stmt = $connect->prepare("SELECT user_id FROM sys_users where staff_id = '$employeeName'");
-        $stmt->execute();
-        if ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-            $employeeID = $row['user_id'];
-
-            if($_GET['type'] == 'kid') {
-                $addEscalatedIssue = "INSERT INTO kid_issues_escalations (kid_issue_id, escalated_to, date_escalated ) VALUES ('$issueId','$employeeID','$EscalationDate')";
-                $connect->exec($addEscalatedIssue);
-                header("Location: issues.php?type=kid");
-
-            }
-            else if($_GET['type'] == 'administration') {
-                $addEscalatedIssue = "INSERT INTO admin_issues_escalations (admin_issue_id, escalated_to, date_escalated) VALUES ('$issueId','$employeeID','$EscalationDate')";
-                $connect->exec($addEscalatedIssue);
-                header("Location: issues.php?type=administration");
-            }
-        }
-    }
-}
 
 echo'
-<script>
-        function reload(){
-            document.getElementById("view-issue-form").submit();
-        }
-    </script>
-
 <div class="view-issue">
     <h2 class="text-center">'.$issueName.'</h2>
     <div class="row">
@@ -237,12 +188,9 @@ echo'
         </div>
     <div class="row">
         <div class="contRow">
-            <label class="col-sm-1 col-xs-2">Solution time:</label>';
-
-       if($issueSolvedWithin!='')
-           echo' <p class="col-sm-11 col-sm-push-0 col-xs-8 col-xs-push-2">'.$issueSolvedWithin.' Days</p>';
-
-echo'</div>
+            <label class="col-sm-1 col-xs-2">Solution time:</label>
+            <p class="col-sm-11 col-sm-push-0 col-xs-8 col-xs-push-2">2 days 10 hrs 30 Mins</p>
+        </div>
     </div>
     <div class="row">
         <div class="contRow">
@@ -250,58 +198,41 @@ echo'</div>
             <p class="col-sm-11 col-xs-12">'.$issueDetails.'</p>
         </div>
     </div>
-    ';
-
-if($issueStatus == '0') {
-    echo '
-    <form  class="form-horizontal" method="post" id="view-issue-form" >
+    <form class="form-horizontal">
         <div class="form-group">
             <div class="col-sm-offset-4 col-sm-4 col-xs-12">
-                <button type="submit" class="btn btn-success btn-block" name="solve_issue">Solve</button>
+                <button type="submit" class="btn btn-success btn-block">Solve</button>
             </div>
         </div>
         <div class="form-group col-sm-5">
             <label for="jobTitle" class="col-sm-4 control-label">Job Title</label>
             <div class="col-sm-8">
-                <select class="form-control" id="jobTitle" name="job_title" onchange="reload()">
-                    <option></option>';
-    $stmt = $connect->prepare("SELECT job_title FROM job_titles");
-    $stmt->execute();
-
-    while ($row6 = $stmt->fetch(PDO::FETCH_ASSOC))
-        echo '<option value="' . $row6['job_title'] . '">' . $row6['job_title'] . '</option>';
-
-    echo '</select>
+                <select class="form-control" id="jobTitle" multiple>
+                    <option>CEO</option>
+                    <option>General Manager</option>
+                    <option>Academy Head</option>
+                    <option>Supervisor</option>
+                </select>
             </div>
         </div>
         <div class="form-group col-sm-5 col-sm-push-2">
             <label for="employee" class="col-sm-4 control-label">To</label>
             <div class="col-sm-8">
-                <select class="form-control" id="employee" multiple name="employee_names[]">';
-
-    if (isset($_POST['job_title']) == true) {
-        $employeeJobTitle = $_POST['job_title'];
-        $stmt = $connect->prepare("SELECT staff.staff_id,staff.name FROM sys_users
-        JOIN staff on sys_users.staff_id = staff.staff_id
-        JOIN job_titles ON staff.job_title_id = job_titles.job_title_id
-        WHERE job_titles.job_title = '" . $employeeJobTitle . "' ");
-        $stmt->execute();
-        while ($row7 = $stmt->fetch(PDO::FETCH_ASSOC)) {
-            echo '<option value="' . $row7['staff_id'] . '">' . $row7['name'] . '</option>';
-        }
-    }
-    echo '</select>
+                <select class="form-control" id="employee" multiple>
+                    <option>Ahmed</option>
+                    <option>Mohamed</option>
+                    <option>Ibrahim</option>
+                    <option>Ali</option>
+                </select>
             </div>
         </div>
         <div class="form-group">
             <div class="col-sm-offset-4 col-sm-4 col-xs-12">
-                <button type="submit" class="btn btn-warning btn-block" name="escalate_issue">Escalate</button>
+                <button type="submit" class="btn btn-warning btn-block">Forward</button>
             </div>
         </div>
-        </form>';
-}
-
-        echo'</div>';
+    </form>
+</div>';
 
     include $templates . 'footer.php';
 ?>
