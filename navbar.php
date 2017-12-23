@@ -37,6 +37,7 @@ if(isset($_POST['back']))
                             <li><a href="add-event.php">Add Event</a></li>
                             <li><a href="add-kid-issue.php">Add Issue for kid</a></li>
                             <li><a href="add-administration-issue.php">Add Issue for administration</a></li>
+                            <li><a href="change-password.php">Change Password</a></li>
                             <li><a href="logout.php">Logout</a></li>
                         </ul>
                     </li>
@@ -178,6 +179,7 @@ if(isset($_POST['back']))
                 <li><a href="bus-attend.php">C</a></li>
                 <li><a href="bus-attend.php">X</a></li>
                 <li><a href="bus-attend.php">F</a></li>
+                <li><a href="add-bus.php">Add Bus</a></li>
             </ul>
             </li>';
             }
