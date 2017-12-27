@@ -38,6 +38,7 @@ if(isset($_POST['back']))
                             <li><a href="add-kid-issue.php">Add Issue for kid</a></li>
                             <li><a href="add-administration-issue.php">Add Issue for administration</a></li>
                             <li><a href="change-password.php">Change Password</a></li>
+                            <li><a href="security-question.php">Security Question</a></li>
                             <li><a href="logout.php">Logout</a></li>
                         </ul>
                     </li>
@@ -171,7 +172,7 @@ if(isset($_POST['back']))
                 echo'<li ';
                 if (basename($_SERVER['PHP_SELF']) == 'bus-attend-am.php' || basename($_SERVER['PHP_SELF']) == 'bus-attend-pm.php') echo 'class="active"';
                 echo'><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                Bus <span class="glyphicon glyphicon-triangle-right"></span>
+                Buses <span class="glyphicon glyphicon-triangle-right"></span>
             </a>
             <ul class="dropdown-menu">
                 <li><a href="bus-attend.php">A</a></li>
@@ -179,7 +180,7 @@ if(isset($_POST['back']))
                 <li><a href="bus-attend.php">C</a></li>
                 <li><a href="bus-attend.php">X</a></li>
                 <li><a href="bus-attend.php">F</a></li>
-                <li><a href="add-bus.php">Add Bus</a></li>
+                <li><a href="buses.php">Buses Info</a></li>
             </ul>
             </li>';
             }

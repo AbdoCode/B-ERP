@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="597a9482-fa08-471e-8566-9bf89cea1a8e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/add-bus.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/change-password.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/buses.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/security-question.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/landing-page-control.php" afterPath="$PROJECT_DIR$/landing-page-control.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/navbar.php" afterPath="$PROJECT_DIR$/navbar.php" />
     </list>
     <ignored path="BackPackersz.iws" />
@@ -27,7 +26,7 @@
     <favorites_list name="BackPackersz" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -35,8 +34,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/staff.php" />
-        <option value="$PROJECT_DIR$/edit-kids-profile.php" />
         <option value="$PROJECT_DIR$/edit-profile.php" />
         <option value="$PROJECT_DIR$/performance-sheet-kids.php" />
         <option value="$PROJECT_DIR$/users.php" />
@@ -84,8 +81,10 @@
         <option value="$PROJECT_DIR$/view-issue.php" />
         <option value="$PROJECT_DIR$/landing-page-control.php" />
         <option value="$PROJECT_DIR$/change-password.php" />
-        <option value="$PROJECT_DIR$/navbar.php" />
         <option value="$PROJECT_DIR$/add-bus.php" />
+        <option value="$PROJECT_DIR$/buses.php" />
+        <option value="$PROJECT_DIR$/navbar.php" />
+        <option value="$PROJECT_DIR$/security-question.php" />
       </list>
     </option>
   </component>
@@ -149,8 +148,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -203,6 +200,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -346,7 +345,8 @@
       <workItem from="1512395874266" duration="935000" />
       <workItem from="1512525834120" duration="13509000" />
       <workItem from="1513596424582" duration="370000" />
-      <workItem from="1514015750299" duration="2792000" />
+      <workItem from="1514015750299" duration="3421000" />
+      <workItem from="1514406455781" duration="1315000" />
     </task>
     <task id="LOCAL-00001" summary="Mohamed Edit">
       <created>1507986336002</created>
@@ -677,11 +677,18 @@
       <option name="project" value="LOCAL" />
       <updated>1512760238063</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Mohamed commits">
+      <created>1514018672166</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1514018672166</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="721034000" />
+    <option name="totallyTimeSpent" value="722978000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -724,7 +731,8 @@
     <MESSAGE value="Mohamed Edit" />
     <MESSAGE value="code" />
     <MESSAGE value="code commits" />
-    <option name="LAST_COMMIT_MESSAGE" value="code commits" />
+    <MESSAGE value="Mohamed commits" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mohamed commits" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -733,27 +741,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/check-in-out.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kids-data.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="32" column="39" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view-event-request.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="135" column="59" selection-start-line="135" selection-start-column="59" selection-end-line="135" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kids-profile.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1012,14 +999,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/branches.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="56" column="2" selection-start-line="56" selection-start-column="2" selection-end-line="56" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/add-customer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
@@ -1047,19 +1026,6 @@
             <marker date="1513596380254" expanded="true" signature="2704:2736" ph="SELECT kid_i... kids" />
             <marker date="1513596380254" expanded="true" signature="4481:4513" ph="SELECT job_t... job_titles" />
             <marker date="1513596380254" expanded="true" signature="5365:5579" ph="SELECT staff... sys_users" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assigned-tasks.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-          <folding>
-            <marker date="1513596380256" expanded="true" signature="131:190" ph="SELECT * FRO... assigned_tasks" />
-            <marker date="1513596380256" expanded="true" signature="337:516" ph="SELECT * FRO... assigned_tasks" />
-            <marker date="1513596380256" expanded="true" signature="1873:2042" ph="..." />
-            <marker date="1513596380256" expanded="true" signature="2106:2416" ph="SELECT job_t... assigned_tasks" />
           </folding>
         </state>
       </provider>
@@ -1114,50 +1080,95 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/add-bus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="42" column="14" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assigned-tasks.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <folding>
+            <marker date="1513596380256" expanded="true" signature="131:190" ph="SELECT * FRO... assigned_tasks" />
+            <marker date="1513596380256" expanded="true" signature="337:516" ph="SELECT * FRO... assigned_tasks" />
+            <marker date="1513596380256" expanded="true" signature="1873:2042" ph="..." />
+            <marker date="1513596380256" expanded="true" signature="2106:2416" ph="SELECT job_t... assigned_tasks" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/branches.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buses.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/navbar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="181" column="40" selection-start-line="181" selection-start-column="40" selection-end-line="181" selection-end-column="40" />
+        <state relative-caret-position="197">
+          <caret line="39" column="33" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
           <folding>
-            <marker date="1514018240317" expanded="true" signature="4573:4680" ph="..." />
-            <marker date="1514018240317" expanded="true" signature="4723:5057" ph="..." />
-            <marker date="1514018240317" expanded="true" signature="5545:5651" ph="..." />
-            <marker date="1514018240317" expanded="true" signature="5694:5968" ph="..." />
-            <marker date="1514018240317" expanded="true" signature="6544:6649" ph="..." />
-            <marker date="1514018240317" expanded="true" signature="6692:6911" ph="..." />
-            <marker date="1514018240317" expanded="true" signature="7429:7526" ph="..." />
-            <marker date="1514018240317" expanded="true" signature="7565:7732" ph="..." />
-            <marker date="1514018240317" expanded="true" signature="8204:8304" ph="..." />
-            <marker date="1514018240317" expanded="true" signature="8343:8511" ph="..." />
-            <marker date="1514018240317" expanded="true" signature="8968:9062" ph="..." />
-            <marker date="1514018240317" expanded="true" signature="9101:9458" ph="..." />
-            <marker date="1514018240317" expanded="true" signature="10159:10259" ph="..." />
-            <marker date="1514018240317" expanded="true" signature="10298:10440" ph="..." />
-            <marker date="1514018240317" expanded="true" signature="11274:11369" ph="..." />
-            <marker date="1514018240317" expanded="true" signature="11408:11471" ph="..." />
-            <marker date="1514018240317" expanded="true" signature="12064:12160" ph="..." />
-            <marker date="1514018240317" expanded="true" signature="12199:12361" ph="..." />
-            <marker date="1514018240317" expanded="true" signature="12935:13030" ph="..." />
-            <marker date="1514018240317" expanded="true" signature="13069:13275" ph="..." />
-            <marker date="1514018240317" expanded="true" signature="14071:14167" ph="..." />
-            <marker date="1514018240317" expanded="true" signature="14206:14345" ph="..." />
-            <marker date="1514018240317" expanded="true" signature="19610:19653" ph="SELECT branc... branches" />
+            <marker date="1514406434122" expanded="true" signature="4664:4771" ph="..." />
+            <marker date="1514406434122" expanded="true" signature="4814:5148" ph="..." />
+            <marker date="1514406434122" expanded="true" signature="5636:5742" ph="..." />
+            <marker date="1514406434122" expanded="true" signature="5785:6059" ph="..." />
+            <marker date="1514406434122" expanded="true" signature="6635:6740" ph="..." />
+            <marker date="1514406434122" expanded="true" signature="6783:7002" ph="..." />
+            <marker date="1514406434122" expanded="true" signature="7520:7617" ph="..." />
+            <marker date="1514406434122" expanded="true" signature="7656:7823" ph="..." />
+            <marker date="1514406434122" expanded="true" signature="8295:8395" ph="..." />
+            <marker date="1514406434122" expanded="true" signature="8434:8602" ph="..." />
+            <marker date="1514406434122" expanded="true" signature="9059:9155" ph="..." />
+            <marker date="1514406434122" expanded="true" signature="9194:9552" ph="..." />
+            <marker date="1514406434122" expanded="true" signature="10253:10353" ph="..." />
+            <marker date="1514406434122" expanded="true" signature="10392:10534" ph="..." />
+            <marker date="1514406434122" expanded="true" signature="11368:11463" ph="..." />
+            <marker date="1514406434122" expanded="true" signature="11502:11565" ph="..." />
+            <marker date="1514406434122" expanded="true" signature="12158:12254" ph="..." />
+            <marker date="1514406434122" expanded="true" signature="12293:12455" ph="..." />
+            <marker date="1514406434122" expanded="true" signature="13029:13124" ph="..." />
+            <marker date="1514406434122" expanded="true" signature="13163:13369" ph="..." />
+            <marker date="1514406434122" expanded="true" signature="14165:14261" ph="..." />
+            <marker date="1514406434122" expanded="true" signature="14300:14439" ph="..." />
+            <marker date="1514406434122" expanded="true" signature="19704:19747" ph="SELECT branc... branches" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/change-password.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        <state relative-caret-position="102">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/add-bus.php">
+    <entry file="file://$PROJECT_DIR$/forget-password.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="42" column="14" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
+        <state relative-caret-position="19">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security-question.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
